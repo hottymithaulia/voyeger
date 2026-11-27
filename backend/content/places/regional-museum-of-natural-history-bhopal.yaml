@@ -1,0 +1,55 @@
+id: regional-museum-of-natural-history-bhopal
+slug: regional-museum-of-natural-history-bhopal
+category: culture
+status: draft
+tags:
+- natural-history
+- museum
+- ecology
+- shahpura-lake
+- arera-colony
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Regional Museum of Natural History, Bhopal
+    url: https://en.wikipedia.org/wiki/Regional_Museum_of_Natural_History,_Bhopal
+    type: wikipedia
+  - name: Wikidata - Regional Museum of Natural History, Bhopal (Q29966796)
+    url: https://www.wikidata.org/wiki/Q29966796
+    type: wikidata
+  - name: Wikivoyage - Bhopal
+    url: https://en.wikivoyage.org/wiki/Bhopal
+    type: wikivoyage
+text:
+  en:
+    title: Regional Museum of Natural History, Bhopal
+    summary: Situated in E-5 Arera Colony near Shahpura Lake, the Regional Museum of Natural History explores Central India's biodiversity, fossils, and human-environment relationships.
+    story: Inaugurated on 29 September 1997 under the Ministry of Environment, Forest and Climate Change as a regional branch of the National Museum of Natural History in New Delhi, the museum serves as an informal environmental education centre. Its galleries examine Central Indian ecological heritage and human-nature interactions, featuring transcripts, translations, audio tours, and a replica of a Rajasaurus skull.
+    tips: []
+    needs_review: true
+  hi:
+    title: क्षेत्रीय प्राकृतिक इतिहास संग्रहालय, भोपाल
+    summary: शाहपुरा झील के पास ई-5 अरेरा कॉलोनी में स्थित क्षेत्रीय प्राकृतिक इतिहास संग्रहालय मध्य भारत की जैव विविधता, जीवाश्मों और मानव-प्रकृति संबंधों को प्रदर्शित करता है।
+    story: पर्यावरण, वन एवं जलवायु परिवर्तन मंत्रालय के अंतर्गत 29 सितंबर 1997 को उद्घाटित यह संस्थान नई दिल्ली स्थित राष्ट्रीय प्राकृतिक इतिहास संग्रहालय की क्षेत्रीय शाखा के रूप में पर्यावरण शिक्षा को बढ़ावा देता है। इसकी दीर्घाओं में मध्य भारत की प्राकृतिक विरासत और मानव-पर्यावरण संबंधों के साथ राजासॉरस (Rajasaurus) की खोपड़ी की प्रतिकृति, अनुवाद तथा ऑडियो टूर उपलब्ध हैं।
+    tips: []
+    needs_review: true
+deleted: false

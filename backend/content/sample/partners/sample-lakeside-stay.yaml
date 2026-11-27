@@ -1,0 +1,25 @@
+id: sample-lakeside-stay
+type: homestay
+name: Sample Lakeside Homestay
+contact:
+  phone: '917555010001'
+  whatsapp: '917555010001'
+  email: stay@example.invalid
+place_ids:
+- upper-lake
+- bharat-bhavan
+offer: Sample welcome tea for Voyeger visitors
+featured_until: '2026-12-31'
+onboarded_via: admin
+text:
+  en:
+    name: Sample Lakeside Homestay
+    offer: Sample welcome tea for Voyeger visitors
+    description: Illustrative homestay listing near Bhopal's lakefront.
+    needs_review: false
+  hi:
+    name: नमूना लेकसाइड होमस्टे
+    offer: यात्रियों के लिए नमूना स्वागत चाय
+    description: भोपाल की झील के पास होमस्टे की उदाहरण सूची।
+    needs_review: false
+deleted: false

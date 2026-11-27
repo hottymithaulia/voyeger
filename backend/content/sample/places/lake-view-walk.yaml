@@ -1,0 +1,54 @@
+id: lake-view-walk
+slug: lake-view-walk
+category: experience
+tags:
+- lakeside
+- sunset
+- walk
+geo:
+  lat: 23.2465
+  lng: 77.3948
+is_anchor: false
+anchor_for: []
+hours: 06:00 - 21:00 (SAMPLE DATA)
+best_time: Sunset
+cost_note: Free promenade access (SAMPLE DATA)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: null
+media:
+  images:
+  - id: lake-view-walk-cover
+    source_file: lake-view-walk.jpg
+    alt:
+      en: Evening walkway overlooking Upper Lake in Bhopal
+      hi: भोपाल में बड़े तालाब के किनारे शाम का सैरगाह
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Lake View Walk
+    summary: Breezy hillside promenade linking Shamla Hills with the southern shore
+      of Bhojtal.
+    story: Popular for unhurried evening strolls, this stretch frames views across
+      the water toward Old Bhopal's minarets.
+    tips:
+    - Arrive 30 minutes before sunset for the best light.
+    - Pair with a visit to Bharat Bhavan nearby.
+    needs_review: false
+  hi:
+    title: लेक व्यू वॉक
+    summary: श्यामला हिल्स को भोजताल के दक्षिणी किनारे से जोड़ने वाला हवादार सैरगाह।
+    story: शाम की सैर के लिए लोकप्रिय यह मार्ग झील के पार पुराने भोपाल के सुंदर दृश्य
+      दिखाता है।
+    tips:
+    - सूर्यास्त से 30 मिनट पहले पहुंचें।
+    - पास के भारत भवन की यात्रा के साथ जोड़ें।
+    needs_review: false
+deleted: false

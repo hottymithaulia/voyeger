@@ -1,0 +1,20 @@
+id: chhatri-khushvakht-rai-saxena-baoli
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: medium
+flags:
+- geo pending osm
+- distance approx
+- no dedicated wikipedia page
+- verify restoration status and public access locally
+osm_search_hint: Chhatri of Khushvakht Rai Saxena and Baoli Aishbagh Bhopal
+hidden_gem_evidence: Madhya Pradesh State Protected Monument (S-MP-330) verified on the official State Protected Monuments list, corroborated by INTACH Aishbagh baoli listings and regional press reporting; omitted from mainstream tourism portals; approx 1.4 km from lower-lake-chhota-talaab.
+anchor_for_candidate: lower-lake-chhota-talaab
+approx_distance_to_anchor_km: 1.4
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: true
+hindi_needs_review: true
+hold_reason: null

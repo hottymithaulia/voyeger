@@ -1,0 +1,19 @@
+id: hammam-e-qadimi
+source_file: hidden_g2.yaml
+record_type: candidate
+category_confidence: high
+flags:
+- geo pending osm
+- distance approx
+- verify seasonal operation and visitor access rules locally
+osm_search_hint: Hammam-e-Qadimi Old Bhopal near Kamla Park Chowk
+hidden_gem_evidence: Publicly accessible 18th-century functioning bathhouse confirmed by Wikipedia and INTACH 2003 (#190); absent from official MP Tourism and District Bhopal headline lists; approx 0.3 km from gohar-mahal.
+anchor_for_candidate: gohar-mahal
+approx_distance_to_anchor_km: 0.3
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

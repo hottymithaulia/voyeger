@@ -1,0 +1,77 @@
+{
+  "from": 1,
+  "to": 2,
+  "places": [
+    {
+      "id": "gauhar-mahal",
+      "slug": "gauhar-mahal",
+      "category": "hidden_gem",
+      "tags": [
+        "heritage",
+        "architecture",
+        "old-city"
+      ],
+      "geo": {
+        "lat": 23.259,
+        "lng": 77.4001
+      },
+      "is_anchor": false,
+      "anchor_for": [
+        "upper-lake",
+        "bharat-bhavan"
+      ],
+      "i18n": {
+        "en": {
+          "title": "Gauhar Mahal",
+          "summary": "A peaceful heritage courtyard beside Bhopal’s old city.",
+          "story": "Gauhar Mahal is associated with Bhopal’s early Begums and its layered architectural history. Look for carved details and changing light around the courtyards.",
+          "tips": [
+            "Check current access and opening information before visiting.",
+            "Be considerate of residents and shared public spaces."
+          ]
+        },
+        "hi": {
+          "title": "गौहर महल",
+          "summary": "पुराने शहर के पास विरासत से भरा शांत आंगन।",
+          "story": "गौहर महल भोपाल की शुरुआती बेगमों और शहर की विविध स्थापत्य परंपरा से जुड़ा है। आंगन की नक्काशी और बदलती रोशनी पर ध्यान दें।",
+          "tips": [
+            "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+            "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+          ]
+        }
+      },
+      "media": {
+        "images": [
+          {
+            "id": "gauhar-mahal-cover",
+            "file": "/pack/v2/images/gauhar-mahal.webp",
+            "thumb": "/pack/v2/images/gauhar-mahal.webp",
+            "alt": {
+              "en": "Illustrated sample view of Gauhar Mahal",
+              "hi": "गौहर महल का नमूना चित्र"
+            },
+            "credit": "Voyeger sample illustration"
+          }
+        ]
+      },
+      "hours": "Sample hours; verify before visiting",
+      "best_time": "Morning or late afternoon",
+      "cost_note": "Sample guide; verify current prices",
+      "sensitivity": {
+        "is_sacred": false,
+        "note": ""
+      },
+      "enrichment": {},
+      "provenance": {
+        "source": "Sample editorial pack",
+        "license": "Sample text, CC BY-SA compatible",
+        "verified_by": "Voyeger demo",
+        "verified_at": "2026-11-27"
+      },
+      "updated_in_version": 2
+    }
+  ],
+  "partners": [],
+  "text": {},
+  "deleted_ids": []
+}

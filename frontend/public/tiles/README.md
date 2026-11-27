@@ -1,0 +1,1 @@
+Drop the production Bhopal archive here as `bhopal.pmtiles`. Until it is present, the app shows an interactive marker map on a plain background. The app uses MapLibre with the PMTiles protocol and credits OpenStreetMap contributors.

@@ -1,0 +1,18 @@
+id: manua-bhan-ki-tekri
+source_file: anchors.yaml
+record_type: anchor
+category_confidence: high
+flags:
+- geo pending osm
+- no dedicated wikipedia page
+osm_search_hint: Manua Bhan Ki Tekri Lalghati Bhopal
+hidden_gem_evidence: null
+anchor_for_candidate: null
+approx_distance_to_anchor_km: null
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: true
+hindi_needs_review: true
+hold_reason: null

@@ -1,0 +1,19 @@
+id: bhadbhada-dam
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: medium
+flags:
+- geo pending osm
+- distance approx
+- spillway spectacle is seasonal during heavy monsoon; verify safety locally
+osm_search_hint: Bhadbhada Dam Bhadbhada Road Bhopal
+hidden_gem_evidence: Publicly viewable 1965 dam confirmed by Wikipedia (Bhadbhada Dam, Bhojtal); omitted from MP Tourism's main Bhopal destination list (which headlines Kerwa Dam instead) and District Bhopal places of interest; approx 2.7 km from van-vihar-national-park.
+anchor_for_candidate: van-vihar-national-park
+approx_distance_to_anchor_km: 2.7
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

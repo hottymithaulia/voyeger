@@ -1,0 +1,447 @@
+- id: kamlapati-palace
+  slug: kamlapati-palace
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: high
+  hidden_gem_evidence: "Publicly accessible ASI Monument of National Importance (N-MP-10) corroborated by Wikipedia, Wikidata, and INTACH 2003; omitted as a headline sightseeing card on MP Tourism's main Bhopal destination list and District Bhopal places of interest; approx 1.0 km along the eastern embankment of upper-lake-bhojtal."
+  anchor_for_candidate: upper-lake-bhojtal
+  approx_distance_to_anchor_km: 1.0
+  tags:
+    - gond-heritage
+    - palace
+    - asi-monument
+    - kamla-park
+    - eighteenth-century
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Rani Kamlapati Palace Kamla Park Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Kamlapati Palace"
+      url: "https://en.wikipedia.org/wiki/Kamlapati_Palace"
+      type: wikipedia
+    - name: "Wikipedia - Monuments of National Importance in MP (West)"
+      url: "https://en.wikipedia.org/wiki/List_of_Monuments_of_National_Importance_in_Madhya_Pradesh/West"
+      type: wikipedia
+    - name: "Wikidata - Kamlapati Palace (Q27963272)"
+      url: "https://www.wikidata.org/wiki/Q27963272"
+      type: wikidata
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Rani Kamlapati Palace"
+      summary: "Tucked inside Kamla Park on the ancient embankment separating Bhopal's Upper and Lower Lakes, Rani Kamlapati Palace (1722) is the earliest surviving secular building in Bhopal town."
+      story: "Constructed in 1722 CE on the eastern flank of Raja Bhoj's ancient Bhojpal embankment, this double-storeyed palace is named after Rani Kamlapati, widow of Gond chief Nizam Shah of Ginnorgarh. Built in traditional lakhauri brick, its facade displays cusped arches supported on fluted pillars, lotus-petal merlons, and brackets carrying projecting chhajjas. Historical accounts link Rani Kamlapati's alliance with Sardar Dost Mohammad Khan to the founding of modern Bhopal on the opposite Fatehgarh ridge. Declared a protected Monument of National Importance (N-MP-10) in 1989, the structure remains under the custodianship of the Archaeological Survey of India."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "रानी कमलापति महल"
+      summary: "अपर लेक और लोअर लेक को अलग करने वाले प्राचीन बांध पर कमला पार्क के भीतर स्थित रानी कमलापति महल (1722) भोपाल नगर की सबसे पुरानी शेष धर्मनिरपेक्ष इमारत है।"
+      story: "राजा भोज के प्राचीन भोजपाल बांध के पूर्वी हिस्से पर 1722 ई. में निर्मित यह दो-मंजिला महल गिन्नौरगढ़ के गोंड शासक निज़ाम शाह की विधवा रानी कमलापति के नाम पर जाना जाता है। पारंपरिक लाखौरी ईंटों से बने इस महल में नक्काशीदार खंभों पर टिकी कटावदार मेहराबें, कमल-पंखुड़ी आकार के कंगूरे और छज्जों को सहारा देने वाले ब्रेकेट देखे जा सकते हैं। ऐतिहासिक विवरणों में रानी कमलापति और सरदार दोस्त मोहम्मद खान के प्रसंग को आधुनिक भोपाल की स्थापना से जोड़ा जाता है। 1989 में राष्ट्रीय महत्व का संरक्षित स्मारक (N-MP-10) घोषित यह महल भारतीय पुरातत्व सर्वेक्षण (ASI) की देखरेख में है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+  deleted: false
+
+- id: mausoleum-dost-mohammad-khan
+  slug: mausoleum-dost-mohammad-khan
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: high
+  hidden_gem_evidence: "Madhya Pradesh State Protected Monument (S-MP-33) confirmed by Wikipedia, the State Protected Monuments list, and INTACH 2003 (#80, #85); absent from official MP Tourism and District Bhopal headline lists; approx 1.1 km overlooking upper-lake-bhojtal on Fatehgarh ridge."
+  anchor_for_candidate: upper-lake-bhojtal
+  approx_distance_to_anchor_km: 1.1
+  tags:
+    - mausoleum
+    - fatehgarh-fort
+    - nawab-founder
+    - state-protected-monument
+    - old-bhopal
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Mausoleum of Dost Mohammad Khan Fatehgarh Fort Hamidia Hospital area Bhopal"
+  sensitivity:
+    is_sacred: true
+    note: "PENDING_HUMAN_ETIQUETTE_NOTE"
+  sources:
+    - name: "Wikipedia - Dost Mohammad of Bhopal"
+      url: "https://en.wikipedia.org/wiki/Dost_Mohammad_of_Bhopal"
+      type: wikipedia
+    - name: "Wikipedia - State Protected Monuments in MP (Central & West)"
+      url: "https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone"
+      type: wikipedia
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort)"
+      summary: "Set atop the historic Fatehgarh Fort ridge overlooking Upper Lake, this State Protected mausoleum marks the resting place of Nawab Dost Mohammad Khan, founder of modern Bhopal, beside his wife Fateh Bibi."
+      story: "Nawab Dost Mohammad Khan (reigned 1707–1728) transformed Bhopal from a small Gond-era settlement into a walled capital, laying the foundation of Fatehgarh Fort on 30 August 1723 and naming it after his wife Fatah Bibi. Following his death in 1728, he was buried within the fort grounds beside Fatah Bibi, close to the surviving bastion walls on the hill west of Kamlapati Palace. Listed as a Madhya Pradesh State Protected Monument (S-MP-33) and catalogued alongside Fatehgarh's fort walls in INTACH's 2003 survey, the quiet tomb complex rarely features on mainstream sightseeing itineraries."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला)"
+      summary: "अपर लेक के ऊपर फतेहगढ़ किले की पहाड़ी पर स्थित यह राज्य संरक्षित मकबरा आधुनिक भोपाल के संस्थापक नवाब दोस्त मोहम्मद खान और उनकी पत्नी फतेह बीबी की कब्रगाह है।"
+      story: "नवाब दोस्त मोहम्मद खान (शासनकाल 1707–1728) ने भोपाल को गोंड काल की छोटी बस्ती से प्राचीरबद्ध राजधानी में बदला और 30 अगस्त 1723 को अपनी पत्नी फतेह बीबी के नाम पर फतेहगढ़ किले की नींव रखी। 1728 में निधन के बाद उन्हें किले के परिसर में फतेह बीबी के साथ दफनाया गया, जहाँ कमलापति महल के पश्चिम में पहाड़ी पर किले के अवशेष मौजूद हैं। मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-33) के रूप में सूचीबद्ध और इंटैक (INTACH) की 2003 की विरासत सूची में दर्ज यह शांत स्थल मुख्य पर्यटन सूचियों में बहुत कम दिखाई देता है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no dedicated wikipedia page"
+    - "verify campus entry and hours locally"
+  deleted: false
+
+- id: maulana-azad-central-library
+  slug: maulana-azad-central-library
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: high
+  hidden_gem_evidence: "Publicly accessible historic central library and State Protected Monument (S-MP-331) confirmed by Wikipedia and INTACH 2003 (#252); excluded from MP Tourism and District Bhopal headline sightseeing lists; approx 0.4 km from lower-lake-chhota-talaab."
+  anchor_for_candidate: lower-lake-chhota-talaab
+  approx_distance_to_anchor_km: 0.4
+  tags:
+    - heritage-library
+    - indo-islamic-architecture
+    - state-protected-monument
+    - manuscripts
+    - old-bhopal
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Maulana Azad Central Library Itwara Road near Lower Lake Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Maulana Azad Central Library"
+      url: "https://en.wikipedia.org/wiki/Maulana_Azad_Central_Library"
+      type: wikipedia
+    - name: "Wikipedia - State Protected Monuments in MP (Central & West)"
+      url: "https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone"
+      type: wikipedia
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Maulana Azad Central Library (Former Edward Museum)"
+      summary: "Housed in a red sandstone 1908 Indo-Islamic building near Lower Lake, the Maulana Azad Central Library began life as the royal Edward Museum (Ajayabghar) and remains an active public repository of over 100,000 volumes."
+      story: "Constructed in 1908 to display royal gifts and artefacts collected by Bhopal's ruling family, the building was formally inaugurated in 1909 by Viceroy Lord Minto as the Edward Museum. In 1955, the heritage edifice was repurposed into a public central library named after Maulana Abul Kalam Azad, and in 2012 it received status as a State Protected Monument (S-MP-331). Its shelves preserve more than 100,000 books and rare manuscripts—some over a century old—across Hindi, English, Urdu, Persian, Arabic, and Sanskrit, alongside reading halls and a dedicated Braille section."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "मौलाना आज़ाद सेंट्रल लाइब्रेरी (पूर्व एडवर्ड संग्रहालय)"
+      summary: "लोअर लेक के पास 1908 की लाल बलुआ पत्थर की इंडो-इस्लामिक इमारत में स्थित मौलाना आज़ाद सेंट्रल लाइब्रेरी की शुरुआत शाही एडवर्ड म्यूज़ियम (अजायबघर) के रूप में हुई थी और आज यहाँ एक लाख से अधिक पुस्तकें संरक्षित हैं।"
+      story: "भोपाल के शाही परिवार को प्राप्त उपहारों और कलाकृतियों को प्रदर्शित करने के लिए 1908 में बनी इस इमारत का उद्घाटन 1909 में वायसराय लॉर्ड मिंटो ने एडवर्ड म्यूज़ियम के रूप में किया था। 1955 में इस धरोहर भवन को सार्वजनिक पुस्तकालय बनाकर मौलाना अबुल कलाम आज़ाद का नाम दिया गया और 2012 में इसे राज्य संरक्षित स्मारक (S-MP-331) घोषित किया गया। पुस्तकालय में हिंदी, अंग्रेज़ी, उर्दू, फ़ारसी, अरबी और संस्कृत की एक लाख से अधिक पुस्तकें व दुर्लभ पांडुलिपियाँ, जिनमें कई सौ वर्ष से पुरानी हैं, तथा पाठक कक्ष और ब्रेल अनुभाग उपलब्ध हैं।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+  deleted: false
+
+- id: chhatri-khushvakht-rai-saxena-baoli
+  slug: chhatri-khushvakht-rai-saxena-baoli
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: medium
+  hidden_gem_evidence: "Madhya Pradesh State Protected Monument (S-MP-330) verified on the official State Protected Monuments list, corroborated by INTACH Aishbagh baoli listings and regional press reporting; omitted from mainstream tourism portals; approx 1.4 km from lower-lake-chhota-talaab."
+  anchor_for_candidate: lower-lake-chhota-talaab
+  approx_distance_to_anchor_km: 1.4
+  tags:
+    - stepwell
+    - chhatri
+    - state-protected-monument
+    - aishbagh
+    - local-history
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Chhatri of Khushvakht Rai Saxena and Baoli Aishbagh Bhopal"
+  sensitivity:
+    is_sacred: true
+    note: "PENDING_HUMAN_ETIQUETTE_NOTE"
+  sources:
+    - name: "Wikipedia - State Protected Monuments in MP (Central & West)"
+      url: "https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone"
+      type: wikipedia
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+    - name: "Free Press Journal - Restoration of Raja Khushvakht Rai Saxena Memorial (May 2025)"
+      url: "https://www.freepressjournal.in/bhopal/175-year-old-memorial-to-bhopals-first-pm-to-be-restored-to-its-old-glory"
+      type: other
+  text:
+    en:
+      title: "Chhatri of Raja Khushvakht Rai Saxena and Baoli"
+      summary: "Situated in Bhopal's historic Aishbagh neighbourhood near Lower Lake, this State Protected heritage complex pairs a rare Hindu memorial chhatri with an adjoining historic stepwell (baoli)."
+      story: "Officially recorded as Madhya Pradesh State Protected Monument S-MP-330, the complex commemorates Raja Khushvakht Rai Saxena, described in regional press reporting citing the Bhopal Gazetteer as Bhopal's first Prime Minister and a rare surviving Hindu chhatri memorial in the city. The monument adjoins a large historic stepwell, echoing Aishbagh's water-heritage structures catalogued in INTACH's 2003 survey. Regional reporting in May 2025 noted that state-led restoration work had begun on the protected site, so visitors should verify local access conditions before visiting."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी"
+      summary: "लोअर लेक के पास भोपाल के ऐतिहासिक ऐशबाग क्षेत्र में स्थित यह राज्य संरक्षित विरासत परिसर एक दुर्लभ हिंदू स्मारक छतरी और उससे जुड़ी ऐतिहासिक बावड़ी को संरक्षित करता है।"
+      story: "मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-330) के रूप में दर्ज यह परिसर राजा खुशवक्त राय सक्सेना की स्मृति में बना है, जिन्हें भोपाल गजेटियर का हवाला देने वाली क्षेत्रीय समाचार रिपोर्टों में भोपाल के प्रथम प्रधानमंत्री और शहर की दुर्लभ हिंदू छतरी के रूप में वर्णित किया गया है। यह स्मारक एक विशाल ऐतिहासिक बावड़ी से जुड़ा है, और ऐशबाग की बावड़ियाँ इंटैक (INTACH) की 2003 की सूची में भी दर्ज हैं। मई 2025 की क्षेत्रीय रिपोर्ट के अनुसार इस संरक्षित स्थल पर जीर्णोद्धार कार्य प्रारंभ हुआ है, इसलिए प्रवेश की स्थिति स्थानीय स्तर पर सत्यापित करें।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no dedicated wikipedia page"
+    - "verify restoration status and public access locally"
+  deleted: false
+
+- id: golghar-museum
+  slug: golghar-museum
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: high
+  hidden_gem_evidence: "Publicly accessible museum and State Protected Monument (S-MP-32) confirmed by Wikipedia and INTACH 2003 (#61); absent from MP Tourism's main Bhopal destination list and District Bhopal places of interest; approx 0.6 km from taj-ul-masajid."
+  anchor_for_candidate: taj-ul-masajid
+  approx_distance_to_anchor_km: 0.6
+  tags:
+    - museum
+    - nawab-heritage
+    - state-protected-monument
+    - handicrafts
+    - shahjahanabad
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Golghar Museum Gulshan-e-Alam Shahjahanabad Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Golghar Museum"
+      url: "https://en.wikipedia.org/wiki/Golghar_Museum"
+      type: wikipedia
+    - name: "Wikipedia - State Protected Monuments in MP (Central & West)"
+      url: "https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone"
+      type: wikipedia
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Golghar Museum (Gulshan-e-Alam)"
+      summary: "Located in Shahjahanabad a short distance from Taj-ul-Masajid, Golghar Museum occupies a State Protected historic structure showcasing the arts, crafts, and social life of the Nawab-era Princely State of Bhopal."
+      story: "Catalogued as Gulshan-e-Alam (#61) in INTACH's 2003 built-heritage register and designated Madhya Pradesh State Protected Monument S-MP-32, the historic building sits within the royal precinct developed in Shahjahanabad. Following conservation, it was inaugurated as a public art and cultural museum in April 2013. Its curated collections highlight the political history, handicrafts, and everyday social life of the former Princely State of Bhopal, offering quieter historical context than the city's larger state museums."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "गोलघर संग्रहालय (गुलशन-ए-आलम)"
+      summary: "ताज-उल-मसाजिद से कुछ ही दूरी पर शाहजहानाबाद में स्थित गोलघर संग्रहालय एक राज्य संरक्षित ऐतिहासिक भवन में भोपाल रियासत के नवाबी दौर की कला, हस्तशिल्प और सामाजिक जीवन को प्रदर्शित करता है।"
+      story: "इंटैक (INTACH) की 2003 की विरासत सूची में गुलशन-ए-आलम (#61) के रूप में दर्ज और मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-32) घोषित यह ऐतिहासिक इमारत शाहजहानाबाद के शाही परिसर का हिस्सा है। संरक्षण के बाद अप्रैल 2013 में इसे कला एवं संस्कृति संग्रहालय के रूप में आम लोगों के लिए खोला गया। इसके संग्रह भोपाल रियासत के राजनीतिक इतिहास, पारंपरिक हस्तशिल्प और नवाबी काल की जीवनशैली की झलक दिखाते हैं, जो बड़े संग्रहालयों की भीड़ से दूर एक शांत अनुभव देते हैं।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+  deleted: false
+
+- id: bada-bagh-royal-tombs
+  slug: bada-bagh-royal-tombs
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: medium
+  hidden_gem_evidence: "Historic royal garden necropolis corroborated by INTACH 2003 (#160-#166), Wikipedia (Siddiq Hasan Khan), and Wikidata (Q7210785); absent from official MP Tourism and District Bhopal tourism lists; approx 0.8 km from taj-ul-masajid."
+  anchor_for_candidate: taj-ul-masajid
+  approx_distance_to_anchor_km: 0.8
+  tags:
+    - royal-tombs
+    - begum-heritage
+    - historic-garden
+    - stepwell
+    - shahjahanabad
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Bada Bagh Bhopal Talkies Square Shahjahanabad Bhopal"
+  sensitivity:
+    is_sacred: true
+    note: "PENDING_HUMAN_ETIQUETTE_NOTE"
+  sources:
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+    - name: "Wikipedia - Siddiq Hasan Khan"
+      url: "https://en.wikipedia.org/wiki/Siddiq_Hasan_Khan"
+      type: wikipedia
+    - name: "Wikidata - Siddiq Hasan Khan (Q7210785)"
+      url: "https://www.wikidata.org/wiki/Q7210785"
+      type: wikidata
+  text:
+    en:
+      title: "Bada Bagh Royal Tombs"
+      summary: "Bada Bagh is a quiet historic garden and burial precinct near Bhopal Talkies Square in Old Bhopal that preserves the tombs of key figures from Bhopal's Begum era alongside an old stepwell."
+      story: "Recorded in INTACH's 2003 Bhopal built-heritage inventory (#160–#166) under its historical names Bara Bagh, Wazir Bagh, Noor Bagh, Nazar Bagh, and Bagh-e-Kalan, the complex houses multiple royal mausoleums. Among the documented burials within the precinct are Qudsia Begum (Gohar Begum), Wazir Mohammad Khan, Diwan Nazaruddaula, and the 19th-century Islamic scholar and Nawab Consort Siddiq Hasan Khan (1832–1890), together with the historic Baoli Bara Bagh. Despite its deep connection to Bhopal's ruling dynasty, Bada Bagh remains largely absent from mainstream tourism listings."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "बड़ा बाग शाही मकबरे"
+      summary: "पुराने भोपाल में भोपाल टॉकीज चौराहे के पास स्थित बड़ा बाग एक शांत ऐतिहासिक उद्यान और कब्रगाह परिसर है, जहाँ बेगम काल की प्रमुख हस्तियों के मकबरे और एक प्राचीन बावड़ी स्थित हैं।"
+      story: "इंटैक (INTACH) की 2003 की भोपाल विरासत सूची (#160–#166) में बड़ा बाग, वज़ीर बाग, नूर बाग, नज़र बाग और बाग-ए-कलाँ के नामों से दर्ज इस परिसर में कई ऐतिहासिक मकबरे मौजूद हैं। यहाँ नवाब गौहर कुदसिया बेगम, वज़ीर मोहम्मद खान, दीवान नज़रउद्दौला और 19वीं सदी के विद्वान व नवाब कंसोर्ट सिद्दीक हसन खान (1832–1890) की कब्रों के साथ ऐतिहासिक बावड़ी बड़ा बाग भी स्थित है। भोपाल के शाही इतिहास से गहरे जुड़ाव के बावजूद यह स्थल प्रमुख पर्यटन सूचियों में शामिल नहीं है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no dedicated wikipedia page"
+    - "verify current public access and site condition locally"
+  deleted: false
+
+- id: bhadbhada-dam
+  slug: bhadbhada-dam
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: medium
+  hidden_gem_evidence: "Publicly viewable 1965 dam confirmed by Wikipedia (Bhadbhada Dam, Bhojtal); omitted from MP Tourism's main Bhopal destination list (which headlines Kerwa Dam instead) and District Bhopal places of interest; approx 2.7 km from van-vihar-national-park."
+  anchor_for_candidate: van-vihar-national-park
+  approx_distance_to_anchor_km: 2.7
+  tags:
+    - dam
+    - monsoon-viewpoint
+    - upper-lake-outflow
+    - water-engineering
+    - bhadbhada
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Bhadbhada Dam Bhadbhada Road Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Bhadbhada Dam"
+      url: "https://en.wikipedia.org/wiki/Bhadbhada_Dam"
+      type: wikipedia
+    - name: "Wikipedia - Bhojtal"
+      url: "https://en.wikipedia.org/wiki/Bhojtal"
+      type: wikipedia
+  text:
+    en:
+      title: "Bhadbhada Dam"
+      summary: "Constructed in 1965 at the southeastern outlet of Upper Lake, Bhadbhada Dam is an eleven-gate spillway that regulates water flow from Bhojtal into the Kaliasote River."
+      story: "Built in 1965 to manage Bhopal's primary reservoir, Bhadbhada Dam stands at the southeastern corner of Upper Lake with a full tank level of 1,666.80 feet (508.04 metres). Its eleven sluice gates generally remain closed for most of the year and are opened during heavy monsoon rainfall to release surplus water into the Kaliasote River, a tributary of the Betwa basin. While official Bhopal tourism portals spotlight distant Kerwa Dam for outings, Bhadbhada Dam remains a quieter local engineering landmark close to Van Vihar National Park."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "भदभदा डैम"
+      summary: "अपर लेक के दक्षिण-पूर्वी कोने पर 1965 में निर्मित भदभदा डैम ग्यारह गेट वाला एक प्रमुख बांध है, जो भोजताल के अतिरिक्त जल को कलियासोत नदी की ओर नियंत्रित करता है।"
+      story: "भोपाल के प्रमुख जलाशय के जल स्तर प्रबंधन के लिए 1965 में बने इस बांध का पूर्ण टैंक स्तर 1,666.80 फीट (508.04 मीटर) है। इसके ग्यारह स्लुइस गेट सामान्यतः वर्ष के अधिकांश समय बंद रहते हैं और भारी मानसूनी वर्षा के दौरान अतिरिक्त पानी को कलियासोत नदी में छोड़ने के लिए खोले जाते हैं। जहाँ आधिकारिक पर्यटन सूचियाँ अक्सर केरवा डैम को प्रमुखता देती हैं, वहीं वन विहार राष्ट्रीय उद्यान के करीब स्थित भदभदा डैम एक अपेक्षाकृत कम प्रचारित स्थानीय जल-अभियांत्रिकी स्थल है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "spillway spectacle is seasonal during heavy monsoon; verify safety locally"
+  deleted: false
+
+- id: dhrupad-kendra-bhopal
+  slug: dhrupad-kendra-bhopal
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: medium
+  hidden_gem_evidence: "Historic living-heritage music institute confirmed by Wikipedia; absent from official MP Tourism and District Bhopal headline lists; approx 0.8 km from bharat-bhavan."
+  anchor_for_candidate: bharat-bhavan
+  approx_distance_to_anchor_km: 0.8
+  tags:
+    - dhrupad-music
+    - classical-arts
+    - guru-shishya
+    - living-heritage
+    - cultural-academy
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Dhrupad Kendra Ustad Alauddin Khan Sangeet Akademi Ravindranath Thakur Marg Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Dhrupad Kendra Bhopal"
+      url: "https://en.wikipedia.org/wiki/Dhrupad_Kendra_Bhopal"
+      type: wikipedia
+    - name: "Wikipedia - Zia Fariduddin Dagar"
+      url: "https://en.wikipedia.org/wiki/Zia_Fariduddin_Dagar"
+      type: wikipedia
+  text:
+    en:
+      title: "Dhrupad Kendra Bhopal"
+      summary: "Established in 1981 on Ravindranath Thakur Marg near Bharat Bhavan, Dhrupad Kendra Bhopal is a dedicated state-supported conservatory preserving India's ancient Dhrupad classical vocal tradition through the Guru-Shishya system."
+      story: "Founded by the Madhya Pradesh Department of Culture through the initiative of poet-administrator Ashok Vajpeyi and filmmaker Mani Kaul, the Kendra invited Dagar-tradition maestro Zia Fariduddin Dagar back from Europe to revive intensive Dhrupad training in Bhopal. Administered by the Ustad Alauddin Khan Sangeet Evam Kala Akademi, the institute trains scholars in four-year batches and has nurtured celebrated performers including Uday Bhawalkar and the Gundecha Brothers. Though central to India's modern Dhrupad revival, it rarely appears on tourist maps; visitors should verify locally when public recitals or visits are open."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "ध्रुपद केंद्र भोपाल"
+      summary: "भारत भवन के पास रवींद्रनाथ ठाकुर मार्ग पर 1981 में स्थापित ध्रुपद केंद्र भोपाल भारत की प्राचीन ध्रुपद गायन परंपरा को गुरु-शिष्य पद्धति से संरक्षित करने वाला राज्य-समर्थित संगीत संस्थान है।"
+      story: "मध्यप्रदेश संस्कृति विभाग द्वारा कवि-प्रशासक अशोक वाजपेयी और फिल्मकार मणि कौल की पहल पर स्थापित इस केंद्र ने डागर परंपरा के प्रसिद्ध गुरु ज़िया फरीदुद्दीन डागर को यूरोप से भारत लौटने और भोपाल में ध्रुपद प्रशिक्षण का नेतृत्व करने के लिए आमंत्रित किया था। उस्ताद अलाउद्दीन खान संगीत एवं कला अकादमी द्वारा संचालित इस संस्थान ने चार-वर्षीय प्रशिक्षण सत्रों के माध्यम से उदय भवालकर और गुंदेचा बंधुओं जैसे प्रतिष्ठित कलाकारों को तैयार किया है। भारतीय शास्त्रीय संगीत के पुनर्जागरण में अहम भूमिका के बावजूद यह सामान्य पर्यटन सूचियों में नहीं आता; आगंतुकों को सार्वजनिक प्रस्तुति या प्रवेश की जानकारी स्थानीय स्तर पर लेनी चाहिए।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "verify public visitor and recital access locally"
+  deleted: false
+
+- id: ravindra-bhavan-bhopal
+  slug: ravindra-bhavan-bhopal
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: medium
+  hidden_gem_evidence: "Public state cultural auditorium and exhibition venue corroborated by Wikidata (Q29866146) and Wikipedia articles; omitted from official MP Tourism and District Bhopal headline lists; approx 0.8 km from bharat-bhavan."
+  anchor_for_candidate: bharat-bhavan
+  approx_distance_to_anchor_km: 0.8
+  tags:
+    - cultural-centre
+    - auditorium
+    - art-exhibitions
+    - performing-arts
+    - central-bhopal
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Ravindra Bhavan near Bharat Bhavan Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikidata - Ravindra Bhawan, Bhopal (Q29866146)"
+      url: "https://www.wikidata.org/wiki/Q29866146"
+      type: wikidata
+    - name: "Wikipedia - Robin David"
+      url: "https://en.wikipedia.org/wiki/Robin_David"
+      type: wikipedia
+    - name: "Wikipedia - Isuri"
+      url: "https://en.wikipedia.org/wiki/Isuri"
+      type: wikipedia
+  text:
+    en:
+      title: "Ravindra Bhavan"
+      summary: "Ravindra Bhavan is a public state cultural centre and auditorium complex near Bharat Bhavan that hosts visual-art exhibitions, music recitals, and literary programmes."
+      story: "Documented on Wikidata and Hindi Wikipedia as one of Bhopal's established public cultural venues, Ravindra Bhavan sits within the central arts corridor close to Bharat Bhavan. The complex serves as a showcase for events organised by the Madhya Pradesh Department of Culture, including sculptor Robin David's 2020 major exhibition alongside concerts and regional literary gatherings. Because visitor attention overwhelmingly concentrates on nearby Bharat Bhavan, Ravindra Bhavan remains an understated stop for travellers interested in Bhopal's live civic arts calendar."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "रवींद्र भवन"
+      summary: "भारत भवन के पास स्थित रवींद्र भवन भोपाल का एक सार्वजनिक सांस्कृतिक केंद्र और सभागार परिसर है, जहाँ कला प्रदर्शनियाँ, संगीत समारोह और साहित्यिक कार्यक्रम आयोजित होते हैं।"
+      story: "विकीडेटा और हिंदी विकिपीडिया पर भोपाल के प्रमुख सांस्कृतिक संस्थान के रूप में दर्ज रवींद्र भवन भारत भवन के निकट केंद्रीय कला गलियारे में स्थित है। यह परिसर मध्यप्रदेश संस्कृति विभाग द्वारा आयोजित बड़ी कला प्रदर्शनियों—जैसे 2020 में मूर्तिकार रॉबिन डेविड की प्रमुख प्रदर्शनी—के साथ संगीत प्रस्तुतियों और साहित्यिक आयोजनों का मंच रहा है। अधिकांश पर्यटकों का ध्यान पास के भारत भवन पर केंद्रित रहने के कारण रवींद्र भवन स्थानीय कला और मंचन परंपराओं को देखने के लिए एक कम चर्चित विकल्प बना रहता है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no english wikipedia page"
+    - "verify public event schedule locally"
+  deleted: false

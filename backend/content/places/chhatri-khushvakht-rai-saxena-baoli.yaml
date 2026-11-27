@@ -1,0 +1,55 @@
+id: chhatri-khushvakht-rai-saxena-baoli
+slug: chhatri-khushvakht-rai-saxena-baoli
+category: hidden_gem
+status: draft
+tags:
+- stepwell
+- chhatri
+- state-protected-monument
+- aishbagh
+- local-history
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: true
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - State Protected Monuments in MP (Central & West)
+    url: https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone
+    type: wikipedia
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+  - name: Free Press Journal - Restoration of Raja Khushvakht Rai Saxena Memorial (May 2025)
+    url: https://www.freepressjournal.in/bhopal/175-year-old-memorial-to-bhopals-first-pm-to-be-restored-to-its-old-glory
+    type: other
+text:
+  en:
+    title: Chhatri of Raja Khushvakht Rai Saxena and Baoli
+    summary: Situated in Bhopal's historic Aishbagh neighbourhood near Lower Lake, this State Protected heritage complex pairs a rare Hindu memorial chhatri with an adjoining historic stepwell (baoli).
+    story: Officially recorded as Madhya Pradesh State Protected Monument S-MP-330, the complex commemorates Raja Khushvakht Rai Saxena, described in regional press reporting citing the Bhopal Gazetteer as Bhopal's first Prime Minister and a rare surviving Hindu chhatri memorial in the city. The monument adjoins a large historic stepwell, echoing Aishbagh's water-heritage structures catalogued in INTACH's 2003 survey. Regional reporting in May 2025 noted that state-led restoration work had begun on the protected site, so visitors should verify local access conditions before visiting.
+    tips: []
+    needs_review: true
+  hi:
+    title: राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी
+    summary: लोअर लेक के पास भोपाल के ऐतिहासिक ऐशबाग क्षेत्र में स्थित यह राज्य संरक्षित विरासत परिसर एक दुर्लभ हिंदू स्मारक छतरी और उससे जुड़ी ऐतिहासिक बावड़ी को संरक्षित करता है।
+    story: मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-330) के रूप में दर्ज यह परिसर राजा खुशवक्त राय सक्सेना की स्मृति में बना है, जिन्हें भोपाल गजेटियर का हवाला देने वाली क्षेत्रीय समाचार रिपोर्टों में भोपाल के प्रथम प्रधानमंत्री और शहर की दुर्लभ हिंदू छतरी के रूप में वर्णित किया गया है। यह स्मारक एक विशाल ऐतिहासिक बावड़ी से जुड़ा है, और ऐशबाग की बावड़ियाँ इंटैक (INTACH) की 2003 की सूची में भी दर्ज हैं। मई 2025 की क्षेत्रीय रिपोर्ट के अनुसार इस संरक्षित स्थल पर जीर्णोद्धार कार्य प्रारंभ हुआ है, इसलिए प्रवेश की स्थिति स्थानीय स्तर पर सत्यापित करें।
+    tips: []
+    needs_review: true
+deleted: false

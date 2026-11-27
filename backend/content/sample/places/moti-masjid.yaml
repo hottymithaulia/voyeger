@@ -1,0 +1,55 @@
+id: moti-masjid
+slug: moti-masjid
+category: culture
+tags:
+- mosque
+- heritage
+- architecture
+- sacred
+geo:
+  lat: 23.2598
+  lng: 77.4025
+is_anchor: false
+anchor_for: []
+hours: 06:00 - 20:00 (non-prayer hours for visitors)
+best_time: Morning
+cost_note: Free entry (SAMPLE DATA)
+sensitivity:
+  is_sacred: true
+  note: Active place of worship. Dress modestly, remove footwear before entering the
+    courtyard, and avoid visiting during congregational prayers.
+partner_id: null
+media:
+  images:
+  - id: moti-masjid-cover
+    source_file: moti-masjid.jpg
+    alt:
+      en: White marble facade and twin minarets of Moti Masjid in Bhopal
+      hi: भोपाल की मोती मस्जिद का सफेद संगमरमर का अग्रभाग
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Moti Masjid
+    summary: 1860 white marble mosque commissioned by Sikandar Begum in Old Bhopal.
+    story: Known as the Pearl Mosque, Moti Masjid rises on a quiet plinth above Chowk
+      Bazaar with finely proportioned domes and red sandstone flanking towers.
+    tips:
+    - Visit in the morning outside prayer times.
+    - Dress modestly and remove shoes at the entrance.
+    needs_review: false
+  hi:
+    title: मोती मस्जिद
+    summary: 1860 में सिकंदर बेगम द्वारा निर्मित सफेद संगमरमर की ऐतिहासिक मस्जिद।
+    story: चौक बाजार के पास स्थित मोती मस्जिद अपने शांत प्रांगण और सुंदर गुंबदों के
+      लिए जानी जाती है।
+    tips:
+    - नमाज़ के समय के अलावा सुबह आएं।
+    - शालीन वस्त्र पहनें और प्रवेश से पहले जूते उतारें।
+    needs_review: false
+deleted: false

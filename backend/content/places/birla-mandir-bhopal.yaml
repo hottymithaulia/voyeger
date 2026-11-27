@@ -1,0 +1,58 @@
+id: birla-mandir-bhopal
+slug: birla-mandir-bhopal
+category: culture
+status: draft
+tags:
+- hindu-temple
+- arera-hills
+- nagara-architecture
+- viewpoint
+- landmark
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: true
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Lakshmi Narayan Temple, Bhopal
+    url: https://en.wikipedia.org/wiki/Lakshmi_Narayan_Temple,_Bhopal
+    type: wikipedia
+  - name: Madhya Pradesh Tourism - Bhopal
+    url: https://www.mptourism.com/destination-bhopal.php
+    type: official
+  - name: District Bhopal Official Portal - Places of Interest
+    url: https://bhopal.nic.in/en/places-of-interest/
+    type: official
+  - name: Wikivoyage - Bhopal
+    url: https://en.wikivoyage.org/wiki/Bhopal
+    type: wikivoyage
+text:
+  en:
+    title: Birla Mandir (Lakshmi Narayan Temple)
+    summary: Birla Mandir, formally the Lakshmi Narayan Temple, crowns Arera Hills (Lakshminarayana Giri) in central Bhopal, offering panoramic views over both Old and New Bhopal alongside landscaped gardens.
+    story: Built by the Hindustan Charity Trust on hilly land granted during the tenure of Madhya Pradesh Chief Minister Dr. Kailashnath Katju, the temple's foundation stone was laid in 1960 and it was inaugurated in 1964 by Chief Minister Dwarka Prasad Mishra. Designed in the Nagara Shaili architectural tradition across roughly seven to eight acres of hilltop grounds, the ochre-and-red temple enshrines Lord Vishnu and Goddess Lakshmi, flanked by shrines to Shiva and Maa Jagdamba. Inside, carved marble panels depict mythological scenes inscribed with teachings from the Bhagavad Gita and Ramayana, while the adjacent Birla Museum houses antique stone sculptures from across Madhya Pradesh.
+    tips: []
+    needs_review: true
+  hi:
+    title: बिरला मंदिर (लक्ष्मी नारायण मंदिर)
+    summary: बिरला मंदिर, जिसे औपचारिक रूप से लक्ष्मी नारायण मंदिर कहा जाता है, मध्य भोपाल के अरेरा हिल्स (लक्ष्मीनारायण गिरि) के शिखर पर स्थित है और यहाँ से पुराने व नए भोपाल के विहंगम दृश्य दिखाई देते हैं।
+    story: हिंदुस्तान चैरिटी ट्रस्ट द्वारा निर्मित इस मंदिर की आधारशिला 1960 में तत्कालीन मुख्यमंत्री डॉ. कैलाशनाथ काटजू ने रखी थी और इसका उद्घाटन 1964 में मुख्यमंत्री द्वारका प्रसाद मिश्र ने किया। लगभग सात से आठ एकड़ पहाड़ी क्षेत्र में नागर शैली में बने गेरुआ और लाल पत्थर के इस मंदिर में भगवान विष्णु और देवी लक्ष्मी की प्रतिमाएँ प्रतिष्ठित हैं, जबकि पार्श्व में शिव और माँ जगदंबा के मंदिर हैं। गर्भगृह और परिसर की संगमरमर की दीवारों पर पौराणिक दृश्य तथा भगवद गीता व रामायण के उपदेश अंकित हैं, और मंदिर के पास स्थित बिरला संग्रहालय में मध्यप्रदेश की प्राचीन पाषाण प्रतिमाएँ संरक्षित हैं।
+    tips: []
+    needs_review: true
+deleted: false

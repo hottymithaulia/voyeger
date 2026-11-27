@@ -1,0 +1,61 @@
+id: gohar-mahal
+slug: gohar-mahal
+category: culture
+status: draft
+tags:
+- palace
+- begum-heritage
+- mughal-hindu-architecture
+- handicrafts
+- lakeside
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Madhya Pradesh Tourism - Bhopal
+    url: https://www.mptourism.com/destination-bhopal.php
+    type: official
+  - name: Madhya Pradesh Tourism - Begums of Bhopal
+    url: https://www.mptourism.com/begums-of-bhopal.html
+    type: official
+  - name: Wikipedia - Bhopal State
+    url: https://en.wikipedia.org/wiki/Bhopal_State
+    type: wikipedia
+  - name: District Bhopal Official Portal - History
+    url: https://bhopal.nic.in/en/history/
+    type: official
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Gohar Mahal
+    summary: Gohar Mahal is a 19th-century lakeside palace in Old Bhopal built by Qudsia Begum, the princely state's first female ruler. Known for blending Hindu and Mughal architectural styles, the protected monument also hosts regional craft fairs.
+    story: Commissioned between 1819 and 1837 (with its main entrance dated to 1820) by Qudsia Begum—also known as Gohar Begum—the palace sits along the Upper Lake road directly behind Shaukat Mahal. Covering roughly 4.65 acres, the maze-like structure combines Hindu and Mughal architectural traditions across winding passageways and steep flights of stairs that open onto views of Bhojtal. Catalogued as a built-heritage landmark in INTACH's 2003 Bhopal register, Gohar Mahal operates as a protected heritage venue hosting frequent handicraft fairs and housing the state-run Mrignayani emporium.
+    tips: []
+    needs_review: true
+  hi:
+    title: गौहर महल
+    summary: गौहर महल पुराने भोपाल में अपर लेक के किनारे स्थित 19वीं सदी का राजसी महल है, जिसे भोपाल की पहली महिला शासक कुदसिया बेगम ने बनवाया था। हिंदू और मुगल स्थापत्य के संगम वाला यह संरक्षित स्मारक क्षेत्रीय हस्तशिल्प मेलों का भी प्रमुख स्थल है।
+    story: 1819 से 1837 के बीच कुदसिया बेगम (गौहर बेगम) द्वारा निर्मित यह महल शौकत महल के पीछे भोजताल की सड़क पर स्थित है, जिसका मुख्य द्वार 1820 का माना जाता है। लगभग 4.65 एकड़ में फैली इस इमारत में हिंदू और मुगल स्थापत्य शैली का सुंदर मेल दिखता है, जिसके घुमावदार गलियारे और सीढ़ियाँ अपर लेक का मनोरम दृश्य प्रस्तुत करती हैं। इंटैक (INTACH) की 2003 की भोपाल विरासत सूची में दर्ज गौहर महल वर्तमान में संरक्षित धरोहर स्थल है, जहाँ हस्तशिल्प मेले आयोजित होते हैं और सरकारी एम्पोरियम 'मृगनयनी' स्थित है।
+    tips: []
+    needs_review: true
+deleted: false

@@ -1,0 +1,58 @@
+id: kushabhau-thakre-hall-minto-hall
+slug: kushabhau-thakre-hall-minto-hall
+category: hidden_gem
+status: draft
+tags:
+- minto-hall
+- begum-heritage
+- heritage-architecture
+- lower-lake-view
+- convention-centre
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+  - name: Madhya Pradesh Tourism - Kushabhau Thakre Hall
+    url: https://www.mptourism.com/kushabhau-thakre-hall-bhopal.html
+    type: official
+  - name: Madhya Pradesh Tourism - MICE Destinations
+    url: https://www.mptourism.com/mice-destinations-in-madhya-pradesh.html
+    type: official
+  - name: Wikipedia - Kushabhau Thakre
+    url: https://en.wikipedia.org/wiki/Kushabhau_Thakre
+    type: wikipedia
+text:
+  en:
+    title: Kushabhau Thakre Hall (Historic Minto Hall)
+    summary: Overlooking Lower Lake near Arera Hills, Kushabhau Thakre Hall—historically Minto Hall—is an early-20th-century Begum-era landmark that served for four decades as Madhya Pradesh's legislative assembly before being restored as a convention centre.
+    story: Conceived by Bhopal's fourth female ruler, Nawab Sultan Jahan Begum, and designed by architect A. C. Rovan, the building had its foundation stone laid on 12 November 1909 and was completed under her son, Nawab Hamidullah Khan. Catalogued as Minto Hall (#204) in INTACH's 2003 Bhopal built-heritage register, the stately hall served for roughly forty years as the state's legislative assembly hall. Today it operates as the restored Kushabhau Thakre International Convention Centre and hosts a rooftop restaurant ('1909 – The Crown of Bhopal') overlooking Lower Lake, though interior hall access depends on scheduled events.
+    tips: []
+    needs_review: true
+  hi:
+    title: कुशाभाऊ ठाकरे हॉल (ऐतिहासिक मिंटो हॉल)
+    summary: अरेरा हिल्स के पास लोअर लेक की ओर स्थित कुशाभाऊ ठाकरे हॉल (ऐतिहासिक मिंटो हॉल) 20वीं सदी के प्रारंभ का बेगम कालीन विरासत भवन है, जो लगभग चार दशकों तक मध्यप्रदेश विधानसभा का स्थल रहा।
+    story: भोपाल की चौथी बेगम नवाब सुल्तान जहाँ बेगम की परिकल्पना और वास्तुकार ए. सी. रोवन के डिज़ाइन पर आधारित इस भवन की आधारशिला 12 नवंबर 1909 को रखी गई और इसका निर्माण उनके पुत्र नवाब हमीदुल्लाह खान के समय पूरा हुआ। इंटैक (INTACH) की 2003 की सूची में मिंटो हॉल (#204) के रूप में दर्ज यह भव्य इमारत करीब चार दशकों तक राज्य की विधानसभा रही। वर्तमान में इसे कुशाभाऊ ठाकरे अंतरराष्ट्रीय कन्वेंशन सेंटर के रूप में संरक्षित किया गया है, जहाँ छत पर लोअर लेक के दृश्य वाला रेस्तरां '1909 – द क्राउन ऑफ भोपाल' भी स्थित है।
+    tips: []
+    needs_review: true
+deleted: false

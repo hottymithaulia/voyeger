@@ -1,0 +1,92 @@
+{
+  "upper-lake": {
+    "title": "Upper Lake",
+    "summary": "A broad, calm horizon at the heart of Bhopal.",
+    "story": "Bhojtal, often called Upper Lake, has shaped Bhopal’s rhythm for centuries. Its shoreline opens into changing views of the old city and surrounding hills.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  },
+  "bharat-bhavan": {
+    "title": "Bharat Bhavan",
+    "summary": "A landmark arts centre overlooking the lake.",
+    "story": "Visual arts, theatre and literature meet in a building that steps down toward Upper Lake. Its galleries and terraces offer a thoughtful entry to Bhopal’s creative life.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  },
+  "gauhar-mahal": {
+    "title": "Gauhar Mahal",
+    "summary": "A peaceful heritage courtyard beside Bhopal’s old city.",
+    "story": "Gauhar Mahal is associated with Bhopal’s early Begums and its layered architectural history. Look for carved details and changing light around the courtyards.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  },
+  "moti-masjid": {
+    "title": "Moti Masjid",
+    "summary": "A striking white mosque in the historic centre.",
+    "story": "Moti Masjid, also known as the Pearl Mosque, is a compact landmark among the lanes and markets of Bhopal’s historic centre.",
+    "tips": [
+      "This is an active place of worship; dress modestly.",
+      "Ask before entering and avoid interrupting prayers."
+    ]
+  },
+  "sadar-manzil": {
+    "title": "Sadar Manzil",
+    "summary": "A red sandstone palace facade tucked into the old city.",
+    "story": "Sadar Manzil once served as a ceremonial hall for Bhopal’s rulers. Its red exterior and arched details reward a slow look from the surrounding lanes.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  },
+  "old-city-food-lane": {
+    "title": "Old City breakfast lane",
+    "summary": "A sample food stop for poha, jalebi and morning chai.",
+    "story": "Bhopal’s old-city lanes wake early around tea stalls and breakfast counters. This sample listing points to everyday food culture visitors can look for in the market streets.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  },
+  "shaukat-mahal": {
+    "title": "Shaukat Mahal",
+    "summary": "A distinctive blend of European and Indo-Islamic architecture.",
+    "story": "Shaukat Mahal stands near the old city’s busy heart, with a facade unlike the surrounding palaces and mosques. Its contrast reflects the influences that shaped Bhopal.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  },
+  "tribal-museum": {
+    "title": "Tribal Museum",
+    "summary": "A vivid introduction to the living cultures of Madhya Pradesh.",
+    "story": "The Madhya Pradesh Tribal Museum presents the worlds, art and traditions of the state’s Adivasi communities through immersive galleries. Allow time for a thoughtful visit.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  },
+  "heritage-courtyard-walk": {
+    "title": "Old-city courtyard walk",
+    "summary": "A sample self-guided loop through quieter lanes and courtyards.",
+    "story": "Between larger landmarks, Bhopal’s neighbourhood scale is best felt on foot. This sample route links courtyards, shaded passages and street scenes around the historic centre.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  },
+  "lake-view-walk": {
+    "title": "Lake-view evening walk",
+    "summary": "A gentle lakeside walk with open views across the water.",
+    "story": "The lake edge offers a slower way to take in the city. This sample walking stop is a reminder to leave time for the views between headline attractions.",
+    "tips": [
+      "Check current access and opening information before visiting.",
+      "Be considerate of residents and shared public spaces."
+    ]
+  }
+}

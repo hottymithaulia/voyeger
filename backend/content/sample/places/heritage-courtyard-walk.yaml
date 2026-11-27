@@ -1,0 +1,56 @@
+id: heritage-courtyard-walk
+slug: heritage-courtyard-walk
+category: experience
+tags:
+- walk
+- craft
+- courtyard
+- artisan
+geo:
+  lat: 23.2548
+  lng: 77.3986
+is_anchor: false
+anchor_for: []
+hours: 10:00 - 18:00 (SAMPLE DATA)
+best_time: Mid-morning
+cost_note: Free walk; studio workshops extra (SAMPLE DATA)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: sample-begum-studio
+media:
+  images:
+  - id: heritage-courtyard-walk-cover
+    source_file: heritage-courtyard-walk.jpg
+    alt:
+      en: Quiet stone courtyard along the Old Bhopal craft walk
+      hi: पुराने भोपाल की शिल्प सैर के किनारे शांत पत्थर का प्रांगण
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Heritage Courtyard Walk
+    summary: A slow walking loop connecting stone havelis, zardozi workshops, and
+      lakeside gates.
+    story: Tucked off the main bazaar arteries, quiet residential courtyards still
+      host traditional craft studios and mid-day tea stops.
+    tips:
+    - Enquire ahead for artisan studio demonstrations.
+    - Wear comfortable walking shoes.
+    needs_review: false
+  hi:
+    title: हेरिटेज कोर्टयार्ड वॉक
+    summary: पत्थर की हवेलियों, ज़रदोज़ी कार्यशालाओं और झील के द्वारों को जोड़ती पैदल
+      सैर।
+    story: मुख्य बाजार से हटकर शांत आंगनों में आज भी पारंपरिक शिल्प स्टूडियो काम करते
+      हैं।
+    tips:
+    - कार्यशाला देखने के लिए पहले से पूछें।
+    - आरामदायक चलने वाले जूते पहनें।
+    needs_review: false
+deleted: false

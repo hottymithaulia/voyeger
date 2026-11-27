@@ -1,0 +1,29 @@
+id,title,status,geo_missing,photo_missing,credit_missing,tips_missing,etiquette_missing,hours_missing,hindi_unreviewed,access_unverified
+adivasi-lok-kala-academy,Adivasi Lok Kala Academy,draft,true,true,false,true,false,true,true,false
+bada-bagh-royal-tombs,Bada Bagh Royal Tombs,draft,true,true,false,true,true,true,true,true
+bhadbhada-dam,Bhadbhada Dam,draft,true,true,false,true,false,true,true,false
+bharat-bhavan,Bharat Bhavan,draft,true,true,false,true,false,true,true,false
+birla-mandir-bhopal,Birla Mandir (Lakshmi Narayan Temple),draft,true,true,false,true,true,true,true,false
+chhatri-khushvakht-rai-saxena-baoli,Chhatri of Raja Khushvakht Rai Saxena and Baoli,draft,true,true,false,true,true,true,true,false
+dhai-seedhi-ki-masjid,Dhai Seedhi Ki Masjid,draft,true,true,false,true,true,true,true,false
+dhrupad-kendra-bhopal,Dhrupad Kendra Bhopal,draft,true,true,false,true,false,true,true,true
+gohar-mahal,Gohar Mahal,draft,true,true,false,true,false,true,true,false
+golghar-museum,Golghar Museum (Gulshan-e-Alam),draft,true,true,false,true,false,true,true,false
+hammam-e-qadimi,Hammam-e-Qadimi,draft,true,true,false,true,false,true,true,false
+kamlapati-palace,Rani Kamlapati Palace,draft,true,true,false,true,false,true,true,false
+kushabhau-thakre-hall-minto-hall,Kushabhau Thakre Hall (Historic Minto Hall),draft,true,true,false,true,false,true,true,true
+lower-lake-chhota-talaab,Lower Lake (Chhota Talaab),draft,true,true,false,true,false,true,true,false
+manua-bhan-ki-tekri,Manua Bhan Ki Tekri,draft,true,true,false,true,true,true,true,false
+maulana-azad-central-library,Maulana Azad Central Library (Former Edward Museum),draft,true,true,false,true,false,true,true,false
+mausoleum-dost-mohammad-khan,Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort),draft,true,true,false,true,true,true,true,true
+moti-mahal-bhopal,Moti Mahal,draft,true,true,false,true,false,true,true,false
+ravindra-bhavan-bhopal,Ravindra Bhavan,hold,true,true,false,true,false,true,true,false
+regional-museum-of-natural-history-bhopal,"Regional Museum of Natural History, Bhopal",draft,true,true,false,true,false,true,true,false
+remember-bhopal-museum,Remember Bhopal Museum,draft,true,true,false,true,false,true,true,false
+shaukat-mahal-sadar-manzil,Shaukat Mahal and Sadar Manzil,draft,true,true,false,true,false,true,true,false
+st-francis-of-assisi-cathedral-bhopal,Cathedral of St. Francis of Assisi,draft,true,true,false,true,true,true,true,false
+taj-ul-masajid,Taj-ul-Masajid,draft,true,true,false,true,true,true,true,false
+tribal-museum-bhopal,Madhya Pradesh Tribal Museum,draft,true,true,false,true,false,true,true,false
+upper-lake-bhojtal,Upper Lake (Bhojtal),draft,true,true,false,true,false,true,true,false
+van-vihar-national-park,Van Vihar National Park,draft,true,true,false,true,false,true,true,false
+yadgar-e-shahjahani-park,Yadgar-e-Shahjahani Park,draft,true,true,false,true,false,true,true,true

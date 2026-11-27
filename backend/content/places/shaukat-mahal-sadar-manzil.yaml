@@ -1,0 +1,61 @@
+id: shaukat-mahal-sadar-manzil
+slug: shaukat-mahal-sadar-manzil
+category: culture
+status: draft
+tags:
+- palace
+- begum-heritage
+- indo-european-architecture
+- chowk-bazaar
+- state-protected-monument
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Sikandar Begum
+    url: https://en.wikipedia.org/wiki/Sikandar_Begum
+    type: wikipedia
+  - name: Wikipedia - State Protected Monuments in MP (Central & West)
+    url: https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone
+    type: wikipedia
+  - name: Madhya Pradesh Tourism - Heritage Walk in Bhopal
+    url: https://www.mptourism.com/heritage-walk-in-bhopal.html
+    type: official
+  - name: District Bhopal Official Portal - History
+    url: https://bhopal.nic.in/en/history/
+    type: official
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Shaukat Mahal and Sadar Manzil
+    summary: Standing side by side at the entrance to Old Bhopal's Chowk area near Iqbal Maidan, Shaukat Mahal and Sadar Manzil showcase the cosmopolitan royal architecture of Bhopal's 19th-century Begums.
+    story: Shaukat Mahal, constructed under Sikandar Jahan Begum and associated with her residence alongside Nawab Jahangir Mohammed Khan, breaks sharply from surrounding Islamic architecture by fusing Gothic and post-Renaissance European elements with Indo-Islamic arches and elongated windows. Historical accounts attribute its design to a Frenchman linked to the Bourbon lineage of Bhopal. Immediately nearby stands Sadar Manzil, the Begums' former Hall of Public Audience (Darbar Hall), which later housed the Bhopal Municipal Corporation headquarters. Sadar Manzil Darbar Hall is designated a Madhya Pradesh State Protected Monument (S-MP-329), and both structures appear in INTACH's 2003 Bhopal built-heritage register.
+    tips: []
+    needs_review: true
+  hi:
+    title: शौकत महल और सदर मंज़िल
+    summary: पुराने भोपाल के चौक क्षेत्र के प्रवेश द्वार पर इकबाल मैदान के पास स्थित शौकत महल और सदर मंज़िल 19वीं सदी की भोपाल की बेगमों की विशिष्ट राजसी वास्तुकला को दर्शाते हैं।
+    story: सिकंदर जहाँ बेगम के काल में निर्मित और नवाब जहाँगीर मोहम्मद खान के साथ उनके निवास से जुड़ा शौकत महल आसपास की पारंपरिक इस्लामी इमारतों से अलग यूरोपीय गोथिक व उत्तर-पुनर्जागरण शैली तथा इंडो-इस्लामिक मेहराबों के मिश्रण के लिए जाना जाता है। ऐतिहासिक विवरण इसके डिज़ाइन का श्रेय भोपाल के बोरबॉन परिवार से जुड़े एक फ्रांसीसी वास्तुकार को देते हैं। इसके ठीक पास स्थित सदर मंज़िल बेगमों का दरबार हॉल (सार्वजनिक सभा कक्ष) था, जो बाद में भोपाल नगर निगम का मुख्यालय बना। सदर मंज़िल दरबार हॉल मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-329) है और दोनों इमारतें इंटैक (INTACH) की 2003 की विरासत सूची में दर्ज हैं।
+    tips: []
+    needs_review: true
+deleted: false

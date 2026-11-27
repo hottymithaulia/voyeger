@@ -1,0 +1,55 @@
+id: golghar-museum
+slug: golghar-museum
+category: hidden_gem
+status: draft
+tags:
+- museum
+- nawab-heritage
+- state-protected-monument
+- handicrafts
+- shahjahanabad
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Golghar Museum
+    url: https://en.wikipedia.org/wiki/Golghar_Museum
+    type: wikipedia
+  - name: Wikipedia - State Protected Monuments in MP (Central & West)
+    url: https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone
+    type: wikipedia
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Golghar Museum (Gulshan-e-Alam)
+    summary: Located in Shahjahanabad a short distance from Taj-ul-Masajid, Golghar Museum occupies a State Protected historic structure showcasing the arts, crafts, and social life of the Nawab-era Princely State of Bhopal.
+    story: Catalogued as Gulshan-e-Alam (#61) in INTACH's 2003 built-heritage register and designated Madhya Pradesh State Protected Monument S-MP-32, the historic building sits within the royal precinct developed in Shahjahanabad. Following conservation, it was inaugurated as a public art and cultural museum in April 2013. Its curated collections highlight the political history, handicrafts, and everyday social life of the former Princely State of Bhopal, offering quieter historical context than the city's larger state museums.
+    tips: []
+    needs_review: true
+  hi:
+    title: गोलघर संग्रहालय (गुलशन-ए-आलम)
+    summary: ताज-उल-मसाजिद से कुछ ही दूरी पर शाहजहानाबाद में स्थित गोलघर संग्रहालय एक राज्य संरक्षित ऐतिहासिक भवन में भोपाल रियासत के नवाबी दौर की कला, हस्तशिल्प और सामाजिक जीवन को प्रदर्शित करता है।
+    story: इंटैक (INTACH) की 2003 की विरासत सूची में गुलशन-ए-आलम (#61) के रूप में दर्ज और मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-32) घोषित यह ऐतिहासिक इमारत शाहजहानाबाद के शाही परिसर का हिस्सा है। संरक्षण के बाद अप्रैल 2013 में इसे कला एवं संस्कृति संग्रहालय के रूप में आम लोगों के लिए खोला गया। इसके संग्रह भोपाल रियासत के राजनीतिक इतिहास, पारंपरिक हस्तशिल्प और नवाबी काल की जीवनशैली की झलक दिखाते हैं, जो बड़े संग्रहालयों की भीड़ से दूर एक शांत अनुभव देते हैं।
+    tips: []
+    needs_review: true
+deleted: false

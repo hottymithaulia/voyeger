@@ -1,0 +1,55 @@
+id: maulana-azad-central-library
+slug: maulana-azad-central-library
+category: hidden_gem
+status: draft
+tags:
+- heritage-library
+- indo-islamic-architecture
+- state-protected-monument
+- manuscripts
+- old-bhopal
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Maulana Azad Central Library
+    url: https://en.wikipedia.org/wiki/Maulana_Azad_Central_Library
+    type: wikipedia
+  - name: Wikipedia - State Protected Monuments in MP (Central & West)
+    url: https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone
+    type: wikipedia
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Maulana Azad Central Library (Former Edward Museum)
+    summary: Housed in a red sandstone 1908 Indo-Islamic building near Lower Lake, the Maulana Azad Central Library began life as the royal Edward Museum (Ajayabghar) and remains an active public repository of over 100,000 volumes.
+    story: Constructed in 1908 to display royal gifts and artefacts collected by Bhopal's ruling family, the building was formally inaugurated in 1909 by Viceroy Lord Minto as the Edward Museum. In 1955, the heritage edifice was repurposed into a public central library named after Maulana Abul Kalam Azad, and in 2012 it received status as a State Protected Monument (S-MP-331). Its shelves preserve more than 100,000 books and rare manuscripts—some over a century old—across Hindi, English, Urdu, Persian, Arabic, and Sanskrit, alongside reading halls and a dedicated Braille section.
+    tips: []
+    needs_review: true
+  hi:
+    title: मौलाना आज़ाद सेंट्रल लाइब्रेरी (पूर्व एडवर्ड संग्रहालय)
+    summary: लोअर लेक के पास 1908 की लाल बलुआ पत्थर की इंडो-इस्लामिक इमारत में स्थित मौलाना आज़ाद सेंट्रल लाइब्रेरी की शुरुआत शाही एडवर्ड म्यूज़ियम (अजायबघर) के रूप में हुई थी और आज यहाँ एक लाख से अधिक पुस्तकें संरक्षित हैं।
+    story: भोपाल के शाही परिवार को प्राप्त उपहारों और कलाकृतियों को प्रदर्शित करने के लिए 1908 में बनी इस इमारत का उद्घाटन 1909 में वायसराय लॉर्ड मिंटो ने एडवर्ड म्यूज़ियम के रूप में किया था। 1955 में इस धरोहर भवन को सार्वजनिक पुस्तकालय बनाकर मौलाना अबुल कलाम आज़ाद का नाम दिया गया और 2012 में इसे राज्य संरक्षित स्मारक (S-MP-331) घोषित किया गया। पुस्तकालय में हिंदी, अंग्रेज़ी, उर्दू, फ़ारसी, अरबी और संस्कृत की एक लाख से अधिक पुस्तकें व दुर्लभ पांडुलिपियाँ, जिनमें कई सौ वर्ष से पुरानी हैं, तथा पाठक कक्ष और ब्रेल अनुभाग उपलब्ध हैं।
+    tips: []
+    needs_review: true
+deleted: false

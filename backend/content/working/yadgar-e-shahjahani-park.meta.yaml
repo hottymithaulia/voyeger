@@ -1,0 +1,19 @@
+id: yadgar-e-shahjahani-park
+source_file: hidden_g2.yaml
+record_type: candidate
+category_confidence: medium
+flags:
+- geo pending osm
+- distance approx
+- no dedicated wikipedia page
+osm_search_hint: Yadgar-e-Shahjahani Park Shahjahanabad Bhopal
+hidden_gem_evidence: Publicly accessible historic park verified by INTACH 2003 (#256), Wikipedia (Abdul Jabbar Khan), and District Bhopal's parks list; not a headline attraction on official tourism lists; approx 1.1 km from shaukat-mahal-sadar-manzil.
+anchor_for_candidate: shaukat-mahal-sadar-manzil
+approx_distance_to_anchor_km: 1.1
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

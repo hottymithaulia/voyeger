@@ -1,0 +1,55 @@
+id: van-vihar-national-park
+slug: van-vihar-national-park
+category: experience
+status: draft
+tags:
+- national-park
+- wildlife
+- birdwatching
+- cycling
+- lakeside
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Van Vihar National Park
+    url: https://en.wikipedia.org/wiki/Van_Vihar_National_Park
+    type: wikipedia
+  - name: Wikipedia - Conservation in Bhopal
+    url: https://en.wikipedia.org/wiki/Conservation_in_Bhopal
+    type: wikipedia
+  - name: Madhya Pradesh Tourism - Bhopal
+    url: https://www.mptourism.com/destination-bhopal.php
+    type: official
+text:
+  en:
+    title: Van Vihar National Park
+    summary: Van Vihar National Park is a 4.48-square-kilometre urban national park and modern zoological park bordering the southern shore of Bhopal's Upper Lake. Serving as a green lung for the city, it combines open-habitat wildlife viewing, cycling, and birdwatching.
+    story: Established in February 1979, formally declared a national park in 1983, and recognized as a medium-sized zoo by the Central Zoo Authority in 1993–94, Van Vihar is managed with a focus on rescued wildlife rather than capturing animals from the wild. Herbivores including chital, sambar, blackbuck, nilgai, and four-horned antelope range freely across the park's natural habitat, while carnivores are housed in large enclosures separated by walls, trenches, and fencing. More than 200 bird species have been recorded across Van Vihar, and in the 2010s the park developed a vulture breeding centre dedicated to restoring white-rumped and long-billed vulture populations. Visitors access the park along a road running through its grounds, with park management actively promoting bicycle exploration.
+    tips: []
+    needs_review: true
+  hi:
+    title: वन विहार राष्ट्रीय उद्यान
+    summary: वन विहार राष्ट्रीय उद्यान भोपाल के अपर लेक के दक्षिणी तट पर लगभग 4.48 वर्ग किलोमीटर में फैला एक शहरी राष्ट्रीय उद्यान और आधुनिक प्राणी उद्यान है। शहर के हरित फेफड़े के रूप में यह वन्यजीव दर्शन, साइकिलिंग और पक्षी अवलोकन का प्रमुख केंद्र है।
+    story: फरवरी 1979 में स्थापित, 1983 में राष्ट्रीय उद्यान घोषित और 1993–94 में केंद्रीय चिड़ियाघर प्राधिकरण द्वारा मध्यम श्रेणी के प्राणी उद्यान के रूप में मान्य वन विहार में जानवरों को जंगल से पकड़े बिना बचाए गए वन्यजीवों का संरक्षण किया जाता है। यहाँ चीतल, सांभर, काला हिरण, नीलगाय और चौसिंगा जैसे शाकाहारी जीव प्राकृतिक आवास में खुले विचरण करते हैं, जबकि मांसाहारी जीवों को सुरक्षित घेरे में रखा गया है। वन विहार में 200 से अधिक पक्षी प्रजातियाँ दर्ज की गई हैं और 2010 के दशक में यहाँ गिद्ध प्रजनन केंद्र भी विकसित किया गया। आगंतुक पार्क के भीतर बनी सड़क पर भ्रमण करते हैं और प्रशासन यहाँ साइकिल चलाने को बढ़ावा देता है।
+    tips: []
+    needs_review: true
+deleted: false

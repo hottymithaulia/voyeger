@@ -1,0 +1,56 @@
+id: old-city-food-lane
+slug: old-city-food-lane
+category: food
+tags:
+- street-food
+- old-bhopal
+- evening
+- chai
+geo:
+  lat: 23.2609
+  lng: 77.4052
+is_anchor: false
+anchor_for: []
+hours: 17:00 - 23:30 (SAMPLE DATA)
+best_time: After 19:00
+cost_note: INR 150-350 per person (SAMPLE DATA)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: sample-chowk-kitchen
+media:
+  images:
+  - id: old-city-food-lane-cover
+    source_file: old-city-food-lane.jpg
+    alt:
+      en: Evening street food stalls in Old Bhopal's food lane
+      hi: पुराने भोपाल की फूड लेन में शाम के स्ट्रीट फूड स्टॉल
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Old City Food Lane
+    summary: Evening food lane in Old Bhopal famous for Bhopali chaat, snacks, and
+      salted chai.
+    story: As dusk settles over Chowk Bazaar, samovars and coal sigris light up the
+      lane with recipes passed down through family stalls.
+    tips:
+    - Arrive on foot from Peer Gate.
+    - Carry small cash notes for street stalls.
+    needs_review: false
+  hi:
+    title: पुराना शहर फूड लेन
+    summary: पुराने भोपाल की शाम की फूड लेन, जो भोपाली चाट और नमकीन चाय के लिए प्रसिद्ध
+      है।
+    story: शाम ढलते ही चौक बाजार के पास यह गली पारंपरिक भोपाली व्यंजनों की खुशबू से
+      महक उठती है।
+    tips:
+    - पीर गेट से पैदल आएं।
+    - दुकानों के लिए छोटे नकद नोट साथ रखें।
+    needs_review: false
+deleted: false

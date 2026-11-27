@@ -1,0 +1,20 @@
+id: bada-bagh-royal-tombs
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: medium
+flags:
+- geo pending osm
+- distance approx
+- no dedicated wikipedia page
+- verify current public access and site condition locally
+osm_search_hint: Bada Bagh Bhopal Talkies Square Shahjahanabad Bhopal
+hidden_gem_evidence: Historic royal garden necropolis corroborated by INTACH 2003 (#160-#166), Wikipedia (Siddiq Hasan Khan), and Wikidata (Q7210785); absent from official MP Tourism and District Bhopal tourism lists; approx 0.8 km from taj-ul-masajid.
+anchor_for_candidate: taj-ul-masajid
+approx_distance_to_anchor_km: 0.8
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: true
+hindi_needs_review: true
+hold_reason: null

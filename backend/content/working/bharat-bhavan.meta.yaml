@@ -1,0 +1,17 @@
+id: bharat-bhavan
+source_file: anchors.yaml
+record_type: anchor
+category_confidence: high
+flags:
+- geo pending osm
+osm_search_hint: Bharat Bhavan J Swaminathan Marg Shamla Hills Bhopal
+hidden_gem_evidence: null
+anchor_for_candidate: null
+approx_distance_to_anchor_km: null
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

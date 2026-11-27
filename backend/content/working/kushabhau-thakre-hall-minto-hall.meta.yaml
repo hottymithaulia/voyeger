@@ -1,0 +1,20 @@
+id: kushabhau-thakre-hall-minto-hall
+source_file: hidden_g2.yaml
+record_type: candidate
+category_confidence: medium
+flags:
+- geo pending osm
+- distance approx
+- no dedicated wikipedia page
+- public interior access depends on convention events; verify locally
+osm_search_hint: Kushabhau Thakre International Convention Centre Minto Hall Jahangirabad Bhopal
+hidden_gem_evidence: Restored 1909 heritage building corroborated by INTACH 2003 (#204), Wikipedia (Kushabhau Thakre), and MP Tourism heritage/MICE documentation; omitted from MP Tourism's main Bhopal destination sightseeing list and District Bhopal places of interest; approx 1.2 km from birla-mandir-bhopal.
+anchor_for_candidate: birla-mandir-bhopal
+approx_distance_to_anchor_km: 1.2
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

@@ -1,0 +1,54 @@
+id: sadar-manzil
+slug: sadar-manzil
+category: hidden_gem
+tags:
+- heritage
+- begums
+- courtyard
+geo:
+  lat: 23.2611
+  lng: 77.4026
+is_anchor: false
+anchor_for: []
+hours: 09:00 - 18:00 (SAMPLE DATA)
+best_time: Morning
+cost_note: Free exterior view (SAMPLE DATA)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: null
+media:
+  images:
+  - id: sadar-manzil-cover
+    source_file: sadar-manzil.jpg
+    alt:
+      en: Red and cream arched hall of Sadar Manzil in Old Bhopal
+      hi: पुराने भोपाल में सदर मंजिल का ऐतिहासिक मेहराबदार हॉल
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Sadar Manzil
+    summary: Former Hall of Public Audience in the old walled city, framing lush courtyard
+      gardens.
+    story: Built during the Begums' reign as a civic audience hall, Sadar Manzil links
+      Moti Masjid and Shaukat Mahal along a walkable heritage spine.
+    tips:
+    - Walk through early in the morning before market traffic builds.
+    - Combine with Moti Masjid next door.
+    needs_review: false
+  hi:
+    title: सदर मंजिल
+    summary: पुराने शहर में स्थित पूर्व जन-सभा हॉल और हरा-भरा प्रांगण।
+    story: बेगमों के शासनकाल में निर्मित सदर मंजिल मोती मस्जिद और शौकत महल के बीच
+      की विरासत कड़ी है।
+    tips:
+    - बाजार की भीड़ से पहले सुबह टहलें।
+    - पास की मोती मस्जिद के साथ इसे देखें।
+    needs_review: false
+deleted: false

@@ -1,0 +1,19 @@
+id: dhrupad-kendra-bhopal
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: medium
+flags:
+- geo pending osm
+- distance approx
+- verify public visitor and recital access locally
+osm_search_hint: Dhrupad Kendra Ustad Alauddin Khan Sangeet Akademi Ravindranath Thakur Marg Bhopal
+hidden_gem_evidence: Historic living-heritage music institute confirmed by Wikipedia; absent from official MP Tourism and District Bhopal headline lists; approx 0.8 km from bharat-bhavan.
+anchor_for_candidate: bharat-bhavan
+approx_distance_to_anchor_km: 0.8
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

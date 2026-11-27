@@ -1,0 +1,55 @@
+id: bada-bagh-royal-tombs
+slug: bada-bagh-royal-tombs
+category: hidden_gem
+status: draft
+tags:
+- royal-tombs
+- begum-heritage
+- historic-garden
+- stepwell
+- shahjahanabad
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: true
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+  - name: Wikipedia - Siddiq Hasan Khan
+    url: https://en.wikipedia.org/wiki/Siddiq_Hasan_Khan
+    type: wikipedia
+  - name: Wikidata - Siddiq Hasan Khan (Q7210785)
+    url: https://www.wikidata.org/wiki/Q7210785
+    type: wikidata
+text:
+  en:
+    title: Bada Bagh Royal Tombs
+    summary: Bada Bagh is a quiet historic garden and burial precinct near Bhopal Talkies Square in Old Bhopal that preserves the tombs of key figures from Bhopal's Begum era alongside an old stepwell.
+    story: Recorded in INTACH's 2003 Bhopal built-heritage inventory (#160–#166) under its historical names Bara Bagh, Wazir Bagh, Noor Bagh, Nazar Bagh, and Bagh-e-Kalan, the complex houses multiple royal mausoleums. Among the documented burials within the precinct are Qudsia Begum (Gohar Begum), Wazir Mohammad Khan, Diwan Nazaruddaula, and the 19th-century Islamic scholar and Nawab Consort Siddiq Hasan Khan (1832–1890), together with the historic Baoli Bara Bagh. Despite its deep connection to Bhopal's ruling dynasty, Bada Bagh remains largely absent from mainstream tourism listings.
+    tips: []
+    needs_review: true
+  hi:
+    title: बड़ा बाग शाही मकबरे
+    summary: पुराने भोपाल में भोपाल टॉकीज चौराहे के पास स्थित बड़ा बाग एक शांत ऐतिहासिक उद्यान और कब्रगाह परिसर है, जहाँ बेगम काल की प्रमुख हस्तियों के मकबरे और एक प्राचीन बावड़ी स्थित हैं।
+    story: इंटैक (INTACH) की 2003 की भोपाल विरासत सूची (#160–#166) में बड़ा बाग, वज़ीर बाग, नूर बाग, नज़र बाग और बाग-ए-कलाँ के नामों से दर्ज इस परिसर में कई ऐतिहासिक मकबरे मौजूद हैं। यहाँ नवाब गौहर कुदसिया बेगम, वज़ीर मोहम्मद खान, दीवान नज़रउद्दौला और 19वीं सदी के विद्वान व नवाब कंसोर्ट सिद्दीक हसन खान (1832–1890) की कब्रों के साथ ऐतिहासिक बावड़ी बड़ा बाग भी स्थित है। भोपाल के शाही इतिहास से गहरे जुड़ाव के बावजूद यह स्थल प्रमुख पर्यटन सूचियों में शामिल नहीं है।
+    tips: []
+    needs_review: true
+deleted: false

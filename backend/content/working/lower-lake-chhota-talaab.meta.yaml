@@ -1,0 +1,18 @@
+id: lower-lake-chhota-talaab
+source_file: anchors.yaml
+record_type: anchor
+category_confidence: medium
+flags:
+- geo pending osm
+- environmental water quality stress noted in sources
+osm_search_hint: Lower Lake Chhota Talaab Pul Pukhta Bhopal
+hidden_gem_evidence: null
+anchor_for_candidate: null
+approx_distance_to_anchor_km: null
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

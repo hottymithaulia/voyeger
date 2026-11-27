@@ -1,0 +1,139 @@
+- id: adivasi-lok-kala-academy
+  slug: adivasi-lok-kala-academy
+  record_type: candidate
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: tribal-museum-bhopal
+  approx_distance_to_anchor_km: null
+  tags:
+    - tribal-arts
+    - folk-theatre
+    - cultural-academy
+    - lokrang-festival
+    - bhopal-culture
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Adivasi Lok Kala Academy Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Adivasi Lok Kala Academy"
+      url: "https://en.wikipedia.org/wiki/Adivasi_Lok_Kala_Academy"
+      type: wikipedia
+    - name: "Wikipedia - Lado Bai"
+      url: "https://en.wikipedia.org/wiki/Lado_Bai"
+      type: wikipedia
+  text:
+    en:
+      title: "Adivasi Lok Kala Academy"
+      summary: "Established by the Government of Madhya Pradesh in 1980, the Adivasi Lok Kala Academy is a state cultural institution dedicated to documenting, preserving, and promoting tribal and folk performing arts."
+      story: "Operating as a zonal cultural centre in Madhya Pradesh with artists based in Bhopal, the academy conducts field surveys, publishes documentation on indigenous traditions, and hosts major state festivals including Lokrang, Ram Leela Mela, Nimad Utsav, Sampada, and Shruti Samaroh. It has also provided an artistic workspace in Bhopal for noted tribal painter Lado Bai and established off-site museums at Orchha. Because casual drop-in visitor access outside scheduled festivals and exact campus coordinates are unconfirmed in public sources, it is classified under culture rather than hidden_gem."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "आदिवासी लोक कला अकादमी"
+      summary: "मध्यप्रदेश सरकार द्वारा 1980 में स्थापित आदिवासी लोक कला अकादमी जनजातीय और लोक कलाओं के दस्तावेज़ीकरण, संरक्षण एवं संवर्धन के लिए समर्पित राज्य सांस्कृतिक संस्थान है।"
+      story: "भोपाल में सक्रिय यह सांस्कृतिक संस्थान जनजातीय लोक परंपराओं का सर्वेक्षण और प्रकाशन करता है तथा लोकरंग, रामलीला मेला, निमाड़ उत्सव, संपदा और श्रुति समारोह जैसे प्रमुख सांस्कृतिक उत्सव आयोजित करता है। यह संस्था प्रमुख जनजातीय चित्रकार लाड़ो बाई का कार्यस्थल भी रही है और इसने ओरछा में भी संग्रहालय स्थापित किए हैं। नियमित पर्यटक प्रवेश और सटीक परिसर स्थान की पुष्टि न होने के कारण इसे हिडन जेम के बजाय संस्कृति (culture) श्रेणी में रखा गया है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "reclassified from hidden_gem: drop-in public visitor access and exact campus location unconfirmed"
+  deleted: false
+
+- id: remember-bhopal-museum
+  slug: remember-bhopal-museum
+  record_type: candidate
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: taj-ul-masajid
+  approx_distance_to_anchor_km: 3.4
+  tags:
+    - memorial-museum
+    - oral-history
+    - bhopal-1984
+    - social-justice
+    - karond
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Remember Bhopal Museum Berasia Road Karond Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Remember Bhopal Museum"
+      url: "https://en.wikipedia.org/wiki/Remember_Bhopal_Museum"
+      type: wikipedia
+  text:
+    en:
+      title: "Remember Bhopal Museum"
+      summary: "Opened on 2 December 2014 on the 30th anniversary of the 1984 Bhopal Gas Tragedy, the Remember Bhopal Museum is a survivor-curated memorial museum preserving personal artefacts, oral histories, and protest records."
+      story: "Founded by the Remember Bhopal Trust without government or corporate funding and curated by journalist-museologist Rama Lakshmi alongside coordinator Shalini Sharma, the museum occupies a converted residence in Karond roughly 2.5 kilometres from the former Union Carbide factory. Its exhibits bring together personal belongings donated by victims' families—such as clothing and a stopped pocket watch—alongside photographs, campaign posters, and recorded survivor accounts. Described by its curator as India's first museum focused on a contemporary social movement for justice, it is classified as culture because its ~3.4 km distance from Taj-ul-Masajid falls slightly outside the ~3 km hidden-gem radius."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "रिमेम्बर भोपाल संग्रहालय"
+      summary: "1984 की भोपाल गैस त्रासदी की 30वीं वर्षगांठ पर 2 दिसंबर 2014 को खुला रिमेम्बर भोपाल संग्रहालय पीड़ित समुदायों द्वारा संकलित व्यक्तिगत स्मृति-चिह्नों, मौखिक इतिहास और न्याय आंदोलन के दस्तावेज़ों को सहेजता है।"
+      story: "बिना किसी सरकारी या कॉर्पोरेट अनुदान के रिमेम्बर भोपाल ट्रस्ट द्वारा स्थापित और क्यूरेटर रमा लक्ष्मी तथा समन्वयक शालिनी शर्मा के नेतृत्व में तैयार यह संग्रहालय करोंद क्षेत्र में पूर्व यूनियन कार्बाइड कारखाने से लगभग 2.5 किलोमीटर दूर स्थित है। इसकी दीर्घाओं में पीड़ित परिवारों द्वारा भेंट की गई व्यक्तिगत वस्तुएँ, तस्वीरें, आंदोलन के पोस्टर और जीवित बचे लोगों के अनुभव प्रदर्शित हैं। ताज-उल-मसाजिद से लगभग 3.4 किमी की दूरी के कारण इसे हिडन जेम सीमा से बाहर रखते हुए संस्कृति (culture) श्रेणी में वर्गीकृत किया गया है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "reclassified from hidden_gem: slightly exceeds 3 km anchor radius"
+  deleted: false
+
+- id: regional-museum-of-natural-history-bhopal
+  slug: regional-museum-of-natural-history-bhopal
+  record_type: candidate
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: birla-mandir-bhopal
+  approx_distance_to_anchor_km: 3.3
+  tags:
+    - natural-history
+    - museum
+    - ecology
+    - shahpura-lake
+    - arera-colony
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Regional Museum of Natural History E-5 Arera Colony Shahpura Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Regional Museum of Natural History, Bhopal"
+      url: "https://en.wikipedia.org/wiki/Regional_Museum_of_Natural_History,_Bhopal"
+      type: wikipedia
+    - name: "Wikidata - Regional Museum of Natural History, Bhopal (Q29966796)"
+      url: "https://www.wikidata.org/wiki/Q29966796"
+      type: wikidata
+    - name: "Wikivoyage - Bhopal"
+      url: "https://en.wikivoyage.org/wiki/Bhopal"
+      type: wikivoyage
+  text:
+    en:
+      title: "Regional Museum of Natural History, Bhopal"
+      summary: "Situated in E-5 Arera Colony near Shahpura Lake, the Regional Museum of Natural History explores Central India's biodiversity, fossils, and human-environment relationships."
+      story: "Inaugurated on 29 September 1997 under the Ministry of Environment, Forest and Climate Change as a regional branch of the National Museum of Natural History in New Delhi, the museum serves as an informal environmental education centre. Its galleries examine Central Indian ecological heritage and human-nature interactions, featuring transcripts, translations, audio tours, and a replica of a Rajasaurus skull. Because its location in Arera Colony lies approximately 3.3 kilometres from Birla Mandir—just outside the ~3 km hidden-gem radius—it is recorded here under culture."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "क्षेत्रीय प्राकृतिक इतिहास संग्रहालय, भोपाल"
+      summary: "शाहपुरा झील के पास ई-5 अरेरा कॉलोनी में स्थित क्षेत्रीय प्राकृतिक इतिहास संग्रहालय मध्य भारत की जैव विविधता, जीवाश्मों और मानव-प्रकृति संबंधों को प्रदर्शित करता है।"
+      story: "पर्यावरण, वन एवं जलवायु परिवर्तन मंत्रालय के अंतर्गत 29 सितंबर 1997 को उद्घाटित यह संस्थान नई दिल्ली स्थित राष्ट्रीय प्राकृतिक इतिहास संग्रहालय की क्षेत्रीय शाखा के रूप में पर्यावरण शिक्षा को बढ़ावा देता है। इसकी दीर्घाओं में मध्य भारत की प्राकृतिक विरासत और मानव-पर्यावरण संबंधों के साथ राजासॉरस (Rajasaurus) की खोपड़ी की प्रतिकृति, अनुवाद तथा ऑडियो टूर उपलब्ध हैं। बिरला मंदिर से लगभग 3.3 किमी की दूरी होने के कारण इसे हिडन जेम सीमा से बाहर रखते हुए संस्कृति (culture) श्रेणी में शामिल किया गया है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "reclassified from hidden_gem: slightly exceeds 3 km anchor radius"
+  deleted: false

@@ -1,0 +1,57 @@
+id: bharat-bhavan
+slug: bharat-bhavan
+category: culture
+tags:
+- arts
+- architecture
+- lakeside
+geo:
+  lat: 23.2358
+  lng: 77.4014
+is_anchor: true
+anchor_for:
+- lake-view-walk
+- gauhar-mahal
+- heritage-courtyard-walk
+hours: 14:00 - 20:00 (SAMPLE DATA)
+best_time: Late afternoon
+cost_note: INR 20 entry (SAMPLE DATA)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: null
+media:
+  images:
+  - id: bharat-bhavan-cover
+    source_file: bharat-bhavan.jpg
+    alt:
+      en: Terraced courtyards of Bharat Bhavan overlooking the lake
+      hi: झील की ओर खुलते भारत भवन के सीढ़ीदार प्रांगण
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Bharat Bhavan
+    summary: Sunken multi-arts complex celebrating tribal, folk, and contemporary
+      Indian art.
+    story: Stepping gently down toward the Upper Lake, Bharat Bhavan houses Roopankar's
+      Gond and Bhil collections alongside an open-air amphitheatre.
+    tips:
+    - Visit after 4 PM for gallery light and sunset over the lake.
+    - Check gallery schedules before visiting.
+    needs_review: false
+  hi:
+    title: भारत भवन
+    summary: आदिवासी, लोक और समकालीन भारतीय कला को समर्पित कला केंद्र।
+    story: बड़े तालाब की ओर उतरते हुए भारत भवन में गोंड और भील कला का समृद्ध संग्रह
+      और मुक्ताकाश रंगमंच है।
+    tips:
+    - शाम 4 बजे के बाद गैलरी और सूर्यास्त देखने आएं।
+    - जाने से पहले गैलरी का समय जांच लें।
+    needs_review: false
+deleted: false

@@ -1,0 +1,58 @@
+id: moti-mahal-bhopal
+slug: moti-mahal-bhopal
+category: hidden_gem
+status: draft
+tags:
+- palace
+- begum-heritage
+- state-protected-monument
+- chowk-bazaar
+- nineteenth-century
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Sikandar Begum
+    url: https://en.wikipedia.org/wiki/Sikandar_Begum
+    type: wikipedia
+  - name: Wikipedia - Bhopal State
+    url: https://en.wikipedia.org/wiki/Bhopal_State
+    type: wikipedia
+  - name: Wikipedia - State Protected Monuments in MP (Central & West)
+    url: https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone
+    type: wikipedia
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Moti Mahal
+    summary: Standing immediately beside Shaukat Mahal and Sadar Manzil in Old Bhopal, Moti Mahal (the Pearl Palace) is a 19th-century State Protected royal palace commissioned by Sikandar Jahan Begum.
+    story: Built during the mid-19th-century reign of Sikandar Jahan Begum alongside the nearby Moti Masjid and Shaukat Mahal, Moti Mahal served as one of the Begum's principal royal residences, where she died on 30 October 1868. Listed as Madhya Pradesh State Protected Monument S-MP-328 and catalogued in INTACH's 2003 Bhopal built-heritage survey (#106), the palace forms a crucial architectural link in Old Bhopal's historic palace complex. Despite its central location, it is frequently overlooked on official tourism itineraries in favour of adjacent Moti Masjid and Gohar Mahal.
+    tips: []
+    needs_review: true
+  hi:
+    title: मोती महल
+    summary: पुराने भोपाल में शौकत महल और सदर मंज़िल के ठीक पास स्थित मोती महल (पर्ल पैलेस) 19वीं सदी का राज्य संरक्षित शाही महल है, जिसे सिकंदर जहाँ बेगम ने बनवाया था।
+    story: 19वीं सदी के मध्य में सिकंदर जहाँ बेगम ने पास की मोती मस्जिद और शौकत महल के साथ मोती महल का निर्माण कराया था, जो उनके प्रमुख निवासों में से एक था और जहाँ 30 अक्टूबर 1868 को उनका निधन हुआ। मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-328) और इंटैक (INTACH) की 2003 की विरासत सूची (#106) में दर्ज यह इमारत पुराने भोपाल के शाही महल संकुल की महत्वपूर्ण कड़ी है। केंद्रीय स्थान पर होने के बावजूद आधिकारिक पर्यटन सूचियों में यह अक्सर मोती मस्जिद और गौहर महल के पीछे छूट जाता है।
+    tips: []
+    needs_review: true
+deleted: false

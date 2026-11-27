@@ -1,0 +1,20 @@
+id: moti-mahal-bhopal
+source_file: hidden_g2.yaml
+record_type: candidate
+category_confidence: high
+flags:
+- geo pending osm
+- distance approx
+- no dedicated wikipedia page
+- verify interior public access locally
+osm_search_hint: Moti Mahal near Moti Masjid Sadar Manzil Old Bhopal
+hidden_gem_evidence: Madhya Pradesh State Protected Monument (S-MP-328) verified by Wikipedia (Bhopal State, Sikandar Begum, State Protected list) and INTACH 2003 (#106); omitted from MP Tourism's main Bhopal destination page and District Bhopal places of interest; approx 0.1 km from shaukat-mahal-sadar-manzil.
+anchor_for_candidate: shaukat-mahal-sadar-manzil
+approx_distance_to_anchor_km: 0.1
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

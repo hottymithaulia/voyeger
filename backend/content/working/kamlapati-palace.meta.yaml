@@ -1,0 +1,18 @@
+id: kamlapati-palace
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: high
+flags:
+- geo pending osm
+- distance approx
+osm_search_hint: Rani Kamlapati Palace Kamla Park Bhopal
+hidden_gem_evidence: Publicly accessible ASI Monument of National Importance (N-MP-10) corroborated by Wikipedia, Wikidata, and INTACH 2003; omitted as a headline sightseeing card on MP Tourism's main Bhopal destination list and District Bhopal places of interest; approx 1.0 km along the eastern embankment of upper-lake-bhojtal.
+anchor_for_candidate: upper-lake-bhojtal
+approx_distance_to_anchor_km: 1.0
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

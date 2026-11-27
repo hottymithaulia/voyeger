@@ -1,0 +1,689 @@
+[
+  {
+    "id": "upper-lake",
+    "slug": "upper-lake",
+    "category": "experience",
+    "tags": [
+      "lake",
+      "sunrise",
+      "waterfront"
+    ],
+    "geo": {
+      "lat": 23.2583,
+      "lng": 77.4006
+    },
+    "is_anchor": true,
+    "anchor_for": [],
+    "i18n": {
+      "en": {
+        "title": "Upper Lake",
+        "summary": "A broad, calm horizon at the heart of Bhopal.",
+        "story": "Bhojtal, often called Upper Lake, has shaped Bhopal’s rhythm for centuries. Its shoreline opens into changing views of the old city and surrounding hills.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "बड़ा तालाब",
+        "summary": "भोपाल के बीचोंबीच फैला शांत, खुला क्षितिज।",
+        "story": "भोजताल, जिसे बड़ा तालाब भी कहते हैं, सदियों से भोपाल की जीवन-धारा रहा है। इसके किनारे पुराने शहर और आसपास की पहाड़ियों के बदलते दृश्य दिखते हैं。",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "upper-lake-cover",
+          "file": "/pack/v1/images/upper-lake.webp",
+          "thumb": "/pack/v1/images/upper-lake.webp",
+          "alt": {
+            "en": "Illustrated sample view of Upper Lake",
+            "hi": "बड़ा तालाब का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ],
+      "video": {
+        "url": "/media/bhopal-sample-clip.mp4",
+        "poster": "/pack/v1/images/upper-lake.webp",
+        "offline": false
+      }
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1,
+    "partner_id": "sample-lakeside-stay"
+  },
+  {
+    "id": "bharat-bhavan",
+    "slug": "bharat-bhavan",
+    "category": "culture",
+    "tags": [
+      "arts",
+      "theatre",
+      "architecture"
+    ],
+    "geo": {
+      "lat": 23.2358,
+      "lng": 77.4014
+    },
+    "is_anchor": true,
+    "anchor_for": [],
+    "i18n": {
+      "en": {
+        "title": "Bharat Bhavan",
+        "summary": "A landmark arts centre overlooking the lake.",
+        "story": "Visual arts, theatre and literature meet in a building that steps down toward Upper Lake. Its galleries and terraces offer a thoughtful entry to Bhopal’s creative life.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "भारत भवन",
+        "summary": "झील की ओर खुलता कला और संस्कृति का प्रमुख केंद्र।",
+        "story": "यहां दृश्य कला, रंगमंच और साहित्य एक साथ आते हैं। इसकी दीर्घाएं और खुले आंगन भोपाल के रचनात्मक जीवन की झलक देते हैं।",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "bharat-bhavan-cover",
+          "file": "/pack/v1/images/bharat-bhavan.webp",
+          "thumb": "/pack/v1/images/bharat-bhavan.webp",
+          "alt": {
+            "en": "Illustrated sample view of Bharat Bhavan",
+            "hi": "भारत भवन का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ],
+      "video": {
+        "url": "/media/bhopal-sample-clip.mp4",
+        "poster": "/pack/v1/images/bharat-bhavan.webp",
+        "offline": false
+      }
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1
+  },
+  {
+    "id": "gauhar-mahal",
+    "slug": "gauhar-mahal",
+    "category": "hidden_gem",
+    "tags": [
+      "heritage",
+      "architecture",
+      "old-city"
+    ],
+    "geo": {
+      "lat": 23.259,
+      "lng": 77.4001
+    },
+    "is_anchor": false,
+    "anchor_for": [
+      "upper-lake",
+      "bharat-bhavan"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Gauhar Mahal",
+        "summary": "A quiet heritage courtyard beside the old city.",
+        "story": "Gauhar Mahal is associated with Bhopal’s early Begums and its layered architectural history. Look for carved details and changing light around the courtyards.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "गौहर महल",
+        "summary": "पुराने शहर के पास विरासत से भरा शांत आंगन।",
+        "story": "गौहर महल भोपाल की शुरुआती बेगमों और शहर की विविध स्थापत्य परंपरा से जुड़ा है। आंगन की नक्काशी और बदलती रोशनी पर ध्यान दें।",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "gauhar-mahal-cover",
+          "file": "/pack/v1/images/gauhar-mahal.webp",
+          "thumb": "/pack/v1/images/gauhar-mahal.webp",
+          "alt": {
+            "en": "Illustrated sample view of Gauhar Mahal",
+            "hi": "गौहर महल का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ]
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1
+  },
+  {
+    "id": "moti-masjid",
+    "slug": "moti-masjid",
+    "category": "culture",
+    "tags": [
+      "mosque",
+      "heritage",
+      "architecture"
+    ],
+    "geo": {
+      "lat": 23.2598,
+      "lng": 77.4025
+    },
+    "is_anchor": false,
+    "anchor_for": [
+      "upper-lake",
+      "bharat-bhavan"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Moti Masjid",
+        "summary": "A striking white mosque in the historic centre.",
+        "story": "Moti Masjid, also known as the Pearl Mosque, is a compact landmark among the lanes and markets of Bhopal’s historic centre.",
+        "tips": [
+          "This is an active place of worship; dress modestly.",
+          "Ask before entering and avoid interrupting prayers."
+        ]
+      },
+      "hi": {
+        "title": "मोती मस्जिद",
+        "summary": "पुराने शहर में सफेद रंग की सुंदर मस्जिद।",
+        "story": "मोती मस्जिद भोपाल के ऐतिहासिक केंद्र की गलियों और बाज़ारों के बीच एक प्रमुख स्थल है। इसकी सफेद इमारत आसपास से अलग दिखाई देती है।",
+        "tips": [
+          "यह सक्रिय इबादतगाह है; सादे कपड़े पहनें।",
+          "अंदर जाने से पहले पूछें और नमाज़ के समय व्यवधान न डालें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "moti-masjid-cover",
+          "file": "/pack/v1/images/moti-masjid.webp",
+          "thumb": "/pack/v1/images/moti-masjid.webp",
+          "alt": {
+            "en": "Illustrated sample view of Moti Masjid",
+            "hi": "मोती मस्जिद का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ]
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": true,
+      "note": "Active place of worship; follow local customs."
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1
+  },
+  {
+    "id": "sadar-manzil",
+    "slug": "sadar-manzil",
+    "category": "hidden_gem",
+    "tags": [
+      "heritage",
+      "palace",
+      "old-city"
+    ],
+    "geo": {
+      "lat": 23.2611,
+      "lng": 77.4026
+    },
+    "is_anchor": false,
+    "anchor_for": [
+      "upper-lake",
+      "bharat-bhavan"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Sadar Manzil",
+        "summary": "A red sandstone palace facade tucked into the old city.",
+        "story": "Sadar Manzil once served as a ceremonial hall for Bhopal’s rulers. Its red exterior and arched details reward a slow look from the surrounding lanes.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "सदर मंज़िल",
+        "summary": "पुराने शहर में छिपा लाल पत्थर का महलनुमा भवन।",
+        "story": "सदर मंज़िल कभी भोपाल के शासकों का औपचारिक सभागार था। इसकी लाल दीवारें और मेहराब पास की गलियों से धीरे-धीरे देखने लायक हैं।",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "sadar-manzil-cover",
+          "file": "/pack/v1/images/sadar-manzil.webp",
+          "thumb": "/pack/v1/images/sadar-manzil.webp",
+          "alt": {
+            "en": "Illustrated sample view of Sadar Manzil",
+            "hi": "सदर मंज़िल का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ]
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1
+  },
+  {
+    "id": "old-city-food-lane",
+    "slug": "old-city-food-lane",
+    "category": "food",
+    "tags": [
+      "street-food",
+      "poha",
+      "jalebi"
+    ],
+    "geo": {
+      "lat": 23.2609,
+      "lng": 77.4052
+    },
+    "is_anchor": false,
+    "anchor_for": [
+      "upper-lake",
+      "bharat-bhavan"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Old City breakfast lane",
+        "summary": "A sample food stop for poha, jalebi and morning chai.",
+        "story": "Bhopal’s old-city lanes wake early around tea stalls and breakfast counters. This sample listing points to everyday food culture visitors can look for in the market streets.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "पुराने शहर की नाश्ते वाली गली",
+        "summary": "पोहा, जलेबी और सुबह की चाय के लिए नमूना पड़ाव।",
+        "story": "भोपाल के पुराने शहर की गलियां चाय और नाश्ते की दुकानों के साथ जल्दी जागती हैं। यह नमूना सूची बाज़ार में मिलने वाले रोज़मर्रा के स्वाद की ओर इशारा करती है।",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "old-city-food-lane-cover",
+          "file": "/pack/v1/images/old-city-food-lane.webp",
+          "thumb": "/pack/v1/images/old-city-food-lane.webp",
+          "alt": {
+            "en": "Illustrated sample view of Old City breakfast lane",
+            "hi": "पुराने शहर की नाश्ते वाली गली का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ]
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1,
+    "partner_id": "sample-chowk-kitchen"
+  },
+  {
+    "id": "shaukat-mahal",
+    "slug": "shaukat-mahal",
+    "category": "hidden_gem",
+    "tags": [
+      "architecture",
+      "old-city",
+      "heritage"
+    ],
+    "geo": {
+      "lat": 23.2581,
+      "lng": 77.4051
+    },
+    "is_anchor": false,
+    "anchor_for": [
+      "upper-lake",
+      "bharat-bhavan"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Shaukat Mahal",
+        "summary": "A distinctive blend of European and Indo-Islamic architecture.",
+        "story": "Shaukat Mahal stands near the old city’s busy heart, with a facade unlike the surrounding palaces and mosques. Its contrast reflects the influences that shaped Bhopal.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "शौकत महल",
+        "summary": "यूरोपीय और इंडो-इस्लामी स्थापत्य का अनोखा मेल।",
+        "story": "शौकत महल पुराने शहर के व्यस्त केंद्र के पास है। इसका अग्रभाग आसपास के महलों और मस्जिदों से अलग है और भोपाल पर पड़े कई प्रभाव दिखाता है।",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "shaukat-mahal-cover",
+          "file": "/pack/v1/images/shaukat-mahal.webp",
+          "thumb": "/pack/v1/images/shaukat-mahal.webp",
+          "alt": {
+            "en": "Illustrated sample view of Shaukat Mahal",
+            "hi": "शौकत महल का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ]
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1
+  },
+  {
+    "id": "tribal-museum",
+    "slug": "tribal-museum",
+    "category": "culture",
+    "tags": [
+      "museum",
+      "tribal-art",
+      "culture"
+    ],
+    "geo": {
+      "lat": 23.2078,
+      "lng": 77.4171
+    },
+    "is_anchor": false,
+    "anchor_for": [
+      "upper-lake",
+      "bharat-bhavan"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Tribal Museum",
+        "summary": "A vivid introduction to the living cultures of Madhya Pradesh.",
+        "story": "The Madhya Pradesh Tribal Museum presents the worlds, art and traditions of the state’s Adivasi communities through immersive galleries. Allow time for a thoughtful visit.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "जनजातीय संग्रहालय",
+        "summary": "मध्य प्रदेश की जीवंत आदिवासी संस्कृतियों से परिचय।",
+        "story": "मध्य प्रदेश जनजातीय संग्रहालय में राज्य के आदिवासी समुदायों के संसार, कला और परंपराओं को अनुभवपूर्ण दीर्घाओं में दिखाया गया है। इसे देखने के लिए पर्याप्त समय रखें।",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "tribal-museum-cover",
+          "file": "/pack/v1/images/tribal-museum.webp",
+          "thumb": "/pack/v1/images/tribal-museum.webp",
+          "alt": {
+            "en": "Illustrated sample view of Tribal Museum",
+            "hi": "जनजातीय संग्रहालय का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ]
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1
+  },
+  {
+    "id": "heritage-courtyard-walk",
+    "slug": "heritage-courtyard-walk",
+    "category": "experience",
+    "tags": [
+      "walking",
+      "architecture",
+      "old-city"
+    ],
+    "geo": {
+      "lat": 23.2548,
+      "lng": 77.3986
+    },
+    "is_anchor": false,
+    "anchor_for": [
+      "upper-lake",
+      "bharat-bhavan"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Old-city courtyard walk",
+        "summary": "A sample self-guided loop through quieter lanes and courtyards.",
+        "story": "Between larger landmarks, Bhopal’s neighbourhood scale is best felt on foot. This sample route links courtyards, shaded passages and street scenes around the historic centre.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "पुराने शहर का आंगन-पैदल मार्ग",
+        "summary": "शांत गलियों और आंगनों से गुजरता नमूना पैदल चक्कर।",
+        "story": "बड़े दर्शनीय स्थलों के बीच भोपाल का पड़ोस पैदल चलने पर बेहतर महसूस होता है। यह नमूना रास्ता ऐतिहासिक केंद्र के आंगनों, छायादार गलियों और रोज़मर्रा के दृश्यों को जोड़ता है।",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "heritage-courtyard-walk-cover",
+          "file": "/pack/v1/images/heritage-courtyard-walk.webp",
+          "thumb": "/pack/v1/images/heritage-courtyard-walk.webp",
+          "alt": {
+            "en": "Illustrated sample view of Old-city courtyard walk",
+            "hi": "पुराने शहर का आंगन-पैदल मार्ग का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ]
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1,
+    "partner_id": "sample-begum-studio"
+  },
+  {
+    "id": "lake-view-walk",
+    "slug": "lake-view-walk",
+    "category": "experience",
+    "tags": [
+      "walking",
+      "lake",
+      "sunset"
+    ],
+    "geo": {
+      "lat": 23.2465,
+      "lng": 77.3948
+    },
+    "is_anchor": false,
+    "anchor_for": [
+      "upper-lake",
+      "bharat-bhavan"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Lake-view evening walk",
+        "summary": "A gentle lakeside walk with open views across the water.",
+        "story": "The lake edge offers a slower way to take in the city. This sample walking stop is a reminder to leave time for the views between headline attractions.",
+        "tips": [
+          "Check current access and opening information before visiting.",
+          "Be considerate of residents and shared public spaces."
+        ]
+      },
+      "hi": {
+        "title": "झील किनारे शाम की सैर",
+        "summary": "पानी के पार खुले नज़ारों के साथ झील किनारे सुकून भरी सैर।",
+        "story": "झील का किनारा शहर को आराम से देखने का मौका देता है। यह नमूना पैदल पड़ाव बताता है कि बड़े दर्शनीय स्थलों के बीच नज़ारों के लिए भी समय रखें।",
+        "tips": [
+          "जाने से पहले खुलने और पहुंच की जानकारी जांचें।",
+          "स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।"
+        ]
+      }
+    },
+    "media": {
+      "images": [
+        {
+          "id": "lake-view-walk-cover",
+          "file": "/pack/v1/images/lake-view-walk.webp",
+          "thumb": "/pack/v1/images/lake-view-walk.webp",
+          "alt": {
+            "en": "Illustrated sample view of Lake-view evening walk",
+            "hi": "झील किनारे शाम की सैर का नमूना चित्र"
+          },
+          "credit": "Voyeger sample illustration"
+        }
+      ]
+    },
+    "hours": "Sample hours; verify before visiting",
+    "best_time": "Morning or late afternoon",
+    "cost_note": "Sample guide; verify current prices",
+    "sensitivity": {
+      "is_sacred": false,
+      "note": ""
+    },
+    "enrichment": {},
+    "provenance": {
+      "source": "Sample editorial pack",
+      "license": "Sample text, CC BY-SA compatible",
+      "verified_by": "Voyeger demo",
+      "verified_at": "2026-11-27"
+    },
+    "updated_in_version": 1
+  }
+]

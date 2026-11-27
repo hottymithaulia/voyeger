@@ -1,0 +1,510 @@
+- id: upper-lake-bhojtal
+  slug: upper-lake-bhojtal
+  record_type: anchor
+  category: experience
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - lake
+    - ramsar-wetland
+    - waterfront
+    - paramara-heritage
+    - boating
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Bhojtal Upper Lake Boat Club VIP Road Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Bhojtal"
+      url: "https://en.wikipedia.org/wiki/Bhojtal"
+      type: wikipedia
+    - name: "Wikipedia - Bhoj Wetland"
+      url: "https://en.wikipedia.org/wiki/Bhoj_Wetland"
+      type: wikipedia
+    - name: "Madhya Pradesh Tourism - Bhopal"
+      url: "https://www.mptourism.com/destination-bhopal.php"
+      type: official
+    - name: "Wikivoyage - Bhopal"
+      url: "https://en.wikivoyage.org/wiki/Bhopal"
+      type: wikivoyage
+  text:
+    en:
+      title: "Upper Lake (Bhojtal)"
+      summary: "Bhojtal, widely known as Upper Lake or Bada Talab, is Bhopal's defining 11th-century man-made lake and the western half of the Bhoj Wetland Ramsar site. Its expansive shoreline anchors the city's historic core, parks, and lakeside recreation."
+      story: "Local historical tradition attributes Upper Lake to the 11th-century Paramara ruler Raja Bhoj of Malwa (1005–1055), who created the reservoir by constructing an earthen dam across the Kolans River and gave Bhopal its original name, Bhojpal. Renamed Bhojtal in March 2011 in Raja Bhoj's honour, the lake was designated alongside Lower Lake as a Ramsar Wetland of International Importance in August 2002. Its southern edge borders Van Vihar National Park, while its eastern shore meets Kamla Park and historic lakeside monuments, with Takia Island inside the water housing the tomb of Shah Ali Shah. A large statue of Raja Bhoj stands near the waterfront, where boating and evening views draw residents and visitors alike."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "अपर लेक (भोजताल)"
+      summary: "भोजताल, जिसे बड़ा तालाब या अपर लेक भी कहा जाता है, भोपाल की 11वीं सदी की प्रमुख मानव-निर्मित झील और भोज वेटलैंड रामसर स्थल का मुख्य हिस्सा है। इसका विस्तृत तट शहर की ऐतिहासिक पहचान और झील किनारे की गतिविधियों का केंद्र है।"
+      story: "स्थानीय ऐतिहासिक परंपरा के अनुसार अपर लेक का निर्माण 11वीं सदी में मालवा के परमार शासक राजा भोज (1005–1055) ने कोलांस नदी पर मिट्टी का बांध बनाकर कराया था, जिनसे शहर का नाम भोजपाल पड़ा। मार्च 2011 में राजा भोज के सम्मान में इसका नाम भोजताल किया गया और अगस्त 2002 में इसे लोअर लेक के साथ अंतरराष्ट्रीय महत्व के रामसर वेटलैंड का दर्जा मिला। इसके दक्षिणी किनारे पर वन विहार राष्ट्रीय उद्यान और पूर्वी तट पर कमला पार्क स्थित हैं, जबकि झील के भीतर टाकिया द्वीप पर शाह अली शाह की मजार है। झील किनारे राजा भोज की विशाल प्रतिमा स्थापित है और यहाँ नौकायन तथा शहर के दृश्य देखने लोग आते हैं।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "reported surface area varies between wikipedia (31 sq km) and mp tourism (36.1 sq km)"
+  deleted: false
+
+- id: lower-lake-chhota-talaab
+  slug: lower-lake-chhota-talaab
+  record_type: anchor
+  category: experience
+  category_confidence: medium
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - lake
+    - ramsar-wetland
+    - nawab-era
+    - urban-waterbody
+    - waterfront
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Lower Lake Chhota Talaab Pul Pukhta Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Lower Lake (Bhopal)"
+      url: "https://en.wikipedia.org/wiki/Lower_Lake_(Bhopal)"
+      type: wikipedia
+    - name: "Wikipedia - Bhoj Wetland"
+      url: "https://en.wikipedia.org/wiki/Bhoj_Wetland"
+      type: wikipedia
+    - name: "District Bhopal Official Portal - History"
+      url: "https://bhopal.nic.in/en/history/"
+      type: official
+    - name: "Madhya Pradesh Tourism - Bhopal"
+      url: "https://www.mptourism.com/destination-bhopal.php"
+      type: official
+  text:
+    en:
+      title: "Lower Lake (Chhota Talaab)"
+      summary: "Lower Lake, locally called Chhota Talaab, is a late-18th-century urban lake situated directly east of Upper Lake in central Bhopal. Together with Bhojtal, it forms the internationally recognized Bhoj Wetland."
+      story: "Commissioned in 1794 by Chote Khan, a minister under Nawab Hayat Muhammad Khan Bahadur, Lower Lake was created to beautify Bhopal by merging earlier wells behind a stone bridge-dam still known as Pul Pukhta. Separated from Upper Lake by an earthen embankment in a terraced arrangement, the lake receives subsurface seepage from Bhojtal and spans roughly 1.29 square kilometres within a dense urban catchment. Historically referenced in literature as Pukhta-Pul Talao, it sits at the junction of Old Bhopal's heritage quarter and newer administrative areas. Although part of the Ramsar-listed Bhoj Wetland, documented municipal drainage has placed the lake under ongoing ecological stress."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "लोअर लेक (छोटा तालाब)"
+      summary: "लोअर लेक, जिसे स्थानीय रूप से छोटा तालाब कहा जाता है, मध्य भोपाल में अपर लेक के ठीक पूर्व में स्थित 18वीं सदी के उत्तरार्ध की शहरी झील है। भोजताल के साथ मिलकर यह अंतरराष्ट्रीय स्तर पर मान्यता प्राप्त भोज वेटलैंड बनाती है।"
+      story: "1794 में नवाब हयात मुहम्मद खान बहादुर के मंत्री छोटे खान ने शहर की सुंदरता बढ़ाने के लिए कई पुराने कुओं को मिलाकर और 'पुल पुख्ता' नामक पत्थर के पुल-बांध के सहारे इस झील का निर्माण कराया। एक मिट्टी के बांध द्वारा अपर लेक से अलग यह झील सीढ़ीदार स्तर पर बनी है और लगभग 1.29 वर्ग किलोमीटर क्षेत्र में फैली है। साहित्य में इसे पुख्ता-पुल तालाब भी कहा गया है और यह पुराने भोपाल की विरासत तथा आधुनिक प्रशासनिक इलाकों के संगम पर स्थित है। रामसर भोज वेटलैंड का हिस्सा होने के बावजूद शहरी नालों के कारण यह झील पर्यावरणीय दबाव का सामना कर रही है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "environmental water quality stress noted in sources"
+  deleted: false
+
+- id: taj-ul-masajid
+  slug: taj-ul-masajid
+  record_type: anchor
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - mosque
+    - begum-heritage
+    - islamic-architecture
+    - shahjahanabad
+    - landmark
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Taj-ul-Masajid Shahjahanabad Bhopal"
+  sensitivity:
+    is_sacred: true
+    note: "PENDING_HUMAN_ETIQUETTE_NOTE"
+  sources:
+    - name: "Wikipedia - Taj-ul-Masajid"
+      url: "https://en.wikipedia.org/wiki/Taj-ul-Masajid"
+      type: wikipedia
+    - name: "Wikidata - Taj-ul-Masajid (Q3514109)"
+      url: "https://www.wikidata.org/wiki/Q3514109"
+      type: wikidata
+    - name: "Madhya Pradesh Tourism - Bhopal"
+      url: "https://www.mptourism.com/destination-bhopal.php"
+      type: official
+    - name: "District Bhopal Official Portal - Places of Interest"
+      url: "https://bhopal.nic.in/en/places-of-interest/"
+      type: official
+  text:
+    en:
+      title: "Taj-ul-Masajid"
+      summary: "Taj-ul-Masajid, meaning the 'Crown of Mosques', is one of India's largest mosques and a monumental pink sandstone landmark in Old Bhopal's Shahjahanabad quarter. Initiated by Nawab Shah Jahan Begum, its twin minarets and triple domes anchor the city's historic skyline."
+      story: "Construction of Taj-ul-Masajid began under Nawab Shah Jahan Begum in the newly laid walled suburb of Shahjahanabad during the late 19th century, with historical accounts estimating initial work around 1871 and groundbreaking in 1887 before final completion in 1958. Spanning an interior area of about 13,000 square metres with capacity for roughly 26,000 worshippers, the mosque rises with two 67-metre minarets, three large domes, and 27 ceilings held aloft by massive arched pillars. Notably for its era, the complex incorporates a dedicated zenana prayer space for women, and its entrance was later renovated using 13th-century Syrian mosque motifs gifted by the Emir of Kuwait. From 1948 to 2001, the mosque grounds also hosted the annual Bhopal Tablighi Ijtema congregation."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "ताज-उल-मसाजिद"
+      summary: "ताज-उल-मसाजिद, जिसका अर्थ 'मस्जिदों का ताज' है, भारत की सबसे बड़ी मस्जिदों में से एक और पुराने भोपाल के शाहजहानाबाद क्षेत्र की प्रमुख गुलाबी बलुआ पत्थर की धरोहर है। नवाब शाहजहाँ बेगम द्वारा प्रारंभ की गई यह मस्जिद शहर के क्षितिज की पहचान है।"
+      story: "ताज-उल-मसाजिद का निर्माण नवाब शाहजहाँ बेगम ने शाहजहानाबाद उपनगर में 19वीं सदी के उत्तरार्ध में शुरू कराया था, जिसका प्रारंभ लगभग 1871 और नींव 1887 मानी जाती है तथा निर्माण 1958 में पूरा हुआ। लगभग 13,000 वर्ग मीटर आंतरिक क्षेत्र और करीब 26,000 नमाजियों की क्षमता वाली इस मस्जिद में 67 मीटर ऊँची दो मीनारें, तीन विशाल गुंबद और 27 छतें हैं। अपने समय के लिहाज से दुर्लभ विशेषता के रूप में इसमें महिलाओं के लिए अलग ज़नाना इबादतगाह भी बनाई गई थी, और प्रवेश द्वार का जीर्णोद्धार कुवैत के अमीर द्वारा भेंट 13वीं सदी की सीरियाई शैली की सजावट से किया गया। 1948 से 2001 तक यहाँ वार्षिक भोपाल तबलीगी इज्तिमा का आयोजन होता रहा।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "exact construction start year varies across sources (1871 vs 1887)"
+  deleted: false
+
+- id: van-vihar-national-park
+  slug: van-vihar-national-park
+  record_type: anchor
+  category: experience
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - national-park
+    - wildlife
+    - birdwatching
+    - cycling
+    - lakeside
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Van Vihar National Park Shyamla Hills Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Van Vihar National Park"
+      url: "https://en.wikipedia.org/wiki/Van_Vihar_National_Park"
+      type: wikipedia
+    - name: "Wikipedia - Conservation in Bhopal"
+      url: "https://en.wikipedia.org/wiki/Conservation_in_Bhopal"
+      type: wikipedia
+    - name: "Madhya Pradesh Tourism - Bhopal"
+      url: "https://www.mptourism.com/destination-bhopal.php"
+      type: official
+  text:
+    en:
+      title: "Van Vihar National Park"
+      summary: "Van Vihar National Park is a 4.48-square-kilometre urban national park and modern zoological park bordering the southern shore of Bhopal's Upper Lake. Serving as a green lung for the city, it combines open-habitat wildlife viewing, cycling, and birdwatching."
+      story: "Established in February 1979, formally declared a national park in 1983, and recognized as a medium-sized zoo by the Central Zoo Authority in 1993–94, Van Vihar is managed with a focus on rescued wildlife rather than capturing animals from the wild. Herbivores including chital, sambar, blackbuck, nilgai, and four-horned antelope range freely across the park's natural habitat, while carnivores are housed in large enclosures separated by walls, trenches, and fencing. More than 200 bird species have been recorded across Van Vihar, and in the 2010s the park developed a vulture breeding centre dedicated to restoring white-rumped and long-billed vulture populations. Visitors access the park along a road running through its grounds, with park management actively promoting bicycle exploration."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "वन विहार राष्ट्रीय उद्यान"
+      summary: "वन विहार राष्ट्रीय उद्यान भोपाल के अपर लेक के दक्षिणी तट पर लगभग 4.48 वर्ग किलोमीटर में फैला एक शहरी राष्ट्रीय उद्यान और आधुनिक प्राणी उद्यान है। शहर के हरित फेफड़े के रूप में यह वन्यजीव दर्शन, साइकिलिंग और पक्षी अवलोकन का प्रमुख केंद्र है।"
+      story: "फरवरी 1979 में स्थापित, 1983 में राष्ट्रीय उद्यान घोषित और 1993–94 में केंद्रीय चिड़ियाघर प्राधिकरण द्वारा मध्यम श्रेणी के प्राणी उद्यान के रूप में मान्य वन विहार में जानवरों को जंगल से पकड़े बिना बचाए गए वन्यजीवों का संरक्षण किया जाता है। यहाँ चीतल, सांभर, काला हिरण, नीलगाय और चौसिंगा जैसे शाकाहारी जीव प्राकृतिक आवास में खुले विचरण करते हैं, जबकि मांसाहारी जीवों को सुरक्षित घेरे में रखा गया है। वन विहार में 200 से अधिक पक्षी प्रजातियाँ दर्ज की गई हैं और 2010 के दशक में यहाँ गिद्ध प्रजनन केंद्र भी विकसित किया गया। आगंतुक पार्क के भीतर बनी सड़क पर भ्रमण करते हैं और प्रशासन यहाँ साइकिल चलाने को बढ़ावा देता है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+  deleted: false
+
+- id: bharat-bhavan
+  slug: bharat-bhavan
+  record_type: anchor
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - arts-centre
+    - modern-architecture
+    - museum
+    - theatre
+    - shamla-hills
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Bharat Bhavan J Swaminathan Marg Shamla Hills Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Bharat Bhavan"
+      url: "https://en.wikipedia.org/wiki/Bharat_Bhavan"
+      type: wikipedia
+    - name: "Wikidata - Bharat Bhavan (Q2767116)"
+      url: "https://www.wikidata.org/wiki/Q2767116"
+      type: wikidata
+    - name: "Wikivoyage - Bhopal"
+      url: "https://en.wikivoyage.org/wiki/Bhopal"
+      type: wikivoyage
+  text:
+    en:
+      title: "Bharat Bhavan"
+      summary: "Bharat Bhavan is an autonomous multi-arts complex and museum facing Upper Lake in Bhopal's Shamla Hills. Designed by acclaimed architect Charles Correa, it brings together contemporary and folk visual art, theatre, poetry, cinema, and classical music."
+      story: "Inaugurated on 13 February 1982 and overseen by the Bharat Bhavan Trust, the arts complex on J. Swaminathan Marg was established as a centre for visual and performing arts, folk art, and literature. Designed by architect Charles Correa facing Upper Lake, the campus integrates multiple art galleries, an outdoor theatre, workshops, and archival libraries. Its dedicated wings include Roopankar for contemporary, folk, and tribal art alongside graphic and ceramic workshops, Rangmandal for repertory theatre, Vagarth for Indian poetry archives and literary festivals, Anhad for classical and folk music archives and recitals, Chhavi for classical cinema, and the Nirala Srijanpeeth creative writing chair."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "भारत भवन"
+      summary: "भारत भवन भोपाल के श्यामला हिल्स में अपर लेक के सामने स्थित एक स्वायत्त बहु-कला केंद्र और संग्रहालय है। प्रसिद्ध वास्तुकार चार्ल्स कोरिया द्वारा डिज़ाइन किया गया यह परिसर दृश्य कला, रंगमंच, कविता, सिनेमा और शास्त्रीय संगीत का संगम है।"
+      story: "13 फरवरी 1982 को उद्घाटित और भारत भवन ट्रस्ट द्वारा संचालित यह परिसर जे. स्वामीनाथन मार्ग पर दृश्य एवं प्रदर्शन कलाओं, लोक कला तथा साहित्य के केंद्र के रूप में स्थापित किया गया था। अपर लेक के सामने चार्ल्स कोरिया द्वारा डिज़ाइन किए गए इस परिसर में अनेक कला दीर्घाएँ, एक मुक्ताकाश मंच, कार्यशालाएँ और पुस्तकालय शामिल हैं। इसके प्रमुख प्रभागों में समकालीन, लोक और जनजातीय कला का संग्रहालय 'रूपांकर', रंगमंच प्रभाग 'रंगमंडल', भारतीय कविता और साहित्य का पुस्तकालय 'वागर्थ', शास्त्रीय व लोक संगीत प्रभाग 'अनहद', शास्त्रीय सिनेमा केंद्र 'छवि' और रचनात्मक लेखन पीठ 'निराला सृजनपीठ' शामिल हैं।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+  deleted: false
+
+- id: tribal-museum-bhopal
+  slug: tribal-museum-bhopal
+  record_type: anchor
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - museum
+    - tribal-heritage
+    - anthropology
+    - folk-arts
+    - shamla-hills
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Madhya Pradesh Tribal Museum Shyamla Hills Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Tribal Museum Bhopal"
+      url: "https://en.wikipedia.org/wiki/Tribal_Museum_Bhopal"
+      type: wikipedia
+    - name: "Madhya Pradesh Tourism - Bhopal"
+      url: "https://www.mptourism.com/destination-bhopal.php"
+      type: official
+    - name: "Wikivoyage - Bhopal"
+      url: "https://en.wikivoyage.org/wiki/Bhopal"
+      type: wikivoyage
+  text:
+    en:
+      title: "Madhya Pradesh Tribal Museum"
+      summary: "Located in Shyamla Hills, the Madhya Pradesh State Tribal Museum celebrates the living cultural traditions, indigenous knowledge systems, and artistry of regional tribal communities through immersive full-scale installations."
+      story: "Established on 6 June 2013, this anthropological museum presents full-scale model houses, courtyards, and artistic installations illustrating shared cultural threads across the region's tribal communities. Thematic galleries explore everyday aesthetics, regional traditions in Chhattisgarh Dirgha, and traditional children's games in Rakku Dirgha. Beyond its galleries, the complex features an amphitheatre that hosts scheduled plays, musical recitals, and folk dances, along with the Chinhari retail outlet for handicrafts and an in-house magazine, Choumasa."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "मध्यप्रदेश जनजातीय संग्रहालय"
+      summary: "श्यामला हिल्स में स्थित मध्यप्रदेश राज्य जनजातीय संग्रहालय क्षेत्र के जनजातीय समुदायों के जीवंत जीवन, देशज ज्ञान परंपराओं और कलात्मक सौंदर्य को भव्य पूर्ण-आकार प्रदर्शों के माध्यम से प्रस्तुत करता है।"
+      story: "6 जून 2013 को स्थापित यह मानवशास्त्रीय संग्रहालय पूर्ण-आकार के जनजातीय आवासों, आंगनों और कलात्मक प्रदर्शों के जरिए क्षेत्र के विभिन्न समुदायों के साझा सांस्कृतिक सूत्र दिखाता है। इसकी प्रमुख दीर्घाओं में दैनिक जीवन और कला के साथ छत्तीसगढ़ दीर्घा तथा पारंपरिक बाल खेलों पर केंद्रित 'रक्कू दीर्घा' शामिल हैं। परिसर के भीतर एक मुक्ताकाश मंच है जहाँ नियमित रूप से नाटक, संगीत और लोकनृत्य प्रस्तुत किए जाते हैं, साथ ही हस्तशिल्प विक्रय केंद्र 'चिन्हारी' और पत्रिका 'चौमासा' का प्रकाशन भी यहीं से जुड़ा है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+  deleted: false
+
+- id: gohar-mahal
+  slug: gohar-mahal
+  record_type: anchor
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - palace
+    - begum-heritage
+    - mughal-hindu-architecture
+    - handicrafts
+    - lakeside
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Gohar Mahal VIP Road Upper Lake Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Madhya Pradesh Tourism - Bhopal"
+      url: "https://www.mptourism.com/destination-bhopal.php"
+      type: official
+    - name: "Madhya Pradesh Tourism - Begums of Bhopal"
+      url: "https://www.mptourism.com/begums-of-bhopal.html"
+      type: official
+    - name: "Wikipedia - Bhopal State"
+      url: "https://en.wikipedia.org/wiki/Bhopal_State"
+      type: wikipedia
+    - name: "District Bhopal Official Portal - History"
+      url: "https://bhopal.nic.in/en/history/"
+      type: official
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Gohar Mahal"
+      summary: "Gohar Mahal is a 19th-century lakeside palace in Old Bhopal built by Qudsia Begum, the princely state's first female ruler. Known for blending Hindu and Mughal architectural styles, the protected monument also hosts regional craft fairs."
+      story: "Commissioned between 1819 and 1837 (with its main entrance dated to 1820) by Qudsia Begum—also known as Gohar Begum—the palace sits along the Upper Lake road directly behind Shaukat Mahal. Covering roughly 4.65 acres, the maze-like structure combines Hindu and Mughal architectural traditions across winding passageways and steep flights of stairs that open onto views of Bhojtal. Catalogued as a built-heritage landmark in INTACH's 2003 Bhopal register, Gohar Mahal operates as a protected heritage venue hosting frequent handicraft fairs and housing the state-run Mrignayani emporium."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "गौहर महल"
+      summary: "गौहर महल पुराने भोपाल में अपर लेक के किनारे स्थित 19वीं सदी का राजसी महल है, जिसे भोपाल की पहली महिला शासक कुदसिया बेगम ने बनवाया था। हिंदू और मुगल स्थापत्य के संगम वाला यह संरक्षित स्मारक क्षेत्रीय हस्तशिल्प मेलों का भी प्रमुख स्थल है।"
+      story: "1819 से 1837 के बीच कुदसिया बेगम (गौहर बेगम) द्वारा निर्मित यह महल शौकत महल के पीछे भोजताल की सड़क पर स्थित है, जिसका मुख्य द्वार 1820 का माना जाता है। लगभग 4.65 एकड़ में फैली इस इमारत में हिंदू और मुगल स्थापत्य शैली का सुंदर मेल दिखता है, जिसके घुमावदार गलियारे और सीढ़ियाँ अपर लेक का मनोरम दृश्य प्रस्तुत करती हैं। इंटैक (INTACH) की 2003 की भोपाल विरासत सूची में दर्ज गौहर महल वर्तमान में संरक्षित धरोहर स्थल है, जहाँ हस्तशिल्प मेले आयोजित होते हैं और सरकारी एम्पोरियम 'मृगनयनी' स्थित है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "no dedicated wikipedia page"
+  deleted: false
+
+- id: shaukat-mahal-sadar-manzil
+  slug: shaukat-mahal-sadar-manzil
+  record_type: anchor
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - palace
+    - begum-heritage
+    - indo-european-architecture
+    - chowk-bazaar
+    - state-protected-monument
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Shaukat Mahal and Sadar Manzil Iqbal Maidan Chowk Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Sikandar Begum"
+      url: "https://en.wikipedia.org/wiki/Sikandar_Begum"
+      type: wikipedia
+    - name: "Wikipedia - State Protected Monuments in MP (Central & West)"
+      url: "https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone"
+      type: wikipedia
+    - name: "Madhya Pradesh Tourism - Heritage Walk in Bhopal"
+      url: "https://www.mptourism.com/heritage-walk-in-bhopal.html"
+      type: official
+    - name: "District Bhopal Official Portal - History"
+      url: "https://bhopal.nic.in/en/history/"
+      type: official
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Shaukat Mahal and Sadar Manzil"
+      summary: "Standing side by side at the entrance to Old Bhopal's Chowk area near Iqbal Maidan, Shaukat Mahal and Sadar Manzil showcase the cosmopolitan royal architecture of Bhopal's 19th-century Begums."
+      story: "Shaukat Mahal, constructed under Sikandar Jahan Begum and associated with her residence alongside Nawab Jahangir Mohammed Khan, breaks sharply from surrounding Islamic architecture by fusing Gothic and post-Renaissance European elements with Indo-Islamic arches and elongated windows. Historical accounts attribute its design to a Frenchman linked to the Bourbon lineage of Bhopal. Immediately nearby stands Sadar Manzil, the Begums' former Hall of Public Audience (Darbar Hall), which later housed the Bhopal Municipal Corporation headquarters. Sadar Manzil Darbar Hall is designated a Madhya Pradesh State Protected Monument (S-MP-329), and both structures appear in INTACH's 2003 Bhopal built-heritage register."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "शौकत महल और सदर मंज़िल"
+      summary: "पुराने भोपाल के चौक क्षेत्र के प्रवेश द्वार पर इकबाल मैदान के पास स्थित शौकत महल और सदर मंज़िल 19वीं सदी की भोपाल की बेगमों की विशिष्ट राजसी वास्तुकला को दर्शाते हैं।"
+      story: "सिकंदर जहाँ बेगम के काल में निर्मित और नवाब जहाँगीर मोहम्मद खान के साथ उनके निवास से जुड़ा शौकत महल आसपास की पारंपरिक इस्लामी इमारतों से अलग यूरोपीय गोथिक व उत्तर-पुनर्जागरण शैली तथा इंडो-इस्लामिक मेहराबों के मिश्रण के लिए जाना जाता है। ऐतिहासिक विवरण इसके डिज़ाइन का श्रेय भोपाल के बोरबॉन परिवार से जुड़े एक फ्रांसीसी वास्तुकार को देते हैं। इसके ठीक पास स्थित सदर मंज़िल बेगमों का दरबार हॉल (सार्वजनिक सभा कक्ष) था, जो बाद में भोपाल नगर निगम का मुख्यालय बना। सदर मंज़िल दरबार हॉल मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-329) है और दोनों इमारतें इंटैक (INTACH) की 2003 की विरासत सूची में दर्ज हैं।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "no dedicated wikipedia page"
+    - "paired adjacent landmarks"
+  deleted: false
+
+- id: birla-mandir-bhopal
+  slug: birla-mandir-bhopal
+  record_type: anchor
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - hindu-temple
+    - arera-hills
+    - nagara-architecture
+    - viewpoint
+    - landmark
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Lakshmi Narayan Temple Birla Mandir Arera Hills Bhopal"
+  sensitivity:
+    is_sacred: true
+    note: "PENDING_HUMAN_ETIQUETTE_NOTE"
+  sources:
+    - name: "Wikipedia - Lakshmi Narayan Temple, Bhopal"
+      url: "https://en.wikipedia.org/wiki/Lakshmi_Narayan_Temple,_Bhopal"
+      type: wikipedia
+    - name: "Madhya Pradesh Tourism - Bhopal"
+      url: "https://www.mptourism.com/destination-bhopal.php"
+      type: official
+    - name: "District Bhopal Official Portal - Places of Interest"
+      url: "https://bhopal.nic.in/en/places-of-interest/"
+      type: official
+    - name: "Wikivoyage - Bhopal"
+      url: "https://en.wikivoyage.org/wiki/Bhopal"
+      type: wikivoyage
+  text:
+    en:
+      title: "Birla Mandir (Lakshmi Narayan Temple)"
+      summary: "Birla Mandir, formally the Lakshmi Narayan Temple, crowns Arera Hills (Lakshminarayana Giri) in central Bhopal, offering panoramic views over both Old and New Bhopal alongside landscaped gardens."
+      story: "Built by the Hindustan Charity Trust on hilly land granted during the tenure of Madhya Pradesh Chief Minister Dr. Kailashnath Katju, the temple's foundation stone was laid in 1960 and it was inaugurated in 1964 by Chief Minister Dwarka Prasad Mishra. Designed in the Nagara Shaili architectural tradition across roughly seven to eight acres of hilltop grounds, the ochre-and-red temple enshrines Lord Vishnu and Goddess Lakshmi, flanked by shrines to Shiva and Maa Jagdamba. Inside, carved marble panels depict mythological scenes inscribed with teachings from the Bhagavad Gita and Ramayana, while the adjacent Birla Museum houses antique stone sculptures from across Madhya Pradesh."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "बिरला मंदिर (लक्ष्मी नारायण मंदिर)"
+      summary: "बिरला मंदिर, जिसे औपचारिक रूप से लक्ष्मी नारायण मंदिर कहा जाता है, मध्य भोपाल के अरेरा हिल्स (लक्ष्मीनारायण गिरि) के शिखर पर स्थित है और यहाँ से पुराने व नए भोपाल के विहंगम दृश्य दिखाई देते हैं।"
+      story: "हिंदुस्तान चैरिटी ट्रस्ट द्वारा निर्मित इस मंदिर की आधारशिला 1960 में तत्कालीन मुख्यमंत्री डॉ. कैलाशनाथ काटजू ने रखी थी और इसका उद्घाटन 1964 में मुख्यमंत्री द्वारका प्रसाद मिश्र ने किया। लगभग सात से आठ एकड़ पहाड़ी क्षेत्र में नागर शैली में बने गेरुआ और लाल पत्थर के इस मंदिर में भगवान विष्णु और देवी लक्ष्मी की प्रतिमाएँ प्रतिष्ठित हैं, जबकि पार्श्व में शिव और माँ जगदंबा के मंदिर हैं। गर्भगृह और परिसर की संगमरमर की दीवारों पर पौराणिक दृश्य तथा भगवद गीता व रामायण के उपदेश अंकित हैं, और मंदिर के पास स्थित बिरला संग्रहालय में मध्यप्रदेश की प्राचीन पाषाण प्रतिमाएँ संरक्षित हैं।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+  deleted: false
+
+- id: manua-bhan-ki-tekri
+  slug: manua-bhan-ki-tekri
+  record_type: anchor
+  category: culture
+  category_confidence: high
+  hidden_gem_evidence: null
+  anchor_for_candidate: null
+  approx_distance_to_anchor_km: null
+  tags:
+    - jain-temple
+    - hilltop-viewpoint
+    - pilgrimage
+    - ropeway
+    - lalghati
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Manua Bhan Ki Tekri Lalghati Bhopal"
+  sensitivity:
+    is_sacred: true
+    note: "PENDING_HUMAN_ETIQUETTE_NOTE"
+  sources:
+    - name: "District Bhopal Official Portal - Places of Interest"
+      url: "https://bhopal.nic.in/en/places-of-interest/"
+      type: official
+    - name: "Wikivoyage - Bhopal"
+      url: "https://en.wikivoyage.org/wiki/Bhopal"
+      type: wikivoyage
+    - name: "Madhya Pradesh Tourism - Discovering MP"
+      url: "https://www.mptourism.com/pdf/Discovering-MP-Final-Book.pdf"
+      type: official
+  text:
+    en:
+      title: "Manua Bhan Ki Tekri"
+      summary: "Manua Bhan Ki Tekri is a hilltop Shwetambar Jain pilgrimage shrine near Lalghati on Gwalior Road, roughly seven kilometres from central Bhopal. Known for both spiritual significance and sweeping views across the city, the summit is reachable by road or cable car."
+      story: "Recognized by the Bhopal district administration as a major Jain pilgrimage centre and the Sadhana Sthali of the Oswal dynasty, Manua Bhan Ki Tekri preserves sacred footwear memorials of Jain saints Maharaj Shri Vijay Suriji, Shri Jindutta Sureshwarji, and Acharya Manutung alongside an installed idol of Shri Man Bhadarji. An ancient, undeciphered stone-carved manuscript stands at the Simha Gate, and the hill hosts a major annual fair on Kartik Purnima. Beyond pilgrimage, visitors ascend via the hill road or the ropeway cable car for elevated panoramic views of Bhopal."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "मनुआभान की टेकरी"
+      summary: "मनुआभान की टेकरी भोपाल के लालघाटी के पास ग्वालियर रोड पर स्थित एक पहाड़ी श्वेतांबर जैन तीर्थ स्थल है, जो मुख्य शहर से लगभग सात किलोमीटर दूर है। धार्मिक महत्व के साथ यह स्थल रोपवे और भोपाल के विहंगम दृश्यों के लिए जाना जाता है।"
+      story: "भोपाल जिला प्रशासन द्वारा प्रमुख जैन तीर्थ और ओसवाल वंश की साधना स्थली के रूप में दर्ज मनुआभान की टेकरी पर जैन संतों महाराज श्री विजय सूरीजी, श्री जिनदत्त सुरेश्वरजी और आचार्य मानतुंग की चरण पादुकाएँ तथा श्री मानभद्रजी की प्रतिमा प्रतिष्ठित हैं। यहाँ के सिंह द्वार पर पत्थर में उत्कीर्ण एक प्राचीन अपठित पांडुलिपि मौजूद है और प्रतिवर्ष कार्तिक पूर्णिमा पर बड़ा मेला लगता है। श्रद्धालु और सैलानी पहाड़ी मार्ग या रोपवे केबल कार के जरिए शिखर तक पहुँचकर पूरे शहर का दृश्य देख सकते हैं।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "no dedicated wikipedia page"
+  deleted: false

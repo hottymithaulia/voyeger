@@ -1,0 +1,24 @@
+id: sample-chowk-kitchen
+type: food
+name: Sample Chowk Kitchen
+contact:
+  phone: '917555010002'
+  whatsapp: '917555010002'
+  email: food@example.invalid
+place_ids:
+- old-city-food-lane
+offer: Sample breakfast pairing; prices not verified
+featured_until: '2026-12-31'
+onboarded_via: whatsapp
+text:
+  en:
+    name: Sample Chowk Kitchen
+    offer: Sample breakfast pairing; prices not verified
+    description: Illustrative street-food partner listing for the demo pack.
+    needs_review: false
+  hi:
+    name: नमूना चौक रसोई
+    offer: नमूना नाश्ता सुझाव; कीमतें सत्यापित नहीं
+    description: डेमो पैक में सड़क के खाने के साथी की उदाहरण सूची।
+    needs_review: false
+deleted: false

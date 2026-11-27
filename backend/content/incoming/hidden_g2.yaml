@@ -1,0 +1,304 @@
+- id: hammam-e-qadimi
+  slug: hammam-e-qadimi
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: high
+  hidden_gem_evidence: "Publicly accessible 18th-century functioning bathhouse confirmed by Wikipedia and INTACH 2003 (#190); absent from official MP Tourism and District Bhopal headline lists; approx 0.3 km from gohar-mahal."
+  anchor_for_candidate: gohar-mahal
+  approx_distance_to_anchor_km: 0.3
+  tags:
+    - hammam
+    - gond-heritage
+    - living-heritage
+    - eighteenth-century
+    - old-bhopal
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Hammam-e-Qadimi Old Bhopal near Kamla Park Chowk"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Hammam-e-Qadimi"
+      url: "https://en.wikipedia.org/wiki/Hammam-e-Qadimi"
+      type: wikipedia
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Hammam-e-Qadimi"
+      summary: "Hammam-e-Qadimi is a rare functioning 18th-century traditional steam bathhouse tucked into Old Bhopal near Gohar Mahal, preserving centuries-old thermal architecture."
+      story: "Erected in the early 1700s during Gond rule and later gifted to Hajjam Hammu Khalida when Dost Mohammad Khan became Nawab of Bhopal, this historic bathhouse is catalogued as Hammam Kadimi (#190) in INTACH's 2003 Bhopal built-heritage listing. Its interior chambers form gradual stages transitioning from a hot, humid 60-degree-Celsius steam chamber toward cooler, drier outer rooms. On the rooftop, five ventilation openings locally called the naak and kaan (nose and ears) regulate airflow within the building. Absent from official tourism brochures, it represents one of Old Bhopal's most unusual surviving living-heritage structures."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "हम्माम-ए-क़दीमी"
+      summary: "पुराने भोपाल में गौहर महल के पास स्थित हम्माम-ए-क़दीमी 18वीं सदी का एक दुर्लभ और आज भी प्रचलित पारंपरिक भाप स्नानघर है, जिसमें सदियों पुरानी तापीय वास्तुकला सुरक्षित है।"
+      story: "1700 के प्रारंभिक वर्षों में गोंड शासन के दौरान निर्मित और बाद में दोस्त मोहम्मद खान के नवाब बनने पर हज्जाम हम्मू खलीदा को भेंट किया गया यह ऐतिहासिक स्नानघर इंटैक (INTACH) की 2003 की विरासत सूची में हम्माम कदीमी (#190) के रूप में दर्ज है। इसके कक्ष इस प्रकार बने हैं कि लगभग 60 डिग्री सेल्सियस वाले गर्म व आर्द्र भाप कक्ष से बाहर के अपेक्षाकृत ठंडे और शुष्क कक्षों तक क्रमिक संक्रमण होता है। छत पर बने पाँच वायु-संचार छिद्र, जिन्हें स्थानीय रूप से हम्माम की 'नाक और कान' कहा जाता है, इमारत के भीतर हवा का संतुलन बनाए रखते हैं। आधिकारिक पर्यटन सूचियों से बाहर यह पुराने भोपाल की एक अनूठी जीवंत धरोहर है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "verify seasonal operation and visitor access rules locally"
+  deleted: false
+
+- id: dhai-seedhi-ki-masjid
+  slug: dhai-seedhi-ki-masjid
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: high
+  hidden_gem_evidence: "Historic 1720s mosque confirmed by Wikipedia (Dost Mohammad of Bhopal) and INTACH 2003 (#82); omitted from MP Tourism's main Bhopal destination list and District Bhopal places of interest; approx 0.8 km from gohar-mahal."
+  anchor_for_candidate: gohar-mahal
+  approx_distance_to_anchor_km: 0.8
+  tags:
+    - mosque
+    - fatehgarh-fort
+    - earliest-mosque
+    - nawab-era
+    - old-bhopal
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Dhai Seedhi Ki Masjid Fatehgarh Fort Gandhi Medical College Bhopal"
+  sensitivity:
+    is_sacred: true
+    note: "PENDING_HUMAN_ETIQUETTE_NOTE"
+  sources:
+    - name: "Wikipedia - Dost Mohammad of Bhopal"
+      url: "https://en.wikipedia.org/wiki/Dost_Mohammad_of_Bhopal"
+      type: wikipedia
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+    - name: "Madhya Pradesh Tourism - Times Passion Trail"
+      url: "https://www.mptourism.com/times-passion-trail-in-madhya-pradesh.html"
+      type: official
+  text:
+    en:
+      title: "Dhai Seedhi Ki Masjid"
+      summary: "Perched on the historic Fatehgarh Fort precinct in Old Bhopal, Dhai Seedhi Ki Masjid is documented as the earliest mosque built in Bhopal."
+      story: "Built during the 1720s under Nawab Dost Mohammad Khan while Fatehgarh Fort was taking shape, Dhai Seedhi Ki Masjid served the fort's garrison so guards could perform daily prayers on site. Catalogued in INTACH's 2003 Bhopal built-heritage register as Adhai Seedi ki Masjid or Huzara Masjid (#82), the intimate prayer structure contrasts strikingly in scale with the monumental Taj-ul-Masajid nearby. Rarely listed on mainstream sightseeing itineraries, it offers direct insight into Bhopal's earliest phase as a fortified town."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "ढाई सीढ़ी की मस्जिद"
+      summary: "पुराने भोपाल के ऐतिहासिक फतेहगढ़ किला परिसर पर स्थित ढाई सीढ़ी की मस्जिद को भोपाल में बनी पहली मस्जिद के रूप में दर्ज किया गया है।"
+      story: "1720 के दशक में नवाब दोस्त मोहम्मद खान द्वारा फतेहगढ़ किले के निर्माण के समय बनाई गई यह मस्जिद किले के पहरेदारों को वहीं नमाज़ अदा करने की सुविधा देने के लिए स्थापित की गई थी। इंटैक (INTACH) की 2003 की भोपाल विरासत सूची में अढ़ाई सीढ़ी की मस्जिद या हुज़रा मस्जिद (#82) के रूप में दर्ज यह लघु मस्जिद पास के विशाल ताज-उल-मसाजिद के मुकाबले अपने छोटे आकार के कारण विशेष पहचान रखती है। मुख्य पर्यटन सूचियों से बाहर यह स्थान भोपाल के प्रारंभिक किलेबंद नगर के इतिहास की झलक देता है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no dedicated wikipedia page"
+  deleted: false
+
+- id: moti-mahal-bhopal
+  slug: moti-mahal-bhopal
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: high
+  hidden_gem_evidence: "Madhya Pradesh State Protected Monument (S-MP-328) verified by Wikipedia (Bhopal State, Sikandar Begum, State Protected list) and INTACH 2003 (#106); omitted from MP Tourism's main Bhopal destination page and District Bhopal places of interest; approx 0.1 km from shaukat-mahal-sadar-manzil."
+  anchor_for_candidate: shaukat-mahal-sadar-manzil
+  approx_distance_to_anchor_km: 0.1
+  tags:
+    - palace
+    - begum-heritage
+    - state-protected-monument
+    - chowk-bazaar
+    - nineteenth-century
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Moti Mahal near Moti Masjid Sadar Manzil Old Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "Wikipedia - Sikandar Begum"
+      url: "https://en.wikipedia.org/wiki/Sikandar_Begum"
+      type: wikipedia
+    - name: "Wikipedia - Bhopal State"
+      url: "https://en.wikipedia.org/wiki/Bhopal_State"
+      type: wikipedia
+    - name: "Wikipedia - State Protected Monuments in MP (Central & West)"
+      url: "https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone"
+      type: wikipedia
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Moti Mahal"
+      summary: "Standing immediately beside Shaukat Mahal and Sadar Manzil in Old Bhopal, Moti Mahal (the Pearl Palace) is a 19th-century State Protected royal palace commissioned by Sikandar Jahan Begum."
+      story: "Built during the mid-19th-century reign of Sikandar Jahan Begum alongside the nearby Moti Masjid and Shaukat Mahal, Moti Mahal served as one of the Begum's principal royal residences, where she died on 30 October 1868. Listed as Madhya Pradesh State Protected Monument S-MP-328 and catalogued in INTACH's 2003 Bhopal built-heritage survey (#106), the palace forms a crucial architectural link in Old Bhopal's historic palace complex. Despite its central location, it is frequently overlooked on official tourism itineraries in favour of adjacent Moti Masjid and Gohar Mahal."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "मोती महल"
+      summary: "पुराने भोपाल में शौकत महल और सदर मंज़िल के ठीक पास स्थित मोती महल (पर्ल पैलेस) 19वीं सदी का राज्य संरक्षित शाही महल है, जिसे सिकंदर जहाँ बेगम ने बनवाया था।"
+      story: "19वीं सदी के मध्य में सिकंदर जहाँ बेगम ने पास की मोती मस्जिद और शौकत महल के साथ मोती महल का निर्माण कराया था, जो उनके प्रमुख निवासों में से एक था और जहाँ 30 अक्टूबर 1868 को उनका निधन हुआ। मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-328) और इंटैक (INTACH) की 2003 की विरासत सूची (#106) में दर्ज यह इमारत पुराने भोपाल के शाही महल संकुल की महत्वपूर्ण कड़ी है। केंद्रीय स्थान पर होने के बावजूद आधिकारिक पर्यटन सूचियों में यह अक्सर मोती मस्जिद और गौहर महल के पीछे छूट जाता है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no dedicated wikipedia page"
+    - "verify interior public access locally"
+  deleted: false
+
+- id: yadgar-e-shahjahani-park
+  slug: yadgar-e-shahjahani-park
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: medium
+  hidden_gem_evidence: "Publicly accessible historic park verified by INTACH 2003 (#256), Wikipedia (Abdul Jabbar Khan), and District Bhopal's parks list; not a headline attraction on official tourism lists; approx 1.1 km from shaukat-mahal-sadar-manzil."
+  anchor_for_candidate: shaukat-mahal-sadar-manzil
+  approx_distance_to_anchor_km: 1.1
+  tags:
+    - historic-park
+    - civic-memory
+    - shahjahanabad
+    - urban-green-space
+    - local-history
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Yadgar-e-Shahjahani Park Shahjahanabad Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+    - name: "Wikipedia - Abdul Jabbar Khan (activist)"
+      url: "https://en.wikipedia.org/wiki/Abdul_Jabbar_Khan_(activist)"
+      type: wikipedia
+    - name: "District Bhopal Official Portal - Tourism"
+      url: "https://bhopal.nic.in/en/tourism/"
+      type: official
+  text:
+    en:
+      title: "Yadgar-e-Shahjahani Park"
+      summary: "Yadgar-e-Shahjahani Park is an Old Bhopal heritage green space linking Shahjahanabad's historic urban landscape with the modern civic history of Bhopal's gas-tragedy survivor movement."
+      story: "Catalogued as Yadgar-e-Shahjahani (#256) in INTACH's 2003 Bhopal built-heritage register and noted among the city's public parks on Bhopal's official district portal, the park sits near the historic Shahjahanabad quarter. Beyond its built-heritage listing, the grounds hold deep contemporary significance as the weekly meeting venue where activist Abdul Jabbar Khan organised survivors of the 1984 Bhopal Gas Tragedy and supported women-led livelihood work. Rarely mentioned in visitor guides, the park offers a reflective stop into Bhopal's layered civic memory."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "यादगार-ए-शाहजहानी पार्क"
+      summary: "यादगार-ए-शाहजहानी पार्क पुराने भोपाल का एक ऐतिहासिक सार्वजनिक उद्यान है, जो शाहजहानाबाद के ऐतिहासिक परिवेश को भोपाल गैस त्रासदी पीड़ितों के आधुनिक नागरिक आंदोलन की स्मृति से जोड़ता है।"
+      story: "इंटैक (INTACH) की 2003 की भोपाल विरासत सूची (#256) और भोपाल जिला पोर्टल के उद्यानों की सूची में दर्ज यह पार्क ऐतिहासिक शाहजहानाबाद क्षेत्र के पास स्थित है। अपनी विरासत पहचान के अलावा, इस पार्क का आधुनिक सामाजिक इतिहास में विशेष महत्व है क्योंकि सामाजिक कार्यकर्ता अब्दुल जब्बार खान यहाँ 1984 की भोपाल गैस त्रासदी के पीड़ितों की साप्ताहिक बैठकें आयोजित करते थे। सामान्य पर्यटन गाइडों में कम चर्चित यह स्थान भोपाल की नागरिक स्मृति को समझने का एक शांत केंद्र है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no dedicated wikipedia page"
+  deleted: false
+
+- id: st-francis-of-assisi-cathedral-bhopal
+  slug: st-francis-of-assisi-cathedral-bhopal
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: high
+  hidden_gem_evidence: "Publicly accessible historic cathedral corroborated by Wikipedia (Archdiocese of Bhopal), Wikidata (Q420448), and INTACH 2003 (#135); omitted from official MP Tourism and District Bhopal sightseeing lists; approx 1.8 km from birla-mandir-bhopal."
+  anchor_for_candidate: birla-mandir-bhopal
+  approx_distance_to_anchor_km: 1.8
+  tags:
+    - cathedral
+    - christian-heritage
+    - central-bhopal
+    - architecture
+    - multi-faith-bhopal
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "St Francis of Assisi Cathedral Lal Parade Ground Jahangirabad Bhopal"
+  sensitivity:
+    is_sacred: true
+    note: "PENDING_HUMAN_ETIQUETTE_NOTE"
+  sources:
+    - name: "Wikipedia - Archdiocese of Bhopal"
+      url: "https://en.wikipedia.org/wiki/Archdiocese_of_Bhopal"
+      type: wikipedia
+    - name: "Wikidata - Roman Catholic Archdiocese of Bhopal (Q420448)"
+      url: "https://www.wikidata.org/wiki/Q420448"
+      type: wikidata
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+  text:
+    en:
+      title: "Cathedral of St. Francis of Assisi"
+      summary: "Situated in central Bhopal near Arera Hills and Lal Parade Ground, the Cathedral of St. Francis of Assisi is a heritage church and the seat of the Roman Catholic Archdiocese of Bhopal."
+      story: "Catalogued as item #135 alongside Lal Parade Ground (#134) in INTACH's 2003 Bhopal built-heritage register, the church stands within central Bhopal's historic administrative belt. Following the formation of Madhya Pradesh on 1 November 1956, Pope Paul VI established the Archdiocese of Bhopal on 13 September 1963 with this church serving as its cathedral under the patronage of St. Francis of Assisi. Omitted from mainstream sightseeing lists, the cathedral highlights a quieter thread of Bhopal's diverse multi-faith architectural heritage."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "सेंट फ्रांसिस ऑफ असीसी कैथेड्रल"
+      summary: "अरेरा हिल्स और लाल परेड ग्राउंड के पास मध्य भोपाल में स्थित सेंट फ्रांसिस ऑफ असीसी कैथेड्रल एक विरासत गिरजाघर और रोमन कैथोलिक आर्चडायोसिस ऑफ भोपाल का प्रमुख केंद्र है।"
+      story: "इंटैक (INTACH) की 2003 की भोपाल विरासत सूची में लाल परेड ग्राउंड (#134) के साथ क्रमांक #135 पर दर्ज यह गिरजाघर मध्य भोपाल के ऐतिहासिक क्षेत्र में स्थित है। 1 नवंबर 1956 को मध्यप्रदेश के गठन के बाद 13 सितंबर 1963 को पोप पॉल षष्ठम ने भोपाल को आर्चडायोसिस घोषित किया और सेंट फ्रांसिस ऑफ असीसी को समर्पित इस गिरजाघर को कैथेड्रल का दर्जा मिला। मुख्य पर्यटन सूचियों से बाहर यह स्थान भोपाल की बहु-धार्मिक विरासत का शांत उदाहरण है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no dedicated wikipedia page"
+  deleted: false
+
+- id: kushabhau-thakre-hall-minto-hall
+  slug: kushabhau-thakre-hall-minto-hall
+  record_type: candidate
+  category: hidden_gem
+  category_confidence: medium
+  hidden_gem_evidence: "Restored 1909 heritage building corroborated by INTACH 2003 (#204), Wikipedia (Kushabhau Thakre), and MP Tourism heritage/MICE documentation; omitted from MP Tourism's main Bhopal destination sightseeing list and District Bhopal places of interest; approx 1.2 km from birla-mandir-bhopal."
+  anchor_for_candidate: birla-mandir-bhopal
+  approx_distance_to_anchor_km: 1.2
+  tags:
+    - minto-hall
+    - begum-heritage
+    - heritage-architecture
+    - lower-lake-view
+    - convention-centre
+  geo:
+    lat: null
+    lng: null
+  osm_search_hint: "Kushabhau Thakre International Convention Centre Minto Hall Jahangirabad Bhopal"
+  sensitivity:
+    is_sacred: false
+    note: null
+  sources:
+    - name: "INTACH - Bhopal: The Built Heritage (2003)"
+      url: "http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf"
+      type: other
+    - name: "Madhya Pradesh Tourism - Kushabhau Thakre Hall"
+      url: "https://www.mptourism.com/kushabhau-thakre-hall-bhopal.html"
+      type: official
+    - name: "Madhya Pradesh Tourism - MICE Destinations"
+      url: "https://www.mptourism.com/mice-destinations-in-madhya-pradesh.html"
+      type: official
+    - name: "Wikipedia - Kushabhau Thakre"
+      url: "https://en.wikipedia.org/wiki/Kushabhau_Thakre"
+      type: wikipedia
+  text:
+    en:
+      title: "Kushabhau Thakre Hall (Historic Minto Hall)"
+      summary: "Overlooking Lower Lake near Arera Hills, Kushabhau Thakre Hall—historically Minto Hall—is an early-20th-century Begum-era landmark that served for four decades as Madhya Pradesh's legislative assembly before being restored as a convention centre."
+      story: "Conceived by Bhopal's fourth female ruler, Nawab Sultan Jahan Begum, and designed by architect A. C. Rovan, the building had its foundation stone laid on 12 November 1909 and was completed under her son, Nawab Hamidullah Khan. Catalogued as Minto Hall (#204) in INTACH's 2003 Bhopal built-heritage register, the stately hall served for roughly forty years as the state's legislative assembly hall. Today it operates as the restored Kushabhau Thakre International Convention Centre and hosts a rooftop restaurant ('1909 – The Crown of Bhopal') overlooking Lower Lake, though interior hall access depends on scheduled events."
+      tips: "Verify locally"
+      needs_review: true
+    hi:
+      title: "कुशाभाऊ ठाकरे हॉल (ऐतिहासिक मिंटो हॉल)"
+      summary: "अरेरा हिल्स के पास लोअर लेक की ओर स्थित कुशाभाऊ ठाकरे हॉल (ऐतिहासिक मिंटो हॉल) 20वीं सदी के प्रारंभ का बेगम कालीन विरासत भवन है, जो लगभग चार दशकों तक मध्यप्रदेश विधानसभा का स्थल रहा।"
+      story: "भोपाल की चौथी बेगम नवाब सुल्तान जहाँ बेगम की परिकल्पना और वास्तुकार ए. सी. रोवन के डिज़ाइन पर आधारित इस भवन की आधारशिला 12 नवंबर 1909 को रखी गई और इसका निर्माण उनके पुत्र नवाब हमीदुल्लाह खान के समय पूरा हुआ। इंटैक (INTACH) की 2003 की सूची में मिंटो हॉल (#204) के रूप में दर्ज यह भव्य इमारत करीब चार दशकों तक राज्य की विधानसभा रही। वर्तमान में इसे कुशाभाऊ ठाकरे अंतरराष्ट्रीय कन्वेंशन सेंटर के रूप में संरक्षित किया गया है, जहाँ छत पर लोअर लेक के दृश्य वाला रेस्तरां '1909 – द क्राउन ऑफ भोपाल' भी स्थित है।"
+      tips: "स्थानीय स्तर पर पुष्टि करें"
+      needs_review: true
+  flags:
+    - "geo pending osm"
+    - "distance approx"
+    - "no dedicated wikipedia page"
+    - "public interior access depends on convention events; verify locally"
+  deleted: false

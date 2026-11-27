@@ -1,0 +1,55 @@
+id: mausoleum-dost-mohammad-khan
+slug: mausoleum-dost-mohammad-khan
+category: hidden_gem
+status: draft
+tags:
+- mausoleum
+- fatehgarh-fort
+- nawab-founder
+- state-protected-monument
+- old-bhopal
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: true
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Dost Mohammad of Bhopal
+    url: https://en.wikipedia.org/wiki/Dost_Mohammad_of_Bhopal
+    type: wikipedia
+  - name: Wikipedia - State Protected Monuments in MP (Central & West)
+    url: https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Madhya_Pradesh/_Central_%26_West_Zone
+    type: wikipedia
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort)
+    summary: Set atop the historic Fatehgarh Fort ridge overlooking Upper Lake, this State Protected mausoleum marks the resting place of Nawab Dost Mohammad Khan, founder of modern Bhopal, beside his wife Fateh Bibi.
+    story: Nawab Dost Mohammad Khan (reigned 1707–1728) transformed Bhopal from a small Gond-era settlement into a walled capital, laying the foundation of Fatehgarh Fort on 30 August 1723 and naming it after his wife Fatah Bibi. Following his death in 1728, he was buried within the fort grounds beside Fatah Bibi, close to the surviving bastion walls on the hill west of Kamlapati Palace. Listed as a Madhya Pradesh State Protected Monument (S-MP-33) and catalogued alongside Fatehgarh's fort walls in INTACH's 2003 survey, the quiet tomb complex rarely features on mainstream sightseeing itineraries.
+    tips: []
+    needs_review: true
+  hi:
+    title: दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला)
+    summary: अपर लेक के ऊपर फतेहगढ़ किले की पहाड़ी पर स्थित यह राज्य संरक्षित मकबरा आधुनिक भोपाल के संस्थापक नवाब दोस्त मोहम्मद खान और उनकी पत्नी फतेह बीबी की कब्रगाह है।
+    story: नवाब दोस्त मोहम्मद खान (शासनकाल 1707–1728) ने भोपाल को गोंड काल की छोटी बस्ती से प्राचीरबद्ध राजधानी में बदला और 30 अगस्त 1723 को अपनी पत्नी फतेह बीबी के नाम पर फतेहगढ़ किले की नींव रखी। 1728 में निधन के बाद उन्हें किले के परिसर में फतेह बीबी के साथ दफनाया गया, जहाँ कमलापति महल के पश्चिम में पहाड़ी पर किले के अवशेष मौजूद हैं। मध्यप्रदेश राज्य संरक्षित स्मारक (S-MP-33) के रूप में सूचीबद्ध और इंटैक (INTACH) की 2003 की विरासत सूची में दर्ज यह शांत स्थल मुख्य पर्यटन सूचियों में बहुत कम दिखाई देता है।
+    tips: []
+    needs_review: true
+deleted: false

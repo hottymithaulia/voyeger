@@ -1,0 +1,20 @@
+id: mausoleum-dost-mohammad-khan
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: high
+flags:
+- geo pending osm
+- distance approx
+- no dedicated wikipedia page
+- verify campus entry and hours locally
+osm_search_hint: Mausoleum of Dost Mohammad Khan Fatehgarh Fort Hamidia Hospital area Bhopal
+hidden_gem_evidence: 'Madhya Pradesh State Protected Monument (S-MP-33) confirmed by Wikipedia, the State Protected Monuments list, and INTACH 2003 (#80, #85); absent from official MP Tourism and District Bhopal headline lists; approx 1.1 km overlooking upper-lake-bhojtal on Fatehgarh ridge.'
+anchor_for_candidate: upper-lake-bhojtal
+approx_distance_to_anchor_km: 1.1
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: true
+hindi_needs_review: true
+hold_reason: null

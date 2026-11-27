@@ -1,0 +1,19 @@
+id: st-francis-of-assisi-cathedral-bhopal
+source_file: hidden_g2.yaml
+record_type: candidate
+category_confidence: high
+flags:
+- geo pending osm
+- distance approx
+- no dedicated wikipedia page
+osm_search_hint: St Francis of Assisi Cathedral Lal Parade Ground Jahangirabad Bhopal
+hidden_gem_evidence: Publicly accessible historic cathedral corroborated by Wikipedia (Archdiocese of Bhopal), Wikidata (Q420448), and INTACH 2003 (#135); omitted from official MP Tourism and District Bhopal sightseeing lists; approx 1.8 km from birla-mandir-bhopal.
+anchor_for_candidate: birla-mandir-bhopal
+approx_distance_to_anchor_km: 1.8
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: true
+hindi_needs_review: true
+hold_reason: null

@@ -1,0 +1,54 @@
+id: tribal-museum
+slug: tribal-museum
+category: culture
+tags:
+- museum
+- gond-art
+- bhil
+- culture
+geo:
+  lat: 23.2078
+  lng: 77.4171
+is_anchor: false
+anchor_for: []
+hours: 12:00 - 19:00 (Closed Mondays)
+best_time: Afternoon
+cost_note: INR 20 entry (SAMPLE DATA)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: null
+media:
+  images:
+  - id: tribal-museum-cover
+    source_file: tribal-museum.jpg
+    alt:
+      en: Sculptural galleries of the Madhya Pradesh Tribal Museum
+      hi: मध्य प्रदेश जनजातीय संग्रहालय की कलात्मक दीर्घाएं
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Madhya Pradesh Tribal Museum
+    summary: Immersive galleries built by Gond, Bhil, Baiga, and Korku artisans.
+    story: Rather than glass cases, the museum's rooms are full-scale dwellings, mythic
+      installations, and painted murals crafted by community artists.
+    tips:
+    - Allow at least 90 minutes to explore all six galleries.
+    - Closed on Mondays and public holidays.
+    needs_review: false
+  hi:
+    title: मध्य प्रदेश जनजातीय संग्रहालय
+    summary: गोंड, भील, बैगा और कोरकू कलाकारों द्वारा निर्मित जीवंत दीर्घाएं।
+    story: यहाँ कांच के बक्सों के बजाय पारंपरिक आवास, लोककथाएं और भित्ति चित्र कलाकारों
+      ने स्वयं बनाए हैं।
+    tips:
+    - सभी दीर्घाओं को देखने के लिए कम से कम 90 मिनट रखें।
+    - सोमवार को संग्रहालय बंद रहता है।
+    needs_review: false
+deleted: false

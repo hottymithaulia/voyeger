@@ -1,0 +1,53 @@
+id: shaukat-mahal
+slug: shaukat-mahal
+category: hidden_gem
+tags:
+- architecture
+- begums
+- heritage
+geo:
+  lat: 23.2581
+  lng: 77.4051
+is_anchor: false
+anchor_for: []
+hours: Exterior viewable all day (SAMPLE DATA)
+best_time: Morning light
+cost_note: Free exterior view (SAMPLE DATA)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: null
+media:
+  images:
+  - id: shaukat-mahal-cover
+    source_file: shaukat-mahal.jpg
+    alt:
+      en: Indo-European arched facade of Shaukat Mahal in Bhopal
+      hi: भोपाल में शौकत महल का इंडो-यूरोपीय मेहराबदार अग्रभाग
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Shaukat Mahal
+    summary: 1830s palace fusing Gothic and Islamic arches in the heart of Chowk.
+    story: Designed with European Renaissance flourishes beside Mughal floral motifs,
+      Shaukat Mahal stands as one of Old Bhopal's most unusual facades.
+    tips:
+    - Look closely at the triangular pediments and carved floral arches.
+    - Best photographed in soft morning light.
+    needs_review: false
+  hi:
+    title: शौकत महल
+    summary: चौक के बीचोंबीच गोथिक और इस्लामी स्थापत्य का अनूठा संगम।
+    story: 1830 के दशक में बना शौकत महल यूरोपीय और मुगल शैलियों के मिश्रण का दुर्लभ
+      उदाहरण है।
+    tips:
+    - मेहराबों और नक्काशी को ध्यान से देखें।
+    - सुबह की नरम रोशनी में यह सबसे सुंदर दिखता है।
+    needs_review: false
+deleted: false

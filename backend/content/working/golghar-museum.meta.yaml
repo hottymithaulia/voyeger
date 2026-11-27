@@ -1,0 +1,18 @@
+id: golghar-museum
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: high
+flags:
+- geo pending osm
+- distance approx
+osm_search_hint: Golghar Museum Gulshan-e-Alam Shahjahanabad Bhopal
+hidden_gem_evidence: Publicly accessible museum and State Protected Monument (S-MP-32) confirmed by Wikipedia and INTACH 2003 (#61); absent from MP Tourism's main Bhopal destination list and District Bhopal places of interest; approx 0.6 km from taj-ul-masajid.
+anchor_for_candidate: taj-ul-masajid
+approx_distance_to_anchor_km: 0.6
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

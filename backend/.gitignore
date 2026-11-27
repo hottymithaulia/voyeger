@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+voyeger.db
+voyeger.db-*
+pack/
+tiles/*.pmtiles
+.pytest_cache/
+pixel-perfect-picture-4633-main/

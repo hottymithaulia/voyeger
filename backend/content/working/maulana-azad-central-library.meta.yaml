@@ -1,0 +1,18 @@
+id: maulana-azad-central-library
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: high
+flags:
+- geo pending osm
+- distance approx
+osm_search_hint: Maulana Azad Central Library Itwara Road near Lower Lake Bhopal
+hidden_gem_evidence: Publicly accessible historic central library and State Protected Monument (S-MP-331) confirmed by Wikipedia and INTACH 2003 (#252); excluded from MP Tourism and District Bhopal headline sightseeing lists; approx 0.4 km from lower-lake-chhota-talaab.
+anchor_for_candidate: lower-lake-chhota-talaab
+approx_distance_to_anchor_km: 0.4
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

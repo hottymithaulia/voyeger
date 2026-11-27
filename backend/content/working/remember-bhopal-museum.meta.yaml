@@ -1,0 +1,19 @@
+id: remember-bhopal-museum
+source_file: reclassified.yaml
+record_type: candidate
+category_confidence: high
+flags:
+- geo pending osm
+- distance approx
+- 'reclassified from hidden_gem: slightly exceeds 3 km anchor radius'
+osm_search_hint: Remember Bhopal Museum Berasia Road Karond Bhopal
+hidden_gem_evidence: null
+anchor_for_candidate: taj-ul-masajid
+approx_distance_to_anchor_km: 3.4
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: null

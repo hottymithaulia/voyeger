@@ -1,0 +1,60 @@
+id: upper-lake
+slug: upper-lake
+category: experience
+tags:
+- lake
+- sunrise
+- waterfront
+geo:
+  lat: 23.2583
+  lng: 77.4006
+is_anchor: true
+anchor_for:
+- gauhar-mahal
+- sadar-manzil
+- shaukat-mahal
+- heritage-courtyard-walk
+hours: Open 24 hours (SAMPLE DATA)
+best_time: Morning or late afternoon
+cost_note: Free promenade access (SAMPLE DATA)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: sample-lakeside-stay
+media:
+  images:
+  - id: upper-lake-cover
+    source_file: upper-lake.jpg
+    alt:
+      en: Illustrated sample view of Upper Lake
+      hi: बड़ा तालाब का नमूना चित्र
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video:
+    url: /media/bhopal-sample-clip.mp4
+    poster: /pack/v1/images/upper-lake-cover.webp
+    offline: false
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Upper Lake
+    summary: A broad, calm horizon at the heart of Bhopal.
+    story: Bhojtal, often called Upper Lake, has shaped Bhopal's rhythm for centuries.
+      Its shoreline opens into changing views of the old city and surrounding hills.
+    tips:
+    - Check current access and opening information before visiting.
+    - Be considerate of residents and shared public spaces.
+    needs_review: false
+  hi:
+    title: बड़ा तालाब
+    summary: भोपाल के बीचोंबीच फैला शांत, खुला क्षितिज।
+    story: भोजताल, जिसे बड़ा तालाब भी कहते हैं, सदियों से भोपाल की जीवन-धारा रहा है।
+      इसके किनारे पुराने शहर और आसपास की पहाड़ियों के बदलते दृश्य दिखते हैं।
+    tips:
+    - जाने से पहले खुलने और पहुंच की जानकारी जांचें।
+    - स्थानीय लोगों और सार्वजनिक जगहों की निजता का सम्मान करें।
+    needs_review: false
+deleted: false

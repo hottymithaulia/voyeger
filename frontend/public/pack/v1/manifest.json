@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "built_at": "2026-11-27T00:00:00Z",
+  "min_app_version": "1.0.0",
+  "files": [
+    {
+      "path": "/pack/v1/i18n/en.json",
+      "bytes": 4611,
+      "sha256": "2d88033584856c1ed418087fd72f99c55390e47a2c60cb02c3bad23d0e03a58e"
+    },
+    {
+      "path": "/pack/v1/i18n/hi.json",
+      "bytes": 9208,
+      "sha256": "627a7c7313daeca064cd87c4dac6ad735082a4f3db35028b52b396b10645e2ad"
+    },
+    {
+      "path": "/pack/v1/images/bharat-bhavan.webp",
+      "bytes": 3872,
+      "sha256": "397108fc05610121286f24dd46fc0dbd7f7b21252dc4106b3ee126e2ea35c2ba"
+    },
+    {
+      "path": "/pack/v1/images/gauhar-mahal.webp",
+      "bytes": 3942,
+      "sha256": "11f65bb63e5a671ec34dfb64a9295f8bb3c7eb9ebf02f9abe4e59fc713442d45"
+    },
+    {
+      "path": "/pack/v1/images/heritage-courtyard-walk.webp",
+      "bytes": 4826,
+      "sha256": "a342e202a78002aff557836e6a850a192d6a18087a240d64be43cc63b1439a81"
+    },
+    {
+      "path": "/pack/v1/images/lake-view-walk.webp",
+      "bytes": 4150,
+      "sha256": "fe19d6b028e949a5ec4bb25758c694d388817bc75433392c91962f1e686a7954"
+    },
+    {
+      "path": "/pack/v1/images/moti-masjid.webp",
+      "bytes": 3880,
+      "sha256": "7d7e8707c862900f9aada180a4b174a1993531ce352023a7352f1209037d8301"
+    },
+    {
+      "path": "/pack/v1/images/old-city-food-lane.webp",
+      "bytes": 4890,
+      "sha256": "097703899a548b70dc0be35c75711f53b77963c7a7fa0f58855451f6ececb0b4"
+    },
+    {
+      "path": "/pack/v1/images/sadar-manzil.webp",
+      "bytes": 3834,
+      "sha256": "7ff4f328721cc41b0e34512d707c8ba15a5b12d8c237c3680fd8d0915c445bcf"
+    },
+    {
+      "path": "/pack/v1/images/shaukat-mahal.webp",
+      "bytes": 3882,
+      "sha256": "dc34b8504615bce39d251c9b1fd74862587298f2ef13fb9a003f1c6bd0d5e09d"
+    },
+    {
+      "path": "/pack/v1/images/tribal-museum.webp",
+      "bytes": 3768,
+      "sha256": "a0a875ef36e78e23bd07d995ee601694ed6b7e4935d4ef67d35f63c7103bf58b"
+    },
+    {
+      "path": "/pack/v1/images/upper-lake.webp",
+      "bytes": 4150,
+      "sha256": "fe19d6b028e949a5ec4bb25758c694d388817bc75433392c91962f1e686a7954"
+    },
+    {
+      "path": "/pack/v1/partners.json",
+      "bytes": 3073,
+      "sha256": "308c6174755c792e5aef55758486876d276c571921f9937ad53ae75144fb715b"
+    },
+    {
+      "path": "/pack/v1/places.json",
+      "bytes": 27508,
+      "sha256": "d0dd1b945c2f65270a0cffca0a1f3b3bd25e2ff9a248f32815e810026eb6b585"
+    },
+    {
+      "path": "/pack/v1/search/index.json",
+      "bytes": 124,
+      "sha256": "30a5ce67f58382910045ba410bb788994d41dd118f7539a2be66ac18b3f2e647"
+    }
+  ],
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "total_bytes": 85718
+}

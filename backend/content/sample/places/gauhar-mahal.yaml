@@ -1,0 +1,56 @@
+id: gauhar-mahal
+slug: gauhar-mahal
+category: hidden_gem
+tags:
+- palace
+- begums
+- heritage
+- courtyard
+geo:
+  lat: 23.259
+  lng: 77.4001
+is_anchor: false
+anchor_for: []
+hours: 09:00 - 18:00 (SAMPLE DATA)
+best_time: Morning or late afternoon
+cost_note: Free entry; morning courtyard hours recommended (v2 update)
+sensitivity:
+  is_sacred: false
+  note: ''
+partner_id: null
+media:
+  images:
+  - id: gauhar-mahal-cover
+    source_file: gauhar-mahal.jpg
+    alt:
+      en: Carved sandstone arches inside Gauhar Mahal courtyard
+      hi: गौहर महल प्रांगण के अंदर नक्काशीदार बलुआ पत्थर के मेहराब
+    credit: Voyeger Bhopal Curated (SAMPLE DATA)
+  video: null
+provenance:
+  source: SAMPLE DATA
+  license: CC-BY-SA-4.0
+  verified_by: bhopal-editorial
+  verified_at: '2026-11-01'
+text:
+  en:
+    title: Gauhar Mahal
+    summary: 1820 lakeside palace built by Qudsia Begum blending Hindu and Mughal
+      motifs.
+    story: Commissioned by Bhopal's first female ruler, Gauhar Mahal's inner Diwan-e-Aam
+      courtyard opens onto cooling lake breezes.
+    tips:
+    - Look up at the painted wooden ceilings in the upper jharokha.
+    - Pair with a short walk toward VIP Road.
+    needs_review: false
+  hi:
+    title: गौहर महल
+    summary: 1820 में कुदसिया बेगम द्वारा बनवाया गया झील के किनारे स्थित ऐतिहासिक
+      महल।
+    story: भोपाल की पहली महिला शासिका द्वारा निर्मित यह महल हिंदू और मुगल स्थापत्य
+      का सुंदर संगम है।
+    tips:
+    - ऊपरी झरोखे की चित्रित लकड़ी की छत अवश्य देखें।
+    - पास की झील की सैर के साथ इसे जोड़ें।
+    needs_review: false
+deleted: false

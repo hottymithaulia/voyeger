@@ -1,0 +1,20 @@
+id: ravindra-bhavan-bhopal
+source_file: hidden_g1.yaml
+record_type: candidate
+category_confidence: medium
+flags:
+- geo pending osm
+- distance approx
+- no english wikipedia page
+- verify public event schedule locally
+osm_search_hint: Ravindra Bhavan near Bharat Bhavan Bhopal
+hidden_gem_evidence: Public state cultural auditorium and exhibition venue corroborated by Wikidata (Q29866146) and Wikipedia articles; omitted from official MP Tourism and District Bhopal headline lists; approx 0.8 km from bharat-bhavan.
+anchor_for_candidate: bharat-bhavan
+approx_distance_to_anchor_km: 0.8
+needs_review:
+  en: true
+  hi: true
+tips_pending: true
+etiquette_pending: false
+hindi_needs_review: true
+hold_reason: weak sources

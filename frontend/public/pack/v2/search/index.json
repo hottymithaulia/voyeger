@@ -1,0 +1,12 @@
+{
+  "fields": [
+    "title",
+    "summary",
+    "tags"
+  ],
+  "searchFields": [
+    "title",
+    "summary",
+    "tags"
+  ]
+}
