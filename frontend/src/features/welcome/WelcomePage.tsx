@@ -1,169 +1,367 @@
-import { ArrowRight, Compass, MapPin } from "lucide-react";
-import type { TFunction } from "i18next";
-import { useEffect, useState } from "react";
-import { Link, useNavigate } from "@tanstack/react-router";
+import { ArrowRight, MapPin } from "lucide-react";
+import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
+import { useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
+import {
+  isCircularRevealActive,
+  resolveRevealOrigin,
+  triggerCircularReveal,
+} from "@/components/CircularReveal";
 import { getCityConfig } from "@/config/city";
-import { getActiveCity, getDiscoveryStats } from "@/data/repo";
-import type { CityConfig, DiscoveryStats, Language } from "@/types";
+import { getActiveCity, getDiscoveryStats, getMeta, getPlaces } from "@/data/repo";
+import { distanceKm } from "@/features/nudge/logic";
+import {
+  resolveHomepageContext,
+  type HomepageLocationContext,
+  type ResolveHomepageDeps,
+} from "@/features/welcome/location";
+import {
+  pickSessionTaglineIndex,
+  TRAVEL_TAGLINES_EN,
+  TRAVEL_TAGLINES_HI,
+} from "@/features/welcome/taglines";
+import { hasValidGeo } from "@/lib/geo";
+import type { CityConfig, DiscoveryStats, Language, Place } from "@/types";
 
-function formatRelativeExploration(iso: string | null, t: TFunction): string {
+const INITIAL_STATS: DiscoveryStats = {
+  lastExplorationAt: null,
+  hiddenGemsCount: 0,
+  totalDiscoveries: 0,
+  totalXp: 0,
+};
+
+const INITIAL_CONTEXT: HomepageLocationContext = {
+  scenario: "unknown",
+  headingEn: "TRAVELLER",
+  headingHi: "यात्री",
+  userLocation: { source: "none" },
+  matchedCity: null,
+  availableInstalledCity: null,
+  nearestAnchor: null,
+  nearestDistanceKm: null,
+};
+
+function formatLastExploration(
+  iso: string | null,
+  t: (key: any, opts?: any) => any,
+): string {
   if (!iso) return t("welcome.notYet");
-  const diffMs = Math.max(0, Date.now() - Date.parse(iso));
-  const mins = Math.floor(diffMs / 60_000);
-  if (mins < 2) return t("welcome.justNow");
-  if (mins < 60) return t("welcome.minutesAgo", { count: mins });
-  const hours = Math.floor(mins / 60);
-  if (hours < 24) return t("welcome.hoursAgo", { count: hours });
-  const days = Math.floor(hours / 24);
-  if (days < 14) return t("welcome.daysAgo", { count: days });
-  return new Date(iso).toLocaleDateString();
+  const timestamp = Date.parse(iso);
+  if (Number.isNaN(timestamp)) return t("welcome.notYet");
+  const diffMinutes = Math.max(0, Math.floor((Date.now() - timestamp) / 60000));
+  if (diffMinutes < 1) return t("welcome.justNow");
+  if (diffMinutes < 60) return t("welcome.minutesAgo", { count: diffMinutes });
+  const diffHours = Math.floor(diffMinutes / 60);
+  if (diffHours < 24) return t("welcome.hoursAgo", { count: diffHours });
+  return t("welcome.daysAgo", { count: Math.floor(diffHours / 24) });
 }
 
-export function WelcomePage() {
+export function WelcomePage({
+  locationDeps,
+}: {
+  locationDeps?: ResolveHomepageDeps | undefined;
+} = {}) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const language: Language = i18n.language === "hi" ? "hi" : "en";
+  const ctaRef = useRef<HTMLAnchorElement>(null);
+  const locationBtnRef = useRef<HTMLButtonElement>(null);
+  const transitionTimerRef = useRef<number | null>(null);
 
+  const [language, setLanguage] = useState<Language>(
+    i18n.language === "hi" ? "hi" : "en",
+  );
+  const [stats, setStats] = useState<DiscoveryStats>(INITIAL_STATS);
   const [city, setCity] = useState<CityConfig>(() => getCityConfig());
-  const [stats, setStats] = useState<DiscoveryStats | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [nearStatus, setNearStatus] = useState("");
-  const [locating, setLocating] = useState(false);
+  const [places, setPlaces] = useState<Place[]>([]);
+  const [manualAnchorId, setManualAnchorId] = useState<string>("");
+  const [context, setContext] = useState<HomepageLocationContext>(INITIAL_CONTEXT);
+  const [contextLoaded, setContextLoaded] = useState(false);
+  const [taglineIndex] = useState(() =>
+    pickSessionTaglineIndex(TRAVEL_TAGLINES_EN.length),
+  );
+  const [revealing, setRevealing] = useState(false);
+
+  useEffect(() => {
+    setLanguage(i18n.language === "hi" ? "hi" : "en");
+  }, [i18n.language]);
 
   useEffect(() => {
     let active = true;
-    const load = async () => {
-      try {
-        const [activeCity, discoveryStats] = await Promise.all([
-          getActiveCity().catch(() => getCityConfig()),
-          getDiscoveryStats().catch(() => ({
-            totalXp: 0,
-            hiddenGemsCount: 0,
-            totalDiscoveries: 0,
-            lastExplorationAt: null,
-          })),
-        ]);
-        if (!active) return;
-        setCity(activeCity);
-        setStats(discoveryStats);
-      } finally {
-        if (active) setLoading(false);
+
+    const loadAll = async () => {
+      const [savedLang, nextStats, nextContext, nextCity, nextPlaces] = await Promise.all([
+        getMeta<Language>("active_language").catch(() => undefined),
+        getDiscoveryStats().catch(() => INITIAL_STATS),
+        resolveHomepageContext(locationDeps).catch(() => INITIAL_CONTEXT),
+        getActiveCity().catch(() => getCityConfig()),
+        getPlaces().catch(() => [] as Place[]),
+      ]);
+      if (!active) return;
+      if (savedLang === "en" || savedLang === "hi") {
+        setLanguage(savedLang);
       }
+      setStats(nextStats);
+      setContext(nextContext);
+      setCity(nextCity);
+      setPlaces(nextPlaces);
+      setContextLoaded(true);
     };
-    void load();
-    const onUpdated = () => void load();
+
+    void loadAll();
+    const onUpdated = () => void loadAll();
     window.addEventListener("voyeger:content-updated", onUpdated);
     return () => {
       active = false;
+      if (transitionTimerRef.current !== null) {
+        window.clearTimeout(transitionTimerRef.current);
+      }
       window.removeEventListener("voyeger:content-updated", onUpdated);
     };
-  }, []);
+  }, [locationDeps]);
 
-  const handleNearLocation = () => {
-    if (typeof navigator === "undefined" || !("geolocation" in navigator)) {
-      setNearStatus(t("welcome.nearUnsupported"));
-      void navigate({ to: "/discover", search: { filter: "all" } });
-      return;
+  const startCircularNavigation = (
+    event: MouseEvent<HTMLElement>,
+    fallbackEl: HTMLElement | null,
+    performNavigate: () => Promise<unknown>,
+  ) => {
+    if (isCircularRevealActive() || revealing) return;
+    const { x, y } = resolveRevealOrigin(event, fallbackEl);
+    setRevealing(true);
+    if (transitionTimerRef.current !== null) {
+      window.clearTimeout(transitionTimerRef.current);
     }
-    setLocating(true);
-    setNearStatus(t("welcome.nearChecking"));
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        setLocating(false);
-        setNearStatus("");
-        // Never silently change active_city; pass coordinates only as a proximity hint to /discover.
-        void navigate({
-          to: "/discover",
-          search: {
-            filter: "all",
-            nearLat: Number(pos.coords.latitude.toFixed(4)),
-            nearLng: Number(pos.coords.longitude.toFixed(4)),
-          },
-        });
-      },
-      () => {
-        setLocating(false);
-        setNearStatus(t("welcome.nearDenied"));
-        void navigate({ to: "/discover", search: { filter: "all" } });
-      },
-      { enableHighAccuracy: false, timeout: 6000, maximumAge: 60_000 },
+    transitionTimerRef.current = window.setTimeout(() => {
+      setRevealing(false);
+      transitionTimerRef.current = null;
+    }, 1000);
+    triggerCircularReveal(x, y, performNavigate);
+  };
+
+  const handleExperience = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    startCircularNavigation(event, ctaRef.current, () =>
+      navigate({ to: "/discover", search: {} }),
     );
   };
 
-  const cityName = city.name[language] ?? city.name.en;
-  const cityTagline = city.tagline[language] ?? city.tagline.en;
+  const anchors = useMemo(
+    () => places.filter((p) => p.is_anchor && hasValidGeo(p.geo)),
+    [places],
+  );
+
+  const currentAnchor = useMemo(() => {
+    if (manualAnchorId) {
+      const picked = anchors.find((a) => a.id === manualAnchorId);
+      if (picked) return picked;
+    }
+    if (context.nearestAnchor && hasValidGeo(context.nearestAnchor.geo)) {
+      return context.nearestAnchor;
+    }
+    return anchors.find((a) => a.id === "upper-lake-bhojtal") ?? anchors[0] ?? null;
+  }, [anchors, context.nearestAnchor, manualAnchorId]);
+
+  const suggestedNext = useMemo(() => {
+    if (!currentAnchor || !hasValidGeo(currentAnchor.geo)) return null;
+    const candidates = places
+      .filter((p) => p.id !== currentAnchor.id && hasValidGeo(p.geo))
+      .map((p) => ({
+        place: p,
+        km: distanceKm(
+          { lat: currentAnchor.geo.lat as number, lng: currentAnchor.geo.lng as number },
+          { lat: p.geo.lat as number, lng: p.geo.lng as number },
+        ),
+      }))
+      .sort((a, b) => {
+        const aWithin3 = a.km <= 3 ? 0 : 1;
+        const bWithin3 = b.km <= 3 ? 0 : 1;
+        if (aWithin3 !== bWithin3) return aWithin3 - bWithin3;
+        const aGem = a.place.category === "hidden_gem" ? 0 : 1;
+        const bGem = b.place.category === "hidden_gem" ? 0 : 1;
+        if (aWithin3 === 0 && aGem !== bGem) return aGem - bGem;
+        return a.km - b.km;
+      });
+    return candidates[0]?.place ?? null;
+  }, [currentAnchor, places]);
+
+  const handleLocationExperience = (event: MouseEvent<HTMLButtonElement>) => {
+    const targetPlace = suggestedNext ?? currentAnchor;
+    startCircularNavigation(event, locationBtnRef.current, () => {
+      if (targetPlace && hasValidGeo(targetPlace.geo)) {
+        return navigate({
+          to: "/discover",
+          search: {
+            place: targetPlace.id,
+            nearLat: targetPlace.geo.lat ?? undefined,
+            nearLng: targetPlace.geo.lng ?? undefined,
+          },
+        });
+      }
+      return navigate({ to: "/discover", search: {} });
+    });
+  };
+
+  const activeQuotes = language === "hi" ? TRAVEL_TAGLINES_HI : TRAVEL_TAGLINES_EN;
+  const sessionTagline = activeQuotes[taglineIndex] ?? activeQuotes[0];
+
+  const defaultCityHeading = (city.name[language] ?? city.name.en).toUpperCase();
+  const headingText = !contextLoaded
+    ? defaultCityHeading
+    : context.scenario === "unknown"
+      ? defaultCityHeading
+      : language === "hi"
+        ? context.headingHi
+        : context.headingEn;
+
+  const currentAnchorName = currentAnchor
+    ? currentAnchor.i18n[language]?.title ?? currentAnchor.i18n.en.title
+    : null;
+  const suggestedNextName = suggestedNext
+    ? suggestedNext.i18n[language]?.title ?? suggestedNext.i18n.en.title
+    : null;
+
+  const locationLabel =
+    currentAnchorName && suggestedNextName
+      ? t("welcome.nearSuggest", { current: currentAnchorName, next: suggestedNextName })
+      : currentAnchorName
+        ? t("welcome.nearMe", { place: currentAnchorName })
+        : context.userLocation.state
+          ? t("welcome.nearMe", {
+              place:
+                language === "hi" && context.scenario !== "matched_city"
+                  ? context.headingHi
+                  : context.userLocation.state,
+            })
+          : t("welcome.chooseLocation");
+
+  const availableMapCityName = context.availableInstalledCity
+    ? context.availableInstalledCity.name[language]
+    : null;
+
+  const isUnavailableNotice =
+    contextLoaded &&
+    (context.scenario === "unavailable_map" || context.scenario === "state_only");
 
   return (
-    <section className="welcome-screen" aria-labelledby="welcome-city-title">
-      <div className="welcome-backdrop" aria-hidden="true" />
-
-      <div className="welcome-top-bar">
-        <button
-          type="button"
-          className="welcome-near-btn"
-          onClick={handleNearLocation}
-          disabled={locating}
+    <section
+      className="welcome-screen"
+      aria-labelledby="welcome-heading"
+      data-location-scenario={context.scenario}
+    >
+      <div className="welcome-backdrop" aria-hidden="true">
+        <svg
+          className="welcome-contour"
+          viewBox="0 0 1200 760"
+          preserveAspectRatio="xMidYMid slice"
         >
-          <MapPin size={15} aria-hidden="true" />
-          <span>{t("welcome.nearMe")}</span>
-        </button>
-
-        <span className="welcome-city-badge">
-          <Compass size={14} aria-hidden="true" />
-          <span>
-            {cityName}, {city.country}
-          </span>
-        </span>
+          <path d="M-80 560 C 200 430, 410 660, 680 510 S 1060 360, 1290 480" />
+          <path d="M-60 440 C 240 310, 440 530, 720 380 S 1080 230, 1280 330" />
+          <path d="M-40 310 C 220 190, 480 400, 760 250 S 1080 120, 1260 210" />
+          <path d="M120 790 C 310 620, 560 720, 820 590 S 1090 520, 1260 610" />
+        </svg>
       </div>
 
-      {nearStatus ? (
-        <p className="welcome-near-note" role="status">
-          {nearStatus}
-        </p>
-      ) : null}
+      <div className="welcome-top-bar">
+        {anchors.length > 0 ? (
+          <select
+            className="welcome-spot-select"
+            aria-label={t("welcome.pickSpot")}
+            value={currentAnchor?.id ?? ""}
+            onChange={(event) => setManualAnchorId(event.target.value)}
+          >
+            {anchors.map((anchor) => (
+              <option key={anchor.id} value={anchor.id}>
+                {anchor.i18n[language]?.title ?? anchor.i18n.en.title}
+              </option>
+            ))}
+          </select>
+        ) : null}
+        <button
+          ref={locationBtnRef}
+          type="button"
+          className="welcome-location-btn"
+          onClick={handleLocationExperience}
+          disabled={revealing}
+          aria-label={locationLabel}
+        >
+          <MapPin className="welcome-location-pin" aria-hidden="true" size={14} />
+          <span className="welcome-location-text">{locationLabel}</span>
+          <ArrowRight className="welcome-location-arrow" aria-hidden="true" size={14} />
+        </button>
+      </div>
 
       <div className="welcome-hero">
         <span className="welcome-eyebrow">{t("welcome.eyebrow")}</span>
-        <h1 id="welcome-city-title" className="welcome-city-display">
-          {cityName}
+        <h1
+          id="welcome-heading"
+          className={`welcome-title${headingText.length > 10 ? " welcome-title--long" : ""}`}
+        >
+          {headingText}
         </h1>
-        <p className="welcome-tagline">{cityTagline}</p>
+        <div className="welcome-tagline-wrap">
+          {isUnavailableNotice ? (
+            <>
+              <p className="welcome-tagline">{t("welcome.unavailableMap")}</p>
+              {availableMapCityName ? (
+                <p className="welcome-map-available">
+                  {t("welcome.availableMap", { city: availableMapCityName })}
+                </p>
+              ) : null}
+            </>
+          ) : context.scenario === "unknown" ? (
+            <>
+              <p className="welcome-tagline">{t("welcome.chooseCityPrompt")}</p>
+              {availableMapCityName ? (
+                <p className="welcome-map-available">
+                  {t("welcome.availableMap", { city: availableMapCityName })}
+                </p>
+              ) : null}
+            </>
+          ) : (
+            <p className="welcome-tagline">{sessionTagline}</p>
+          )}
+        </div>
       </div>
 
-      <div className="welcome-footer">
-        <dl className="welcome-stats" aria-label={t("welcome.xpEarned")}>
+      <div className="welcome-bottom-stack">
+        <div
+          className="welcome-stats"
+          aria-label={t("welcome.lastExploration")}
+        >
           <div className="welcome-stat">
-            <dt>{t("welcome.lastExploration")}</dt>
-            <dd>
-              {loading
-                ? "—"
-                : formatRelativeExploration(stats?.lastExplorationAt ?? null, t)}
-            </dd>
+            <span className="welcome-stat-label">
+              {t("welcome.lastExploration")}
+            </span>
+            <strong className="welcome-stat-value">
+              {formatLastExploration(stats.lastExplorationAt, t)}
+            </strong>
           </div>
           <div className="welcome-stat">
-            <dt>{t("welcome.hiddenDiscovered")}</dt>
-            <dd>{loading ? "—" : (stats?.hiddenGemsCount ?? 0)}</dd>
+            <span className="welcome-stat-label">
+              {t("welcome.hiddenDiscovered")}
+            </span>
+            <strong className="welcome-stat-value">
+              {stats.hiddenGemsCount}
+            </strong>
           </div>
           <div className="welcome-stat">
-            <dt>{t("welcome.xpEarned")}</dt>
-            <dd>
-              {loading
-                ? "—"
-                : `${stats?.totalXp ?? 0} ${t("welcome.xpUnit")}`}
-            </dd>
+            <span className="welcome-stat-label">{t("welcome.xpEarned")}</span>
+            <strong className="welcome-stat-value">
+              {stats.totalXp} {t("welcome.xpUnit")}
+            </strong>
           </div>
-        </dl>
+        </div>
 
-        <Link
-          to="/discover"
-          search={{ filter: "all" }}
+        <a
+          ref={ctaRef}
+          href="/discover"
           className="welcome-cta"
+          onClick={handleExperience}
         >
           <span>{t("welcome.cta")}</span>
-          <ArrowRight size={18} aria-hidden="true" />
-        </Link>
+          <ArrowRight aria-hidden="true" size={18} />
+        </a>
       </div>
     </section>
   );

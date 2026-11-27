@@ -9,8 +9,8 @@ tags:
 - shahjahanabad
 - landmark
 geo:
-  lat: null
-  lng: null
+  lat: 23.2627
+  lng: 77.3923
 is_anchor: true
 anchor_for: []
 hours: null

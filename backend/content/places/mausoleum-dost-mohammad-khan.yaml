@@ -9,8 +9,8 @@ tags:
 - state-protected-monument
 - old-bhopal
 geo:
-  lat: null
-  lng: null
+  lat: 23.2572
+  lng: 77.3983
 is_anchor: false
 anchor_for: []
 hours: null

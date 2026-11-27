@@ -9,8 +9,8 @@ tags:
 - chowk-bazaar
 - state-protected-monument
 geo:
-  lat: null
-  lng: null
+  lat: 23.2581
+  lng: 77.4051
 is_anchor: true
 anchor_for: []
 hours: null

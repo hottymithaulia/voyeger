@@ -9,8 +9,8 @@ tags:
 - urban-green-space
 - local-history
 geo:
-  lat: null
-  lng: null
+  lat: 23.2545
+  lng: 77.405
 is_anchor: false
 anchor_for: []
 hours: null

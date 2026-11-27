@@ -9,8 +9,8 @@ tags:
 - viewpoint
 - landmark
 geo:
-  lat: null
-  lng: null
+  lat: 23.2356
+  lng: 77.4081
 is_anchor: true
 anchor_for: []
 hours: null

@@ -9,8 +9,8 @@ tags:
 - urban-waterbody
 - waterfront
 geo:
-  lat: null
-  lng: null
+  lat: 23.2496
+  lng: 77.409
 is_anchor: true
 anchor_for: []
 hours: null

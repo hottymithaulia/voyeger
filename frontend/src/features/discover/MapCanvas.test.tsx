@@ -37,15 +37,15 @@ describe("MapCanvas hierarchy and marker helpers", () => {
     expect(markerIcon(experience)).toBe(Footprints);
   });
 
-  it("shows anchors at all zooms and hides non-anchors below zoom 13 unless filtered or focused", () => {
+  it("shows anchors at all zooms and hides non-anchors below zoom 11 unless filtered or focused", () => {
     const anchor = makeTestPlace({ id: "anchor-1", is_anchor: true, category: "culture" });
     const gem = makeTestPlace({ id: "gem-1", is_anchor: false, category: "hidden_gem" });
     const food = makeTestPlace({ id: "food-1", is_anchor: false, category: "food" });
 
     expect(isMarkerVisibleAtZoom(anchor, 10, "all", "")).toBe(true);
     expect(isMarkerVisibleAtZoom(gem, 10, "all", "")).toBe(false);
-    expect(isMarkerVisibleAtZoom(gem, 12.9, "all", "")).toBe(false);
-    expect(isMarkerVisibleAtZoom(gem, 13, "all", "")).toBe(true);
+    expect(isMarkerVisibleAtZoom(gem, 10.9, "all", "")).toBe(false);
+    expect(isMarkerVisibleAtZoom(gem, 11, "all", "")).toBe(true);
 
     expect(isMarkerVisibleAtZoom(gem, 11, "hidden_gem", "")).toBe(true);
     expect(isMarkerVisibleAtZoom(food, 11, "hidden_gem", "")).toBe(false);

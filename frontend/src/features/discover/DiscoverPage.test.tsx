@@ -10,6 +10,7 @@ import type { Place } from "@/types";
 
 vi.mock("@tanstack/react-router", () => ({
   ClientOnly: ({ children }: { children: ReactNode }) => <>{children}</>,
+  useNavigate: () => vi.fn(),
   Link: ({
     children,
     className,
@@ -158,5 +159,27 @@ describe("Page 2 Discover map", () => {
 
     fireEvent.click(screen.getByRole("button", { name: "Offline phrasebook" }));
     expect(screen.getByRole("dialog", { name: "Offline phrasebook" })).toBeInTheDocument();
+  });
+
+  it("searches locally with MiniSearch and focuses the matching place from inline results", async () => {
+    const landmark = makeTestPlace({
+      id: "bharat-bhavan",
+      slug: "bharat-bhavan",
+      is_anchor: true,
+      category: "culture",
+      geo: { lat: 23.253, lng: 77.395 },
+      i18n: testCopy("Bharat Bhavan", "Lakeside multi-arts complex."),
+    });
+    await db.places.put(landmark);
+
+    render(<DiscoverPage filter="all" onFilterChange={vi.fn()} focusPlaceId="" />);
+
+    const input = await screen.findByRole("searchbox");
+    fireEvent.change(input, { target: { value: "Bharat" } });
+
+    const option = await screen.findByRole("option", { name: /Bharat Bhavan/i });
+    fireEvent.click(option);
+
+    expect(await screen.findByText("Lakeside multi-arts complex.")).toBeInTheDocument();
   });
 });

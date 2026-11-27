@@ -10,3 +10,9 @@ export function resolvePackAssetUrl(assetPath: string, env: PackEnv = import.met
   }
   return assetPath;
 }
+
+export function fallbackPackAssetUrl(currentSrc: string, assetPath: string): string | null {
+  if (!assetPath || currentSrc === assetPath) return null;
+  if (assetPath.startsWith("/pack/")) return assetPath;
+  return null;
+}
