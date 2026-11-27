@@ -306,8 +306,8 @@ export async function resolveHomepageContext(
   if (cached && (cached.city || cached.state)) {
     const matchedInstalled = cached.city
       ? installedCities.find(
-          (city) => city.name.en.toLowerCase() === cached.city!.toLowerCase(),
-        ) ?? null
+        (city) => city.name.en.toLowerCase() === cached.city!.toLowerCase(),
+      ) ?? null
       : null;
 
     if (matchedInstalled) {

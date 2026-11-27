@@ -1,4 +1,11 @@
-import { addProtocol, Map as MapLibreMapClass, NavigationControl, type Map as MapLibreMap } from "maplibre-gl";
+import {
+  addProtocol,
+  Map as MapLibreMapClass,
+  NavigationControl,
+  setWorkerUrl,
+  type Map as MapLibreMap,
+} from "maplibre-gl";
+import maplibreWorkerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?url";
 import { PMTiles, Protocol } from "pmtiles";
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -39,16 +46,12 @@ export function matchesPlaceFilter(place: Place, filter: string): boolean {
   return place.category === filter;
 }
 
-export function isMarkerVisibleAtZoom(place: Place, zoom: number, activeFilter: string, focusPlaceId: string): boolean {
+export function isMarkerVisibleAtZoom(place: Place, _zoom: number, activeFilter: string, focusPlaceId: string): boolean {
   if (!hasValidGeo(place.geo)) return false;
   if (place.is_anchor) return true;
   if (focusPlaceId && place.id === focusPlaceId) return true;
-  if (activeFilter !== "all" && activeFilter !== "" && matchesPlaceFilter(place, filterOrAll(activeFilter))) return true;
-  return zoom >= 11;
-}
-
-function filterOrAll(filter: string): string {
-  return filter || "all";
+  if (activeFilter !== "all" && activeFilter !== "") return matchesPlaceFilter(place, activeFilter);
+  return true;
 }
 
 type MarkerPinProps = {
@@ -135,7 +138,10 @@ export function MapCanvas({
 
   const updateMarkers = useCallback(() => {
     const map = mapRef.current;
-    if (!map) return;
+    if (!map) {
+      console.debug("[VoyegerMap] updateMarkers skipped: mapRef is null");
+      return;
+    }
     const currentZoom = map.getZoom();
     setZoom(currentZoom);
 
@@ -144,6 +150,12 @@ export function MapCanvas({
         hasValidGeo(place.geo) &&
         isMarkerVisibleAtZoom(place, currentZoom, filterRef.current, focusRef.current),
     );
+    console.debug("[VoyegerMap] updateMarkers", {
+      totalPlaces: placesRef.current.length,
+      visiblePlaces: visible.length,
+      zoom: currentZoom,
+      activeFilter: filterRef.current,
+    });
     const projected = visible.map((place) => {
       const point = map.project([place.geo.lng, place.geo.lat]);
       return { place, x: point.x, y: point.y };
@@ -167,9 +179,9 @@ export function MapCanvas({
         count === 1
           ? [currentLng, currentLat]
           : [
-              group.reduce((sum, item) => sum + (item.place.geo.lng ?? 0), 0) / count,
-              group.reduce((sum, item) => sum + (item.place.geo.lat ?? 0), 0) / count,
-            ];
+            group.reduce((sum, item) => sum + (item.place.geo.lng ?? 0), 0) / count,
+            group.reduce((sum, item) => sum + (item.place.geo.lat ?? 0), 0) / count,
+          ];
       const muted =
         filterRef.current !== "all" &&
         !group.some((item) => matchesPlaceFilter(item.place, filterRef.current));
@@ -190,6 +202,9 @@ export function MapCanvas({
     const element = host.current;
     if (!element) return;
     let cancelled = false;
+    if (typeof setWorkerUrl === "function") {
+      setWorkerUrl(maplibreWorkerUrl);
+    }
     if (!protocolReady) {
       addProtocol("pmtiles", protocol.tile);
       protocolReady = true;
@@ -197,13 +212,14 @@ export function MapCanvas({
 
     const startCenter: [number, number] =
       nearCenter &&
-      nearCenter[0] >= city.bounds.west &&
-      nearCenter[0] <= city.bounds.east &&
-      nearCenter[1] >= city.bounds.south &&
-      nearCenter[1] <= city.bounds.north
+        nearCenter[0] >= city.bounds.west &&
+        nearCenter[0] <= city.bounds.east &&
+        nearCenter[1] >= city.bounds.south &&
+        nearCenter[1] <= city.bounds.north
         ? nearCenter
         : city.center;
 
+    console.debug("[VoyegerMap] Initializing MapLibre", { center: startCenter, zoom: city.defaultZoom });
     const map = new MapLibreMapClass({
       container: element,
       style: {
@@ -230,10 +246,12 @@ export function MapCanvas({
     const attachOnlineRasterFallback = () => {
       if (cancelled || map.getSource("osm-raster")) return;
       if (typeof navigator !== "undefined" && navigator.onLine === false) {
+        console.debug("[VoyegerMap] Offline: skipping raster fallback");
         setTilesReady(false);
         return;
       }
       try {
+        console.debug("[VoyegerMap] Activating OSM raster fallback");
         map.addSource("osm-raster", {
           type: "raster",
           tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
@@ -248,7 +266,9 @@ export function MapCanvas({
           source: "osm-raster",
           paint: { "raster-opacity": 0.94 },
         });
-      } catch {
+        console.debug("[VoyegerMap] OSM raster source & layer added");
+      } catch (err) {
+        console.warn("[VoyegerMap] Raster fallback failed", err);
         setTilesReady(false);
       }
     };
@@ -261,6 +281,7 @@ export function MapCanvas({
         const header = await archive.getHeader();
         if (cancelled) return;
         if (header.tileType !== 1) {
+          console.debug("[VoyegerMap] PMTiles archive non-vector, activating raster fallback");
           attachOnlineRasterFallback();
           return;
         }
@@ -284,7 +305,8 @@ export function MapCanvas({
         if (roads) map.addLayer({ id: "city-roads", type: "line", source: "city-tiles", "source-layer": roads.id, paint: { "line-color": roadColor, "line-width": 2, "line-opacity": 0.8 } });
         setTilesReady(true);
         updateMarkers();
-      } catch {
+      } catch (err) {
+        console.debug("[VoyegerMap] PMTiles archive unavailable, activating raster fallback", err);
         attachOnlineRasterFallback();
       }
     };
@@ -307,8 +329,12 @@ export function MapCanvas({
       });
     };
 
+    map.on("style.load", () => {
+      console.debug("[VoyegerMap] style.load fired");
+    });
     map.on("load", () => {
       if (cancelled) return;
+      console.debug("[VoyegerMap] load fired");
       updateMarkers();
       void addLocalArchive();
     });

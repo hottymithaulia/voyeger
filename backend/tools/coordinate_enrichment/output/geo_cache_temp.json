@@ -1,0 +1,628 @@
+{
+  "adivasi-lok-kala-academy": {
+    "query": "Adivasi Lok Kala Academy Bhopal",
+    "result": {
+      "boundingbox": [
+        23.2424848,
+        23.2425848,
+        77.3983928,
+        77.3984928
+      ],
+      "display_name": "Ravindra Bhavan, MD3117, Professors Colony, Ibrahimpura, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+      "lat": 23.2425348,
+      "lng": 77.3984428,
+      "osm_class": "",
+      "osm_id": "4782996117",
+      "osm_type": "node",
+      "osm_type_detail": "community_centre",
+      "source": "nominatim",
+      "source_url": "https://www.openstreetmap.org/node/4782996117",
+      "tags": {
+        "address": {
+          "ISO3166-2-lvl4": "IN-MP",
+          "amenity": "Ravindra Bhavan",
+          "city": "Bhopal",
+          "city_district": "Bhopal",
+          "country": "India",
+          "country_code": "in",
+          "county": "Huzur Tahsil",
+          "postcode": "462001",
+          "residential": "Professors Colony",
+          "road": "MD3117",
+          "state": "Madhya Pradesh",
+          "state_district": "Bhopal",
+          "suburb": "Ibrahimpura"
+        }
+      },
+      "timestamp": "2026-11-27T20:14:58.535666+00:00"
+    }
+  },
+  "bada-bagh-royal-tombs": {
+    "query": "Bada Bagh Bhopal Talkies Square Shahjahanabad Bhopal",
+    "result": {
+      "boundingbox": [
+        23.26622,
+        23.277445,
+        77.3889506,
+        77.4030012
+      ],
+      "display_name": "Shahjahanabad, Ibrahimpura, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+      "lat": 23.2726977,
+      "lng": 77.3976461,
+      "osm_class": "",
+      "osm_id": "492968867",
+      "osm_type": "way",
+      "osm_type_detail": "residential",
+      "source": "nominatim",
+      "source_url": "https://www.openstreetmap.org/way/492968867",
+      "tags": {
+        "address": {
+          "ISO3166-2-lvl4": "IN-MP",
+          "city": "Bhopal",
+          "city_district": "Bhopal",
+          "country": "India",
+          "country_code": "in",
+          "county": "Huzur Tahsil",
+          "postcode": "462001",
+          "residential": "Shahjahanabad",
+          "state": "Madhya Pradesh",
+          "state_district": "Bhopal",
+          "suburb": "Ibrahimpura"
+        }
+      },
+      "timestamp": "2026-11-27T20:15:01.776215+00:00"
+    }
+  },
+  "bhadbhada-dam": {
+    "query": "Bhadbhada Dam Bhadbhada Road Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikipedia: Bhadbhada Dam",
+      "lat": 23.20833333,
+      "lng": 77.37888889,
+      "osm_class": "wikipedia",
+      "osm_id": "24179108",
+      "osm_type": "wikipedia",
+      "osm_type_detail": "article_coordinates",
+      "source": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Bhadbhada_Dam",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:03.177979+00:00"
+    }
+  },
+  "bharat-bhavan": {
+    "query": "Bharat Bhavan J Swaminathan Marg Shamla Hills Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikidata entity Q2767116",
+      "lat": 23.247024,
+      "lng": 77.39233,
+      "osm_class": "wikidata",
+      "osm_id": "Q2767116",
+      "osm_type": "item",
+      "osm_type_detail": "P625",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q2767116",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:04.273584+00:00"
+    }
+  },
+  "birla-mandir-bhopal": {
+    "query": "Lakshmi Narayan Temple Birla Mandir Arera Hills Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikipedia: Lakshmi Narayan Temple, Bhopal",
+      "lat": 23.2383,
+      "lng": 77.408612,
+      "osm_class": "wikipedia",
+      "osm_id": "79580304",
+      "osm_type": "wikipedia",
+      "osm_type_detail": "article_coordinates",
+      "source": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Lakshmi_Narayan_Temple,_Bhopal",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:05.362520+00:00"
+    }
+  },
+  "chhatri-khushvakht-rai-saxena-baoli": {
+    "query": "Chhatri of Khushvakht Rai Saxena and Baoli Aishbagh Bhopal",
+    "result": {
+      "boundingbox": [
+        23.2552698,
+        23.2564705,
+        77.4200568,
+        77.4210262
+      ],
+      "display_name": "Aishbagh Stadium, MD3108, Jr LIG Colony, Ibrahimpura, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+      "lat": 23.2559197,
+      "lng": 77.4201358,
+      "osm_class": "",
+      "osm_id": "5623268",
+      "osm_type": "relation",
+      "osm_type_detail": "stadium",
+      "source": "nominatim",
+      "source_url": "https://www.openstreetmap.org/relation/5623268",
+      "tags": {
+        "address": {
+          "ISO3166-2-lvl4": "IN-MP",
+          "city": "Bhopal",
+          "city_district": "Bhopal",
+          "country": "India",
+          "country_code": "in",
+          "county": "Huzur Tahsil",
+          "leisure": "Aishbagh Stadium",
+          "postcode": "462001",
+          "residential": "Jr LIG Colony",
+          "road": "MD3108",
+          "state": "Madhya Pradesh",
+          "state_district": "Bhopal",
+          "suburb": "Ibrahimpura"
+        },
+        "building": "yes",
+        "sport": "hockey",
+        "wikidata": "Q4699164",
+        "wikipedia": "en:Aishbagh Stadium"
+      },
+      "timestamp": "2026-11-27T20:15:07.795901+00:00"
+    }
+  },
+  "dhai-seedhi-ki-masjid": {
+    "query": "Dhai Seedhi Ki Masjid Fatehgarh Fort Gandhi Medical College Bhopal",
+    "result": {
+      "boundingbox": [
+        23.2571455,
+        23.2612251,
+        77.3869834,
+        77.3949929
+      ],
+      "display_name": "Gandhi Medical College and Hamidia Hospital, VIP road, Peer Gate Area, Ibrahimpura, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+      "lat": 23.2592198,
+      "lng": 77.3921163,
+      "osm_class": "",
+      "osm_id": "364479903",
+      "osm_type": "way",
+      "osm_type_detail": "hospital",
+      "source": "nominatim",
+      "source_url": "https://www.openstreetmap.org/way/364479903",
+      "tags": {
+        "address": {
+          "ISO3166-2-lvl4": "IN-MP",
+          "amenity": "Gandhi Medical College and Hamidia Hospital",
+          "city": "Bhopal",
+          "city_district": "Bhopal",
+          "country": "India",
+          "country_code": "in",
+          "county": "Huzur Tahsil",
+          "postcode": "462001",
+          "residential": "Peer Gate Area",
+          "road": "VIP road",
+          "state": "Madhya Pradesh",
+          "state_district": "Bhopal",
+          "suburb": "Ibrahimpura"
+        }
+      },
+      "timestamp": "2026-11-27T20:15:09.247449+00:00"
+    }
+  },
+  "dhrupad-kendra-bhopal": {
+    "query": "Dhrupad Kendra Ustad Alauddin Khan Sangeet Akademi Ravindranath Thakur Marg Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Dhrupad Kendra (Ustad Alauddin Khan Sangeet Akademi, Shamla Hills)",
+      "lat": 23.2435,
+      "lng": 77.3985,
+      "osm_class": "historic",
+      "osm_id": "dhrupad-kendra-bhopal",
+      "osm_type": "node",
+      "osm_type_detail": "visitor_access",
+      "source": "osm-curated",
+      "source_url": "https://www.openstreetmap.org/#map=17/23.24350/77.39850",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:09.249407+00:00"
+    }
+  },
+  "gohar-mahal": {
+    "query": "Gohar Mahal VIP Road Upper Lake Bhopal",
+    "result": {
+      "boundingbox": [
+        23.255325,
+        23.255425,
+        77.3973872,
+        77.3974872
+      ],
+      "display_name": "Gauhar Mahal, VIP road, Peer Gate Area, Ibrahimpura, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+      "lat": 23.255375,
+      "lng": 77.3974372,
+      "osm_class": "",
+      "osm_id": "11368549270",
+      "osm_type": "node",
+      "osm_type_detail": "attraction",
+      "source": "nominatim",
+      "source_url": "https://www.openstreetmap.org/node/11368549270",
+      "tags": {
+        "address": {
+          "ISO3166-2-lvl4": "IN-MP",
+          "city": "Bhopal",
+          "city_district": "Bhopal",
+          "country": "India",
+          "country_code": "in",
+          "county": "Huzur Tahsil",
+          "postcode": "462001",
+          "residential": "Peer Gate Area",
+          "road": "VIP road",
+          "state": "Madhya Pradesh",
+          "state_district": "Bhopal",
+          "suburb": "Ibrahimpura",
+          "tourism": "Gauhar Mahal"
+        }
+      },
+      "timestamp": "2026-11-27T20:15:09.478589+00:00"
+    }
+  },
+  "golghar-museum": {
+    "query": "Golghar Museum Gulshan-e-Alam Shahjahanabad Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikipedia: Golghar Museum",
+      "lat": 23.268092,
+      "lng": 77.390192,
+      "osm_class": "wikipedia",
+      "osm_id": "51608458",
+      "osm_type": "wikipedia",
+      "osm_type_detail": "article_coordinates",
+      "source": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Golghar_Museum",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:10.872156+00:00"
+    }
+  },
+  "hammam-e-qadimi": {
+    "query": "Hammam-e-Qadimi Old Bhopal near Kamla Park Chowk",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Hammam-e-Qadimi (Kamla Park Chowk, Old Bhopal)",
+      "lat": 23.2541,
+      "lng": 77.3995,
+      "osm_class": "historic",
+      "osm_id": "hammam-e-qadimi",
+      "osm_type": "node",
+      "osm_type_detail": "visitor_access",
+      "source": "osm-curated",
+      "source_url": "https://www.openstreetmap.org/#map=17/23.25410/77.39950",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:10.874375+00:00"
+    }
+  },
+  "kamlapati-palace": {
+    "query": "Rani Kamlapati Palace Kamla Park Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikidata entity Q27963272",
+      "lat": 23.25094444,
+      "lng": 77.39791944,
+      "osm_class": "wikidata",
+      "osm_id": "Q27963272",
+      "osm_type": "item",
+      "osm_type_detail": "P625",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q27963272",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:12.138014+00:00"
+    }
+  },
+  "kushabhau-thakre-hall-minto-hall": {
+    "query": "Kushabhau Thakre International Convention Centre Minto Hall Jahangirabad Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Historic Minto Hall / Old Vidhan Sabha (Jahangirabad)",
+      "lat": 23.2422,
+      "lng": 77.4118,
+      "osm_class": "historic",
+      "osm_id": "kushabhau-thakre-hall-minto-hall",
+      "osm_type": "node",
+      "osm_type_detail": "visitor_access",
+      "source": "osm-curated",
+      "source_url": "https://www.openstreetmap.org/#map=17/23.24220/77.41180",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:12.139638+00:00"
+    }
+  },
+  "lower-lake-chhota-talaab": {
+    "query": "Lower Lake Chhota Talaab Pul Pukhta Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikipedia: Lower Lake (Bhopal)",
+      "lat": 23.26666667,
+      "lng": 77.41666667,
+      "osm_class": "wikipedia",
+      "osm_id": "33555642",
+      "osm_type": "wikipedia",
+      "osm_type_detail": "article_coordinates",
+      "source": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Lower_Lake_(Bhopal)",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:13.066431+00:00"
+    }
+  },
+  "manua-bhan-ki-tekri": {
+    "query": "Manua Bhan Ki Tekri Lalghati Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Manua Bhan Ki Tekri Hilltop Temple & Ropeway (Lalghati)",
+      "lat": 23.2925,
+      "lng": 77.3755,
+      "osm_class": "tourism",
+      "osm_id": "manua-bhan-ki-tekri",
+      "osm_type": "node",
+      "osm_type_detail": "visitor_access",
+      "source": "osm-curated",
+      "source_url": "https://www.openstreetmap.org/#map=17/23.29250/77.37550",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:13.068040+00:00"
+    }
+  },
+  "maulana-azad-central-library": {
+    "query": "Maulana Azad Central Library Itwara Road near Lower Lake Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikipedia: Maulana Azad Central Library",
+      "lat": 23.25834,
+      "lng": 77.40935,
+      "osm_class": "wikipedia",
+      "osm_id": "79788131",
+      "osm_type": "wikipedia",
+      "osm_type_detail": "article_coordinates",
+      "source": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Maulana_Azad_Central_Library",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:14.177076+00:00"
+    }
+  },
+  "mausoleum-dost-mohammad-khan": {
+    "query": "Mausoleum of Dost Mohammad Khan Fatehgarh Fort Hamidia Hospital area Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Mausoleum of Dost Mohammad Khan & Fateh Bibi (Fatehgarh Ridge)",
+      "lat": 23.2602,
+      "lng": 77.3968,
+      "osm_class": "historic",
+      "osm_id": "mausoleum-dost-mohammad-khan",
+      "osm_type": "node",
+      "osm_type_detail": "visitor_access",
+      "source": "osm-curated",
+      "source_url": "https://www.openstreetmap.org/#map=17/23.26020/77.39680",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:14.178385+00:00"
+    }
+  },
+  "moti-mahal-bhopal": {
+    "query": "Moti Mahal near Moti Masjid Sadar Manzil Old Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Moti Mahal (Moti Masjid Complex, Old Bhopal)",
+      "lat": 23.2595,
+      "lng": 77.4022,
+      "osm_class": "historic",
+      "osm_id": "moti-mahal-bhopal",
+      "osm_type": "node",
+      "osm_type_detail": "visitor_access",
+      "source": "osm-curated",
+      "source_url": "https://www.openstreetmap.org/#map=17/23.25950/77.40220",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:14.179331+00:00"
+    }
+  },
+  "ravindra-bhavan-bhopal": {
+    "query": "Ravindra Bhavan near Bharat Bhavan Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikidata entity Q29866146",
+      "lat": 23.24265829639105,
+      "lng": 77.39833240551118,
+      "osm_class": "wikidata",
+      "osm_id": "Q29866146",
+      "osm_type": "item",
+      "osm_type_detail": "P625",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q29866146",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:15.281869+00:00"
+    }
+  },
+  "regional-museum-of-natural-history-bhopal": {
+    "query": "Regional Museum of Natural History E-5 Arera Colony Shahpura Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikidata entity Q29966796",
+      "lat": 23.213743,
+      "lng": 77.426155,
+      "osm_class": "wikidata",
+      "osm_id": "Q29966796",
+      "osm_type": "item",
+      "osm_type_detail": "P625",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q29966796",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:16.397603+00:00"
+    }
+  },
+  "remember-bhopal-museum": {
+    "query": "Remember Bhopal Museum Berasia Road Karond Bhopal",
+    "result": {
+      "boundingbox": [
+        23.2923967,
+        23.2924967,
+        77.4008172,
+        77.4009172
+      ],
+      "display_name": "Remember Bhopal Museum, Berasia Road, Karond, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+      "lat": 23.2924467,
+      "lng": 77.4008672,
+      "osm_class": "",
+      "osm_id": "5641064622",
+      "osm_type": "node",
+      "osm_type_detail": "museum",
+      "source": "nominatim",
+      "source_url": "https://www.openstreetmap.org/node/5641064622",
+      "tags": {
+        "address": {
+          "ISO3166-2-lvl4": "IN-MP",
+          "city": "Bhopal",
+          "city_district": "Bhopal",
+          "country": "India",
+          "country_code": "in",
+          "county": "Huzur Tahsil",
+          "postcode": "462001",
+          "residential": "Karond",
+          "road": "Berasia Road",
+          "state": "Madhya Pradesh",
+          "state_district": "Bhopal",
+          "tourism": "Remember Bhopal Museum"
+        },
+        "opening_hours": "Mo-Su 10:00-17:00",
+        "website": "https://www.rememberbhopal.net/"
+      },
+      "timestamp": "2026-11-27T20:15:18.320163+00:00"
+    }
+  },
+  "shaukat-mahal-sadar-manzil": {
+    "query": "Shaukat Mahal and Sadar Manzil Iqbal Maidan Chowk Bhopal",
+    "result": {
+      "boundingbox": [
+        23.2570384,
+        23.2571384,
+        77.3970287,
+        77.3971287
+      ],
+      "display_name": "Sadar Manzil, Sadar Manzil Road, Peer Gate Area, Ibrahimpura, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+      "lat": 23.2570884,
+      "lng": 77.3970787,
+      "osm_class": "",
+      "osm_id": "5411635121",
+      "osm_type": "node",
+      "osm_type_detail": "castle",
+      "source": "nominatim",
+      "source_url": "https://www.openstreetmap.org/node/5411635121",
+      "tags": {
+        "address": {
+          "ISO3166-2-lvl4": "IN-MP",
+          "city": "Bhopal",
+          "city_district": "Bhopal",
+          "country": "India",
+          "country_code": "in",
+          "county": "Huzur Tahsil",
+          "historic": "Sadar Manzil",
+          "postcode": "462001",
+          "residential": "Peer Gate Area",
+          "road": "Sadar Manzil Road",
+          "state": "Madhya Pradesh",
+          "state_district": "Bhopal",
+          "suburb": "Ibrahimpura"
+        }
+      },
+      "timestamp": "2026-11-27T20:15:20.492058+00:00"
+    }
+  },
+  "st-francis-of-assisi-cathedral-bhopal": {
+    "query": "St Francis of Assisi Cathedral Lal Parade Ground Jahangirabad Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikipedia: Archdiocese of Bhopal",
+      "lat": 23.2494,
+      "lng": 77.4214,
+      "osm_class": "wikipedia",
+      "osm_id": "18490495",
+      "osm_type": "wikipedia",
+      "osm_type_detail": "article_coordinates",
+      "source": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Archdiocese_of_Bhopal",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:23.020998+00:00"
+    }
+  },
+  "taj-ul-masajid": {
+    "query": "Taj-ul-Masajid Shahjahanabad Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikidata entity Q3514109",
+      "lat": 23.2629,
+      "lng": 77.3928,
+      "osm_class": "wikidata",
+      "osm_id": "Q3514109",
+      "osm_type": "item",
+      "osm_type_detail": "P625",
+      "source": "wikidata",
+      "source_url": "https://www.wikidata.org/wiki/Q3514109",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:24.147739+00:00"
+    }
+  },
+  "tribal-museum-bhopal": {
+    "query": "Madhya Pradesh Tribal Museum Shyamla Hills Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikipedia: Tribal Museum Bhopal",
+      "lat": 23.2344,
+      "lng": 77.3848,
+      "osm_class": "wikipedia",
+      "osm_id": "72327182",
+      "osm_type": "wikipedia",
+      "osm_type_detail": "article_coordinates",
+      "source": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Tribal_Museum_Bhopal",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:25.172899+00:00"
+    }
+  },
+  "upper-lake-bhojtal": {
+    "query": "Bhojtal Upper Lake Boat Club VIP Road Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Upper Lake Boat Club & VIP Road Promenade (Visitor Access Point)",
+      "lat": 23.2458,
+      "lng": 77.3891,
+      "osm_class": "tourism",
+      "osm_id": "upper-lake-bhojtal",
+      "osm_type": "node",
+      "osm_type_detail": "visitor_access",
+      "source": "osm-curated",
+      "source_url": "https://www.openstreetmap.org/#map=17/23.24580/77.38910",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:25.175917+00:00"
+    }
+  },
+  "van-vihar-national-park": {
+    "query": "Van Vihar National Park Shyamla Hills Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Wikipedia: Van Vihar National Park",
+      "lat": 23.23,
+      "lng": 77.36638889,
+      "osm_class": "wikipedia",
+      "osm_id": "3227663",
+      "osm_type": "wikipedia",
+      "osm_type_detail": "article_coordinates",
+      "source": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Van_Vihar_National_Park",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:26.299981+00:00"
+    }
+  },
+  "yadgar-e-shahjahani-park": {
+    "query": "Yadgar-e-Shahjahani Park Shahjahanabad Bhopal",
+    "result": {
+      "boundingbox": null,
+      "display_name": "Yadgar-e-Shahjahani Park (Shahjahanabad Lakefront)",
+      "lat": 23.2652,
+      "lng": 77.3958,
+      "osm_class": "historic",
+      "osm_id": "yadgar-e-shahjahani-park",
+      "osm_type": "node",
+      "osm_type_detail": "visitor_access",
+      "source": "osm-curated",
+      "source_url": "https://www.openstreetmap.org/#map=17/23.26520/77.39580",
+      "tags": {},
+      "timestamp": "2026-11-27T20:15:26.301518+00:00"
+    }
+  }
+}

@@ -180,8 +180,13 @@ async function performSync(): Promise<{ updated: boolean; version: number }> {
   const language = (await getMeta<Language>("active_language")) ?? "en";
   const distance = manifest.version - currentVersion;
   if (!hasLegacySample && currentVersion > 0 && distance > 0 && distance <= 5) {
-    const delta = await api.getDelta(currentVersion, manifest.version);
-    await applyDelta(delta, language);
+    try {
+      const delta = await api.getDelta(currentVersion, manifest.version);
+      await applyDelta(delta, language);
+    } catch {
+      const payload = await api.getPack(manifest.version, language);
+      await writePack(payload, manifest, language);
+    }
   } else {
     const payload = await api.getPack(manifest.version, language);
     await writePack(payload, manifest, language);

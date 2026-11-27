@@ -20,7 +20,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 
 import { getActiveCity, getMeta, isPackReady, setMeta } from "@/data/repo";
 import { flushOutbox, listOutbox } from "@/data/outbox";
-import { shouldSyncByTime, syncNow } from "@/data/sync";
+import { loadManifest, shouldSyncByTime, syncNow } from "@/data/sync";
 import { CircularReveal } from "@/components/CircularReveal";
 import { Button } from "@/components/ui/button";
 import { apiMode } from "@/net/api";
@@ -75,7 +75,15 @@ export function AppFrame({ children }: { children: ReactNode }) {
     const state = await probeConnectivity();
     setConnectivity(state);
     if (state === "ONLINE_IDLE") {
-      if (ready && (await shouldSyncByTime().catch(() => false))) {
+      let needsSync = ready ? await shouldSyncByTime().catch(() => false) : false;
+      if (ready && !needsSync) {
+        const currentVersion = await getMeta<number>("content_version").catch(() => undefined);
+        const remote = await loadManifest().catch(() => undefined);
+        if (remote && remote.version !== currentVersion) {
+          needsSync = true;
+        }
+      }
+      if (ready && needsSync) {
         setConnectivity("SYNCING");
         try {
           const result = await syncNow();
@@ -83,11 +91,11 @@ export function AppFrame({ children }: { children: ReactNode }) {
         } catch {
           // The current pack stays readable when a background update is unavailable.
         }
-        await flushOutbox().catch(() => {});
+        await flushOutbox().catch(() => { });
         setVersion(await getMeta<number>("content_version").catch(() => undefined));
         setConnectivity(await probeConnectivity());
       } else {
-        await flushOutbox().catch(() => {});
+        await flushOutbox().catch(() => { });
       }
     }
   };

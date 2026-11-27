@@ -231,7 +231,7 @@
 }
 
 .app-header .brand-lockup,
-.app-header .header-actions > * {
+.app-header .header-actions>* {
   pointer-events: auto;
 }
 
@@ -2966,13 +2966,27 @@
 }
 
 @keyframes settings-drift-a {
-  0% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.85; }
-  100% { transform: translate3d(-24px, 18px, 0) scale(1.06); opacity: 1; }
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.85;
+  }
+
+  100% {
+    transform: translate3d(-24px, 18px, 0) scale(1.06);
+    opacity: 1;
+  }
 }
 
 @keyframes settings-drift-b {
-  0% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.78; }
-  100% { transform: translate3d(26px, -20px, 0) scale(1.07); opacity: 0.96; }
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.78;
+  }
+
+  100% {
+    transform: translate3d(26px, -20px, 0) scale(1.07);
+    opacity: 0.96;
+  }
 }
 
 .settings-shell {
@@ -3020,8 +3034,17 @@
 }
 
 @keyframes settings-dot-breathe {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.2); opacity: 0.78; }
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.78;
+  }
 }
 
 .settings-subtitle {
@@ -3077,10 +3100,21 @@
   border-color: color-mix(in oklch, var(--brand-green) 26%, var(--border));
 }
 
-.settings-panel--language { animation: voyeger-fade-up 220ms ease both; }
-.settings-panel--forest { animation: voyeger-fade-up 260ms ease both; }
-.settings-panel--storage { animation: voyeger-fade-up 300ms ease both; }
-.settings-panel--about { animation: voyeger-fade-up 340ms ease both; }
+.settings-panel--language {
+  animation: voyeger-fade-up 220ms ease both;
+}
+
+.settings-panel--forest {
+  animation: voyeger-fade-up 260ms ease both;
+}
+
+.settings-panel--storage {
+  animation: voyeger-fade-up 300ms ease both;
+}
+
+.settings-panel--about {
+  animation: voyeger-fade-up 340ms ease both;
+}
 
 .settings-panel-head {
   display: flex;
@@ -3274,8 +3308,13 @@
 }
 
 @keyframes settings-rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .settings-storage-readout {
@@ -3400,6 +3439,7 @@
 }
 
 @media (max-width: 767px) {
+
   .settings-background::before,
   .settings-background::after,
   .settings-ambient-orb {
@@ -3461,8 +3501,8 @@
   box-shadow: 0 6px 18px color-mix(in oklch, var(--foreground) 6%, transparent);
 }
 
-.app-header .header-actions > button:not(.header-status),
-.app-header .header-actions > a {
+.app-header .header-actions>button:not(.header-status),
+.app-header .header-actions>a {
   min-width: 36px;
   min-height: 36px;
   border-radius: 999px;
@@ -3474,8 +3514,8 @@
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
-.app-header .header-actions > button:hover,
-.app-header .header-actions > a:hover {
+.app-header .header-actions>button:hover,
+.app-header .header-actions>a:hover {
   transform: translateY(-1px);
   border-color: color-mix(in oklch, var(--brand-green) 34%, var(--border));
   background: color-mix(in oklch, var(--card) 88%, transparent);
@@ -3487,11 +3527,11 @@
   background: transparent;
 }
 
-.app-frame--welcome > .app-header {
+.app-frame--welcome>.app-header {
   z-index: 20;
 }
 
-.app-frame--welcome > .app-main--welcome {
+.app-frame--welcome>.app-main--welcome {
   position: relative;
   z-index: 1;
   overflow: visible;
@@ -3502,7 +3542,7 @@
   overflow: visible;
 }
 
-.welcome-screen > *:not(.welcome-backdrop) {
+.welcome-screen>*:not(.welcome-backdrop) {
   position: relative;
   z-index: 1;
 }
@@ -3652,6 +3692,7 @@
     opacity: 0;
     transform: translateY(4px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -3663,6 +3704,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -3716,7 +3758,7 @@
   text-align: center;
 }
 
-.welcome-stat + .welcome-stat::before {
+.welcome-stat+.welcome-stat::before {
   content: "";
   position: absolute;
   left: -7px;
@@ -3794,7 +3836,7 @@
     padding: 2px 4px;
   }
 
-  .welcome-stat + .welcome-stat::before {
+  .welcome-stat+.welcome-stat::before {
     left: 4px;
     right: 4px;
     top: -4px;
