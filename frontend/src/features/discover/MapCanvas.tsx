@@ -43,8 +43,12 @@ export function isMarkerVisibleAtZoom(place: Place, zoom: number, activeFilter: 
   if (!hasValidGeo(place.geo)) return false;
   if (place.is_anchor) return true;
   if (focusPlaceId && place.id === focusPlaceId) return true;
-  if (activeFilter !== "all" && activeFilter !== "" && matchesPlaceFilter(place, activeFilter)) return true;
-  return zoom >= 13;
+  if (activeFilter !== "all" && activeFilter !== "" && matchesPlaceFilter(place, filterOrAll(activeFilter))) return true;
+  return zoom >= 11;
+}
+
+function filterOrAll(filter: string): string {
+  return filter || "all";
 }
 
 type MarkerPinProps = {

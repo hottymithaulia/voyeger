@@ -48,6 +48,7 @@ async function writePack(payload: PackPayload, manifest: Manifest, language: Lan
       { key: "pack_manifest", value: manifest },
       { key: "active_language", value: language },
       { key: "app_version", value: APP_VERSION },
+      { key: "synced_api_mode", value: apiMode },
     ]);
   });
 }
@@ -171,13 +172,14 @@ async function performSync(): Promise<{ updated: boolean; version: number }> {
   if (manifest.min_app_version.localeCompare(APP_VERSION, undefined, { numeric: true }) > 0) {
     if (typeof window !== "undefined") window.dispatchEvent(new CustomEvent("voyeger:reload-required"));
   }
-  if (manifest.version === currentVersion) {
+  const hasLegacySample = currentVersion === 1 && Boolean(await db.places.get("upper-lake"));
+  if (manifest.version === currentVersion && !hasLegacySample) {
     await setMeta("last_sync_at", new Date().toISOString());
     return { updated: false, version: currentVersion };
   }
   const language = (await getMeta<Language>("active_language")) ?? "en";
   const distance = manifest.version - currentVersion;
-  if (currentVersion > 0 && distance > 0 && distance <= 5) {
+  if (!hasLegacySample && currentVersion > 0 && distance > 0 && distance <= 5) {
     const delta = await api.getDelta(currentVersion, manifest.version);
     await applyDelta(delta, language);
   } else {
@@ -251,6 +253,9 @@ export async function refreshEnrichment(placeIds: string[]): Promise<void> {
 export async function shouldSyncByTime(): Promise<boolean> {
   const retryAt = (await getMeta<number>("sync_retry_at")) ?? 0;
   if (retryAt > Date.now()) return false;
+  if (await db.places.get("upper-lake")) return true;
+  const syncedMode = await getMeta<string>("synced_api_mode");
+  if (apiMode === "http" && syncedMode !== "http") return true;
   const lastSyncAt = await getMeta<string>("last_sync_at");
   return !lastSyncAt || Date.now() - Date.parse(lastSyncAt) >= SIX_HOURS;
 }

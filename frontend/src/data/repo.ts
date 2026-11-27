@@ -38,9 +38,21 @@ export async function getPlaceById(id: string): Promise<Place | undefined> {
   return place?.deleted ? undefined : place;
 }
 
+const LEGACY_SLUG_ALIASES: Record<string, string> = {
+  "upper-lake": "upper-lake-bhojtal",
+  "gauhar-mahal": "gohar-mahal",
+  "tribal-museum": "tribal-museum-bhopal",
+  "shaukat-mahal": "shaukat-mahal-sadar-manzil",
+  "sadar-manzil": "shaukat-mahal-sadar-manzil",
+};
+
 export async function getPlaceBySlug(slug: string): Promise<Place | undefined> {
-  const place = await db.places.where("slug").equals(slug).first();
-  return place?.deleted ? undefined : place;
+  const direct = await db.places.where("slug").equals(slug).first();
+  if (direct && !direct.deleted) return direct;
+  const alias = LEGACY_SLUG_ALIASES[slug];
+  if (!alias) return undefined;
+  const aliased = await db.places.where("slug").equals(alias).first();
+  return aliased?.deleted ? undefined : aliased;
 }
 
 export async function placesInBounds(bounds: PackBounds): Promise<Place[]> {

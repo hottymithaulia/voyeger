@@ -1,87 +1,1297 @@
 {
-  "version": 1,
-  "built_at": "2026-11-27T00:00:00Z",
-  "min_app_version": "1.0.0",
+  "built_at": "2026-11-27T18:43:33.890765+00:00",
   "files": [
     {
+      "bytes": 24386,
       "path": "/pack/v1/i18n/en.json",
-      "bytes": 4611,
-      "sha256": "2d88033584856c1ed418087fd72f99c55390e47a2c60cb02c3bad23d0e03a58e"
+      "sha256": "c0ba499a71f3c928bdc880f22d0bccd026a1ae5e1edba309769f9a33120595f2"
     },
     {
+      "bytes": 51796,
       "path": "/pack/v1/i18n/hi.json",
-      "bytes": 9208,
-      "sha256": "627a7c7313daeca064cd87c4dac6ad735082a4f3db35028b52b396b10645e2ad"
+      "sha256": "969778422f91549acd28239f78fae3755fc18f49f997d79c354a9ab5d2a9b125"
     },
     {
-      "path": "/pack/v1/images/bharat-bhavan.webp",
-      "bytes": 3872,
-      "sha256": "397108fc05610121286f24dd46fc0dbd7f7b21252dc4106b3ee126e2ea35c2ba"
+      "bytes": 554,
+      "path": "/pack/v1/images/adivasi-lok-kala-academy-placeholder.thumb.webp",
+      "sha256": "a4e89a6fd5fbbec5acadf0598c8286bc61d825cfd2c17636671160b507b1c263"
     },
     {
-      "path": "/pack/v1/images/gauhar-mahal.webp",
-      "bytes": 3942,
-      "sha256": "11f65bb63e5a671ec34dfb64a9295f8bb3c7eb9ebf02f9abe4e59fc713442d45"
+      "bytes": 4032,
+      "path": "/pack/v1/images/adivasi-lok-kala-academy-placeholder.webp",
+      "sha256": "b2ccdfe2d736cf6d2148840dce59c48892ecd2093fe13a005badf67140e5e293"
     },
     {
-      "path": "/pack/v1/images/heritage-courtyard-walk.webp",
-      "bytes": 4826,
-      "sha256": "a342e202a78002aff557836e6a850a192d6a18087a240d64be43cc63b1439a81"
+      "bytes": 16572,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-1.thumb.webp",
+      "sha256": "95bc69d26654c1988ac15aec37a89e8837fea4d55e21d811de1be3681dea8eb9"
     },
     {
-      "path": "/pack/v1/images/lake-view-walk.webp",
-      "bytes": 4150,
-      "sha256": "fe19d6b028e949a5ec4bb25758c694d388817bc75433392c91962f1e686a7954"
+      "bytes": 71000,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-1.webp",
+      "sha256": "64e94b518ce7b6df662e9da86c9eecd0d345eed1d88444dd76ded5dd3540be53"
     },
     {
-      "path": "/pack/v1/images/moti-masjid.webp",
-      "bytes": 3880,
-      "sha256": "7d7e8707c862900f9aada180a4b174a1993531ce352023a7352f1209037d8301"
+      "bytes": 16620,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-2.thumb.webp",
+      "sha256": "de4df1802335aa7114049073104ada3c23ec71b8a79b8ba372a8fe3794de6859"
     },
     {
-      "path": "/pack/v1/images/old-city-food-lane.webp",
-      "bytes": 4890,
-      "sha256": "097703899a548b70dc0be35c75711f53b77963c7a7fa0f58855451f6ececb0b4"
+      "bytes": 80550,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-2.webp",
+      "sha256": "da5e71ada6e72e636217a6d4b0d338e02830a6ce50761e679851103d3d236bbf"
     },
     {
-      "path": "/pack/v1/images/sadar-manzil.webp",
-      "bytes": 3834,
-      "sha256": "7ff4f328721cc41b0e34512d707c8ba15a5b12d8c237c3680fd8d0915c445bcf"
+      "bytes": 13896,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-3.thumb.webp",
+      "sha256": "2e0bd134c2bcb2625468c673256995ee675f0f80a7bb28a8e0978ff1915834aa"
     },
     {
-      "path": "/pack/v1/images/shaukat-mahal.webp",
-      "bytes": 3882,
-      "sha256": "dc34b8504615bce39d251c9b1fd74862587298f2ef13fb9a003f1c6bd0d5e09d"
+      "bytes": 92580,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-3.webp",
+      "sha256": "da7dc90602a6e94d1e41cf38de36117f7a5a3f815f43a84e17524b5f75ddc4f5"
     },
     {
-      "path": "/pack/v1/images/tribal-museum.webp",
-      "bytes": 3768,
-      "sha256": "a0a875ef36e78e23bd07d995ee601694ed6b7e4935d4ef67d35f63c7103bf58b"
+      "bytes": 20218,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-4.thumb.webp",
+      "sha256": "db19383abfdf08886fca31212b3931877420dd5ef90cb6adeb5667204335994c"
     },
     {
-      "path": "/pack/v1/images/upper-lake.webp",
-      "bytes": 4150,
-      "sha256": "fe19d6b028e949a5ec4bb25758c694d388817bc75433392c91962f1e686a7954"
+      "bytes": 118428,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-4.webp",
+      "sha256": "6e150941d2dc7552fceb77ade0ca14f707e8ccc5da0f0d9387ccd101da5583ce"
     },
     {
+      "bytes": 15018,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-5.thumb.webp",
+      "sha256": "42f3f81410f8149b3b5fa490d548af2e97a997c022ef4fc1744c4bfe8c1d658a"
+    },
+    {
+      "bytes": 92008,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-5.webp",
+      "sha256": "51857181b03e6f41a88fb5c9d66de1981184955271f7bb23cd533bea17f80c19"
+    },
+    {
+      "bytes": 8736,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-6.thumb.webp",
+      "sha256": "bc78b33f7b8f44ea28eb6bc4843d0a81c0a64d852515df24b9d108b38dcef0c7"
+    },
+    {
+      "bytes": 60164,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-6.webp",
+      "sha256": "daabfe839965ab79cddcfc37bc1962bd195c3564db11c1fb7c731b89a11424ec"
+    },
+    {
+      "bytes": 17372,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-7.thumb.webp",
+      "sha256": "cf6a7532c7c1b1af10dfb48808a20431471cff0848f6cf54f47e30b04d6d6b56"
+    },
+    {
+      "bytes": 76504,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-7.webp",
+      "sha256": "5bcab36fc4d487f5a392fa2e90502b3e2acca844a2abe01d151425b849b333df"
+    },
+    {
+      "bytes": 11606,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-8.thumb.webp",
+      "sha256": "39693ec0043abfaeba321da12ed70af7d57dd82988e55753f789720b7db9fd51"
+    },
+    {
+      "bytes": 75056,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-8.webp",
+      "sha256": "e683ebc7f7d5b5c129169bfa12f20d7d7fdae1b26a61451310fc48aa24cc5c3f"
+    },
+    {
+      "bytes": 13118,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-9.thumb.webp",
+      "sha256": "54cb0d8391df397e8231fd1d7a5a2d2479e39c9425de04a629990a496c05217f"
+    },
+    {
+      "bytes": 79414,
+      "path": "/pack/v1/images/bada-bagh-royal-tombs-9.webp",
+      "sha256": "1f52f3bfa03fb352eee0d685521f50860dd32373d0655a0824be8186c6aad695"
+    },
+    {
+      "bytes": 21058,
+      "path": "/pack/v1/images/bhadbhada-dam-1.thumb.webp",
+      "sha256": "2da2b3a77196354d1dfad95479ea9bdca7be5372e1f6ff13c3d2bd4f7330d630"
+    },
+    {
+      "bytes": 92468,
+      "path": "/pack/v1/images/bhadbhada-dam-1.webp",
+      "sha256": "1058056a42a554e598d67ff4800b58e6f8302cb289fe4c9be55a79ed8871d838"
+    },
+    {
+      "bytes": 21728,
+      "path": "/pack/v1/images/bhadbhada-dam-2.thumb.webp",
+      "sha256": "4375775ecd8650a70718d351d0b2799c863763ab59e4df63d58baef8a2c24f78"
+    },
+    {
+      "bytes": 76054,
+      "path": "/pack/v1/images/bhadbhada-dam-2.webp",
+      "sha256": "8824e82e00a6f5938cadbedc4786a9ff6df09dafe2aa52752297b85d7e3b00a1"
+    },
+    {
+      "bytes": 9918,
+      "path": "/pack/v1/images/bhadbhada-dam-3.thumb.webp",
+      "sha256": "6981cb8969335c1be38a387deb879be2e7411b82cdc8195c474d32931b75cf4e"
+    },
+    {
+      "bytes": 72336,
+      "path": "/pack/v1/images/bhadbhada-dam-3.webp",
+      "sha256": "228ffceef59bdb80c61f8b4624dcd20f3ebda18046426be25009835da1f57770"
+    },
+    {
+      "bytes": 14858,
+      "path": "/pack/v1/images/bhadbhada-dam-4.thumb.webp",
+      "sha256": "847857cbfde95fb07a1fae1129a760604cb89589cd6f154847fdc0d29bd6a358"
+    },
+    {
+      "bytes": 161916,
+      "path": "/pack/v1/images/bhadbhada-dam-4.webp",
+      "sha256": "89c1d913f89ab119188e31543cee73341f41dc3b55ef8a1f195abc22f8831cc5"
+    },
+    {
+      "bytes": 8842,
+      "path": "/pack/v1/images/bhadbhada-dam-5.thumb.webp",
+      "sha256": "1c0d009ed0fe10375c3f4e6dcc91617aa69f524b83e5d2c1daf642c76b4de9ef"
+    },
+    {
+      "bytes": 70924,
+      "path": "/pack/v1/images/bhadbhada-dam-5.webp",
+      "sha256": "348b2095ed8a42b287fcaf35403ac0844a931d8d7e268aaa8dfab5ad928a65bf"
+    },
+    {
+      "bytes": 15562,
+      "path": "/pack/v1/images/bhadbhada-dam-6.thumb.webp",
+      "sha256": "fa126c46e5a62e55e4cde514b25e84695b89996e0dc90b28237c4918fab4df3b"
+    },
+    {
+      "bytes": 77214,
+      "path": "/pack/v1/images/bhadbhada-dam-6.webp",
+      "sha256": "fec6a48f3430b01fd835a09723ea29f9fc96251714c07468a0c67abe49878cb2"
+    },
+    {
+      "bytes": 4982,
+      "path": "/pack/v1/images/bharat-bhavan-1.thumb.webp",
+      "sha256": "0aef1f68088e66148c493bb195a724bc1729b9acad82fa312316a757afdffdc6"
+    },
+    {
+      "bytes": 4982,
+      "path": "/pack/v1/images/bharat-bhavan-1.webp",
+      "sha256": "0aef1f68088e66148c493bb195a724bc1729b9acad82fa312316a757afdffdc6"
+    },
+    {
+      "bytes": 16986,
+      "path": "/pack/v1/images/bharat-bhavan-2.thumb.webp",
+      "sha256": "c9fde95ad0a98d3b5b51bd6ae7dff8033ea78263ee6350a9c4305e56c6e704cc"
+    },
+    {
+      "bytes": 16986,
+      "path": "/pack/v1/images/bharat-bhavan-2.webp",
+      "sha256": "c9fde95ad0a98d3b5b51bd6ae7dff8033ea78263ee6350a9c4305e56c6e704cc"
+    },
+    {
+      "bytes": 9340,
+      "path": "/pack/v1/images/bharat-bhavan-3.thumb.webp",
+      "sha256": "cea8e4be36662cd4b25c0077ee9509549e4a7e3f0869b97b0d894e541a4d3f8c"
+    },
+    {
+      "bytes": 9340,
+      "path": "/pack/v1/images/bharat-bhavan-3.webp",
+      "sha256": "cea8e4be36662cd4b25c0077ee9509549e4a7e3f0869b97b0d894e541a4d3f8c"
+    },
+    {
+      "bytes": 4712,
+      "path": "/pack/v1/images/bharat-bhavan-4.thumb.webp",
+      "sha256": "22ce42920cbe8332c69193c8044b53bf15bdfe7cd999986f0817b98f3c167ea5"
+    },
+    {
+      "bytes": 4712,
+      "path": "/pack/v1/images/bharat-bhavan-4.webp",
+      "sha256": "22ce42920cbe8332c69193c8044b53bf15bdfe7cd999986f0817b98f3c167ea5"
+    },
+    {
+      "bytes": 21326,
+      "path": "/pack/v1/images/bharat-bhavan-5.thumb.webp",
+      "sha256": "a60274d596c37415378d9866f78c64b97743cc82f016fe37f13bb71402bc0c2f"
+    },
+    {
+      "bytes": 27314,
+      "path": "/pack/v1/images/bharat-bhavan-5.webp",
+      "sha256": "acdb33ab6fa4f8ca4a2893745665c4d073d60d3c38dd073a52f6e487dec411cd"
+    },
+    {
+      "bytes": 16482,
+      "path": "/pack/v1/images/bharat-bhavan-6.thumb.webp",
+      "sha256": "87b2045e5e079f0c0710e9f8231fef767233f70d29ee699675adc12d12f41dc6"
+    },
+    {
+      "bytes": 70278,
+      "path": "/pack/v1/images/bharat-bhavan-6.webp",
+      "sha256": "30622ceb8c5c6f39d4f103bf9b21198d956504cbbfe941482a65cce92a472a43"
+    },
+    {
+      "bytes": 13712,
+      "path": "/pack/v1/images/birla-mandir-bhopal-1.thumb.webp",
+      "sha256": "f95485a400c379f3535377c65452345f7dcdb9628f5decdeb4c315b6ec195415"
+    },
+    {
+      "bytes": 81032,
+      "path": "/pack/v1/images/birla-mandir-bhopal-1.webp",
+      "sha256": "344e724cff9fc776e5a732a35328d8c3fd4445b08ddab70bd5dbd08e14a684eb"
+    },
+    {
+      "bytes": 14822,
+      "path": "/pack/v1/images/birla-mandir-bhopal-2.thumb.webp",
+      "sha256": "96bb04e54229b2045c991da11db3abc2cc1e9a03d18304673b9fb0813f5b3927"
+    },
+    {
+      "bytes": 80710,
+      "path": "/pack/v1/images/birla-mandir-bhopal-2.webp",
+      "sha256": "57e515806cc9ab48fb11be39fd2f2554824de110fa93823a4cb886910577251b"
+    },
+    {
+      "bytes": 12970,
+      "path": "/pack/v1/images/birla-mandir-bhopal-3.thumb.webp",
+      "sha256": "8550e4e5cdb487a6f11a4640f17cd6e3f294ab9cf4293122b8d940d4882100a5"
+    },
+    {
+      "bytes": 68446,
+      "path": "/pack/v1/images/birla-mandir-bhopal-3.webp",
+      "sha256": "c0ae189ae5e367fbd1b1424c2b48c6efec77bf0b7ded9188039331b02afe6424"
+    },
+    {
+      "bytes": 16636,
+      "path": "/pack/v1/images/birla-mandir-bhopal-4.thumb.webp",
+      "sha256": "01b7a1fe26543d0ea992422d1767601d53f9d338bb6e33fcf84aa577b8e6e8b4"
+    },
+    {
+      "bytes": 84586,
+      "path": "/pack/v1/images/birla-mandir-bhopal-4.webp",
+      "sha256": "4c8bed3b2365545d47dc064d1dc1fdb54058937ee315a7f988e6cee2f43e4f97"
+    },
+    {
+      "bytes": 9182,
+      "path": "/pack/v1/images/birla-mandir-bhopal-5.thumb.webp",
+      "sha256": "a74acfabc99c51b3bb8f39f228cfa4a968b28b66c1e120b57393f0ef4b37f43c"
+    },
+    {
+      "bytes": 9182,
+      "path": "/pack/v1/images/birla-mandir-bhopal-5.webp",
+      "sha256": "a74acfabc99c51b3bb8f39f228cfa4a968b28b66c1e120b57393f0ef4b37f43c"
+    },
+    {
+      "bytes": 13482,
+      "path": "/pack/v1/images/birla-mandir-bhopal-6.thumb.webp",
+      "sha256": "955a13914c850bd962fa98b532f1d2903ef9aeef3d4db594783e28ea1bcd64df"
+    },
+    {
+      "bytes": 53746,
+      "path": "/pack/v1/images/birla-mandir-bhopal-6.webp",
+      "sha256": "03f256d87312602fc258bcd58b0e85d2ad7e8e10d194ee63ac70ecf32c45293f"
+    },
+    {
+      "bytes": 20792,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-1.thumb.webp",
+      "sha256": "12d7a538b85e7adb1639cc5c1aab8e08a7ef21f206323577830a5c8ff2030679"
+    },
+    {
+      "bytes": 104424,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-1.webp",
+      "sha256": "a526541bd2016bdc3e0ae0b61791cbd607dc040fa6f2be81faba745b9a4c3f01"
+    },
+    {
+      "bytes": 10878,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-2.thumb.webp",
+      "sha256": "23a9a2ac34edcb683da2b021ceca636471e70713b09e23f5f271da634a372d44"
+    },
+    {
+      "bytes": 69504,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-2.webp",
+      "sha256": "1fc371cb0936df12b00e46a485ccb26bd67f0d00f40e43fbb75ab0da4d75affa"
+    },
+    {
+      "bytes": 10900,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-3.thumb.webp",
+      "sha256": "deaa540f5c7460ba40daebf62700370a085cce4239b83ff358d25c826b893bc6"
+    },
+    {
+      "bytes": 61554,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-3.webp",
+      "sha256": "dd89f1a64f6904b861a7c060a1c43c267f5187c39e101ab65478a627b825f7d5"
+    },
+    {
+      "bytes": 16550,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-4.thumb.webp",
+      "sha256": "910332c6427161d222af746398e8fd5eb2bbd45ff704b0e2ef081ec75492f52a"
+    },
+    {
+      "bytes": 92944,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-4.webp",
+      "sha256": "396ba2b5b50e287481dc0355d6c5f325d3ad6e32cb5f46ce4cb3f4bbbdfc84d8"
+    },
+    {
+      "bytes": 12456,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-5.thumb.webp",
+      "sha256": "1f2ddebf0af721d8a063e25d482d6257ea25d608f66f965327f540b6f16d3057"
+    },
+    {
+      "bytes": 64712,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-5.webp",
+      "sha256": "8b554057533edc54a107493fc792f71be6ab50ebc7672081749ac1b35128dd88"
+    },
+    {
+      "bytes": 18832,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-6.thumb.webp",
+      "sha256": "da162b15b29f313a1db634ff040b56c45f6a1837f3ec69e9e3ba53228676673c"
+    },
+    {
+      "bytes": 98172,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-6.webp",
+      "sha256": "46e6ca582d490658ede3d4c42a0540c15c917e582e1bbb9019349c086b773d7e"
+    },
+    {
+      "bytes": 20118,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-7.thumb.webp",
+      "sha256": "9301874e235d98933701861714eeb01538eb817c5a85bc0f45894f88ca189804"
+    },
+    {
+      "bytes": 126784,
+      "path": "/pack/v1/images/chhatri-khushvakht-rai-saxena-baoli-7.webp",
+      "sha256": "980262c79d53828947c2fd348eb29bb76290e88662737193b02ef62bc6bf5549"
+    },
+    {
+      "bytes": 538,
+      "path": "/pack/v1/images/dhai-seedhi-ki-masjid-placeholder.thumb.webp",
+      "sha256": "48ef04b3fd0b9995f9d0ffbef10c38d648fdf07d1fef2a2db6eea29b853440db"
+    },
+    {
+      "bytes": 3906,
+      "path": "/pack/v1/images/dhai-seedhi-ki-masjid-placeholder.webp",
+      "sha256": "68b264a5f7a2b253997076517a9da63003a94a9e610bbac574ae508423b63c38"
+    },
+    {
+      "bytes": 16194,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-1.thumb.webp",
+      "sha256": "50a6207ea4b660d2b662712706860f5022a2ed18ef7979d2cb64b1e8a2036247"
+    },
+    {
+      "bytes": 92978,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-1.webp",
+      "sha256": "bbf82cf3f3380408ca9fcbd5a8aed8f5e87621878655db1e007e575d95d99364"
+    },
+    {
+      "bytes": 16106,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-2.thumb.webp",
+      "sha256": "65418b2be467733ae4b2e1b236eba63119c6297b1dcc4ce6f353700a801b95cd"
+    },
+    {
+      "bytes": 76164,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-2.webp",
+      "sha256": "70b9eadef770106220a2d8756ee34d38a6ac68fc6e4cf9da4580aab29a1b7043"
+    },
+    {
+      "bytes": 20460,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-3.thumb.webp",
+      "sha256": "9190ea4542f4b7cb503ffe6aadf48114258469eff0e396c83b09e23251b7635b"
+    },
+    {
+      "bytes": 118584,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-3.webp",
+      "sha256": "9024f098252cb26437325fb0dfb276174b992546ee8960c16205a292d6026c23"
+    },
+    {
+      "bytes": 12618,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-4.thumb.webp",
+      "sha256": "b0cbd5f672fd4334972e69adf5eba4df39e1269124c5bf47029aa77c6d5a5f67"
+    },
+    {
+      "bytes": 59934,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-4.webp",
+      "sha256": "9b69447d3ea60f1b940fde9a087fb941144c2741297e75f76a394959e23eb3d0"
+    },
+    {
+      "bytes": 10992,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-5.thumb.webp",
+      "sha256": "1c1713fe0847529fc91b0602c6b0ac871b4701b9ebe53a8a4435241be5a8a77b"
+    },
+    {
+      "bytes": 62556,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-5.webp",
+      "sha256": "6cd2f1f6c578b9da4ae478f21b73aedacfaee977b80beec39bdfbf39b5adef59"
+    },
+    {
+      "bytes": 14494,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-6.thumb.webp",
+      "sha256": "fd9f01e5d9b113922ad05c6dc642ce3637d40b5d976d5a8a92083dd0cf79d0a8"
+    },
+    {
+      "bytes": 72532,
+      "path": "/pack/v1/images/dhrupad-kendra-bhopal-6.webp",
+      "sha256": "b473e521994a237b74fc38fb0ba176c6a3975c7e72797aad9b235597b67f9b73"
+    },
+    {
+      "bytes": 19540,
+      "path": "/pack/v1/images/gohar-mahal-1.thumb.webp",
+      "sha256": "568486ac513dc1790e87cc5a599fba730970a3d3133e111b5678dc7069ae9dba"
+    },
+    {
+      "bytes": 74430,
+      "path": "/pack/v1/images/gohar-mahal-1.webp",
+      "sha256": "2025ba6213da344ea98c4ee1db0ea04ec42c8444569d84407acc967a0b22ea90"
+    },
+    {
+      "bytes": 12650,
+      "path": "/pack/v1/images/gohar-mahal-2.thumb.webp",
+      "sha256": "3cc2ffe11b10244a60da2b6a430f1dc1e51d6e776dc40b1dd783be5bb52950ee"
+    },
+    {
+      "bytes": 75684,
+      "path": "/pack/v1/images/gohar-mahal-2.webp",
+      "sha256": "926947265eb7c9c3266a9f9062136fb839998aecc85357ae32e9d67af6ddbf7a"
+    },
+    {
+      "bytes": 10788,
+      "path": "/pack/v1/images/gohar-mahal-3.thumb.webp",
+      "sha256": "563dfd00055f0e189380872c6163ade913324cf21f84f2e8df53eff5e604642c"
+    },
+    {
+      "bytes": 75068,
+      "path": "/pack/v1/images/gohar-mahal-3.webp",
+      "sha256": "150351fab2fa36ad62296193fe8fa8dc779d08b4a73921d6bf0034a8c546a160"
+    },
+    {
+      "bytes": 20864,
+      "path": "/pack/v1/images/gohar-mahal-4.thumb.webp",
+      "sha256": "bcfc6e0d6c1b7553a62e86f1dad330283ebae4484c4db20650ea0442f4c7d5ea"
+    },
+    {
+      "bytes": 175620,
+      "path": "/pack/v1/images/gohar-mahal-4.webp",
+      "sha256": "903c6f9c8d585b69eed3957f98ec3cd19c92edbd9aaac57492e9bfa0604ec161"
+    },
+    {
+      "bytes": 17016,
+      "path": "/pack/v1/images/gohar-mahal-5.thumb.webp",
+      "sha256": "15e5026e252dced711819ba3de20d78a8d1bea3b79891f759743d2a509e07089"
+    },
+    {
+      "bytes": 82852,
+      "path": "/pack/v1/images/gohar-mahal-5.webp",
+      "sha256": "1d8249d49df64d3ed12d2be568028afb051f306d0cddf1117bf1a987b768a401"
+    },
+    {
+      "bytes": 11810,
+      "path": "/pack/v1/images/gohar-mahal-6.thumb.webp",
+      "sha256": "e4dfb8f159874454781c5d6316c7d698436fcdf9da4d74f17712e111688e1f1c"
+    },
+    {
+      "bytes": 77026,
+      "path": "/pack/v1/images/gohar-mahal-6.webp",
+      "sha256": "5a7600d93b714af0a8176b1e845dc3c94ccd7e98a09728cc3ecf4ab5f9d0fade"
+    },
+    {
+      "bytes": 11728,
+      "path": "/pack/v1/images/golghar-museum-1.thumb.webp",
+      "sha256": "806326eb7d25b719c0d24ed4d16e0d0d63b38363ad3741caf16e01cec1879d58"
+    },
+    {
+      "bytes": 74100,
+      "path": "/pack/v1/images/golghar-museum-1.webp",
+      "sha256": "5c6ae09d0e13c55b3819a777954b7b13820353503f66345c73284f9d278d0333"
+    },
+    {
+      "bytes": 11576,
+      "path": "/pack/v1/images/golghar-museum-2.thumb.webp",
+      "sha256": "9d0402a43beae7d42ef3d0ee0597deb7525f474e8799c305fefe7e1e64dc6911"
+    },
+    {
+      "bytes": 69258,
+      "path": "/pack/v1/images/golghar-museum-2.webp",
+      "sha256": "84d50a66a600d21c13a65ec373e96e7ce72110c0021d58aec9f0a1419bfe003d"
+    },
+    {
+      "bytes": 10412,
+      "path": "/pack/v1/images/golghar-museum-3.thumb.webp",
+      "sha256": "07401b47f5c13e4b12c1fb417bb48a49633936a96fcb68b92a19911f0e08ecc0"
+    },
+    {
+      "bytes": 75062,
+      "path": "/pack/v1/images/golghar-museum-3.webp",
+      "sha256": "e7a0addda298ff46baa44612e13d3f041ebfc7bd8c402b8c4ea3c8d02957bc93"
+    },
+    {
+      "bytes": 9110,
+      "path": "/pack/v1/images/golghar-museum-4.thumb.webp",
+      "sha256": "88957aef3b472c5135b54b3ee0ad5dcfcc126fc88c46351307fa7e109f19d38b"
+    },
+    {
+      "bytes": 61310,
+      "path": "/pack/v1/images/golghar-museum-4.webp",
+      "sha256": "910e5eac8c079d3419cd24cb278f33ccad9c7fd797ab700dcf59b3bed8692149"
+    },
+    {
+      "bytes": 13722,
+      "path": "/pack/v1/images/golghar-museum-5.thumb.webp",
+      "sha256": "fc39ea0e757631bfa50d483fbcf070aae7584d239ca6b2e837815582fa3699a1"
+    },
+    {
+      "bytes": 80030,
+      "path": "/pack/v1/images/golghar-museum-5.webp",
+      "sha256": "b822eb755cece4829455c6285be11131b1a193310c7cdba5dade07c458456a22"
+    },
+    {
+      "bytes": 20810,
+      "path": "/pack/v1/images/golghar-museum-6.thumb.webp",
+      "sha256": "4bc75206f78d74b760a86c0ef6ded5f3349a23519de0d21f84776d1c57a6e487"
+    },
+    {
+      "bytes": 98046,
+      "path": "/pack/v1/images/golghar-museum-6.webp",
+      "sha256": "6df37d739ff66f7faa4f655ecb2359271d5a8068dad0cfa22d8bd4da7bb777de"
+    },
+    {
+      "bytes": 490,
+      "path": "/pack/v1/images/hammam-e-qadimi-placeholder.thumb.webp",
+      "sha256": "2dca331c9344145191a78aaed8515ad9328d730c8669f38df9c9c702c9e92ab4"
+    },
+    {
+      "bytes": 3974,
+      "path": "/pack/v1/images/hammam-e-qadimi-placeholder.webp",
+      "sha256": "7be78a17ffc076afad5c25cdfc90cd58e5e8c68762ca3cfecdd64130ee4ea2dd"
+    },
+    {
+      "bytes": 11346,
+      "path": "/pack/v1/images/kamlapati-palace-1.thumb.webp",
+      "sha256": "252e654116fc182efcdc9aef88351e9a3844caa31064e1baedb4a83e4d4af17a"
+    },
+    {
+      "bytes": 79502,
+      "path": "/pack/v1/images/kamlapati-palace-1.webp",
+      "sha256": "7121d7a333cf8a3c20c8cc40ab4a5f30a149c688945fd7bcd320d54d91e6c076"
+    },
+    {
+      "bytes": 2540,
+      "path": "/pack/v1/images/kamlapati-palace-2.thumb.webp",
+      "sha256": "fd95edcffa643506d31d90b01e440fd882bac63ae00031c60b8448b3a6d0a3b5"
+    },
+    {
+      "bytes": 2540,
+      "path": "/pack/v1/images/kamlapati-palace-2.webp",
+      "sha256": "fd95edcffa643506d31d90b01e440fd882bac63ae00031c60b8448b3a6d0a3b5"
+    },
+    {
+      "bytes": 1756,
+      "path": "/pack/v1/images/kamlapati-palace-3.thumb.webp",
+      "sha256": "eb0d40dae19de007f2b743a1b47e8855173b44fadfe3fc1bb2a5505b405cb5aa"
+    },
+    {
+      "bytes": 1756,
+      "path": "/pack/v1/images/kamlapati-palace-3.webp",
+      "sha256": "eb0d40dae19de007f2b743a1b47e8855173b44fadfe3fc1bb2a5505b405cb5aa"
+    },
+    {
+      "bytes": 14280,
+      "path": "/pack/v1/images/kamlapati-palace-4.thumb.webp",
+      "sha256": "9470721270e434413d07dd9fdd8dac5f1aef5d7b9c03e1ebfced2ffee19a6de6"
+    },
+    {
+      "bytes": 78168,
+      "path": "/pack/v1/images/kamlapati-palace-4.webp",
+      "sha256": "04c371785f1c9c451b721cc1109ae5d416a1ba869d1cc9df1c5715710fe32ce7"
+    },
+    {
+      "bytes": 17090,
+      "path": "/pack/v1/images/kamlapati-palace-5.thumb.webp",
+      "sha256": "77e80e469af76b6ab00a9c74b22791d1d7e4f5390b0b26d6525ced8947e55f96"
+    },
+    {
+      "bytes": 81860,
+      "path": "/pack/v1/images/kamlapati-palace-5.webp",
+      "sha256": "368f8d8ec998febe7aa5baad9ec8d9a550e781a4deb99ab25b5ffaab8576789e"
+    },
+    {
+      "bytes": 18180,
+      "path": "/pack/v1/images/kamlapati-palace-6.thumb.webp",
+      "sha256": "a63ba3930f2c649eff7601b5c968e0be083516e3f122a0389caf1fcf6c592597"
+    },
+    {
+      "bytes": 88764,
+      "path": "/pack/v1/images/kamlapati-palace-6.webp",
+      "sha256": "0de16d419dd190c3127f4c9858964029b175b9302f69e43e88fed2cabf37475d"
+    },
+    {
+      "bytes": 17482,
+      "path": "/pack/v1/images/kamlapati-palace-7.thumb.webp",
+      "sha256": "4fc993e410223751faad54ec3cb8b4ecbaf7ef2045f95a42a066a9f707cfc0b6"
+    },
+    {
+      "bytes": 92166,
+      "path": "/pack/v1/images/kamlapati-palace-7.webp",
+      "sha256": "550037cfec09dacbd2660e2cd861957bdb3afa6d5aa8defb2c395bfd47e874c4"
+    },
+    {
+      "bytes": 16022,
+      "path": "/pack/v1/images/kamlapati-palace-8.thumb.webp",
+      "sha256": "41304cfa117f3ab4a7a66d460fe9da7b147a7844ec07c32efbbf2bad467c8649"
+    },
+    {
+      "bytes": 92702,
+      "path": "/pack/v1/images/kamlapati-palace-8.webp",
+      "sha256": "102c4f816811d12c1c851f6b39666e96ef3d93c6bde29d01f281a35b0ee60176"
+    },
+    {
+      "bytes": 490,
+      "path": "/pack/v1/images/kushabhau-thakre-hall-minto-hall-placeholder.thumb.webp",
+      "sha256": "ad6bd1993da09b286ac6a9fc3a850efe1863132a5d4cb610f8fc5f5c8c3c97a5"
+    },
+    {
+      "bytes": 3770,
+      "path": "/pack/v1/images/kushabhau-thakre-hall-minto-hall-placeholder.webp",
+      "sha256": "cd2d6d14e83c1fb192855b770f4498d429e4a45284161d6780ce369aada811d6"
+    },
+    {
+      "bytes": 8046,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-1.thumb.webp",
+      "sha256": "3719ff7cf8f70c5b47b54748e7580f5e35b1634257a5920fc95cba571bb5a662"
+    },
+    {
+      "bytes": 72252,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-1.webp",
+      "sha256": "37b27e261e25cef9b80d66717d9477cf618856643b3ace7e8d88d349ea37768c"
+    },
+    {
+      "bytes": 14008,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-2.thumb.webp",
+      "sha256": "3cca39b7cf41200b0a0dbd70c11e80c56698fb6d3f79e1e5e7308799da046066"
+    },
+    {
+      "bytes": 43980,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-2.webp",
+      "sha256": "d35bd086ff671aa0ce178748bacbee7708c8711b23f685b4989ba39bf7b46ad8"
+    },
+    {
+      "bytes": 6638,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-3.thumb.webp",
+      "sha256": "deb3296b139ee2e03742529836c401fc635982603808eaf75d80859925f44545"
+    },
+    {
+      "bytes": 44576,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-3.webp",
+      "sha256": "a01480dd0dd31a3470ff166dc595e90acd4b725112fb8940639329483bbcdf51"
+    },
+    {
+      "bytes": 7206,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-4.thumb.webp",
+      "sha256": "70aad7399cae43a587e1d2acc4b4f784f4ff6951c95fcb22840e2b4fd2d86796"
+    },
+    {
+      "bytes": 70468,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-4.webp",
+      "sha256": "5f264cc96af90cb62d12358b5d4b2966bda78378493eae19b378dd8a14c58b8c"
+    },
+    {
+      "bytes": 17536,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-5.thumb.webp",
+      "sha256": "0cee61fece8bff46e3250c7b1adf86eddf9ae588b0413642c02ef24b106b5790"
+    },
+    {
+      "bytes": 73788,
+      "path": "/pack/v1/images/lower-lake-chhota-talaab-5.webp",
+      "sha256": "4d90354d7793ec64be8f72cf93ec29b3b79b8dc92a7c01f08cb1200ef830144c"
+    },
+    {
+      "bytes": 11128,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-1.thumb.webp",
+      "sha256": "4504672dfa158a1c3cd5cdd8ea3b4452f57a55a7f3fb0ff55ea00dad46295dd9"
+    },
+    {
+      "bytes": 11128,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-1.webp",
+      "sha256": "4504672dfa158a1c3cd5cdd8ea3b4452f57a55a7f3fb0ff55ea00dad46295dd9"
+    },
+    {
+      "bytes": 19328,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-2.thumb.webp",
+      "sha256": "d725b89f179f966d2d619502fb79f9755177f0da6e723704f7abbbcc24c0ff61"
+    },
+    {
+      "bytes": 79790,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-2.webp",
+      "sha256": "28a284257cab88591caacb38642fb70c34b98790d583fba8784fa270e8070e20"
+    },
+    {
+      "bytes": 11402,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-3.thumb.webp",
+      "sha256": "76bf7000ba7f345e41376d4a5316e6690089e625a0367ecf4b29f961bbe6af99"
+    },
+    {
+      "bytes": 74626,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-3.webp",
+      "sha256": "b09ffdbef13fb95262ab91aaca90118b80b6f2e0baaf9033bf94e6296345357d"
+    },
+    {
+      "bytes": 20800,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-4.thumb.webp",
+      "sha256": "70a959be251c94f6fd95c521c03786f0154e5725a7a4ea3b8a3352463bb32ecc"
+    },
+    {
+      "bytes": 151364,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-4.webp",
+      "sha256": "e0e39aceaa1cc0a87e620d3dab7ff26d74236fee592e6a49b5ac122539613074"
+    },
+    {
+      "bytes": 4016,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-5.thumb.webp",
+      "sha256": "4ba1895d405adb163c0a8a7655c715f3e88d846e1a0ec56d059171098f62d8e8"
+    },
+    {
+      "bytes": 4016,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-5.webp",
+      "sha256": "4ba1895d405adb163c0a8a7655c715f3e88d846e1a0ec56d059171098f62d8e8"
+    },
+    {
+      "bytes": 18566,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-6.thumb.webp",
+      "sha256": "ac99978dd28810d6dfd34315eea822a09782384d4b3fde64b24081ef75ac3647"
+    },
+    {
+      "bytes": 18566,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-6.webp",
+      "sha256": "ac99978dd28810d6dfd34315eea822a09782384d4b3fde64b24081ef75ac3647"
+    },
+    {
+      "bytes": 11282,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-7.thumb.webp",
+      "sha256": "d041adad24966da44ddc2c8de7ff78185befe76a28e9c821422eb55fb8e48ce7"
+    },
+    {
+      "bytes": 48890,
+      "path": "/pack/v1/images/manua-bhan-ki-tekri-7.webp",
+      "sha256": "e9bf7115cede4067d1a1b920836999a2f740fe919bcf4529cdf83d4edd2fe780"
+    },
+    {
+      "bytes": 19100,
+      "path": "/pack/v1/images/maulana-azad-central-library-1.thumb.webp",
+      "sha256": "50e473e827468c70fbab6241d47b0ffd8554367c4f356c1341bb39a47595cee5"
+    },
+    {
+      "bytes": 81746,
+      "path": "/pack/v1/images/maulana-azad-central-library-1.webp",
+      "sha256": "7ec846d3ebb3a4dad4e3888c69aa9b67c2afe08d23adb661b7d76855ea0a465f"
+    },
+    {
+      "bytes": 14790,
+      "path": "/pack/v1/images/maulana-azad-central-library-2.thumb.webp",
+      "sha256": "52f3446fbe05c069f10eb2135a6559b64e4b3d863b32f7320f3319f81db1fdb1"
+    },
+    {
+      "bytes": 74694,
+      "path": "/pack/v1/images/maulana-azad-central-library-2.webp",
+      "sha256": "5847228cfef905c236bbc55aa6ecb3ccf0cff5e8a3e567d8c776a643a30992fe"
+    },
+    {
+      "bytes": 17718,
+      "path": "/pack/v1/images/maulana-azad-central-library-3.thumb.webp",
+      "sha256": "9ec9c1efcd3d2bae2dccf9c43bcd31fadf40f366c3793971a85ee639609af72c"
+    },
+    {
+      "bytes": 71080,
+      "path": "/pack/v1/images/maulana-azad-central-library-3.webp",
+      "sha256": "278b4b9e3f4693995bed799b65bc9d28a98e9a0fbc23f90372c6926f888b1b03"
+    },
+    {
+      "bytes": 19216,
+      "path": "/pack/v1/images/maulana-azad-central-library-4.thumb.webp",
+      "sha256": "63f25652187c2aa7ee42310187f5f3fb5e563e0bb2531c148dd49545a9c5b310"
+    },
+    {
+      "bytes": 184898,
+      "path": "/pack/v1/images/maulana-azad-central-library-4.webp",
+      "sha256": "aa5ca5bdc9384df6bed4d368b7aebc03afb0c851e99bf12ea8cca7806ae6c85a"
+    },
+    {
+      "bytes": 12410,
+      "path": "/pack/v1/images/maulana-azad-central-library-5.thumb.webp",
+      "sha256": "6619d4254138e1c23d0c79d6833bb515e6dab880f9480123e48004c5e6a1f42d"
+    },
+    {
+      "bytes": 70466,
+      "path": "/pack/v1/images/maulana-azad-central-library-5.webp",
+      "sha256": "f8d550e56999e0a39b323557f0d487d0c420645bfd14a65430d1801e60845516"
+    },
+    {
+      "bytes": 14212,
+      "path": "/pack/v1/images/maulana-azad-central-library-6.thumb.webp",
+      "sha256": "3bb04f961e62f695307085bbdcd4c25043e7fc3e157d9fb6e3070e8722d98a3d"
+    },
+    {
+      "bytes": 72798,
+      "path": "/pack/v1/images/maulana-azad-central-library-6.webp",
+      "sha256": "766a613583c9abb589d3b4022ba238db1c8e088a8b917f14deb845e3f877a1bc"
+    },
+    {
+      "bytes": 5974,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-1.thumb.webp",
+      "sha256": "378fc8ce561b8aecd6f61649c7866ce3a93da18b2e20820a11eb14c323a2a7a9"
+    },
+    {
+      "bytes": 44958,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-1.webp",
+      "sha256": "5224c2a1954afeaab134b2a4740a0c822e9565c540fce2d05aa68a751e195cd3"
+    },
+    {
+      "bytes": 22504,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-2.thumb.webp",
+      "sha256": "8da864fdd751e6954fb3b52dd7e8d061a8ae64740ff1887be431d4d063b8bf60"
+    },
+    {
+      "bytes": 89528,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-2.webp",
+      "sha256": "bb9f9a5e1538d769f077ec72bb8c21913f6b2f3c43fc33a0564474c2675d28b9"
+    },
+    {
+      "bytes": 11648,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-3.thumb.webp",
+      "sha256": "94538a401333816966873ca1c3e423625709059fdc3246f99ef1a525adafa0db"
+    },
+    {
+      "bytes": 60228,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-3.webp",
+      "sha256": "72984143c8c7e278c0cefed5090d971489f96fcd64d58b26205999e627971426"
+    },
+    {
+      "bytes": 16506,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-4.thumb.webp",
+      "sha256": "823bbc3655aaedc6275e1591450d76789f893066c208a6da7abbe3d27337fabb"
+    },
+    {
+      "bytes": 109842,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-4.webp",
+      "sha256": "69422ef554464df03821163419892de14c7f3f68d463e7dbdea5dbf492e46bbe"
+    },
+    {
+      "bytes": 19764,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-5.thumb.webp",
+      "sha256": "af7e7e68449b79e9e3a6568704fe803e9763eb6d52149c11aa94a69a5484520f"
+    },
+    {
+      "bytes": 97656,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-5.webp",
+      "sha256": "42fed18f6ee2932afb6c986ac95aef4c828b253be3d2da130799b7cd960c138f"
+    },
+    {
+      "bytes": 18522,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-6.thumb.webp",
+      "sha256": "8b38fa706fade1ada4be9526e1a9865c054fa74abb286bdb23a2e9ac2111b24c"
+    },
+    {
+      "bytes": 99596,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-6.webp",
+      "sha256": "fa50baa81e868196dff3c6d9824d11144543362d1930c27139d632db4f5607bb"
+    },
+    {
+      "bytes": 22322,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-7.thumb.webp",
+      "sha256": "4b0c7ad4ca4c4cadc528603484573a108a7820b8c9e06452dc58b90ef673a79b"
+    },
+    {
+      "bytes": 128958,
+      "path": "/pack/v1/images/mausoleum-dost-mohammad-khan-7.webp",
+      "sha256": "ab45bbfe422eb0f451e9259cf029124e81ddd0213a5d5b4fb10185d1c540acaa"
+    },
+    {
+      "bytes": 17908,
+      "path": "/pack/v1/images/moti-mahal-bhopal-1.thumb.webp",
+      "sha256": "c8823043844f66297c068c6dd08f7b69a1f29d2123ef096f06b023086dc43bb9"
+    },
+    {
+      "bytes": 83640,
+      "path": "/pack/v1/images/moti-mahal-bhopal-1.webp",
+      "sha256": "45ff1585af7e39eba98202d26d742ca6cee213524013ee3105dc776484dfb19c"
+    },
+    {
+      "bytes": 21706,
+      "path": "/pack/v1/images/moti-mahal-bhopal-2.thumb.webp",
+      "sha256": "e8b42309b11a11a9e5ef6189aae677a6fb162df0694d2ae0cb775f39b1d58ff1"
+    },
+    {
+      "bytes": 137324,
+      "path": "/pack/v1/images/moti-mahal-bhopal-2.webp",
+      "sha256": "431c33295f46e67a0aaaefbdce066013039fa93ec92c385183dc5e302a96e247"
+    },
+    {
+      "bytes": 8138,
+      "path": "/pack/v1/images/moti-mahal-bhopal-3.thumb.webp",
+      "sha256": "f1180e34048fee117874f992a941cb5f73738f506bc4307acb6ab8b2ae02e0b8"
+    },
+    {
+      "bytes": 52154,
+      "path": "/pack/v1/images/moti-mahal-bhopal-3.webp",
+      "sha256": "a8da6fec519a77f755b4903c84cd00b20369a4d6f950e0b371d3e5d21a1400d3"
+    },
+    {
+      "bytes": 17092,
+      "path": "/pack/v1/images/moti-mahal-bhopal-4.thumb.webp",
+      "sha256": "38c232ca6517043fe0e232376598eafdc71d3693c10769404ec23ca2521435c0"
+    },
+    {
+      "bytes": 74744,
+      "path": "/pack/v1/images/moti-mahal-bhopal-4.webp",
+      "sha256": "202b816901cb4f4e0ac39def91e673ea0a9baf934157e9876d04eb974485c7a2"
+    },
+    {
+      "bytes": 12442,
+      "path": "/pack/v1/images/moti-mahal-bhopal-5.thumb.webp",
+      "sha256": "304e5acb897079a4ee8bb6d7324c3d404411b87bf716f0732d6e9b265ecd6618"
+    },
+    {
+      "bytes": 67602,
+      "path": "/pack/v1/images/moti-mahal-bhopal-5.webp",
+      "sha256": "b41cd0d14e6e49ae9e562d3700fde9d6e192c1d14deb1b9a32965d8d72208c87"
+    },
+    {
+      "bytes": 10848,
+      "path": "/pack/v1/images/moti-mahal-bhopal-6.thumb.webp",
+      "sha256": "03f71ec6dfcf107ed41d95a0de0509ec8dc0be81f2fbdc1c8980395ce98249d4"
+    },
+    {
+      "bytes": 79760,
+      "path": "/pack/v1/images/moti-mahal-bhopal-6.webp",
+      "sha256": "09da92760d2d2682873e77b1d8268574557827e58a44f8eb7a813a2489b322d0"
+    },
+    {
+      "bytes": 642,
+      "path": "/pack/v1/images/regional-museum-of-natural-history-bhopal-placeholder.thumb.webp",
+      "sha256": "b0c3b74cef3f15819f1bdcb4830f4eb8350e47d97819fd9a5833af496fe8fe1a"
+    },
+    {
+      "bytes": 4780,
+      "path": "/pack/v1/images/regional-museum-of-natural-history-bhopal-placeholder.webp",
+      "sha256": "176503f43888b0cf0bd0e7d5e74c4c462f8fd8c517a2988a93fc9e3c7c0efcf7"
+    },
+    {
+      "bytes": 638,
+      "path": "/pack/v1/images/remember-bhopal-museum-placeholder.thumb.webp",
+      "sha256": "59b2b0dbbc2157303154022241cbcb0eff91f3d25a699b34c86caa2631ee73bd"
+    },
+    {
+      "bytes": 4200,
+      "path": "/pack/v1/images/remember-bhopal-museum-placeholder.webp",
+      "sha256": "a79a4005f1e79fc953f6f6552353e6ac2b3b50563661d2fc756566dbebf68525"
+    },
+    {
+      "bytes": 11116,
+      "path": "/pack/v1/images/shaukat-mahal-sadar-manzil-1.thumb.webp",
+      "sha256": "713b59bf8b155b3cfc19f3214909080fd708d06e91ecf9d2acbb5a3e05c6aabf"
+    },
+    {
+      "bytes": 77980,
+      "path": "/pack/v1/images/shaukat-mahal-sadar-manzil-1.webp",
+      "sha256": "6d88837630e88b8b446a098cc9cccfb2483dfac7880dc80f92e3219a932ba93c"
+    },
+    {
+      "bytes": 16038,
+      "path": "/pack/v1/images/shaukat-mahal-sadar-manzil-2.thumb.webp",
+      "sha256": "9c1c7dcea5c9d870d0701fcbaf924339081326b81feec18382754018d947de01"
+    },
+    {
+      "bytes": 75536,
+      "path": "/pack/v1/images/shaukat-mahal-sadar-manzil-2.webp",
+      "sha256": "1d7676c1754b9d253862ab000ad3279023667faf10abeebe8e38268a64318ddf"
+    },
+    {
+      "bytes": 13986,
+      "path": "/pack/v1/images/shaukat-mahal-sadar-manzil-3.thumb.webp",
+      "sha256": "07e33f9fe3bca731effe2e07f75224a060aa15a273ee3758b4ff9d3ad7af0c61"
+    },
+    {
+      "bytes": 39662,
+      "path": "/pack/v1/images/shaukat-mahal-sadar-manzil-3.webp",
+      "sha256": "2fee17edbe9582c02a601d95ddf2329af4357fe727be14065482b43ae3254093"
+    },
+    {
+      "bytes": 21706,
+      "path": "/pack/v1/images/shaukat-mahal-sadar-manzil-4.thumb.webp",
+      "sha256": "e8b42309b11a11a9e5ef6189aae677a6fb162df0694d2ae0cb775f39b1d58ff1"
+    },
+    {
+      "bytes": 137324,
+      "path": "/pack/v1/images/shaukat-mahal-sadar-manzil-4.webp",
+      "sha256": "431c33295f46e67a0aaaefbdce066013039fa93ec92c385183dc5e302a96e247"
+    },
+    {
+      "bytes": 536,
+      "path": "/pack/v1/images/st-francis-of-assisi-cathedral-bhopal-placeholder.thumb.webp",
+      "sha256": "5d58d2082aafd7352e47917bedbebd5e86b14b74e1a1634f31c7084141fc31f5"
+    },
+    {
+      "bytes": 4278,
+      "path": "/pack/v1/images/st-francis-of-assisi-cathedral-bhopal-placeholder.webp",
+      "sha256": "81c63bd15077cf32137855d1de3110fca8f3644d6af525eb139301ef9c311990"
+    },
+    {
+      "bytes": 19932,
+      "path": "/pack/v1/images/taj-ul-masajid-1.thumb.webp",
+      "sha256": "1b30df336075a0ff8500adc671008d8f915f0121b51adfcffe45c49a5e586c06"
+    },
+    {
+      "bytes": 80034,
+      "path": "/pack/v1/images/taj-ul-masajid-1.webp",
+      "sha256": "847b8925c0952ddf30d0a5192fa9b1706efa08fadc69986d267e8bca92eb45f7"
+    },
+    {
+      "bytes": 12828,
+      "path": "/pack/v1/images/taj-ul-masajid-2.thumb.webp",
+      "sha256": "e0b7acba88b377a47a673f87a7c3780beddaf047c22f128615feba078b726ada"
+    },
+    {
+      "bytes": 78082,
+      "path": "/pack/v1/images/taj-ul-masajid-2.webp",
+      "sha256": "c9929fabb4a51bce4953401caad235c1721dd6cac0a3fa0f45ac4c1c72cbf0bd"
+    },
+    {
+      "bytes": 13116,
+      "path": "/pack/v1/images/taj-ul-masajid-3.thumb.webp",
+      "sha256": "45f8f48c0c6647d108ae1778784c8574f542adcfd58a2f2aa4761066ca62b047"
+    },
+    {
+      "bytes": 82288,
+      "path": "/pack/v1/images/taj-ul-masajid-3.webp",
+      "sha256": "b508df632281588d2d8735449b996b621821db6d68cea1b8a778981a3b566b01"
+    },
+    {
+      "bytes": 13722,
+      "path": "/pack/v1/images/taj-ul-masajid-4.thumb.webp",
+      "sha256": "fc39ea0e757631bfa50d483fbcf070aae7584d239ca6b2e837815582fa3699a1"
+    },
+    {
+      "bytes": 80030,
+      "path": "/pack/v1/images/taj-ul-masajid-4.webp",
+      "sha256": "b822eb755cece4829455c6285be11131b1a193310c7cdba5dade07c458456a22"
+    },
+    {
+      "bytes": 8300,
+      "path": "/pack/v1/images/taj-ul-masajid-5.thumb.webp",
+      "sha256": "f60e5f6eda0c233515610cb287ccdbec1b3b3b1c4cb4d285fe05517738620bd8"
+    },
+    {
+      "bytes": 72712,
+      "path": "/pack/v1/images/taj-ul-masajid-5.webp",
+      "sha256": "17802e61a92aa7d8ba64072fbf6630264166704c3495d36e93b879d514f464e5"
+    },
+    {
+      "bytes": 19940,
+      "path": "/pack/v1/images/tribal-museum-bhopal-1.thumb.webp",
+      "sha256": "a2ba07c7c4ff6920ce9e16b88ac4297c9b1c5ffcea23f5459fb5a8d26afed8c6"
+    },
+    {
+      "bytes": 111578,
+      "path": "/pack/v1/images/tribal-museum-bhopal-1.webp",
+      "sha256": "6c5798c454c1013469c06e26c20bec51860d58ceb1da3209e46a9c503bf61e2e"
+    },
+    {
+      "bytes": 18932,
+      "path": "/pack/v1/images/tribal-museum-bhopal-2.thumb.webp",
+      "sha256": "8cffe18060636caad5ec85b5f24a794df5f3401b64528d9a6bb09db5d32ac719"
+    },
+    {
+      "bytes": 75010,
+      "path": "/pack/v1/images/tribal-museum-bhopal-2.webp",
+      "sha256": "a6ecb27390ad9685036c58587bdf5d1a7c0db6677ce95bdc85ed76916af2959d"
+    },
+    {
+      "bytes": 21078,
+      "path": "/pack/v1/images/tribal-museum-bhopal-3.thumb.webp",
+      "sha256": "2f12681f4183064960fa9c91f6332ea1afefee18b760f9516b1ba56c4770ba79"
+    },
+    {
+      "bytes": 74452,
+      "path": "/pack/v1/images/tribal-museum-bhopal-3.webp",
+      "sha256": "7c00e750c9ce07f2529403ae84d11420a62a7ab4ec63373236758c065ecb9118"
+    },
+    {
+      "bytes": 14464,
+      "path": "/pack/v1/images/tribal-museum-bhopal-4.thumb.webp",
+      "sha256": "9091f7d71245e6bd1406ca1bf601a24d0cdd404e5e049dfa94bca96c9c81773e"
+    },
+    {
+      "bytes": 14464,
+      "path": "/pack/v1/images/tribal-museum-bhopal-4.webp",
+      "sha256": "9091f7d71245e6bd1406ca1bf601a24d0cdd404e5e049dfa94bca96c9c81773e"
+    },
+    {
+      "bytes": 23690,
+      "path": "/pack/v1/images/tribal-museum-bhopal-5.thumb.webp",
+      "sha256": "6214cc963046898afc527abb79fb1c4abd68309d2ab064b32ef44e75cb29f63e"
+    },
+    {
+      "bytes": 98818,
+      "path": "/pack/v1/images/tribal-museum-bhopal-5.webp",
+      "sha256": "f6d520f2d787027065aa817eab464914fd346951f076d9153a28aa46b77083be"
+    },
+    {
+      "bytes": 4830,
+      "path": "/pack/v1/images/tribal-museum-bhopal-6.thumb.webp",
+      "sha256": "9aab0318f213d33c7677e16397fee208f2bd6fa1fcccb0dd410b667754a58a85"
+    },
+    {
+      "bytes": 4830,
+      "path": "/pack/v1/images/tribal-museum-bhopal-6.webp",
+      "sha256": "9aab0318f213d33c7677e16397fee208f2bd6fa1fcccb0dd410b667754a58a85"
+    },
+    {
+      "bytes": 20074,
+      "path": "/pack/v1/images/tribal-museum-bhopal-7.thumb.webp",
+      "sha256": "f5945a46daa18850fc36d8d50b6f54f18b488519cb0af09defea63929a3e7248"
+    },
+    {
+      "bytes": 75640,
+      "path": "/pack/v1/images/tribal-museum-bhopal-7.webp",
+      "sha256": "2ab33c4a39080cd10af1175b6dfafc4831a2f6fb6e701bd583a5f2e9af45091a"
+    },
+    {
+      "bytes": 5240,
+      "path": "/pack/v1/images/tribal-museum-bhopal-8.thumb.webp",
+      "sha256": "2e50c01dd6fc4331306968ac9f13bd9e90d6b7b7d1159102b741a392b0421984"
+    },
+    {
+      "bytes": 5240,
+      "path": "/pack/v1/images/tribal-museum-bhopal-8.webp",
+      "sha256": "2e50c01dd6fc4331306968ac9f13bd9e90d6b7b7d1159102b741a392b0421984"
+    },
+    {
+      "bytes": 21524,
+      "path": "/pack/v1/images/tribal-museum-bhopal-9.thumb.webp",
+      "sha256": "5be020a39177baf5173650171fc45f03bfc8b28b9964cb6b9aae8901b5b3cff8"
+    },
+    {
+      "bytes": 74968,
+      "path": "/pack/v1/images/tribal-museum-bhopal-9.webp",
+      "sha256": "8c593b0d27171fa59f26756fd117adab49e84415a38c4360ada47ea441cd3a9d"
+    },
+    {
+      "bytes": 16380,
+      "path": "/pack/v1/images/upper-lake-bhojtal-1.thumb.webp",
+      "sha256": "614a1b83e74666061025cac6fe4c013799dde4e4139cc3e4ca2898b88188902b"
+    },
+    {
+      "bytes": 75160,
+      "path": "/pack/v1/images/upper-lake-bhojtal-1.webp",
+      "sha256": "e9adf991dd909cd4fd57a6ef141441cfadce185108b94b278cfa61235e72851d"
+    },
+    {
+      "bytes": 15206,
+      "path": "/pack/v1/images/upper-lake-bhojtal-2.thumb.webp",
+      "sha256": "0028f4c4677b2ff3d73e3b6f5f42460763e55cc88b9410b706aa3defcba5963d"
+    },
+    {
+      "bytes": 80084,
+      "path": "/pack/v1/images/upper-lake-bhojtal-2.webp",
+      "sha256": "06d52fc393a994f508d5c339cc9b5e542711a6c3caed3795ab214ec741814a3a"
+    },
+    {
+      "bytes": 11198,
+      "path": "/pack/v1/images/upper-lake-bhojtal-3.thumb.webp",
+      "sha256": "96c4b537877714230fce56b75e822affb94441021577ffb7adecc39cc882dd2b"
+    },
+    {
+      "bytes": 76494,
+      "path": "/pack/v1/images/upper-lake-bhojtal-3.webp",
+      "sha256": "b1077d585c710a140d34c56895e5c7212e86c7d323d490990a5dc1e28a512e76"
+    },
+    {
+      "bytes": 12570,
+      "path": "/pack/v1/images/upper-lake-bhojtal-4.thumb.webp",
+      "sha256": "f176481963c504e14efc6e468a99ea2dcacf76ebf24a44345a54a41de4ff7acc"
+    },
+    {
+      "bytes": 74196,
+      "path": "/pack/v1/images/upper-lake-bhojtal-4.webp",
+      "sha256": "466e117503dd990cc39191eff68ab509d8ee97210615c623225669e58e5dd077"
+    },
+    {
+      "bytes": 24216,
+      "path": "/pack/v1/images/van-vihar-national-park-1.thumb.webp",
+      "sha256": "cdae6ad2f831b51caf8eef0d52448ca553a44f7e5fe2832d29700516d8e4d6b1"
+    },
+    {
+      "bytes": 123546,
+      "path": "/pack/v1/images/van-vihar-national-park-1.webp",
+      "sha256": "878e75442d7d3e44ac9153e7fa7366790f8b52c6341bf4c565ca797c541086e3"
+    },
+    {
+      "bytes": 22658,
+      "path": "/pack/v1/images/van-vihar-national-park-2.thumb.webp",
+      "sha256": "634b4ba9c11fcebbb7a8c2abcdf9acacd625be493e43d36e0ef566a77ccf1dd8"
+    },
+    {
+      "bytes": 69056,
+      "path": "/pack/v1/images/van-vihar-national-park-2.webp",
+      "sha256": "25992b14007be0e6e132235c3b17705b2458c2d47c8f75306b4839db9bf162b4"
+    },
+    {
+      "bytes": 18742,
+      "path": "/pack/v1/images/van-vihar-national-park-3.thumb.webp",
+      "sha256": "fcf1f996bd8736391e1abbd79b60416ae8745a822e4138ec602e4dacbbf69f72"
+    },
+    {
+      "bytes": 74566,
+      "path": "/pack/v1/images/van-vihar-national-park-3.webp",
+      "sha256": "7ca93e2aabbcd453a32275060c6dd29ca485950695e20a7182ca35b195f638f3"
+    },
+    {
+      "bytes": 7902,
+      "path": "/pack/v1/images/van-vihar-national-park-4.thumb.webp",
+      "sha256": "4ee8c507804ab9ca886b74c24e02c653b63b305288101ce39ab9c861c98a8bfb"
+    },
+    {
+      "bytes": 7902,
+      "path": "/pack/v1/images/van-vihar-national-park-4.webp",
+      "sha256": "4ee8c507804ab9ca886b74c24e02c653b63b305288101ce39ab9c861c98a8bfb"
+    },
+    {
+      "bytes": 10530,
+      "path": "/pack/v1/images/van-vihar-national-park-5.thumb.webp",
+      "sha256": "dee229182baca5a22ea17be653ef844ce6a7dd9622f280494ad278bcc9933e00"
+    },
+    {
+      "bytes": 10530,
+      "path": "/pack/v1/images/van-vihar-national-park-5.webp",
+      "sha256": "dee229182baca5a22ea17be653ef844ce6a7dd9622f280494ad278bcc9933e00"
+    },
+    {
+      "bytes": 614,
+      "path": "/pack/v1/images/yadgar-e-shahjahani-park-placeholder.thumb.webp",
+      "sha256": "ad01642f9a9c4f7936c12d245141440cd61b55637aef0ee5a40d1abea8fd4730"
+    },
+    {
+      "bytes": 4316,
+      "path": "/pack/v1/images/yadgar-e-shahjahani-park-placeholder.webp",
+      "sha256": "1ec32d22b9f20b169c48edb54c09f475decd5a4d187525204af59a147d757d6c"
+    },
+    {
+      "bytes": 2,
       "path": "/pack/v1/partners.json",
-      "bytes": 3073,
-      "sha256": "308c6174755c792e5aef55758486876d276c571921f9937ad53ae75144fb715b"
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
     },
     {
+      "bytes": 146745,
       "path": "/pack/v1/places.json",
-      "bytes": 27508,
-      "sha256": "d0dd1b945c2f65270a0cffca0a1f3b3bd25e2ff9a248f32815e810026eb6b585"
+      "sha256": "56cf743eacd45430cf0cba09ec98bca1fedb01f7802cdd02da4351cc978f5a01"
     },
     {
+      "bytes": 79,
       "path": "/pack/v1/search/index.json",
-      "bytes": 124,
-      "sha256": "30a5ce67f58382910045ba410bb788994d41dd118f7539a2be66ac18b3f2e647"
+      "sha256": "0849f6bba765e2503313a91ff9d4bf03effd9043ada561a01c7db48b38302138"
     }
   ],
   "languages": [
     "en",
     "hi"
   ],
-  "total_bytes": 85718
+  "min_app_version": "1.0.0",
+  "total_bytes": 10653340,
+  "version": 1
 }

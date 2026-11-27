@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Bookmark, Compass, Landmark, MapPin, Play, Share2, Sparkles } from "lucide-react";
+import { ArrowUpRight, Bookmark, ChevronLeft, ChevronRight, Compass, Landmark, MapPin, Play, Share2, Sparkles, X, ZoomIn } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import { Button } from "@/components/ui/button";
@@ -8,7 +8,7 @@ import { getMeta, getPartner, getPlaceBySlug, getPlaces, isSaved, recordDiscover
 import { logEvent } from "@/data/outbox";
 import { rankNearbySpots } from "@/features/nudge/logic";
 import { changeAppLanguage } from "@/i18n";
-import { resolvePackAssetUrl } from "@/lib/assets";
+import { fallbackPackAssetUrl, resolvePackAssetUrl } from "@/lib/assets";
 import { hasValidGeo } from "@/lib/geo";
 import { probeConnectivity } from "@/net/connectivity";
 import type { AppConnectivity, Language, Partner, Place } from "@/types";
@@ -22,15 +22,45 @@ export function PlacePage({ slug }: { slug: string }) {
   const [saved, setSaved] = useState(false);
   const [connectivity, setConnectivity] = useState<AppConnectivity>("OFFLINE");
   const [photoIndex, setPhotoIndex] = useState(0);
+  const [slideshowPaused, setSlideshowPaused] = useState(false);
   const [photoLoaded, setPhotoLoaded] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const [shareMessage, setShareMessage] = useState("");
   const language: Language = i18n.language === "hi" ? "hi" : "en";
+
+  const imageCount = place?.media.images.length ?? 0;
+  useEffect(() => {
+    if (imageCount <= 1 || slideshowPaused || lightboxOpen) return;
+    const timer = window.setInterval(() => {
+      setPhotoLoaded(false);
+      setPhotoIndex((prev) => (prev + 1) % imageCount);
+    }, 4500);
+    return () => window.clearInterval(timer);
+  }, [imageCount, slideshowPaused, lightboxOpen]);
+
+  useEffect(() => {
+    if (!lightboxOpen || imageCount === 0) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setLightboxOpen(false);
+      } else if (event.key === "ArrowLeft" && imageCount > 1) {
+        setPhotoLoaded(false);
+        setPhotoIndex((prev) => (prev - 1 + imageCount) % imageCount);
+      } else if (event.key === "ArrowRight" && imageCount > 1) {
+        setPhotoLoaded(false);
+        setPhotoIndex((prev) => (prev + 1) % imageCount);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [lightboxOpen, imageCount]);
 
   useEffect(() => {
     let active = true;
     setLoading(true);
     setPhotoIndex(0);
     setPhotoLoaded(false);
+    setLightboxOpen(false);
     setShareMessage("");
     const load = async () => {
       const found = await getPlaceBySlug(slug);
@@ -154,8 +184,19 @@ export function PlacePage({ slug }: { slug: string }) {
   return (
     <article className="place-detail-shell" style={themeVars}>
       <div className="place-backdrop" aria-hidden="true">
-        {activePhoto ? (
-          <img className="place-backdrop-img" src={resolvePackAssetUrl(activePhoto.file)} alt="" />
+        {images.length > 0 ? (
+          images.map((photo, index) => (
+            <img
+              key={photo.id}
+              className={`place-backdrop-img${index === photoIndex ? " place-backdrop-img--active" : ""}`}
+              src={resolvePackAssetUrl(photo.file)}
+              alt=""
+              onError={(event) => {
+                const fallback = fallbackPackAssetUrl(event.currentTarget.src, photo.file);
+                if (fallback) event.currentTarget.src = fallback;
+              }}
+            />
+          ))
         ) : (
           <div className="place-backdrop-fallback" />
         )}
@@ -167,7 +208,9 @@ export function PlacePage({ slug }: { slug: string }) {
           <Link to="/discover" className="text-link">
             {t("common.backHome")}
           </Link>
-          <span className="sample-stamp">{t("place.sampleCredit")}</span>
+          {isPlaceholderMedia || (place.provenance?.source ?? "").toLowerCase().includes("sample") ? (
+            <span className="sample-stamp">{t("place.sampleCredit")}</span>
+          ) : null}
         </div>
 
         <section className="place-editorial-card">
@@ -235,36 +278,115 @@ export function PlacePage({ slug }: { slug: string }) {
           </div>
 
           {activePhoto ? (
-            <div className="place-portrait-stage">
+            <div
+              className="place-portrait-stage"
+              onMouseEnter={() => setSlideshowPaused(true)}
+              onMouseLeave={() => setSlideshowPaused(false)}
+              onFocus={() => setSlideshowPaused(true)}
+              onBlur={() => setSlideshowPaused(false)}
+            >
               <figure className="place-portrait-frame">
-                <img
-                  key={activePhoto.id}
-                  className={`place-portrait-img${photoLoaded ? " place-portrait-img--loaded" : ""}`}
-                  src={resolvePackAssetUrl(activePhoto.file)}
-                  alt={activePhoto.alt[language] ?? activePhoto.alt.en}
-                  onLoad={() => setPhotoLoaded(true)}
-                  onError={() => setPhotoLoaded(true)}
-                />
+                <div className="place-portrait-media">
+                  <button
+                    type="button"
+                    className="place-portrait-zoom-btn"
+                    onClick={() => setLightboxOpen(true)}
+                    aria-label={`${copy.title} — ${photoIndex + 1} / ${images.length}`}
+                  >
+                    <img
+                      key={activePhoto.id}
+                      className={`place-portrait-img${photoLoaded ? " place-portrait-img--loaded" : ""}`}
+                      src={resolvePackAssetUrl(activePhoto.file)}
+                      alt={activePhoto.alt[language] ?? activePhoto.alt.en}
+                      onLoad={() => setPhotoLoaded(true)}
+                      onError={(event) => {
+                        const fallback = fallbackPackAssetUrl(event.currentTarget.src, activePhoto.file);
+                        if (fallback) {
+                          event.currentTarget.src = fallback;
+                          return;
+                        }
+                        setPhotoLoaded(true);
+                      }}
+                    />
+                    <span className="place-zoom-badge" aria-hidden="true">
+                      <ZoomIn size={14} />
+                      <span>{photoIndex + 1} / {images.length}</span>
+                    </span>
+                  </button>
+                  {images.length > 1 ? (
+                    <>
+                      <button
+                        type="button"
+                        className="place-gallery-nav place-gallery-nav--prev"
+                        aria-label="Previous photo"
+                        onClick={() => {
+                          setPhotoLoaded(false);
+                          setPhotoIndex((prev) => (prev - 1 + images.length) % images.length);
+                        }}
+                      >
+                        <ChevronLeft size={18} />
+                      </button>
+                      <button
+                        type="button"
+                        className="place-gallery-nav place-gallery-nav--next"
+                        aria-label="Next photo"
+                        onClick={() => {
+                          setPhotoLoaded(false);
+                          setPhotoIndex((prev) => (prev + 1) % images.length);
+                        }}
+                      >
+                        <ChevronRight size={18} />
+                      </button>
+                    </>
+                  ) : null}
+                </div>
                 {!isPlaceholderMedia && activePhoto.credit ? <figcaption>{activePhoto.credit}</figcaption> : null}
               </figure>
               {images.length > 1 ? (
-                <div className="place-thumb-strip" role="group" aria-label={t("nav.discover")}>
-                  {images.map((photo, index) => (
-                    <button
-                      key={photo.id}
-                      type="button"
-                      className={`place-thumb-btn${index === photoIndex ? " place-thumb-btn--active" : ""}`}
-                      aria-label={t("place.gallerySelect", { index: index + 1 })}
-                      aria-pressed={index === photoIndex}
-                      onClick={() => {
-                        setPhotoLoaded(false);
-                        setPhotoIndex(index);
-                      }}
-                    >
-                      <img src={resolvePackAssetUrl(photo.thumb || photo.file)} alt="" loading="lazy" />
-                    </button>
-                  ))}
-                </div>
+                <>
+                  <div className="place-slideshow-dots" role="tablist" aria-label={t("nav.discover")}>
+                    {images.map((photo, index) => (
+                      <button
+                        key={photo.id}
+                        type="button"
+                        role="tab"
+                        aria-selected={index === photoIndex}
+                        aria-label={t("place.gallerySelect", { index: index + 1 })}
+                        className={`place-slideshow-dot${index === photoIndex ? " place-slideshow-dot--active" : ""}`}
+                        onClick={() => {
+                          setPhotoLoaded(false);
+                          setPhotoIndex(index);
+                        }}
+                      />
+                    ))}
+                  </div>
+                  <div className="place-thumb-strip" role="group" aria-label={t("nav.discover")}>
+                    {images.map((photo, index) => (
+                      <button
+                        key={photo.id}
+                        type="button"
+                        className={`place-thumb-btn${index === photoIndex ? " place-thumb-btn--active" : ""}`}
+                        aria-label={t("place.gallerySelect", { index: index + 1 })}
+                        aria-pressed={index === photoIndex}
+                        onClick={() => {
+                          setPhotoLoaded(false);
+                          setPhotoIndex(index);
+                        }}
+                      >
+                        <img
+                          src={resolvePackAssetUrl(photo.thumb || photo.file)}
+                          alt=""
+                          loading="lazy"
+                          onError={(event) => {
+                            const assetPath = photo.thumb || photo.file;
+                            const fallback = fallbackPackAssetUrl(event.currentTarget.src, assetPath);
+                            if (fallback) event.currentTarget.src = fallback;
+                          }}
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </>
               ) : null}
             </div>
           ) : (
@@ -401,6 +523,73 @@ export function PlacePage({ slug }: { slug: string }) {
           </section>
         ) : null}
       </div>
+
+      {lightboxOpen && activePhoto ? (
+        <div
+          className="place-lightbox-backdrop"
+          role="dialog"
+          aria-modal="true"
+          aria-label={copy.title}
+          onClick={() => setLightboxOpen(false)}
+        >
+          <div className="place-lightbox-dialog" onClick={(event) => event.stopPropagation()}>
+            <div className="place-lightbox-header">
+              <span className="place-lightbox-counter">
+                {photoIndex + 1} / {images.length}
+              </span>
+              <button
+                type="button"
+                className="place-lightbox-close"
+                aria-label={t("action.close")}
+                onClick={() => setLightboxOpen(false)}
+              >
+                <X size={20} />
+              </button>
+            </div>
+            <div className="place-lightbox-stage">
+              {images.length > 1 ? (
+                <button
+                  type="button"
+                  className="place-lightbox-nav place-lightbox-nav--prev"
+                  aria-label="Previous photo"
+                  onClick={() => {
+                    setPhotoLoaded(false);
+                    setPhotoIndex((prev) => (prev - 1 + images.length) % images.length);
+                  }}
+                >
+                  <ChevronLeft size={24} />
+                </button>
+              ) : null}
+              <img
+                className="place-lightbox-img"
+                src={resolvePackAssetUrl(activePhoto.file)}
+                alt={activePhoto.alt[language] ?? activePhoto.alt.en}
+                onError={(event) => {
+                  const fallback = fallbackPackAssetUrl(event.currentTarget.src, activePhoto.file);
+                  if (fallback) event.currentTarget.src = fallback;
+                }}
+              />
+              {images.length > 1 ? (
+                <button
+                  type="button"
+                  className="place-lightbox-nav place-lightbox-nav--next"
+                  aria-label="Next photo"
+                  onClick={() => {
+                    setPhotoLoaded(false);
+                    setPhotoIndex((prev) => (prev + 1) % images.length);
+                  }}
+                >
+                  <ChevronRight size={24} />
+                </button>
+              ) : null}
+            </div>
+            <div className="place-lightbox-caption">
+              <strong>{activePhoto.alt[language] ?? activePhoto.alt.en}</strong>
+              {!isPlaceholderMedia && activePhoto.credit ? <span>{activePhoto.credit}</span> : null}
+            </div>
+          </div>
+        </div>
+      ) : null}
     </article>
   );
 }

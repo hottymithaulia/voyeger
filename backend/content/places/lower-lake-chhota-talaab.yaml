@@ -9,8 +9,8 @@ tags:
 - urban-waterbody
 - waterfront
 geo:
-  lat: null
-  lng: null
+  lat: 23.2496
+  lng: 77.409
 is_anchor: true
 anchor_for: []
 hours: null
@@ -21,9 +21,48 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: lower-lake-chhota-talaab-1
+    source_file: lower-lake-chhota-talaab/lower-lake-chhota-talaab-01.jpg
+    alt:
+      en: Lower Lake (Chhota Talaab) — photo 1
+      hi: लोअर लेक (छोटा तालाब) — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: lower-lake-chhota-talaab-2
+    source_file: lower-lake-chhota-talaab/lower-lake-chhota-talaab-02.jpg
+    alt:
+      en: Lower Lake (Chhota Talaab) — photo 2
+      hi: लोअर लेक (छोटा तालाब) — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: lower-lake-chhota-talaab-3
+    source_file: lower-lake-chhota-talaab/lower-lake-chhota-talaab-03.jpg
+    alt:
+      en: Lower Lake (Chhota Talaab) — photo 3
+      hi: लोअर लेक (छोटा तालाब) — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: lower-lake-chhota-talaab-4
+    source_file: lower-lake-chhota-talaab/lower-lake-chhota-talaab-04.jpg
+    alt:
+      en: Lower Lake (Chhota Talaab) — photo 4
+      hi: लोअर लेक (छोटा तालाब) — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: lower-lake-chhota-talaab-5
+    source_file: lower-lake-chhota-talaab/lower-lake-chhota-talaab-05.jpg
+    alt:
+      en: Lower Lake (Chhota Talaab) — photo 5
+      hi: लोअर लेक (छोटा तालाब) — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -56,3 +95,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#429ecc'
+  secondary: '#336d90'
+  on_primary: '#000000'

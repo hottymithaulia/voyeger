@@ -9,8 +9,8 @@ tags:
 - chowk-bazaar
 - state-protected-monument
 geo:
-  lat: null
-  lng: null
+  lat: 23.2581
+  lng: 77.4051
 is_anchor: true
 anchor_for: []
 hours: null
@@ -21,9 +21,40 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: shaukat-mahal-sadar-manzil-1
+    source_file: shaukat-mahal-sadar-manzil/shaukat-mahal-sadar-manzil-01.jpg
+    alt:
+      en: Shaukat Mahal and Sadar Manzil — photo 1
+      hi: शौकत महल और सदर मंज़िल — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: shaukat-mahal-sadar-manzil-2
+    source_file: shaukat-mahal-sadar-manzil/shaukat-mahal-sadar-manzil-02.jpg
+    alt:
+      en: Shaukat Mahal and Sadar Manzil — photo 2
+      hi: शौकत महल और सदर मंज़िल — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: shaukat-mahal-sadar-manzil-3
+    source_file: shaukat-mahal-sadar-manzil/shaukat-mahal-sadar-manzil-03.jpg
+    alt:
+      en: Shaukat Mahal and Sadar Manzil — photo 3
+      hi: शौकत महल और सदर मंज़िल — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: shaukat-mahal-sadar-manzil-4
+    source_file: shaukat-mahal-sadar-manzil/shaukat-mahal-sadar-manzil-04.jpg
+    alt:
+      en: Shaukat Mahal and Sadar Manzil — photo 4
+      hi: शौकत महल और सदर मंज़िल — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -59,3 +90,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#777a8d'
+  secondary: '#694c41'
+  on_primary: '#000000'

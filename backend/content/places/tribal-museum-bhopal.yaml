@@ -9,8 +9,8 @@ tags:
 - folk-arts
 - shamla-hills
 geo:
-  lat: null
-  lng: null
+  lat: 23.2323
+  lng: 77.396
 is_anchor: true
 anchor_for: []
 hours: null
@@ -21,9 +21,80 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: tribal-museum-bhopal-1
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-01.jpg
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 1
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: tribal-museum-bhopal-2
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-02.jpg
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 2
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: tribal-museum-bhopal-3
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-03.jpg
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 3
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: tribal-museum-bhopal-4
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-04.jpg
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 4
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: tribal-museum-bhopal-5
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-05.jpg
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 5
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: tribal-museum-bhopal-6
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-06.jpg
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 6
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: tribal-museum-bhopal-7
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-07.webp
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 7
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 7
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: tribal-museum-bhopal-8
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-08.jpg
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 8
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 8
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: tribal-museum-bhopal-9
+    source_file: tribal-museum-bhopal/tribal-museum-bhopal-09.webp
+    alt:
+      en: Madhya Pradesh Tribal Museum — photo 9
+      hi: मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 9
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -53,3 +124,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#8e7f6f'
+  secondary: '#382413'
+  on_primary: '#000000'

@@ -9,8 +9,8 @@ tags:
 - performing-arts
 - central-bhopal
 geo:
-  lat: null
-  lng: null
+  lat: 23.2414
+  lng: 77.4034
 is_anchor: false
 anchor_for: []
 hours: null
@@ -21,7 +21,55 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: ravindra-bhavan-bhopal-1
+    source_file: ravindra-bhavan-bhopal/ravindra-bhavan-bhopal-01.jpg
+    alt:
+      en: Ravindra Bhavan — photo 1
+      hi: रवींद्र भवन — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: ravindra-bhavan-bhopal-2
+    source_file: ravindra-bhavan-bhopal/ravindra-bhavan-bhopal-02.jpg
+    alt:
+      en: Ravindra Bhavan — photo 2
+      hi: रवींद्र भवन — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: ravindra-bhavan-bhopal-3
+    source_file: ravindra-bhavan-bhopal/ravindra-bhavan-bhopal-03.jpg
+    alt:
+      en: Ravindra Bhavan — photo 3
+      hi: रवींद्र भवन — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: ravindra-bhavan-bhopal-4
+    source_file: ravindra-bhavan-bhopal/ravindra-bhavan-bhopal-04.jpg
+    alt:
+      en: Ravindra Bhavan — photo 4
+      hi: रवींद्र भवन — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: ravindra-bhavan-bhopal-5
+    source_file: ravindra-bhavan-bhopal/ravindra-bhavan-bhopal-05.jpg
+    alt:
+      en: Ravindra Bhavan — photo 5
+      hi: रवींद्र भवन — तस्वीर 5
+    credit: Suyash Dwivedi (Total Project Solutions)
+    license: ''
+    source_url: ''
+  - id: ravindra-bhavan-bhopal-6
+    source_file: ravindra-bhavan-bhopal/ravindra-bhavan-bhopal-06.jpg
+    alt:
+      en: Ravindra Bhavan — photo 6
+      hi: रवींद्र भवन — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
 provenance:
   source: curated-research
@@ -52,3 +100,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#675344'
+  secondary: '#927856'
+  on_primary: '#ffffff'

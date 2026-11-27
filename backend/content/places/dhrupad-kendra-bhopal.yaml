@@ -9,8 +9,8 @@ tags:
 - living-heritage
 - cultural-academy
 geo:
-  lat: null
-  lng: null
+  lat: 23.2435
+  lng: 77.3935
 is_anchor: false
 anchor_for: []
 hours: null
@@ -21,9 +21,56 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: dhrupad-kendra-bhopal-1
+    source_file: dhrupad-kendra-bhopal/dhrupad-kendra-bhopal-01.jpg
+    alt:
+      en: Dhrupad Kendra Bhopal — photo 1
+      hi: ध्रुपद केंद्र भोपाल — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: dhrupad-kendra-bhopal-2
+    source_file: dhrupad-kendra-bhopal/dhrupad-kendra-bhopal-02.webp
+    alt:
+      en: Dhrupad Kendra Bhopal — photo 2
+      hi: ध्रुपद केंद्र भोपाल — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: dhrupad-kendra-bhopal-3
+    source_file: dhrupad-kendra-bhopal/dhrupad-kendra-bhopal-03.jpg
+    alt:
+      en: Dhrupad Kendra Bhopal — photo 3
+      hi: ध्रुपद केंद्र भोपाल — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: dhrupad-kendra-bhopal-4
+    source_file: dhrupad-kendra-bhopal/dhrupad-kendra-bhopal-04.jpg
+    alt:
+      en: Dhrupad Kendra Bhopal — photo 4
+      hi: ध्रुपद केंद्र भोपाल — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: dhrupad-kendra-bhopal-5
+    source_file: dhrupad-kendra-bhopal/dhrupad-kendra-bhopal-05.jpg
+    alt:
+      en: Dhrupad Kendra Bhopal — photo 5
+      hi: ध्रुपद केंद्र भोपाल — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: dhrupad-kendra-bhopal-6
+    source_file: dhrupad-kendra-bhopal/dhrupad-kendra-bhopal-06.jpg
+    alt:
+      en: Dhrupad Kendra Bhopal — photo 6
+      hi: ध्रुपद केंद्र भोपाल — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -50,3 +97,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#100a12'
+  secondary: '#a58b5e'
+  on_primary: '#ffffff'

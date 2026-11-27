@@ -1,12 +1,1 @@
-{
-  "fields": [
-    "title",
-    "summary",
-    "tags"
-  ],
-  "searchFields": [
-    "title",
-    "summary",
-    "tags"
-  ]
-}
+{"fields":["title","summary","tags"],"searchFields":["title","summary","tags"]}

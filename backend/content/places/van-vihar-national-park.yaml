@@ -9,8 +9,8 @@ tags:
 - cycling
 - lakeside
 geo:
-  lat: null
-  lng: null
+  lat: 23.2322
+  lng: 77.3652
 is_anchor: true
 anchor_for: []
 hours: null
@@ -21,9 +21,48 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: van-vihar-national-park-1
+    source_file: van-vihar-national-park/van-vihar-national-park-01.jpg
+    alt:
+      en: Van Vihar National Park — photo 1
+      hi: वन विहार राष्ट्रीय उद्यान — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: van-vihar-national-park-2
+    source_file: van-vihar-national-park/van-vihar-national-park-02.jpg
+    alt:
+      en: Van Vihar National Park — photo 2
+      hi: वन विहार राष्ट्रीय उद्यान — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: van-vihar-national-park-3
+    source_file: van-vihar-national-park/van-vihar-national-park-03.jpg
+    alt:
+      en: Van Vihar National Park — photo 3
+      hi: वन विहार राष्ट्रीय उद्यान — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: van-vihar-national-park-4
+    source_file: van-vihar-national-park/van-vihar-national-park-04.jpg
+    alt:
+      en: Van Vihar National Park — photo 4
+      hi: वन विहार राष्ट्रीय उद्यान — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: van-vihar-national-park-5
+    source_file: van-vihar-national-park/van-vihar-national-park-05.jpg
+    alt:
+      en: Van Vihar National Park — photo 5
+      hi: वन विहार राष्ट्रीय उद्यान — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -53,3 +92,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#5e8055'
+  secondary: '#74a268'
+  on_primary: '#000000'

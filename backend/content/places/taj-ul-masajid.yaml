@@ -9,8 +9,8 @@ tags:
 - shahjahanabad
 - landmark
 geo:
-  lat: null
-  lng: null
+  lat: 23.2627
+  lng: 77.3923
 is_anchor: true
 anchor_for: []
 hours: null
@@ -21,9 +21,48 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: taj-ul-masajid-1
+    source_file: taj-ul-masajid/taj-ul-masajid-01.jpg
+    alt:
+      en: Taj-ul-Masajid — photo 1
+      hi: ताज-उल-मसाजिद — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: taj-ul-masajid-2
+    source_file: taj-ul-masajid/taj-ul-masajid-02.jpg
+    alt:
+      en: Taj-ul-Masajid — photo 2
+      hi: ताज-उल-मसाजिद — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: taj-ul-masajid-3
+    source_file: taj-ul-masajid/taj-ul-masajid-03.jpg
+    alt:
+      en: Taj-ul-Masajid — photo 3
+      hi: ताज-उल-मसाजिद — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: taj-ul-masajid-4
+    source_file: taj-ul-masajid/taj-ul-masajid-04.jpg
+    alt:
+      en: Taj-ul-Masajid — photo 4
+      hi: ताज-उल-मसाजिद — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: taj-ul-masajid-5
+    source_file: taj-ul-masajid/taj-ul-masajid-05.jpg
+    alt:
+      en: Taj-ul-Masajid — photo 5
+      hi: ताज-उल-मसाजिद — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -56,3 +95,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#281811'
+  secondary: '#6d3a21'
+  on_primary: '#ffffff'

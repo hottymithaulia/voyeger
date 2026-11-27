@@ -9,8 +9,8 @@ tags:
 - paramara-heritage
 - boating
 geo:
-  lat: null
-  lng: null
+  lat: 23.2583
+  lng: 77.4006
 is_anchor: true
 anchor_for: []
 hours: null
@@ -21,9 +21,40 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: upper-lake-bhojtal-1
+    source_file: upper-lake-bhojtal/upper-lake-bhojtal-01.jpeg
+    alt:
+      en: Upper Lake (Bhojtal) — photo 1
+      hi: अपर लेक (भोजताल) — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: upper-lake-bhojtal-2
+    source_file: upper-lake-bhojtal/upper-lake-bhojtal-02.jpg
+    alt:
+      en: Upper Lake (Bhojtal) — photo 2
+      hi: अपर लेक (भोजताल) — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: upper-lake-bhojtal-3
+    source_file: upper-lake-bhojtal/upper-lake-bhojtal-03.jpg
+    alt:
+      en: Upper Lake (Bhojtal) — photo 3
+      hi: अपर लेक (भोजताल) — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: upper-lake-bhojtal-4
+    source_file: upper-lake-bhojtal/upper-lake-bhojtal-04.jpg
+    alt:
+      en: Upper Lake (Bhojtal) — photo 4
+      hi: अपर लेक (भोजताल) — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -56,3 +87,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#d8edfe'
+  secondary: '#3f3329'
+  on_primary: '#000000'

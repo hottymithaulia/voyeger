@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as AttributionRouteImport } from './routes/attribution'
 import { Route as DiscoverRouteImport } from './routes/discover'
 import { Route as PartnersRouteImport } from './routes/partners'
@@ -17,12 +18,18 @@ import { Route as PlannerRouteImport } from './routes/planner'
 import { Route as SavedRouteImport } from './routes/saved'
 import { Route as SearchRouteImport } from './routes/search'
 import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as SubmitPlaceRouteImport } from './routes/submit-place'
 import { Route as PartnerIdRouteImport } from './routes/partner.$id'
 import { Route as PlaceSlugRouteImport } from './routes/place.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AttributionRoute = AttributionRouteImport.update({
@@ -60,6 +67,11 @@ const SettingsRoute = SettingsRouteImport.update({
   path: '/settings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SubmitPlaceRoute = SubmitPlaceRouteImport.update({
+  id: '/submit-place',
+  path: '/submit-place',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PartnerIdRoute = PartnerIdRouteImport.update({
   id: '/partner/$id',
   path: '/partner/$id',
@@ -73,6 +85,7 @@ const PlaceSlugRoute = PlaceSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/attribution': typeof AttributionRoute
   '/discover': typeof DiscoverRoute
   '/partners': typeof PartnersRoute
@@ -80,11 +93,13 @@ export interface FileRoutesByFullPath {
   '/saved': typeof SavedRoute
   '/search': typeof SearchRoute
   '/settings': typeof SettingsRoute
+  '/submit-place': typeof SubmitPlaceRoute
   '/partner/$id': typeof PartnerIdRoute
   '/place/$slug': typeof PlaceSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/attribution': typeof AttributionRoute
   '/discover': typeof DiscoverRoute
   '/partners': typeof PartnersRoute
@@ -92,12 +107,14 @@ export interface FileRoutesByTo {
   '/saved': typeof SavedRoute
   '/search': typeof SearchRoute
   '/settings': typeof SettingsRoute
+  '/submit-place': typeof SubmitPlaceRoute
   '/partner/$id': typeof PartnerIdRoute
   '/place/$slug': typeof PlaceSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/attribution': typeof AttributionRoute
   '/discover': typeof DiscoverRoute
   '/partners': typeof PartnersRoute
@@ -105,6 +122,7 @@ export interface FileRoutesById {
   '/saved': typeof SavedRoute
   '/search': typeof SearchRoute
   '/settings': typeof SettingsRoute
+  '/submit-place': typeof SubmitPlaceRoute
   '/partner/$id': typeof PartnerIdRoute
   '/place/$slug': typeof PlaceSlugRoute
 }
@@ -112,6 +130,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/about'
     | '/attribution'
     | '/discover'
     | '/partners'
@@ -119,11 +138,13 @@ export interface FileRouteTypes {
     | '/saved'
     | '/search'
     | '/settings'
+    | '/submit-place'
     | '/partner/$id'
     | '/place/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/about'
     | '/attribution'
     | '/discover'
     | '/partners'
@@ -131,11 +152,13 @@ export interface FileRouteTypes {
     | '/saved'
     | '/search'
     | '/settings'
+    | '/submit-place'
     | '/partner/$id'
     | '/place/$slug'
   id:
     | '__root__'
     | '/'
+    | '/about'
     | '/attribution'
     | '/discover'
     | '/partners'
@@ -143,12 +166,14 @@ export interface FileRouteTypes {
     | '/saved'
     | '/search'
     | '/settings'
+    | '/submit-place'
     | '/partner/$id'
     | '/place/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   AttributionRoute: typeof AttributionRoute
   DiscoverRoute: typeof DiscoverRoute
   PartnersRoute: typeof PartnersRoute
@@ -156,6 +181,7 @@ export interface RootRouteChildren {
   SavedRoute: typeof SavedRoute
   SearchRoute: typeof SearchRoute
   SettingsRoute: typeof SettingsRoute
+  SubmitPlaceRoute: typeof SubmitPlaceRoute
   PartnerIdRoute: typeof PartnerIdRoute
   PlaceSlugRoute: typeof PlaceSlugRoute
 }
@@ -167,6 +193,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/attribution': {
@@ -218,6 +251,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/submit-place': {
+      id: '/submit-place'
+      path: '/submit-place'
+      fullPath: '/submit-place'
+      preLoaderRoute: typeof SubmitPlaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/partner/$id': {
       id: '/partner/$id'
       path: '/partner/$id'
@@ -237,6 +277,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   AttributionRoute: AttributionRoute,
   DiscoverRoute: DiscoverRoute,
   PartnersRoute: PartnersRoute,
@@ -244,6 +285,7 @@ const rootRouteChildren: RootRouteChildren = {
   SavedRoute: SavedRoute,
   SearchRoute: SearchRoute,
   SettingsRoute: SettingsRoute,
+  SubmitPlaceRoute: SubmitPlaceRoute,
   PartnerIdRoute: PartnerIdRoute,
   PlaceSlugRoute: PlaceSlugRoute,
 }

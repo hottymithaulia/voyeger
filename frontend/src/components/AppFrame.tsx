@@ -1,8 +1,11 @@
 import {
   Bookmark,
   Compass,
+  Info,
+  Mail,
   Map,
   Moon,
+  PlusCircle,
   RefreshCw,
   Route,
   Search,
@@ -29,7 +32,7 @@ import { getCityConfig } from "@/config/city";
 import type { AppConnectivity, CityConfig, Language, OutboxItem } from "@/types";
 
 type NavigationItem = {
-  to: "/discover" | "/search" | "/planner" | "/saved" | "/partners" | "/settings";
+  to: "/discover" | "/search" | "/planner" | "/saved" | "/partners" | "/submit-place" | "/about" | "/settings";
   key: string;
   icon: typeof Compass;
 };
@@ -40,7 +43,11 @@ const navigation: NavigationItem[] = [
   { to: "/planner", key: "nav.planner", icon: Route },
   { to: "/saved", key: "nav.saved", icon: Bookmark },
   { to: "/partners", key: "nav.partners", icon: Store },
+  { to: "/submit-place", key: "nav.addPlace", icon: PlusCircle },
+  { to: "/about", key: "nav.about", icon: Info },
 ];
+
+const mobileNavigation: NavigationItem[] = navigation.slice(0, 5);
 
 function activeFor(pathname: string, to: NavigationItem["to"]): boolean {
   return pathname === to || pathname.startsWith(`${to}/`);
@@ -235,11 +242,33 @@ export function AppFrame({ children }: { children: ReactNode }) {
         </aside>
       ) : null}
 
-      <main className={`app-main${isMapView ? " app-main--map" : ""}${isWelcomeView ? " app-main--welcome" : ""}`}>{mounted ? children : null}</main>
+      <main className={`app-main${isMapView ? " app-main--map" : ""}${isWelcomeView ? " app-main--welcome" : ""}`}>
+        {mounted ? children : null}
+        {mounted && !isMapView ? (
+          <footer className="app-footer" aria-label="Voyeger footer">
+            <div className="app-footer-inner">
+              <div className="app-footer-brand">
+                <strong>Voyeger · Bhopal, India</strong>
+                <span>Built by Dharmesh Krish Mithaulia &amp; Ujjval Rajauriya</span>
+              </div>
+              <nav className="app-footer-links" aria-label="Footer navigation">
+                <Link to="/discover">{t("nav.discover")}</Link>
+                <Link to="/submit-place">{t("nav.addPlace")}</Link>
+                <Link to="/partners">{t("nav.partners")}</Link>
+                <Link to="/about">{t("nav.about")}</Link>
+                <a href="mailto:cnttoujjval@gmail.com" className="app-footer-mail">
+                  <Mail size={13} aria-hidden="true" />
+                  cnttoujjval@gmail.com
+                </a>
+              </nav>
+            </div>
+          </footer>
+        ) : null}
+      </main>
 
       {!isWelcomeView ? (
         <nav className="mobile-nav" aria-label={t("app.name")}>
-          {navigation.map((item) => {
+          {mobileNavigation.map((item) => {
             const Icon = item.icon;
             return (
               <Link key={item.to} to={item.to} className={`nav-link${activeFor(pathname, item.to) ? " nav-link--active" : ""}`} aria-current={activeFor(pathname, item.to) ? "page" : undefined}>

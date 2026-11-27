@@ -1,5 +1,5 @@
 import { ArrowRight, MapPin } from "lucide-react";
-import { useEffect, useRef, useState, type MouseEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
@@ -8,7 +8,9 @@ import {
   resolveRevealOrigin,
   triggerCircularReveal,
 } from "@/components/CircularReveal";
-import { getDiscoveryStats, getMeta } from "@/data/repo";
+import { getCityConfig } from "@/config/city";
+import { getActiveCity, getDiscoveryStats, getMeta, getPlaces } from "@/data/repo";
+import { distanceKm } from "@/features/nudge/logic";
 import {
   resolveHomepageContext,
   type HomepageLocationContext,
@@ -19,7 +21,8 @@ import {
   TRAVEL_TAGLINES_EN,
   TRAVEL_TAGLINES_HI,
 } from "@/features/welcome/taglines";
-import type { DiscoveryStats, Language } from "@/types";
+import { hasValidGeo } from "@/lib/geo";
+import type { CityConfig, DiscoveryStats, Language, Place } from "@/types";
 
 const INITIAL_STATS: DiscoveryStats = {
   lastExplorationAt: null,
@@ -69,6 +72,9 @@ export function WelcomePage({
     i18n.language === "hi" ? "hi" : "en",
   );
   const [stats, setStats] = useState<DiscoveryStats>(INITIAL_STATS);
+  const [city, setCity] = useState<CityConfig>(() => getCityConfig());
+  const [places, setPlaces] = useState<Place[]>([]);
+  const [manualAnchorId, setManualAnchorId] = useState<string>("");
   const [context, setContext] = useState<HomepageLocationContext>(INITIAL_CONTEXT);
   const [contextLoaded, setContextLoaded] = useState(false);
   const [taglineIndex] = useState(() =>
@@ -84,10 +90,12 @@ export function WelcomePage({
     let active = true;
 
     const loadAll = async () => {
-      const [savedLang, nextStats, nextContext] = await Promise.all([
+      const [savedLang, nextStats, nextContext, nextCity, nextPlaces] = await Promise.all([
         getMeta<Language>("active_language").catch(() => undefined),
         getDiscoveryStats().catch(() => INITIAL_STATS),
         resolveHomepageContext(locationDeps).catch(() => INITIAL_CONTEXT),
+        getActiveCity().catch(() => getCityConfig()),
+        getPlaces().catch(() => [] as Place[]),
       ]);
       if (!active) return;
       if (savedLang === "en" || savedLang === "hi") {
@@ -95,6 +103,8 @@ export function WelcomePage({
       }
       setStats(nextStats);
       setContext(nextContext);
+      setCity(nextCity);
+      setPlaces(nextPlaces);
       setContextLoaded(true);
     };
 
@@ -136,17 +146,55 @@ export function WelcomePage({
     );
   };
 
+  const anchors = useMemo(
+    () => places.filter((p) => p.is_anchor && hasValidGeo(p.geo)),
+    [places],
+  );
+
+  const currentAnchor = useMemo(() => {
+    if (manualAnchorId) {
+      const picked = anchors.find((a) => a.id === manualAnchorId);
+      if (picked) return picked;
+    }
+    if (context.nearestAnchor && hasValidGeo(context.nearestAnchor.geo)) {
+      return context.nearestAnchor;
+    }
+    return anchors.find((a) => a.id === "upper-lake-bhojtal") ?? anchors[0] ?? null;
+  }, [anchors, context.nearestAnchor, manualAnchorId]);
+
+  const suggestedNext = useMemo(() => {
+    if (!currentAnchor || !hasValidGeo(currentAnchor.geo)) return null;
+    const candidates = places
+      .filter((p) => p.id !== currentAnchor.id && hasValidGeo(p.geo))
+      .map((p) => ({
+        place: p,
+        km: distanceKm(
+          { lat: currentAnchor.geo.lat as number, lng: currentAnchor.geo.lng as number },
+          { lat: p.geo.lat as number, lng: p.geo.lng as number },
+        ),
+      }))
+      .sort((a, b) => {
+        const aWithin3 = a.km <= 3 ? 0 : 1;
+        const bWithin3 = b.km <= 3 ? 0 : 1;
+        if (aWithin3 !== bWithin3) return aWithin3 - bWithin3;
+        const aGem = a.place.category === "hidden_gem" ? 0 : 1;
+        const bGem = b.place.category === "hidden_gem" ? 0 : 1;
+        if (aWithin3 === 0 && aGem !== bGem) return aGem - bGem;
+        return a.km - b.km;
+      });
+    return candidates[0]?.place ?? null;
+  }, [currentAnchor, places]);
+
   const handleLocationExperience = (event: MouseEvent<HTMLButtonElement>) => {
+    const targetPlace = suggestedNext ?? currentAnchor;
     startCircularNavigation(event, locationBtnRef.current, () => {
-      if (context.nearestAnchor) {
-        const nearLat = context.nearestAnchor.geo.lat ?? undefined;
-        const nearLng = context.nearestAnchor.geo.lng ?? undefined;
+      if (targetPlace && hasValidGeo(targetPlace.geo)) {
         return navigate({
           to: "/discover",
           search: {
-            place: context.nearestAnchor.id,
-            nearLat,
-            nearLng,
+            place: targetPlace.id,
+            nearLat: targetPlace.geo.lat ?? undefined,
+            nearLng: targetPlace.geo.lng ?? undefined,
           },
         });
       }
@@ -157,29 +205,35 @@ export function WelcomePage({
   const activeQuotes = language === "hi" ? TRAVEL_TAGLINES_HI : TRAVEL_TAGLINES_EN;
   const sessionTagline = activeQuotes[taglineIndex] ?? activeQuotes[0];
 
+  const defaultCityHeading = (city.name[language] ?? city.name.en).toUpperCase();
   const headingText = !contextLoaded
-    ? t("welcome.travellerHeading")
+    ? defaultCityHeading
     : context.scenario === "unknown"
-      ? t("welcome.travellerHeading")
+      ? defaultCityHeading
       : language === "hi"
         ? context.headingHi
         : context.headingEn;
 
-  const anchorName = context.nearestAnchor
-    ? context.nearestAnchor.i18n[language]?.title ??
-      context.nearestAnchor.i18n.en.title
+  const currentAnchorName = currentAnchor
+    ? currentAnchor.i18n[language]?.title ?? currentAnchor.i18n.en.title
+    : null;
+  const suggestedNextName = suggestedNext
+    ? suggestedNext.i18n[language]?.title ?? suggestedNext.i18n.en.title
     : null;
 
-  const locationLabel = anchorName
-    ? t("welcome.nearMe", { place: anchorName })
-    : context.userLocation.state
-      ? t("welcome.nearMe", {
-          place:
-            language === "hi" && context.scenario !== "matched_city"
-              ? context.headingHi
-              : context.userLocation.state,
-        })
-      : t("welcome.chooseLocation");
+  const locationLabel =
+    currentAnchorName && suggestedNextName
+      ? t("welcome.nearSuggest", { current: currentAnchorName, next: suggestedNextName })
+      : currentAnchorName
+        ? t("welcome.nearMe", { place: currentAnchorName })
+        : context.userLocation.state
+          ? t("welcome.nearMe", {
+              place:
+                language === "hi" && context.scenario !== "matched_city"
+                  ? context.headingHi
+                  : context.userLocation.state,
+            })
+          : t("welcome.chooseLocation");
 
   const availableMapCityName = context.availableInstalledCity
     ? context.availableInstalledCity.name[language]
@@ -209,6 +263,20 @@ export function WelcomePage({
       </div>
 
       <div className="welcome-top-bar">
+        {anchors.length > 0 ? (
+          <select
+            className="welcome-spot-select"
+            aria-label={t("welcome.pickSpot")}
+            value={currentAnchor?.id ?? ""}
+            onChange={(event) => setManualAnchorId(event.target.value)}
+          >
+            {anchors.map((anchor) => (
+              <option key={anchor.id} value={anchor.id}>
+                {anchor.i18n[language]?.title ?? anchor.i18n.en.title}
+              </option>
+            ))}
+          </select>
+        ) : null}
         <button
           ref={locationBtnRef}
           type="button"
