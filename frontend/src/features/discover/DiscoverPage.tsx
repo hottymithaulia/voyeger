@@ -6,6 +6,7 @@ import {
   Footprints,
   Landmark,
   Languages,
+  PlusCircle,
   Search,
   Sparkles,
   Utensils,
@@ -322,6 +323,15 @@ export function DiscoverPage({
           <Languages size={17} aria-hidden="true" />
           <span>{t("phrasebook.button")}</span>
         </button>
+
+        <Link
+          to="/submit-place"
+          className="map-phrasebook-trigger glass-panel"
+          aria-label={t("nav.addPlace")}
+        >
+          <PlusCircle size={17} aria-hidden="true" />
+          <span>{t("nav.addPlace")}</span>
+        </Link>
       </div>
 
       <nav

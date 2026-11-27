@@ -6,6 +6,8 @@ const en = {
     planner: "Day plan",
     saved: "Saved",
     partners: "Local partners",
+    addPlace: "Add a Place",
+    about: "About Us",
     settings: "Settings",
     attribution: "Attribution",
   },

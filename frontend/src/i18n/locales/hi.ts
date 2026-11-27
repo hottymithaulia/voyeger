@@ -6,6 +6,8 @@ const hi = {
     planner: "दिन की योजना",
     saved: "सहेजे गए",
     partners: "स्थानीय साथी",
+    addPlace: "स्थान जोड़ें",
+    about: "हमारे बारे में",
     settings: "सेटिंग्स",
     attribution: "स्रोत",
   },

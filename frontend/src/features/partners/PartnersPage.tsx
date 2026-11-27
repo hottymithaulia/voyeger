@@ -1,4 +1,4 @@
-import { ArrowUpRight, Camera, CheckCircle2, Clock3, Store } from "lucide-react";
+import { ArrowUpRight, Camera, CheckCircle2, Mail, Store, X } from "lucide-react";
 import { useEffect, useState, type FormEvent } from "react";
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
@@ -25,9 +25,12 @@ export function PartnersPage() {
   const [partners, setPartners] = useState<Partner[]>([]);
   const [places, setPlaces] = useState<Place[]>([]);
   const [ready, setReady] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "sent" | "offline">("idle");
   const [submittedName, setSubmittedName] = useState("");
+  const [mailtoBody, setMailtoBody] = useState("");
   const [application, setApplication] = useState({
     name: "",
     type: "artisan" as Partner["type"],
@@ -65,12 +68,32 @@ export function PartnersPage() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!modalOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setModalOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [modalOpen]);
+
+  const openModal = (preselectedType?: Partner["type"]) => {
+    if (preselectedType) {
+      setApplication((current) => ({ ...current, type: preselectedType }));
+    }
+    setSubmitError("");
+    setSubmitStatus("idle");
+    setModalOpen(true);
+  };
+
   const submitApplication = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (submitting) return;
     setSubmitting(true);
     setSubmitError("");
     const submittedBusiness = application.name.trim();
+    const selectedPlace = places.find((p) => p.id === application.placeId);
+    const placeTitle = selectedPlace ? (selectedPlace.i18n[language]?.title ?? selectedPlace.i18n.en.title) : "None specified";
     const payload: Omit<PartnerApplication, "id" | "created_at"> = {
       name: submittedBusiness,
       type: application.type,
@@ -78,10 +101,35 @@ export function PartnersPage() {
       offer: application.offer.trim(),
       place_ids: application.placeId ? [application.placeId] : [],
     };
+    const emailSummary = `Business/Artist: ${submittedBusiness}\nType: ${application.type}\nContact: ${payload.contact}\nLandmark: ${placeTitle}\nOffer: ${payload.offer}`;
+    setMailtoBody(emailSummary);
+
     try {
       await queuePartnerApplication(payload);
+      const isOnline = typeof navigator !== "undefined" && navigator.onLine;
+      if (isOnline) {
+        try {
+          const res = await fetch("https://formsubmit.co/ajax/cnttoujjval@gmail.com", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({
+              _subject: "New Voyeger Partner Application",
+              name: submittedBusiness,
+              type: application.type,
+              contact: payload.contact,
+              landmark: placeTitle,
+              offer: payload.offer,
+            }),
+          });
+          setSubmitStatus(res.ok ? "sent" : "offline");
+        } catch {
+          setSubmitStatus("offline");
+        }
+      } else {
+        setSubmitStatus("offline");
+      }
       setSubmittedName(submittedBusiness);
-      setApplication({ name: "", type: "artisan", contact: "", offer: "", placeId: "" });
+      setApplication({ name: "", type: application.type, contact: "", offer: "", placeId: "" });
     } catch {
       setSubmitError(t("common.error"));
     } finally {
@@ -119,9 +167,9 @@ export function PartnersPage() {
         </div>
 
         <div className="partners-hero-actions">
-          <a href="#partner-application" className="voyager-button voyager-button--primary voyager-button--default">
+          <Button type="button" variant="primary" onClick={() => openModal()}>
             {t("partners.become")}
-          </a>
+          </Button>
         </div>
       </header>
 
@@ -169,118 +217,139 @@ export function PartnersPage() {
         )}
       </section>
 
-      <section className="content-panel application-panel" id="partner-application">
-        <h2>{t("partners.applicationTitle")}</h2>
-        <form className="form-stack" onSubmit={(event) => void submitApplication(event)}>
-          <label className="field-label">
-            {t("partners.businessName")}
-            <input
-              className="text-field"
-              value={application.name}
-              onChange={(event) => {
-                const value = event.currentTarget.value;
-                setApplication((current) => ({ ...current, name: value }));
-              }}
-              required
-            />
-          </label>
-
-          <label className="field-label">
-            {t("partners.kind")}
-            <select
-              className="text-field"
-              value={application.type}
-              onChange={(event) => {
-                const value = event.currentTarget.value as Partner["type"];
-                setApplication((current) => ({ ...current, type: value }));
-              }}
-            >
-              {partnerTypes.map((type) => (
-                <option value={type} key={type}>
-                  {t(`partners.types.${type}`)}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="field-label">
-            {t("partners.contact")}
-            <input
-              className="text-field"
-              value={application.contact}
-              onChange={(event) => {
-                const value = event.currentTarget.value;
-                setApplication((current) => ({ ...current, contact: value }));
-              }}
-              required
-            />
-          </label>
-
-          <label className="field-label">
-            {t("partners.offer")}
-            <textarea
-              className="text-field text-field--area"
-              value={application.offer}
-              onChange={(event) => {
-                const value = event.currentTarget.value;
-                setApplication((current) => ({ ...current, offer: value }));
-              }}
-              required
-            />
-          </label>
-
-          <label className="field-label">
-            {t("partners.linkedPlace")}
-            <select
-              className="text-field"
-              value={application.placeId}
-              onChange={(event) => {
-                const value = event.currentTarget.value;
-                setApplication((current) => ({ ...current, placeId: value }));
-              }}
-            >
-              <option value="">{t("partners.noPlaceOption")}</option>
-              {places.map((place) => (
-                <option key={place.id} value={place.id}>
-                  {place.i18n[language]?.title ?? place.i18n.en.title}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <div className="partner-photo-placeholder" aria-disabled="true">
-            <div className="partner-photo-head">
-              <Camera size={16} aria-hidden="true" />
-              <strong>{t("partners.photoFutureLabel")}</strong>
+      {modalOpen ? (
+        <div className="dialog-backdrop" role="presentation" onClick={() => setModalOpen(false)}>
+          <section
+            className="dialog-panel partner-modal-panel"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="partner-modal-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="panel-heading-row">
+              <h2 id="partner-modal-title">{t("partners.applicationTitle")}</h2>
+              <Button variant="quiet" size="icon" className="icon-button" onClick={() => setModalOpen(false)} aria-label={t("action.close")}>
+                <X aria-hidden="true" />
+              </Button>
             </div>
-            <p>{t("partners.photoFutureNote")}</p>
-          </div>
 
-          <Button type="submit" disabled={submitting}>
-            {submitting ? t("onboarding.progress") : t("partners.become")}
-          </Button>
-
-          {submitError ? (
-            <p className="notice notice--error" role="alert">
-              {submitError}
-            </p>
-          ) : null}
-
-          {submittedName ? (
-            <div className="notice partners-review-note" role="status">
-              <Clock3 size={16} aria-hidden="true" />
-              <div>
-                <strong>
-                  {submittedName} — {t("partners.submitted")}
-                </strong>
-                <p>{t("partners.reviewPending")}</p>
+            {submitStatus !== "idle" ? (
+              <div className="partner-modal-confirm" role="status">
+                <CheckCircle2 size={28} className="partner-confirm-icon" aria-hidden="true" />
+                <h3>{submittedName}</h3>
+                <p>
+                  {submitStatus === "sent"
+                    ? t("partners.submitted", { name: submittedName })
+                    : "Saved offline — will send when back online."}
+                </p>
+                <div className="partner-modal-confirm-actions">
+                  <a
+                    className="voyager-button voyager-button--outline voyager-button--small"
+                    href={`mailto:cnttoujjval@gmail.com?subject=${encodeURIComponent("New Voyeger Partner Application")}&body=${encodeURIComponent(mailtoBody)}`}
+                  >
+                    <Mail size={14} aria-hidden="true" />
+                    Send via Email App
+                  </a>
+                  <Button type="button" onClick={() => setModalOpen(false)}>
+                    {t("action.close")}
+                  </Button>
+                </div>
               </div>
-            </div>
-          ) : null}
+            ) : (
+              <form className="form-stack" onSubmit={(event) => void submitApplication(event)}>
+                <label className="field-label">
+                  {t("partners.businessName")}
+                  <input
+                    className="text-field"
+                    value={application.name}
+                    onChange={(event) => {
+                      const value = event.currentTarget.value;
+                      setApplication((current) => ({ ...current, name: value }));
+                    }}
+                    required
+                  />
+                </label>
 
-          <p className="form-helper">{t("status.willSend")}</p>
-        </form>
-      </section>
+                <label className="field-label">
+                  {t("partners.kind")}
+                  <select
+                    className="text-field"
+                    value={application.type}
+                    onChange={(event) => {
+                      const value = event.currentTarget.value as Partner["type"];
+                      setApplication((current) => ({ ...current, type: value }));
+                    }}
+                  >
+                    {partnerTypes.map((type) => (
+                      <option value={type} key={type}>
+                        {t(`partners.types.${type}`)}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="field-label">
+                  {t("partners.contact")}
+                  <input
+                    className="text-field"
+                    value={application.contact}
+                    onChange={(event) => {
+                      const value = event.currentTarget.value;
+                      setApplication((current) => ({ ...current, contact: value }));
+                    }}
+                    required
+                  />
+                </label>
+
+                <label className="field-label">
+                  {t("partners.offer")}
+                  <textarea
+                    className="text-field text-field--area"
+                    value={application.offer}
+                    onChange={(event) => {
+                      const value = event.currentTarget.value;
+                      setApplication((current) => ({ ...current, offer: value }));
+                    }}
+                    required
+                  />
+                </label>
+
+                <label className="field-label">
+                  {t("partners.linkedPlace")}
+                  <select
+                    className="text-field"
+                    value={application.placeId}
+                    onChange={(event) => {
+                      const value = event.currentTarget.value;
+                      setApplication((current) => ({ ...current, placeId: value }));
+                    }}
+                  >
+                    <option value="">{t("partners.noPlaceOption")}</option>
+                    {places.map((place) => (
+                      <option key={place.id} value={place.id}>
+                        {place.i18n[language]?.title ?? place.i18n.en.title}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+
+                <div className="partner-photo-placeholder" aria-disabled="true">
+                  <div className="partner-photo-head">
+                    <Camera size={16} aria-hidden="true" />
+                    <strong>{t("partners.photoFutureLabel")}</strong>
+                  </div>
+                  <p>{t("partners.photoFutureNote")}</p>
+                </div>
+
+                {submitError ? <p className="notice notice--error" role="alert">{submitError}</p> : null}
+                <Button type="submit" disabled={submitting}>
+                  {submitting ? t("onboarding.progress") : t("partners.become")}
+                </Button>
+              </form>
+            )}
+          </section>
+        </div>
+      ) : null}
     </section>
   );
 }
