@@ -21,9 +21,80 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: bada-bagh-royal-tombs-1
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-01.jpg
+    alt:
+      en: Bada Bagh Royal Tombs — photo 1
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bada-bagh-royal-tombs-2
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-02.webp
+    alt:
+      en: Bada Bagh Royal Tombs — photo 2
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bada-bagh-royal-tombs-3
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-03.webp
+    alt:
+      en: Bada Bagh Royal Tombs — photo 3
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bada-bagh-royal-tombs-4
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-04.webp
+    alt:
+      en: Bada Bagh Royal Tombs — photo 4
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bada-bagh-royal-tombs-5
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-05.jpg
+    alt:
+      en: Bada Bagh Royal Tombs — photo 5
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bada-bagh-royal-tombs-6
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-06.jpg
+    alt:
+      en: Bada Bagh Royal Tombs — photo 6
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bada-bagh-royal-tombs-7
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-07.jpg
+    alt:
+      en: Bada Bagh Royal Tombs — photo 7
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 7
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bada-bagh-royal-tombs-8
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-08.jpg
+    alt:
+      en: Bada Bagh Royal Tombs — photo 8
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 8
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bada-bagh-royal-tombs-9
+    source_file: bada-bagh-royal-tombs/bada-bagh-royal-tombs-09.jpg
+    alt:
+      en: Bada Bagh Royal Tombs — photo 9
+      hi: बड़ा बाग शाही मकबरे — तस्वीर 9
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -53,3 +124,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#c08944'
+  secondary: '#75431d'
+  on_primary: '#000000'

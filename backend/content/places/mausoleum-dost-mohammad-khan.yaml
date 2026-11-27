@@ -21,9 +21,64 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: mausoleum-dost-mohammad-khan-1
+    source_file: mausoleum-dost-mohammad-khan/mausoleum-dost-mohammad-khan-01.jpg
+    alt:
+      en: Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort) — photo 1
+      hi: दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला) — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: mausoleum-dost-mohammad-khan-2
+    source_file: mausoleum-dost-mohammad-khan/mausoleum-dost-mohammad-khan-02.jpg
+    alt:
+      en: Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort) — photo 2
+      hi: दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला) — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: mausoleum-dost-mohammad-khan-3
+    source_file: mausoleum-dost-mohammad-khan/mausoleum-dost-mohammad-khan-03.jpg
+    alt:
+      en: Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort) — photo 3
+      hi: दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला) — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: mausoleum-dost-mohammad-khan-4
+    source_file: mausoleum-dost-mohammad-khan/mausoleum-dost-mohammad-khan-04.jpg
+    alt:
+      en: Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort) — photo 4
+      hi: दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला) — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: mausoleum-dost-mohammad-khan-5
+    source_file: mausoleum-dost-mohammad-khan/mausoleum-dost-mohammad-khan-05.jpg
+    alt:
+      en: Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort) — photo 5
+      hi: दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला) — तस्वीर 5
+    credit: Suyash Dwivedi
+    license: ''
+    source_url: ''
+  - id: mausoleum-dost-mohammad-khan-6
+    source_file: mausoleum-dost-mohammad-khan/mausoleum-dost-mohammad-khan-06.jpg
+    alt:
+      en: Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort) — photo 6
+      hi: दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला) — तस्वीर 6
+    credit: Suyash Dwivedi
+    license: ''
+    source_url: ''
+  - id: mausoleum-dost-mohammad-khan-7
+    source_file: mausoleum-dost-mohammad-khan/mausoleum-dost-mohammad-khan-07.jpg
+    alt:
+      en: Mausoleum of Dost Mohammad Khan and Fateh Bibi (Fatehgarh Fort) — photo 7
+      hi: दोस्त मोहम्मद खान और फतेह बीबी का मकबरा (फतेहगढ़ किला) — तस्वीर 7
+    credit: ASIFSALMAN.COM
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -53,3 +108,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#2a221a'
+  secondary: '#847462'
+  on_primary: '#ffffff'

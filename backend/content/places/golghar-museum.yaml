@@ -21,9 +21,56 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: golghar-museum-1
+    source_file: golghar-museum/golghar-museum-01.jpg
+    alt:
+      en: Golghar Museum (Gulshan-e-Alam) — photo 1
+      hi: गोलघर संग्रहालय (गुलशन-ए-आलम) — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: golghar-museum-2
+    source_file: golghar-museum/golghar-museum-02.jpg
+    alt:
+      en: Golghar Museum (Gulshan-e-Alam) — photo 2
+      hi: गोलघर संग्रहालय (गुलशन-ए-आलम) — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: golghar-museum-3
+    source_file: golghar-museum/golghar-museum-03.jpg
+    alt:
+      en: Golghar Museum (Gulshan-e-Alam) — photo 3
+      hi: गोलघर संग्रहालय (गुलशन-ए-आलम) — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: golghar-museum-4
+    source_file: golghar-museum/golghar-museum-04.jpg
+    alt:
+      en: Golghar Museum (Gulshan-e-Alam) — photo 4
+      hi: गोलघर संग्रहालय (गुलशन-ए-आलम) — तस्वीर 4
+    credit: Suyash Dwivedi
+    license: ''
+    source_url: ''
+  - id: golghar-museum-5
+    source_file: golghar-museum/golghar-museum-05.jpg
+    alt:
+      en: Golghar Museum (Gulshan-e-Alam) — photo 5
+      hi: गोलघर संग्रहालय (गुलशन-ए-आलम) — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: golghar-museum-6
+    source_file: golghar-museum/golghar-museum-06.jpg
+    alt:
+      en: Golghar Museum (Gulshan-e-Alam) — photo 6
+      hi: गोलघर संग्रहालय (गुलशन-ए-आलम) — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -53,3 +100,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#83675e'
+  secondary: '#62a5fd'
+  on_primary: '#ffffff'

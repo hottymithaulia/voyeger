@@ -21,9 +21,56 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: birla-mandir-bhopal-1
+    source_file: birla-mandir-bhopal/birla-mandir-bhopal-01.jpg
+    alt:
+      en: Birla Mandir (Lakshmi Narayan Temple) — photo 1
+      hi: बिरला मंदिर (लक्ष्मी नारायण मंदिर) — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: birla-mandir-bhopal-2
+    source_file: birla-mandir-bhopal/birla-mandir-bhopal-02.jpg
+    alt:
+      en: Birla Mandir (Lakshmi Narayan Temple) — photo 2
+      hi: बिरला मंदिर (लक्ष्मी नारायण मंदिर) — तस्वीर 2
+    credit: MANFRED SOMMER asienman@web.de
+    license: ''
+    source_url: ''
+  - id: birla-mandir-bhopal-3
+    source_file: birla-mandir-bhopal/birla-mandir-bhopal-03.jpg
+    alt:
+      en: Birla Mandir (Lakshmi Narayan Temple) — photo 3
+      hi: बिरला मंदिर (लक्ष्मी नारायण मंदिर) — तस्वीर 3
+    credit: Suyash Dwivedi
+    license: ''
+    source_url: ''
+  - id: birla-mandir-bhopal-4
+    source_file: birla-mandir-bhopal/birla-mandir-bhopal-04.jpg
+    alt:
+      en: Birla Mandir (Lakshmi Narayan Temple) — photo 4
+      hi: बिरला मंदिर (लक्ष्मी नारायण मंदिर) — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: birla-mandir-bhopal-5
+    source_file: birla-mandir-bhopal/birla-mandir-bhopal-05.jpg
+    alt:
+      en: Birla Mandir (Lakshmi Narayan Temple) — photo 5
+      hi: बिरला मंदिर (लक्ष्मी नारायण मंदिर) — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: birla-mandir-bhopal-6
+    source_file: birla-mandir-bhopal/birla-mandir-bhopal-06.webp
+    alt:
+      en: Birla Mandir (Lakshmi Narayan Temple) — photo 6
+      hi: बिरला मंदिर (लक्ष्मी नारायण मंदिर) — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -56,3 +103,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#a88d62'
+  secondary: '#593e2b'
+  on_primary: '#000000'

@@ -21,9 +21,56 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: moti-mahal-bhopal-1
+    source_file: moti-mahal-bhopal/moti-mahal-bhopal-01.jpg
+    alt:
+      en: Moti Mahal — photo 1
+      hi: मोती महल — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: moti-mahal-bhopal-2
+    source_file: moti-mahal-bhopal/moti-mahal-bhopal-02.jpg
+    alt:
+      en: Moti Mahal — photo 2
+      hi: मोती महल — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: moti-mahal-bhopal-3
+    source_file: moti-mahal-bhopal/moti-mahal-bhopal-03.jpg
+    alt:
+      en: Moti Mahal — photo 3
+      hi: मोती महल — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: moti-mahal-bhopal-4
+    source_file: moti-mahal-bhopal/moti-mahal-bhopal-04.jpg
+    alt:
+      en: Moti Mahal — photo 4
+      hi: मोती महल — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: moti-mahal-bhopal-5
+    source_file: moti-mahal-bhopal/moti-mahal-bhopal-05.jpg
+    alt:
+      en: Moti Mahal — photo 5
+      hi: मोती महल — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: moti-mahal-bhopal-6
+    source_file: moti-mahal-bhopal/moti-mahal-bhopal-06.jpg
+    alt:
+      en: Moti Mahal — photo 6
+      hi: मोती महल — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -56,3 +103,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#5c5734'
+  secondary: '#352818'
+  on_primary: '#ffffff'

@@ -22,8 +22,18 @@ export function PlacePage({ slug }: { slug: string }) {
   const [saved, setSaved] = useState(false);
   const [connectivity, setConnectivity] = useState<AppConnectivity>("OFFLINE");
   const [photoIndex, setPhotoIndex] = useState(0);
+  const [slideshowPaused, setSlideshowPaused] = useState(false);
   const [shareMessage, setShareMessage] = useState("");
   const language: Language = i18n.language === "hi" ? "hi" : "en";
+
+  const imageCount = place?.media.images.length ?? 0;
+  useEffect(() => {
+    if (imageCount <= 1 || slideshowPaused) return;
+    const timer = window.setInterval(() => {
+      setPhotoIndex((prev) => (prev + 1) % imageCount);
+    }, 4500);
+    return () => window.clearInterval(timer);
+  }, [imageCount, slideshowPaused]);
 
   useEffect(() => {
     let active = true;
@@ -152,8 +162,15 @@ export function PlacePage({ slug }: { slug: string }) {
   return (
     <article className="place-detail-shell" style={themeVars}>
       <div className="place-backdrop" aria-hidden="true">
-        {activePhoto ? (
-          <img className="place-backdrop-img" src={resolvePackAssetUrl(activePhoto.file)} alt="" />
+        {images.length > 0 ? (
+          images.map((photo, index) => (
+            <img
+              key={photo.id}
+              className={`place-backdrop-img${index === photoIndex ? " place-backdrop-img--active" : ""}`}
+              src={resolvePackAssetUrl(photo.file)}
+              alt=""
+            />
+          ))
         ) : (
           <div className="place-backdrop-fallback" />
         )}
@@ -233,7 +250,13 @@ export function PlacePage({ slug }: { slug: string }) {
           </div>
 
           {activePhoto ? (
-            <div className="place-portrait-stage">
+            <div
+              className="place-portrait-stage"
+              onMouseEnter={() => setSlideshowPaused(true)}
+              onMouseLeave={() => setSlideshowPaused(false)}
+              onFocus={() => setSlideshowPaused(true)}
+              onBlur={() => setSlideshowPaused(false)}
+            >
               <figure className="place-portrait-frame">
                 <img
                   key={activePhoto.id}
@@ -244,20 +267,35 @@ export function PlacePage({ slug }: { slug: string }) {
                 {!isPlaceholderMedia && activePhoto.credit ? <figcaption>{activePhoto.credit}</figcaption> : null}
               </figure>
               {images.length > 1 ? (
-                <div className="place-thumb-strip" role="group" aria-label={t("nav.discover")}>
-                  {images.map((photo, index) => (
-                    <button
-                      key={photo.id}
-                      type="button"
-                      className={`place-thumb-btn${index === photoIndex ? " place-thumb-btn--active" : ""}`}
-                      aria-label={t("place.gallerySelect", { index: index + 1 })}
-                      aria-pressed={index === photoIndex}
-                      onClick={() => setPhotoIndex(index)}
-                    >
-                      <img src={resolvePackAssetUrl(photo.thumb || photo.file)} alt="" />
-                    </button>
-                  ))}
-                </div>
+                <>
+                  <div className="place-slideshow-dots" role="tablist" aria-label={t("nav.discover")}>
+                    {images.map((photo, index) => (
+                      <button
+                        key={photo.id}
+                        type="button"
+                        role="tab"
+                        aria-selected={index === photoIndex}
+                        aria-label={t("place.gallerySelect", { index: index + 1 })}
+                        className={`place-slideshow-dot${index === photoIndex ? " place-slideshow-dot--active" : ""}`}
+                        onClick={() => setPhotoIndex(index)}
+                      />
+                    ))}
+                  </div>
+                  <div className="place-thumb-strip" role="group" aria-label={t("nav.discover")}>
+                    {images.map((photo, index) => (
+                      <button
+                        key={photo.id}
+                        type="button"
+                        className={`place-thumb-btn${index === photoIndex ? " place-thumb-btn--active" : ""}`}
+                        aria-label={t("place.gallerySelect", { index: index + 1 })}
+                        aria-pressed={index === photoIndex}
+                        onClick={() => setPhotoIndex(index)}
+                      >
+                        <img src={resolvePackAssetUrl(photo.thumb || photo.file)} alt="" />
+                      </button>
+                    ))}
+                  </div>
+                </>
               ) : null}
             </div>
           ) : null}

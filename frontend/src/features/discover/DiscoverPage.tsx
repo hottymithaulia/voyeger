@@ -20,6 +20,7 @@ import { logEvent } from "@/data/outbox";
 import { Onboarding } from "@/features/discover/Onboarding";
 import { rankNearbySpots } from "@/features/nudge/logic";
 import { PhrasebookSheet } from "@/features/translate/PhrasebookSheet";
+import { resolvePackAssetUrl } from "@/lib/assets";
 import type { CityConfig, Language, Place, PlaceCategory } from "@/types";
 import type { TransferProgress } from "@/data/sync";
 
@@ -59,6 +60,7 @@ export function DiscoverPage({
   const [places, setPlaces] = useState<Place[]>([]);
   const [language, setLanguage] = useState<Language>("en");
   const [selected, setSelected] = useState<Place | null>(null);
+  const [selectedThumbError, setSelectedThumbError] = useState(false);
   const [nearbyOpen, setNearbyOpen] = useState(false);
   const [phrasebookOpen, setPhrasebookOpen] = useState(false);
   const [transfer, setTransfer] = useState<TransferProgress>();
@@ -110,6 +112,7 @@ export function DiscoverPage({
 
   const onSelect = useCallback((place: Place | null) => {
     setSelected(place);
+    setSelectedThumbError(false);
     setNearbyOpen(false);
     if (place) void logEvent("view", place.id, place.partner_id);
   }, []);
@@ -238,19 +241,34 @@ export function DiscoverPage({
       {selected && selectedCopy ? (
         <div className={`map-bottom${nearbyOpen ? " map-bottom--expanded" : ""}`}>
           <section className="map-bottom-sheet" aria-label={t("map.selected")}>
-            <div>
-              <span className="category-label">
-                {selected.is_anchor
-                  ? `${t("map.anchorBadge")} · ${t(`filters.${selected.category}`)}`
-                  : t(`filters.${selected.category}`)}
-              </span>
-              <h2 className="map-sheet-title">{selectedCopy.title}</h2>
-              <p className="map-sheet-copy">{selectedCopy.summary}</p>
-              {selected.is_anchor && nearby.length > 0 ? (
-                <p className="nudge-count">
-                  {t("nudge.title")} · {t("nudge.count", { count: nearby.length })}
-                </p>
-              ) : null}
+            <div className="map-sheet-lead">
+              {selected.media.images[0] && !selectedThumbError ? (
+                <img
+                  className="map-sheet-thumb"
+                  src={resolvePackAssetUrl(selected.media.images[0].thumb || selected.media.images[0].file)}
+                  alt={selected.media.images[0].alt[language] ?? selected.media.images[0].alt.en}
+                  loading="lazy"
+                  onError={() => setSelectedThumbError(true)}
+                />
+              ) : (
+                <span className="map-sheet-thumb map-sheet-thumb--fallback" aria-hidden="true">
+                  <Compass size={20} />
+                </span>
+              )}
+              <div className="map-sheet-copy-wrap">
+                <span className="category-label">
+                  {selected.is_anchor
+                    ? `${t("map.anchorBadge")} · ${t(`filters.${selected.category}`)}`
+                    : t(`filters.${selected.category}`)}
+                </span>
+                <h2 className="map-sheet-title">{selectedCopy.title}</h2>
+                <p className="map-sheet-copy">{selectedCopy.summary}</p>
+                {selected.is_anchor && nearby.length > 0 ? (
+                  <p className="nudge-count">
+                    {t("nudge.title")} · {t("nudge.count", { count: nearby.length })}
+                  </p>
+                ) : null}
+              </div>
             </div>
             <div className="map-sheet-actions">
               <Link

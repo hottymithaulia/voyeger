@@ -21,9 +21,64 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: chhatri-khushvakht-rai-saxena-baoli-1
+    source_file: chhatri-khushvakht-rai-saxena-baoli/chhatri-khushvakht-rai-saxena-baoli-01.jpg
+    alt:
+      en: Chhatri of Raja Khushvakht Rai Saxena and Baoli — photo 1
+      hi: राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: chhatri-khushvakht-rai-saxena-baoli-2
+    source_file: chhatri-khushvakht-rai-saxena-baoli/chhatri-khushvakht-rai-saxena-baoli-02.jpg
+    alt:
+      en: Chhatri of Raja Khushvakht Rai Saxena and Baoli — photo 2
+      hi: राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: chhatri-khushvakht-rai-saxena-baoli-3
+    source_file: chhatri-khushvakht-rai-saxena-baoli/chhatri-khushvakht-rai-saxena-baoli-03.jpg
+    alt:
+      en: Chhatri of Raja Khushvakht Rai Saxena and Baoli — photo 3
+      hi: राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: chhatri-khushvakht-rai-saxena-baoli-4
+    source_file: chhatri-khushvakht-rai-saxena-baoli/chhatri-khushvakht-rai-saxena-baoli-04.jpg
+    alt:
+      en: Chhatri of Raja Khushvakht Rai Saxena and Baoli — photo 4
+      hi: राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: chhatri-khushvakht-rai-saxena-baoli-5
+    source_file: chhatri-khushvakht-rai-saxena-baoli/chhatri-khushvakht-rai-saxena-baoli-05.jpg
+    alt:
+      en: Chhatri of Raja Khushvakht Rai Saxena and Baoli — photo 5
+      hi: राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: chhatri-khushvakht-rai-saxena-baoli-6
+    source_file: chhatri-khushvakht-rai-saxena-baoli/chhatri-khushvakht-rai-saxena-baoli-06.jpg
+    alt:
+      en: Chhatri of Raja Khushvakht Rai Saxena and Baoli — photo 6
+      hi: राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: chhatri-khushvakht-rai-saxena-baoli-7
+    source_file: chhatri-khushvakht-rai-saxena-baoli/chhatri-khushvakht-rai-saxena-baoli-07.jpg
+    alt:
+      en: Chhatri of Raja Khushvakht Rai Saxena and Baoli — photo 7
+      hi: राजा खुशवक्त राय सक्सेना की छतरी और बावड़ी — तस्वीर 7
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -53,3 +108,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#542f10'
+  secondary: '#8b6733'
+  on_primary: '#ffffff'

@@ -21,9 +21,56 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: maulana-azad-central-library-1
+    source_file: maulana-azad-central-library/maulana-azad-central-library-01.jpeg
+    alt:
+      en: Maulana Azad Central Library (Former Edward Museum) — photo 1
+      hi: मौलाना आज़ाद सेंट्रल लाइब्रेरी (पूर्व एडवर्ड संग्रहालय) — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: maulana-azad-central-library-2
+    source_file: maulana-azad-central-library/maulana-azad-central-library-02.jpg
+    alt:
+      en: Maulana Azad Central Library (Former Edward Museum) — photo 2
+      hi: मौलाना आज़ाद सेंट्रल लाइब्रेरी (पूर्व एडवर्ड संग्रहालय) — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: maulana-azad-central-library-3
+    source_file: maulana-azad-central-library/maulana-azad-central-library-03.jpg
+    alt:
+      en: Maulana Azad Central Library (Former Edward Museum) — photo 3
+      hi: मौलाना आज़ाद सेंट्रल लाइब्रेरी (पूर्व एडवर्ड संग्रहालय) — तस्वीर 3
+    credit: Dddube | Dreamstime.com
+    license: ''
+    source_url: ''
+  - id: maulana-azad-central-library-4
+    source_file: maulana-azad-central-library/maulana-azad-central-library-04.jpg
+    alt:
+      en: Maulana Azad Central Library (Former Edward Museum) — photo 4
+      hi: मौलाना आज़ाद सेंट्रल लाइब्रेरी (पूर्व एडवर्ड संग्रहालय) — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: maulana-azad-central-library-5
+    source_file: maulana-azad-central-library/maulana-azad-central-library-05.jpg
+    alt:
+      en: Maulana Azad Central Library (Former Edward Museum) — photo 5
+      hi: मौलाना आज़ाद सेंट्रल लाइब्रेरी (पूर्व एडवर्ड संग्रहालय) — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: maulana-azad-central-library-6
+    source_file: maulana-azad-central-library/maulana-azad-central-library-06.jpg
+    alt:
+      en: Maulana Azad Central Library (Former Edward Museum) — photo 6
+      hi: मौलाना आज़ाद सेंट्रल लाइब्रेरी (पूर्व एडवर्ड संग्रहालय) — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -53,3 +100,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#474c5e'
+  secondary: '#292940'
+  on_primary: '#ffffff'

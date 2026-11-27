@@ -21,9 +21,56 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: bhadbhada-dam-1
+    source_file: bhadbhada-dam/bhadbhada-dam-01.jpg
+    alt:
+      en: Bhadbhada Dam — photo 1
+      hi: भदभदा डैम — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bhadbhada-dam-2
+    source_file: bhadbhada-dam/bhadbhada-dam-02.jpg
+    alt:
+      en: Bhadbhada Dam — photo 2
+      hi: भदभदा डैम — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bhadbhada-dam-3
+    source_file: bhadbhada-dam/bhadbhada-dam-03.jpg
+    alt:
+      en: Bhadbhada Dam — photo 3
+      hi: भदभदा डैम — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bhadbhada-dam-4
+    source_file: bhadbhada-dam/bhadbhada-dam-04.jpg
+    alt:
+      en: Bhadbhada Dam — photo 4
+      hi: भदभदा डैम — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bhadbhada-dam-5
+    source_file: bhadbhada-dam/bhadbhada-dam-05.jpg
+    alt:
+      en: Bhadbhada Dam — photo 5
+      hi: भदभदा डैम — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: bhadbhada-dam-6
+    source_file: bhadbhada-dam/bhadbhada-dam-06.jpg
+    alt:
+      en: Bhadbhada Dam — photo 6
+      hi: भदभदा डैम — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -50,3 +97,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#575950'
+  secondary: '#2a362d'
+  on_primary: '#ffffff'

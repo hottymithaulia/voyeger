@@ -21,9 +21,64 @@ sensitivity:
   note: null
 partner_id: null
 media:
-  images: []
+  images:
+  - id: manua-bhan-ki-tekri-1
+    source_file: manua-bhan-ki-tekri/manua-bhan-ki-tekri-01.jpg
+    alt:
+      en: Manua Bhan Ki Tekri — photo 1
+      hi: मनुआभान की टेकरी — तस्वीर 1
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: manua-bhan-ki-tekri-2
+    source_file: manua-bhan-ki-tekri/manua-bhan-ki-tekri-02.jpg
+    alt:
+      en: Manua Bhan Ki Tekri — photo 2
+      hi: मनुआभान की टेकरी — तस्वीर 2
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: manua-bhan-ki-tekri-3
+    source_file: manua-bhan-ki-tekri/manua-bhan-ki-tekri-03.jpg
+    alt:
+      en: Manua Bhan Ki Tekri — photo 3
+      hi: मनुआभान की टेकरी — तस्वीर 3
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: manua-bhan-ki-tekri-4
+    source_file: manua-bhan-ki-tekri/manua-bhan-ki-tekri-04.jpg
+    alt:
+      en: Manua Bhan Ki Tekri — photo 4
+      hi: मनुआभान की टेकरी — तस्वीर 4
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: manua-bhan-ki-tekri-5
+    source_file: manua-bhan-ki-tekri/manua-bhan-ki-tekri-05.jpg
+    alt:
+      en: Manua Bhan Ki Tekri — photo 5
+      hi: मनुआभान की टेकरी — तस्वीर 5
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: manua-bhan-ki-tekri-6
+    source_file: manua-bhan-ki-tekri/manua-bhan-ki-tekri-06.jpg
+    alt:
+      en: Manua Bhan Ki Tekri — photo 6
+      hi: मनुआभान की टेकरी — तस्वीर 6
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
+  - id: manua-bhan-ki-tekri-7
+    source_file: manua-bhan-ki-tekri/manua-bhan-ki-tekri-07.webp
+    alt:
+      en: Manua Bhan Ki Tekri — photo 7
+      hi: मनुआभान की टेकरी — तस्वीर 7
+    credit: Attribution pending verification
+    license: ''
+    source_url: ''
   video: null
-  placeholder: true
 provenance:
   source: curated-research
   license: CC-BY-SA-4.0
@@ -53,3 +108,7 @@ text:
     tips: []
     needs_review: true
 deleted: false
+theme:
+  primary: '#302a24'
+  secondary: '#4d75a3'
+  on_primary: '#ffffff'

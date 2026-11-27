@@ -37,14 +37,44 @@
     "media": {
       "images": [
         {
-          "id": "upper-lake-cover",
-          "file": "/pack/v2/images/upper-lake.webp",
-          "thumb": "/pack/v2/images/upper-lake.webp",
+          "id": "upper-lake-bhojtal-1",
+          "file": "/pack/v2/images/upper-lake-bhojtal-1.webp",
+          "thumb": "/pack/v2/images/upper-lake-bhojtal-1.thumb.webp",
           "alt": {
-            "en": "Illustrated sample view of Upper Lake",
-            "hi": "बड़ा तालाब का नमूना चित्र"
+            "en": "Upper Lake (Bhojtal) — photo 1",
+            "hi": "अपर लेक (भोजताल) — तस्वीर 1"
           },
-          "credit": "Voyeger sample illustration"
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "upper-lake-bhojtal-2",
+          "file": "/pack/v2/images/upper-lake-bhojtal-2.webp",
+          "thumb": "/pack/v2/images/upper-lake-bhojtal-2.thumb.webp",
+          "alt": {
+            "en": "Upper Lake (Bhojtal) — photo 2",
+            "hi": "अपर लेक (भोजताल) — तस्वीर 2"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "upper-lake-bhojtal-3",
+          "file": "/pack/v2/images/upper-lake-bhojtal-3.webp",
+          "thumb": "/pack/v2/images/upper-lake-bhojtal-3.thumb.webp",
+          "alt": {
+            "en": "Upper Lake (Bhojtal) — photo 3",
+            "hi": "अपर लेक (भोजताल) — तस्वीर 3"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "upper-lake-bhojtal-4",
+          "file": "/pack/v2/images/upper-lake-bhojtal-4.webp",
+          "thumb": "/pack/v2/images/upper-lake-bhojtal-4.thumb.webp",
+          "alt": {
+            "en": "Upper Lake (Bhojtal) — photo 4",
+            "hi": "अपर लेक (भोजताल) — तस्वीर 4"
+          },
+          "credit": "Attribution pending verification"
         }
       ],
       "video": {
@@ -68,7 +98,12 @@
       "verified_at": "2026-11-27"
     },
     "updated_in_version": 1,
-    "partner_id": "sample-lakeside-stay"
+    "partner_id": "sample-lakeside-stay",
+    "theme": {
+      "primary": "#d8edfe",
+      "secondary": "#3f3329",
+      "on_primary": "#000000"
+    }
   },
   {
     "id": "bharat-bhavan",
@@ -108,14 +143,64 @@
     "media": {
       "images": [
         {
-          "id": "bharat-bhavan-cover",
-          "file": "/pack/v2/images/bharat-bhavan.webp",
-          "thumb": "/pack/v2/images/bharat-bhavan.webp",
+          "id": "bharat-bhavan-1",
+          "file": "/pack/v2/images/bharat-bhavan-1.webp",
+          "thumb": "/pack/v2/images/bharat-bhavan-1.thumb.webp",
           "alt": {
-            "en": "Illustrated sample view of Bharat Bhavan",
-            "hi": "भारत भवन का नमूना चित्र"
+            "en": "Bharat Bhavan — photo 1",
+            "hi": "भारत भवन — तस्वीर 1"
           },
-          "credit": "Voyeger sample illustration"
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "bharat-bhavan-2",
+          "file": "/pack/v2/images/bharat-bhavan-2.webp",
+          "thumb": "/pack/v2/images/bharat-bhavan-2.thumb.webp",
+          "alt": {
+            "en": "Bharat Bhavan — photo 2",
+            "hi": "भारत भवन — तस्वीर 2"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "bharat-bhavan-3",
+          "file": "/pack/v2/images/bharat-bhavan-3.webp",
+          "thumb": "/pack/v2/images/bharat-bhavan-3.thumb.webp",
+          "alt": {
+            "en": "Bharat Bhavan — photo 3",
+            "hi": "भारत भवन — तस्वीर 3"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "bharat-bhavan-4",
+          "file": "/pack/v2/images/bharat-bhavan-4.webp",
+          "thumb": "/pack/v2/images/bharat-bhavan-4.thumb.webp",
+          "alt": {
+            "en": "Bharat Bhavan — photo 4",
+            "hi": "भारत भवन — तस्वीर 4"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "bharat-bhavan-5",
+          "file": "/pack/v2/images/bharat-bhavan-5.webp",
+          "thumb": "/pack/v2/images/bharat-bhavan-5.thumb.webp",
+          "alt": {
+            "en": "Bharat Bhavan — photo 5",
+            "hi": "भारत भवन — तस्वीर 5"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "bharat-bhavan-6",
+          "file": "/pack/v2/images/bharat-bhavan-6.webp",
+          "thumb": "/pack/v2/images/bharat-bhavan-6.thumb.webp",
+          "alt": {
+            "en": "Bharat Bhavan — photo 6",
+            "hi": "भारत भवन — तस्वीर 6"
+          },
+          "credit": "Attribution pending verification"
         }
       ],
       "video": {
@@ -138,7 +223,12 @@
       "verified_by": "Voyeger demo",
       "verified_at": "2026-11-27"
     },
-    "updated_in_version": 1
+    "updated_in_version": 1,
+    "theme": {
+      "primary": "#7a675d",
+      "secondary": "#9b8d83",
+      "on_primary": "#ffffff"
+    }
   },
   {
     "id": "gauhar-mahal",
@@ -181,14 +271,64 @@
     "media": {
       "images": [
         {
-          "id": "gauhar-mahal-cover",
-          "file": "/pack/v2/images/gauhar-mahal.webp",
-          "thumb": "/pack/v2/images/gauhar-mahal.webp",
+          "id": "gohar-mahal-1",
+          "file": "/pack/v2/images/gohar-mahal-1.webp",
+          "thumb": "/pack/v2/images/gohar-mahal-1.thumb.webp",
           "alt": {
-            "en": "Illustrated sample view of Gauhar Mahal",
-            "hi": "गौहर महल का नमूना चित्र"
+            "en": "Gohar Mahal — photo 1",
+            "hi": "गौहर महल — तस्वीर 1"
           },
-          "credit": "Voyeger sample illustration"
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "gohar-mahal-2",
+          "file": "/pack/v2/images/gohar-mahal-2.webp",
+          "thumb": "/pack/v2/images/gohar-mahal-2.thumb.webp",
+          "alt": {
+            "en": "Gohar Mahal — photo 2",
+            "hi": "गौहर महल — तस्वीर 2"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "gohar-mahal-3",
+          "file": "/pack/v2/images/gohar-mahal-3.webp",
+          "thumb": "/pack/v2/images/gohar-mahal-3.thumb.webp",
+          "alt": {
+            "en": "Gohar Mahal — photo 3",
+            "hi": "गौहर महल — तस्वीर 3"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "gohar-mahal-4",
+          "file": "/pack/v2/images/gohar-mahal-4.webp",
+          "thumb": "/pack/v2/images/gohar-mahal-4.thumb.webp",
+          "alt": {
+            "en": "Gohar Mahal — photo 4",
+            "hi": "गौहर महल — तस्वीर 4"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "gohar-mahal-5",
+          "file": "/pack/v2/images/gohar-mahal-5.webp",
+          "thumb": "/pack/v2/images/gohar-mahal-5.thumb.webp",
+          "alt": {
+            "en": "Gohar Mahal — photo 5",
+            "hi": "गौहर महल — तस्वीर 5"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "gohar-mahal-6",
+          "file": "/pack/v2/images/gohar-mahal-6.webp",
+          "thumb": "/pack/v2/images/gohar-mahal-6.thumb.webp",
+          "alt": {
+            "en": "Gohar Mahal — photo 6",
+            "hi": "गौहर महल — तस्वीर 6"
+          },
+          "credit": "Attribution pending verification"
         }
       ]
     },
@@ -206,7 +346,12 @@
       "verified_by": "Voyeger demo",
       "verified_at": "2026-11-27"
     },
-    "updated_in_version": 2
+    "updated_in_version": 2,
+    "theme": {
+      "primary": "#546065",
+      "secondary": "#3a85b0",
+      "on_primary": "#ffffff"
+    }
   },
   {
     "id": "moti-masjid",
@@ -317,14 +462,44 @@
     "media": {
       "images": [
         {
-          "id": "sadar-manzil-cover",
-          "file": "/pack/v2/images/sadar-manzil.webp",
-          "thumb": "/pack/v2/images/sadar-manzil.webp",
+          "id": "shaukat-mahal-sadar-manzil-1",
+          "file": "/pack/v2/images/shaukat-mahal-sadar-manzil-1.webp",
+          "thumb": "/pack/v2/images/shaukat-mahal-sadar-manzil-1.thumb.webp",
           "alt": {
-            "en": "Illustrated sample view of Sadar Manzil",
-            "hi": "सदर मंज़िल का नमूना चित्र"
+            "en": "Shaukat Mahal and Sadar Manzil — photo 1",
+            "hi": "शौकत महल और सदर मंज़िल — तस्वीर 1"
           },
-          "credit": "Voyeger sample illustration"
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "shaukat-mahal-sadar-manzil-2",
+          "file": "/pack/v2/images/shaukat-mahal-sadar-manzil-2.webp",
+          "thumb": "/pack/v2/images/shaukat-mahal-sadar-manzil-2.thumb.webp",
+          "alt": {
+            "en": "Shaukat Mahal and Sadar Manzil — photo 2",
+            "hi": "शौकत महल और सदर मंज़िल — तस्वीर 2"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "shaukat-mahal-sadar-manzil-3",
+          "file": "/pack/v2/images/shaukat-mahal-sadar-manzil-3.webp",
+          "thumb": "/pack/v2/images/shaukat-mahal-sadar-manzil-3.thumb.webp",
+          "alt": {
+            "en": "Shaukat Mahal and Sadar Manzil — photo 3",
+            "hi": "शौकत महल और सदर मंज़िल — तस्वीर 3"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "shaukat-mahal-sadar-manzil-4",
+          "file": "/pack/v2/images/shaukat-mahal-sadar-manzil-4.webp",
+          "thumb": "/pack/v2/images/shaukat-mahal-sadar-manzil-4.thumb.webp",
+          "alt": {
+            "en": "Shaukat Mahal and Sadar Manzil — photo 4",
+            "hi": "शौकत महल और सदर मंज़िल — तस्वीर 4"
+          },
+          "credit": "Attribution pending verification"
         }
       ]
     },
@@ -342,7 +517,12 @@
       "verified_by": "Voyeger demo",
       "verified_at": "2026-11-27"
     },
-    "updated_in_version": 1
+    "updated_in_version": 1,
+    "theme": {
+      "primary": "#777a8d",
+      "secondary": "#694c41",
+      "on_primary": "#000000"
+    }
   },
   {
     "id": "old-city-food-lane",
@@ -454,14 +634,44 @@
     "media": {
       "images": [
         {
-          "id": "shaukat-mahal-cover",
-          "file": "/pack/v2/images/shaukat-mahal.webp",
-          "thumb": "/pack/v2/images/shaukat-mahal.webp",
+          "id": "shaukat-mahal-sadar-manzil-1",
+          "file": "/pack/v2/images/shaukat-mahal-sadar-manzil-1.webp",
+          "thumb": "/pack/v2/images/shaukat-mahal-sadar-manzil-1.thumb.webp",
           "alt": {
-            "en": "Illustrated sample view of Shaukat Mahal",
-            "hi": "शौकत महल का नमूना चित्र"
+            "en": "Shaukat Mahal and Sadar Manzil — photo 1",
+            "hi": "शौकत महल और सदर मंज़िल — तस्वीर 1"
           },
-          "credit": "Voyeger sample illustration"
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "shaukat-mahal-sadar-manzil-2",
+          "file": "/pack/v2/images/shaukat-mahal-sadar-manzil-2.webp",
+          "thumb": "/pack/v2/images/shaukat-mahal-sadar-manzil-2.thumb.webp",
+          "alt": {
+            "en": "Shaukat Mahal and Sadar Manzil — photo 2",
+            "hi": "शौकत महल और सदर मंज़िल — तस्वीर 2"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "shaukat-mahal-sadar-manzil-3",
+          "file": "/pack/v2/images/shaukat-mahal-sadar-manzil-3.webp",
+          "thumb": "/pack/v2/images/shaukat-mahal-sadar-manzil-3.thumb.webp",
+          "alt": {
+            "en": "Shaukat Mahal and Sadar Manzil — photo 3",
+            "hi": "शौकत महल और सदर मंज़िल — तस्वीर 3"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "shaukat-mahal-sadar-manzil-4",
+          "file": "/pack/v2/images/shaukat-mahal-sadar-manzil-4.webp",
+          "thumb": "/pack/v2/images/shaukat-mahal-sadar-manzil-4.thumb.webp",
+          "alt": {
+            "en": "Shaukat Mahal and Sadar Manzil — photo 4",
+            "hi": "शौकत महल और सदर मंज़िल — तस्वीर 4"
+          },
+          "credit": "Attribution pending verification"
         }
       ]
     },
@@ -479,7 +689,12 @@
       "verified_by": "Voyeger demo",
       "verified_at": "2026-11-27"
     },
-    "updated_in_version": 1
+    "updated_in_version": 1,
+    "theme": {
+      "primary": "#777a8d",
+      "secondary": "#694c41",
+      "on_primary": "#000000"
+    }
   },
   {
     "id": "tribal-museum",
@@ -522,14 +737,94 @@
     "media": {
       "images": [
         {
-          "id": "tribal-museum-cover",
-          "file": "/pack/v2/images/tribal-museum.webp",
-          "thumb": "/pack/v2/images/tribal-museum.webp",
+          "id": "tribal-museum-bhopal-1",
+          "file": "/pack/v2/images/tribal-museum-bhopal-1.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-1.thumb.webp",
           "alt": {
-            "en": "Illustrated sample view of Tribal Museum",
-            "hi": "जनजातीय संग्रहालय का नमूना चित्र"
+            "en": "Madhya Pradesh Tribal Museum — photo 1",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 1"
           },
-          "credit": "Voyeger sample illustration"
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "tribal-museum-bhopal-2",
+          "file": "/pack/v2/images/tribal-museum-bhopal-2.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-2.thumb.webp",
+          "alt": {
+            "en": "Madhya Pradesh Tribal Museum — photo 2",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 2"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "tribal-museum-bhopal-3",
+          "file": "/pack/v2/images/tribal-museum-bhopal-3.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-3.thumb.webp",
+          "alt": {
+            "en": "Madhya Pradesh Tribal Museum — photo 3",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 3"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "tribal-museum-bhopal-4",
+          "file": "/pack/v2/images/tribal-museum-bhopal-4.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-4.thumb.webp",
+          "alt": {
+            "en": "Madhya Pradesh Tribal Museum — photo 4",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 4"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "tribal-museum-bhopal-5",
+          "file": "/pack/v2/images/tribal-museum-bhopal-5.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-5.thumb.webp",
+          "alt": {
+            "en": "Madhya Pradesh Tribal Museum — photo 5",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 5"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "tribal-museum-bhopal-6",
+          "file": "/pack/v2/images/tribal-museum-bhopal-6.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-6.thumb.webp",
+          "alt": {
+            "en": "Madhya Pradesh Tribal Museum — photo 6",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 6"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "tribal-museum-bhopal-7",
+          "file": "/pack/v2/images/tribal-museum-bhopal-7.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-7.thumb.webp",
+          "alt": {
+            "en": "Madhya Pradesh Tribal Museum — photo 7",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 7"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "tribal-museum-bhopal-8",
+          "file": "/pack/v2/images/tribal-museum-bhopal-8.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-8.thumb.webp",
+          "alt": {
+            "en": "Madhya Pradesh Tribal Museum — photo 8",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 8"
+          },
+          "credit": "Attribution pending verification"
+        },
+        {
+          "id": "tribal-museum-bhopal-9",
+          "file": "/pack/v2/images/tribal-museum-bhopal-9.webp",
+          "thumb": "/pack/v2/images/tribal-museum-bhopal-9.thumb.webp",
+          "alt": {
+            "en": "Madhya Pradesh Tribal Museum — photo 9",
+            "hi": "मध्यप्रदेश जनजातीय संग्रहालय — तस्वीर 9"
+          },
+          "credit": "Attribution pending verification"
         }
       ]
     },
@@ -547,7 +842,12 @@
       "verified_by": "Voyeger demo",
       "verified_at": "2026-11-27"
     },
-    "updated_in_version": 1
+    "updated_in_version": 1,
+    "theme": {
+      "primary": "#8e7f6f",
+      "secondary": "#382413",
+      "on_primary": "#000000"
+    }
   },
   {
     "id": "heritage-courtyard-walk",

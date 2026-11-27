@@ -255,6 +255,10 @@
 .map-bottom > * { pointer-events: auto; }
 .map-chip-wrap { overflow: hidden; }
 .map-bottom-sheet { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--background); box-shadow: 0 8px 24px color-mix(in oklch, var(--foreground) 12%, transparent); }
+.map-sheet-lead { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.map-sheet-copy-wrap { min-width: 0; }
+.map-sheet-thumb { flex: none; width: 64px; height: 64px; border-radius: 8px; object-fit: cover; background: var(--secondary); border: 1px solid var(--border); }
+.map-sheet-thumb--fallback { display: grid; place-items: center; color: var(--muted-foreground); }
 .map-sheet-actions { display: flex; align-items: center; gap: 4px; }
 .nudge-count { margin: 7px 0 0; color: var(--primary); font-size: 11px; font-weight: 750; }
 .nearby-wrap { grid-column: 1 / -1; display: grid; gap: 8px; }
@@ -292,6 +296,7 @@
 .content-list { display: grid; gap: 12px; }
 .place-list-item { display: grid; grid-template-columns: 76px minmax(0,1fr) auto; gap: 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--border); color: inherit; text-decoration: none; }
 .place-thumb { width: 76px; aspect-ratio: 1; border-radius: 8px; object-fit: cover; background: var(--secondary); }
+.place-thumb--fallback { display: grid; place-items: center; color: var(--muted-foreground); border: 1px solid var(--border); }
 .place-list-title { margin: 0; font-size: 16px; font-weight: 750; }
 .place-list-copy { margin: 5px 0 0; color: var(--muted-foreground); font-size: 13px; line-height: 1.4; }
 .category-label { display: inline-flex; color: var(--primary); font-size: 10px; font-weight: 800; text-transform: uppercase; }
@@ -659,7 +664,8 @@
   --place-tint: var(--place-secondary, var(--secondary));
 }
 .place-backdrop { position: absolute; inset: 0 0 auto 0; height: min(560px, 72vh); overflow: hidden; pointer-events: none; z-index: 0; }
-.place-backdrop-img { width: 100%; height: 100%; object-fit: cover; filter: blur(34px) saturate(1.18); transform: scale(1.12); opacity: 0.34; transition: opacity 280ms ease; }
+.place-backdrop-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(34px) saturate(1.18); transform: scale(1.12); opacity: 0; transition: opacity 900ms ease; }
+.place-backdrop-img--active { opacity: 0.38; }
 .place-backdrop-fallback {
   width: 100%;
   height: 100%;
@@ -667,7 +673,7 @@
     radial-gradient(circle at 20% 20%, color-mix(in oklch, var(--place-tint) 65%, transparent), transparent 62%),
     radial-gradient(circle at 80% 15%, color-mix(in oklch, var(--place-accent) 18%, transparent), transparent 55%);
 }
-.place-backdrop-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in oklch, var(--background) 28%, transparent) 0%, var(--background) 100%); }
+.place-backdrop-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in oklch, var(--foreground) 10%, transparent) 0%, color-mix(in oklch, var(--background) 42%, transparent) 46%, var(--background) 100%); }
 .place-detail { position: relative; z-index: 1; animation: voyeger-fade-up 420ms ease both; }
 .place-back-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 18px; }
 .place-editorial-card {
@@ -703,6 +709,9 @@
 .place-portrait-frame { margin: 0; width: 100%; max-width: 380px; display: grid; gap: 6px; }
 .place-portrait-img { width: 100%; aspect-ratio: 3 / 4; border-radius: 14px; object-fit: cover; background: var(--secondary); box-shadow: 0 14px 36px color-mix(in oklch, var(--foreground) 16%, transparent); animation: voyeger-fade-up 320ms ease both; }
 .place-portrait-frame figcaption { color: var(--muted-foreground); font-size: 11px; text-align: center; }
+.place-slideshow-dots { display: flex; align-items: center; justify-content: center; gap: 6px; }
+.place-slideshow-dot { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 999px; background: color-mix(in oklch, var(--muted-foreground) 38%, transparent); cursor: pointer; transition: width 200ms ease, background-color 200ms ease; }
+.place-slideshow-dot--active { width: 20px; background: var(--place-accent); }
 .place-thumb-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .place-thumb-btn { width: 52px; height: 52px; padding: 0; overflow: hidden; border: 2px solid var(--border); border-radius: 8px; background: var(--muted); cursor: pointer; opacity: 0.72; transition: opacity 150ms ease, border-color 150ms ease, transform 150ms ease; }
 .place-thumb-btn--active, .place-thumb-btn:hover { opacity: 1; border-color: var(--place-accent); transform: translateY(-1px); }
