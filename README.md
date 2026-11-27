@@ -1,4 +1,4 @@
-# Voyeger — Offline-First Cultural & Local Discovery Platform (Bhopal)
+# Voyeger — Hybrid(offline+online) Cultural & Local Discovery Platform (Bhopal)
 
 **Voyeger** is an offline-first, multilingual web application that helps travellers discover lesser-known heritage sites, local kitchens, cultural spaces, and neighbourhood experiences around Bhopal — even without connectivity.
 
