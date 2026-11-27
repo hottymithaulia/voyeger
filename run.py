@@ -195,7 +195,7 @@ def _frontend_deps_ok() -> bool:
         node_modules / "vite",
         node_modules / "vitest",
         node_modules / "typescript",
-        node_modules / "@testing-library" / "dom",
+        node_modules / "@testing-library" / "react",
     ]
     return all(p.exists() for p in required_pkgs)
 
