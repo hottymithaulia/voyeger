@@ -1,14 +1,8 @@
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
-// or the app will break with duplicate plugins:
-//   - TanStack devtools (dev-only, first), tanstackStart, viteReact, tailwindcss, tsConfigPaths,
-//     nitro (build-only using cloudflare as a default target), VITE_* env injection, @ path alias,
-//     React/TanStack dedupe, error logger plugins, and sandbox detection (port/host/strictPort).
-// Never set ssr.external or resolve.external: the Worker has no runtime module resolution, so
-// the build fails. Never add compression (compressPublicAssets, vite-plugin-compression):
-// hosting already compresses at the edge.
-// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
-import type { Plugin, PluginOption } from "vite";
+import { defineConfig, type Plugin, type PluginOption } from "vite";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import viteReact from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import tsConfigPaths from "vite-tsconfig-paths";
 import { VitePWA, type VitePWAOptions } from "vite-plugin-pwa";
 
 const pwaOptions: Partial<VitePWAOptions> = {
@@ -96,26 +90,32 @@ function generateSwAfterPrerender(): Plugin {
 }
 
 export default defineConfig({
-  nitro: false,
-  vite: {
-    optimizeDeps: {
-      include: [
-        "use-sync-external-store/shim",
-        "use-sync-external-store/shim/with-selector",
-        "@tanstack/react-store",
-        "maplibre-gl",
-        "pmtiles",
-      ],
-    },
-    plugins: [pwaPlugins as unknown as PluginOption, generateSwAfterPrerender()],
+  server: {
+    port: 8080,
+    host: true,
   },
-  tanstackStart: {
-    server: { entry: "server" },
-    spa: {
-      enabled: true,
-      prerender: {
-        outputPath: "/index.html",
+  optimizeDeps: {
+    include: [
+      "use-sync-external-store/shim",
+      "use-sync-external-store/shim/with-selector",
+      "@tanstack/react-store",
+      "maplibre-gl",
+      "pmtiles",
+    ],
+  },
+  plugins: [
+    tsConfigPaths(),
+    tailwindcss(),
+    tanstackStart({
+      spa: {
+        enabled: true,
+        prerender: {
+          outputPath: "/index.html",
+        },
       },
-    },
-  },
+    }),
+    viteReact(),
+    pwaPlugins as unknown as PluginOption,
+    generateSwAfterPrerender(),
+  ],
 });
