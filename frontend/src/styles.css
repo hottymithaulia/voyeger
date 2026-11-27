@@ -216,6 +216,7 @@
 }
 
 .app-header {
+  position: relative;
   height: 64px;
   flex: 0 0 64px;
   display: flex;
@@ -223,9 +224,15 @@
   justify-content: space-between;
   gap: 12px;
   padding: 0 20px;
-  border-bottom: 1px solid var(--border);
-  background: var(--background);
+  border-bottom: 0;
+  background: transparent;
+  pointer-events: none;
   z-index: 20;
+}
+
+.app-header .brand-lockup,
+.app-header .header-actions > * {
+  pointer-events: auto;
 }
 
 .brand-lockup {
@@ -326,7 +333,7 @@
   inset: 0;
   z-index: 90;
   pointer-events: none;
-  background: radial-gradient(circle at var(--reveal-origin, 50% 50%), #ff5a54 0%, #e84f4a 52%, var(--primary) 100%);
+  background: radial-gradient(circle at var(--reveal-origin, 50% 50%), #ff625c 0%, #ff625c 62%, #e84f4a 100%);
   will-change: clip-path, opacity;
 }
 
@@ -3322,6 +3329,356 @@
 
   .settings-lang-action .voyager-button {
     width: 100%;
+  }
+}
+
+/* Transparent floating glass header overlay & homepage refinements */
+.app-header .brand-lockup {
+  padding: 6px 14px 6px 8px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklch, var(--border) 74%, transparent);
+  background: color-mix(in oklch, var(--card) 74%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 24px color-mix(in oklch, var(--foreground) 7%, transparent);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.app-header .brand-lockup:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in oklch, var(--brand-green) 36%, var(--border));
+  background: color-mix(in oklch, var(--card) 86%, transparent);
+}
+
+.app-header .sample-stamp,
+.app-header .header-status {
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklch, var(--border) 72%, transparent);
+  background: color-mix(in oklch, var(--card) 72%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 6px 18px color-mix(in oklch, var(--foreground) 6%, transparent);
+}
+
+.app-header .header-actions > button:not(.header-status),
+.app-header .header-actions > a {
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklch, var(--border) 72%, transparent);
+  background: color-mix(in oklch, var(--card) 72%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 6px 18px color-mix(in oklch, var(--foreground) 6%, transparent);
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.app-header .header-actions > button:hover,
+.app-header .header-actions > a:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in oklch, var(--brand-green) 34%, var(--border));
+  background: color-mix(in oklch, var(--card) 88%, transparent);
+}
+
+.app-frame--welcome {
+  position: relative;
+  overflow-x: clip;
+  background: transparent;
+}
+
+.app-frame--welcome > .app-header {
+  z-index: 20;
+}
+
+.app-frame--welcome > .app-main--welcome {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.welcome-screen {
+  position: relative;
+  overflow: visible;
+}
+
+.welcome-screen > *:not(.welcome-backdrop) {
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(62% 54% at 14% 18%, rgba(255, 98, 92, 0.24) 0%, rgba(255, 98, 92, 0.08) 48%, transparent 74%),
+    radial-gradient(58% 54% at 86% 24%, rgba(22, 75, 56, 0.20) 0%, rgba(22, 75, 56, 0.07) 48%, transparent 75%),
+    radial-gradient(52% 46% at 76% 86%, rgba(22, 75, 56, 0.14) 0%, transparent 72%),
+    radial-gradient(48% 44% at 20% 82%, rgba(255, 98, 92, 0.13) 0%, transparent 72%),
+    linear-gradient(180deg, #faf7f1 0%, #f5efe4 52%, #f1eadc 100%);
+}
+
+.dark .welcome-backdrop {
+  background:
+    radial-gradient(62% 54% at 14% 18%, rgba(255, 98, 92, 0.20) 0%, rgba(255, 98, 92, 0.06) 50%, transparent 74%),
+    radial-gradient(58% 54% at 86% 24%, rgba(44, 138, 102, 0.22) 0%, rgba(44, 138, 102, 0.07) 50%, transparent 75%),
+    radial-gradient(48% 44% at 22% 84%, rgba(255, 98, 92, 0.11) 0%, transparent 72%),
+    linear-gradient(180deg, #101714 0%, #0d1411 60%, #0a100d 100%);
+}
+
+.welcome-top-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: clamp(14px, 2.8vh, 26px);
+}
+
+.welcome-location-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  max-width: min(100%, 420px);
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklch, var(--brand-green) 24%, rgba(255, 255, 255, 0.72));
+  background: color-mix(in oklch, var(--card) 78%, rgba(220, 235, 226, 0.45));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 8px 24px color-mix(in oklch, var(--brand-green) 10%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  color: var(--brand-green);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.welcome-location-btn:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in oklch, #ff625c 38%, var(--brand-green));
+  background: color-mix(in oklch, var(--card) 88%, rgba(220, 235, 226, 0.55));
+  box-shadow: 0 12px 28px color-mix(in oklch, var(--brand-green) 14%, transparent);
+}
+
+.welcome-location-btn:active {
+  transform: scale(0.98);
+}
+
+.welcome-location-btn:focus-visible {
+  outline: 2px solid #ff625c;
+  outline-offset: 3px;
+}
+
+.welcome-location-btn:disabled {
+  cursor: wait;
+  opacity: 0.85;
+}
+
+.welcome-location-pin {
+  flex: none;
+  color: #ff625c;
+}
+
+.welcome-location-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.welcome-location-arrow {
+  flex: none;
+  opacity: 0.78;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.welcome-location-btn:hover .welcome-location-arrow {
+  transform: translateX(3px);
+  opacity: 1;
+}
+
+.welcome-title {
+  font-size: clamp(2.4rem, 7.2vw, 5.15rem);
+  line-height: 0.96;
+  letter-spacing: -0.025em;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.welcome-title--long {
+  font-size: clamp(1.85rem, 5.2vw, 3.85rem);
+}
+
+.welcome-tagline-wrap {
+  min-height: 3.5rem;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  gap: 6px;
+}
+
+@keyframes voyeger-tagline-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes voyeger-stats-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-tagline {
+  margin: 0;
+  animation: voyeger-tagline-fade 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.welcome-map-available {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--brand-green);
+  opacity: 0.9;
+}
+
+.welcome-bottom-stack {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.welcome-stats {
+  width: min(100%, 540px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 14px;
+  padding: 13px 18px;
+  border-radius: 18px;
+  border: 1px solid color-mix(in oklch, var(--brand-green) 16%, rgba(255, 255, 255, 0.72));
+  background: color-mix(in oklch, var(--card) 68%, rgba(255, 252, 246, 0.55));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow:
+    0 14px 34px color-mix(in oklch, var(--brand-green) 10%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  animation: voyeger-stats-in 480ms cubic-bezier(0.22, 1, 0.36, 1) 80ms both;
+}
+
+.welcome-stat {
+  position: relative;
+  display: grid;
+  gap: 3px;
+  padding: 2px 6px;
+  text-align: center;
+}
+
+.welcome-stat + .welcome-stat::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 18%;
+  bottom: 18%;
+  width: 1px;
+  background: color-mix(in oklch, var(--brand-green) 16%, transparent);
+}
+
+.welcome-stat-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in oklch, var(--brand-green) 76%, var(--muted-foreground));
+}
+
+.welcome-stat-label::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #ff625c;
+  flex: none;
+}
+
+.welcome-stat-value {
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: var(--foreground);
+  font-variant-numeric: tabular-nums;
+}
+
+.dark .welcome-location-btn,
+.dark .welcome-stats {
+  background: color-mix(in oklch, var(--card) 74%, rgba(16, 30, 24, 0.55));
+  border-color: color-mix(in oklch, var(--brand-green) 28%, rgba(255, 255, 255, 0.16));
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 560px) {
+  .app-header {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .app-header .brand-lockup {
+    padding: 5px 10px 5px 6px;
+  }
+
+  .app-header .header-actions {
+    gap: 6px;
+  }
+
+  .app-header .sample-stamp {
+    display: none;
+  }
+
+  .welcome-stats {
+    width: min(100%, 360px);
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 12px 14px;
+  }
+
+  .welcome-stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2px 4px;
+  }
+
+  .welcome-stat + .welcome-stat::before {
+    left: 4px;
+    right: 4px;
+    top: -4px;
+    bottom: auto;
+    width: auto;
+    height: 1px;
   }
 }
 
