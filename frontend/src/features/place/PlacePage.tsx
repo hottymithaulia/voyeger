@@ -22,6 +22,7 @@ export function PlacePage({ slug }: { slug: string }) {
   const [saved, setSaved] = useState(false);
   const [connectivity, setConnectivity] = useState<AppConnectivity>("OFFLINE");
   const [photoIndex, setPhotoIndex] = useState(0);
+  const [photoLoaded, setPhotoLoaded] = useState(false);
   const [shareMessage, setShareMessage] = useState("");
   const language: Language = i18n.language === "hi" ? "hi" : "en";
 
@@ -29,6 +30,7 @@ export function PlacePage({ slug }: { slug: string }) {
     let active = true;
     setLoading(true);
     setPhotoIndex(0);
+    setPhotoLoaded(false);
     setShareMessage("");
     const load = async () => {
       const found = await getPlaceBySlug(slug);
@@ -237,9 +239,11 @@ export function PlacePage({ slug }: { slug: string }) {
               <figure className="place-portrait-frame">
                 <img
                   key={activePhoto.id}
-                  className="place-portrait-img"
+                  className={`place-portrait-img${photoLoaded ? " place-portrait-img--loaded" : ""}`}
                   src={resolvePackAssetUrl(activePhoto.file)}
                   alt={activePhoto.alt[language] ?? activePhoto.alt.en}
+                  onLoad={() => setPhotoLoaded(true)}
+                  onError={() => setPhotoLoaded(true)}
                 />
                 {!isPlaceholderMedia && activePhoto.credit ? <figcaption>{activePhoto.credit}</figcaption> : null}
               </figure>
@@ -252,15 +256,25 @@ export function PlacePage({ slug }: { slug: string }) {
                       className={`place-thumb-btn${index === photoIndex ? " place-thumb-btn--active" : ""}`}
                       aria-label={t("place.gallerySelect", { index: index + 1 })}
                       aria-pressed={index === photoIndex}
-                      onClick={() => setPhotoIndex(index)}
+                      onClick={() => {
+                        setPhotoLoaded(false);
+                        setPhotoIndex(index);
+                      }}
                     >
-                      <img src={resolvePackAssetUrl(photo.thumb || photo.file)} alt="" />
+                      <img src={resolvePackAssetUrl(photo.thumb || photo.file)} alt="" loading="lazy" />
                     </button>
                   ))}
                 </div>
               ) : null}
             </div>
-          ) : null}
+          ) : (
+            <div className="place-portrait-stage" aria-hidden="true">
+              <div className="place-portrait-fallback">
+                <Compass size={28} />
+                <span>{place.is_anchor ? t("map.anchorBadge") : t(`filters.${place.category}`)}</span>
+              </div>
+            </div>
+          )}
         </section>
 
         {place.sensitivity.is_sacred ? (

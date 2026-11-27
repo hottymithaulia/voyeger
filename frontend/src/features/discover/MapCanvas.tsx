@@ -1,8 +1,8 @@
 import { addProtocol, Map as MapLibreMapClass, NavigationControl, type Map as MapLibreMap } from "maplibre-gl";
 import { PMTiles, Protocol } from "pmtiles";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Compass, Footprints, Landmark, Sparkles, Utensils } from "lucide-react";
+import { Compass, Footprints, Landmark, LocateFixed, Sparkles, Utensils } from "lucide-react";
 
 import { hasValidGeo } from "@/lib/geo";
 import type { CityConfig, Language, Place } from "@/types";
@@ -47,6 +47,55 @@ export function isMarkerVisibleAtZoom(place: Place, zoom: number, activeFilter: 
   return zoom >= 13;
 }
 
+type MarkerPinProps = {
+  place: Place;
+  x: number;
+  y: number;
+  muted: boolean;
+  activeFilter: string;
+  selected: boolean;
+  title: string;
+  ariaLabel: string;
+  onSelect: (place: Place) => void;
+};
+
+const MarkerPin = memo(function MarkerPin({
+  place,
+  x,
+  y,
+  muted,
+  activeFilter,
+  selected,
+  title,
+  ariaLabel,
+  onSelect,
+}: MarkerPinProps) {
+  const Icon = markerIcon(place);
+  const shapeClass = place.is_anchor ? "map-marker--anchor" : `map-marker--${place.category}`;
+  const partnerClass = place.partner_id ? " map-marker--partner" : "";
+  const stateClass = muted
+    ? " map-marker--muted"
+    : activeFilter !== "all"
+      ? " map-marker--emphasized"
+      : "";
+  const focusClass = selected ? " map-marker--selected" : "";
+  return (
+    <button
+      type="button"
+      className={`map-marker ${shapeClass}${partnerClass}${stateClass}${focusClass}`}
+      style={{ left: x, top: y }}
+      aria-label={ariaLabel}
+      title={title}
+      onClick={(event) => {
+        event.stopPropagation();
+        onSelect(place);
+      }}
+    >
+      <Icon aria-hidden="true" />
+    </button>
+  );
+});
+
 export function MapCanvas({
   places,
   city,
@@ -65,6 +114,7 @@ export function MapCanvas({
   const { t, i18n } = useTranslation();
   const host = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
+  const rafRef = useRef<number | null>(null);
   const placesRef = useRef(places);
   const filterRef = useRef(activeFilter);
   const focusRef = useRef(focusPlaceId);
@@ -245,18 +295,30 @@ export function MapCanvas({
         setTilesReady((current) => current);
       }
     });
+    const scheduleMarkers = () => {
+      if (rafRef.current !== null) return;
+      rafRef.current = window.requestAnimationFrame(() => {
+        rafRef.current = null;
+        if (!cancelled) updateMarkers();
+      });
+    };
+
     map.on("load", () => {
       if (cancelled) return;
       updateMarkers();
       void addLocalArchive();
     });
-    map.on("move", updateMarkers);
-    map.on("zoom", updateMarkers);
+    map.on("move", scheduleMarkers);
+    map.on("zoom", scheduleMarkers);
     map.on("click", () => selectRef.current(null));
     const resize = () => map.resize();
     window.addEventListener("resize", resize);
     return () => {
       cancelled = true;
+      if (rafRef.current !== null) {
+        window.cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
+      }
       window.removeEventListener("resize", resize);
       map.remove();
       mapRef.current = null;
@@ -302,39 +364,41 @@ export function MapCanvas({
           ) : marker.places[0] ? (
             (() => {
               const place = marker.places[0];
-              const Icon = markerIcon(place);
               const language: Language = i18n.language === "hi" ? "hi" : "en";
               const copy = place.i18n[language] ?? place.i18n.en;
-              const shapeClass = place.is_anchor
-                ? "map-marker--anchor"
-                : `map-marker--${place.category}`;
-              const partnerClass = place.partner_id ? " map-marker--partner" : "";
-              const stateClass = marker.muted
-                ? " map-marker--muted"
-                : activeFilter !== "all"
-                  ? " map-marker--emphasized"
-                  : "";
-              const focusClass = focusPlaceId === place.id ? " map-marker--selected" : "";
               return (
-                <button
+                <MarkerPin
                   key={marker.id}
-                  type="button"
-                  className={`map-marker ${shapeClass}${partnerClass}${stateClass}${focusClass}`}
-                  style={{ left: marker.x, top: marker.y }}
-                  aria-label={`${copy.title} (${place.is_anchor ? t("map.anchorBadge") : t(`filters.${place.category}`)})`}
+                  place={place}
+                  x={marker.x}
+                  y={marker.y}
+                  muted={marker.muted}
+                  activeFilter={activeFilter}
+                  selected={focusPlaceId === place.id}
                   title={copy.title}
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    selectRef.current(place);
-                  }}
-                >
-                  <Icon aria-hidden="true" />
-                </button>
+                  ariaLabel={`${copy.title} (${place.is_anchor ? t("map.anchorBadge") : t(`filters.${place.category}`)})`}
+                  onSelect={(picked) => selectRef.current(picked)}
+                />
               );
             })()
           ) : null,
         )}
       </div>
+
+      <button
+        type="button"
+        className="map-recenter-btn glass-panel"
+        aria-label={t("map.recenter")}
+        title={t("map.recenter")}
+        onClick={() => {
+          mapRef.current?.easeTo({
+            center: nearCenter ?? city.center,
+            zoom: city.defaultZoom,
+          });
+        }}
+      >
+        <LocateFixed size={16} aria-hidden="true" />
+      </button>
 
       {zoom < 13 && activeFilter === "all" && places.some((p) => !p.is_anchor) ? (
         <p className="map-zoom-hint">{t("map.zoomHint")}</p>

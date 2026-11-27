@@ -78,6 +78,8 @@ describe("Page 4 Hidden India partners", () => {
     expect(screen.getByText(/Bhopal/)).toBeInTheDocument();
     expect(screen.getByText("Photographs (planned future integration)")).toBeInTheDocument();
 
+    fireEvent.click(screen.getByRole("button", { name: "Artisan" }));
+
     fireEvent.change(screen.getByLabelText("Business or artist name"), {
       target: { value: "Zardozi Loom Collective" },
     });

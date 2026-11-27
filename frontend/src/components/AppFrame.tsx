@@ -18,6 +18,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { getActiveCity, getMeta, isPackReady, setMeta } from "@/data/repo";
 import { flushOutbox, listOutbox } from "@/data/outbox";
 import { shouldSyncByTime, syncNow } from "@/data/sync";
+import { CircularReveal } from "@/components/CircularReveal";
 import { Button } from "@/components/ui/button";
 import { apiMode } from "@/net/api";
 import { readMockToggles, setMockToggle, bumpMockVersion } from "@/net/mockApi";
@@ -53,6 +54,7 @@ export function AppFrame({ children }: { children: ReactNode }) {
   const [hasPack, setHasPack] = useState(false);
   const [city, setCity] = useState<CityConfig>(() => getCityConfig());
   const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [mounted, setMounted] = useState(false);
   const [showDev, setShowDev] = useState(false);
   const [devMode, setDevMode] = useState(false);
   const [toast, setToast] = useState("");
@@ -84,6 +86,7 @@ export function AppFrame({ children }: { children: ReactNode }) {
   };
 
   useEffect(() => {
+    setMounted(true);
     let active = true;
     const refresh = async () => {
       if (!active) return;
@@ -173,8 +176,8 @@ export function AppFrame({ children }: { children: ReactNode }) {
     void setMeta("theme", next);
   };
 
-  const isWelcomeView = pathname === "/";
-  const isMapView = pathname === "/discover" && hasPack;
+  const isWelcomeView = !mounted || pathname === "/";
+  const isMapView = mounted && pathname === "/discover" && hasPack;
   const statusLabel =
     connectivity === "SYNCING"
       ? t("status.syncing")
@@ -204,7 +207,7 @@ export function AppFrame({ children }: { children: ReactNode }) {
             aria-label={t("action.refresh")}
             title={t("action.refresh")}
           >
-            <span className={`status-dot${connectivity === "OFFLINE" ? " status-dot--offline" : ""}`} />
+            <span className={`status-dot${connectivity === "OFFLINE" ? " status-dot--offline" : connectivity === "SYNCING" ? " status-dot--syncing" : ""}`} />
             <span className="header-status-text">{statusLabel}</span>
             <RefreshCw size={14} aria-hidden="true" />
           </Button>
@@ -232,7 +235,7 @@ export function AppFrame({ children }: { children: ReactNode }) {
         </aside>
       ) : null}
 
-      <main className={`app-main${isMapView ? " app-main--map" : ""}${isWelcomeView ? " app-main--welcome" : ""}`}>{children}</main>
+      <main className={`app-main${isMapView ? " app-main--map" : ""}${isWelcomeView ? " app-main--welcome" : ""}`}>{mounted ? children : null}</main>
 
       {!isWelcomeView ? (
         <nav className="mobile-nav" aria-label={t("app.name")}>
@@ -258,6 +261,7 @@ export function AppFrame({ children }: { children: ReactNode }) {
         </div>
       ) : null}
       {devMode && showDev ? <DeveloperPanel onClose={() => setShowDev(false)} onRefresh={refreshNow} version={version} /> : null}
+      <CircularReveal />
     </div>
   );
 }

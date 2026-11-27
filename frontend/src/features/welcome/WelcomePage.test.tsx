@@ -56,4 +56,23 @@ describe("Page 1 City Welcome", () => {
       expect(screen.getByText("Just now")).toBeInTheDocument();
     });
   });
+
+  it("shows a real nearby anchor pill only when located anchors exist in IndexedDB", async () => {
+    const upperLake = makeTestPlace({
+      id: "upper-lake",
+      slug: "upper-lake",
+      is_anchor: true,
+      category: "experience",
+      geo: { lat: 23.252, lng: 77.386 },
+      i18n: {
+        en: { title: "Upper Lake", summary: "Bhojtal.", story: "", tips: [] },
+        hi: { title: "ऊपरी झील", summary: "भोजताल।", story: "", tips: [] },
+      },
+    });
+    await db.places.put(upperLake);
+
+    render(<WelcomePage />);
+
+    expect(await screen.findByText("Near Upper Lake")).toBeInTheDocument();
+  });
 });

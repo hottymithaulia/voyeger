@@ -25,6 +25,8 @@ export function PartnersPage() {
   const [partners, setPartners] = useState<Partner[]>([]);
   const [places, setPlaces] = useState<Place[]>([]);
   const [ready, setReady] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [submittedName, setSubmittedName] = useState("");
   const [application, setApplication] = useState({
     name: "",
@@ -65,6 +67,9 @@ export function PartnersPage() {
 
   const submitApplication = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
+    setSubmitError("");
     const submittedBusiness = application.name.trim();
     const payload: Omit<PartnerApplication, "id" | "created_at"> = {
       name: submittedBusiness,
@@ -73,15 +78,21 @@ export function PartnersPage() {
       offer: application.offer.trim(),
       place_ids: application.placeId ? [application.placeId] : [],
     };
-    await queuePartnerApplication(payload);
-    setSubmittedName(submittedBusiness);
-    setApplication({ name: "", type: "artisan", contact: "", offer: "", placeId: "" });
+    try {
+      await queuePartnerApplication(payload);
+      setSubmittedName(submittedBusiness);
+      setApplication({ name: "", type: "artisan", contact: "", offer: "", placeId: "" });
+    } catch {
+      setSubmitError(t("common.error"));
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
     <section className="screen partners-screen">
-      <header className="partners-hero">
-        <span className="eyebrow">{t("partners.campaignBadge")}</span>
+      <header className="partners-hero partners-hero--coral">
+        <span className="eyebrow partners-hero-eyebrow">{t("partners.campaignBadge")}</span>
         <h1 className="partners-hero-title">{t("partners.campaignTitle")}</h1>
         <p className="partners-hero-copy">
           {t("partners.campaignLead", { city: cityName })}
@@ -90,11 +101,20 @@ export function PartnersPage() {
         <div className="partners-participants">
           <span className="partners-participants-label">{t("partners.whoJoins")}</span>
           <div className="partners-pill-row">
-            {partnerTypes.map((type) => (
-              <span className="partners-pill" key={type}>
-                {t(`partners.types.${type}`)}
-              </span>
-            ))}
+            {partnerTypes.map((type) => {
+              const selected = application.type === type;
+              return (
+                <button
+                  type="button"
+                  className={`partners-pill${selected ? " partners-pill--active" : ""}`}
+                  key={type}
+                  aria-pressed={selected}
+                  onClick={() => setApplication((current) => ({ ...current, type }))}
+                >
+                  {t(`partners.types.${type}`)}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -236,7 +256,15 @@ export function PartnersPage() {
             <p>{t("partners.photoFutureNote")}</p>
           </div>
 
-          <Button type="submit">{t("partners.become")}</Button>
+          <Button type="submit" disabled={submitting}>
+            {submitting ? t("onboarding.progress") : t("partners.become")}
+          </Button>
+
+          {submitError ? (
+            <p className="notice notice--error" role="alert">
+              {submitError}
+            </p>
+          ) : null}
 
           {submittedName ? (
             <div className="notice partners-review-note" role="status">
