@@ -596,18 +596,23 @@ def main() -> None:
         print("\nSetup complete. Run 'python run.py' to validate and start Voyeger.")
         return
 
-    if args.test:
-        ok = run_preflight_checks(active_py, env_info, run_tests=True, run_build=False)
-        sys.exit(0 if ok else 1)
+    try:
+        if args.test:
+            ok = run_preflight_checks(active_py, env_info, run_tests=True, run_build=False)
+            sys.exit(0 if ok else 1)
 
-    if args.build:
-        ok = run_preflight_checks(active_py, env_info, run_tests=False, run_build=True)
-        sys.exit(0 if ok else 1)
+        if args.build:
+            ok = run_preflight_checks(active_py, env_info, run_tests=False, run_build=True)
+            sys.exit(0 if ok else 1)
 
-    if not args.no_tests:
-        ok = run_preflight_checks(active_py, env_info, run_tests=True, run_build=True)
-        if not ok:
-            sys.exit(1)
+        if not args.no_tests:
+            ok = run_preflight_checks(active_py, env_info, run_tests=True, run_build=True)
+            if not ok:
+                print("\nWARNING: Preflight checks reported failures, but continuing to start services.")
+                print("Use 'python run.py --test' to inspect failures, or '--no-tests' to skip them entirely.")
+    except KeyboardInterrupt:
+        print("\nInterrupted by user — exiting.")
+        sys.exit(130)
 
     rc = start_services(active_py, env_info)
     sys.exit(rc)

@@ -1,4 +1,4 @@
-import { ArrowUpRight, Camera, CheckCircle2, Mail, Store, X } from "lucide-react";
+import { ArrowUpRight, Camera, CheckCircle2, Clock3, Mail, Store } from "lucide-react";
 import { useEffect, useState, type FormEvent } from "react";
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
@@ -25,7 +25,6 @@ export function PartnersPage() {
   const [partners, setPartners] = useState<Partner[]>([]);
   const [places, setPlaces] = useState<Place[]>([]);
   const [ready, setReady] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
   const [submitStatus, setSubmitStatus] = useState<"idle" | "sent" | "offline">("idle");
@@ -68,24 +67,6 @@ export function PartnersPage() {
     };
   }, []);
 
-  useEffect(() => {
-    if (!modalOpen) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setModalOpen(false);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [modalOpen]);
-
-  const openModal = (preselectedType?: Partner["type"]) => {
-    if (preselectedType) {
-      setApplication((current) => ({ ...current, type: preselectedType }));
-    }
-    setSubmitError("");
-    setSubmitStatus("idle");
-    setModalOpen(true);
-  };
-
   const submitApplication = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (submitting) return;
@@ -106,6 +87,8 @@ export function PartnersPage() {
 
     try {
       await queuePartnerApplication(payload);
+      setSubmittedName(submittedBusiness);
+      setApplication({ name: "", type: application.type, contact: "", offer: "", placeId: "" });
       const isOnline = typeof navigator !== "undefined" && navigator.onLine;
       if (isOnline) {
         try {
@@ -128,8 +111,6 @@ export function PartnersPage() {
       } else {
         setSubmitStatus("offline");
       }
-      setSubmittedName(submittedBusiness);
-      setApplication({ name: "", type: application.type, contact: "", offer: "", placeId: "" });
     } catch {
       setSubmitError(t("common.error"));
     } finally {
@@ -167,9 +148,9 @@ export function PartnersPage() {
         </div>
 
         <div className="partners-hero-actions">
-          <Button type="button" variant="primary" onClick={() => openModal()}>
+          <a href="#partner-application" className="voyager-button voyager-button--primary voyager-button--default">
             {t("partners.become")}
-          </Button>
+          </a>
         </div>
       </header>
 
@@ -217,46 +198,27 @@ export function PartnersPage() {
         )}
       </section>
 
-      {modalOpen ? (
-        <div className="dialog-backdrop" role="presentation" onClick={() => setModalOpen(false)}>
-          <section
-            className="dialog-panel partner-modal-panel"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="partner-modal-title"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <div className="panel-heading-row">
-              <h2 id="partner-modal-title">{t("partners.applicationTitle")}</h2>
-              <Button variant="quiet" size="icon" className="icon-button" onClick={() => setModalOpen(false)} aria-label={t("action.close")}>
-                <X aria-hidden="true" />
-              </Button>
+      <section className="content-panel application-panel" id="partner-application">
+        <h2>{t("partners.applicationTitle")}</h2>
+        {submittedName ? (
+          <div className="notice partners-review-note" role="status">
+            <Clock3 size={16} aria-hidden="true" />
+            <div>
+              <strong>
+                {submittedName} — {t("partners.submitted")}
+              </strong>
+              <p>{t("partners.reviewPending")}</p>
+              <a
+                className="voyager-button voyager-button--outline voyager-button--small"
+                href={`mailto:cnttoujjval@gmail.com?subject=${encodeURIComponent("New Voyeger Partner Application")}&body=${encodeURIComponent(mailtoBody)}`}
+              >
+                <Mail size={14} aria-hidden="true" />
+                Send via Email App
+              </a>
             </div>
-
-            {submitStatus !== "idle" ? (
-              <div className="partner-modal-confirm" role="status">
-                <CheckCircle2 size={28} className="partner-confirm-icon" aria-hidden="true" />
-                <h3>{submittedName}</h3>
-                <p>
-                  {submitStatus === "sent"
-                    ? t("partners.submitted", { name: submittedName })
-                    : "Saved offline — will send when back online."}
-                </p>
-                <div className="partner-modal-confirm-actions">
-                  <a
-                    className="voyager-button voyager-button--outline voyager-button--small"
-                    href={`mailto:cnttoujjval@gmail.com?subject=${encodeURIComponent("New Voyeger Partner Application")}&body=${encodeURIComponent(mailtoBody)}`}
-                  >
-                    <Mail size={14} aria-hidden="true" />
-                    Send via Email App
-                  </a>
-                  <Button type="button" onClick={() => setModalOpen(false)}>
-                    {t("action.close")}
-                  </Button>
-                </div>
-              </div>
-            ) : (
-              <form className="form-stack" onSubmit={(event) => void submitApplication(event)}>
+          </div>
+        ) : null}
+        <form className="form-stack" onSubmit={(event) => void submitApplication(event)}>
                 <label className="field-label">
                   {t("partners.businessName")}
                   <input
@@ -346,10 +308,7 @@ export function PartnersPage() {
                   {submitting ? t("onboarding.progress") : t("partners.become")}
                 </Button>
               </form>
-            )}
-          </section>
-        </div>
-      ) : null}
+      </section>
     </section>
   );
 }

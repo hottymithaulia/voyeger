@@ -2,6 +2,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
+import type { TFunction } from "i18next";
 
 import {
   isCircularRevealActive,
@@ -44,7 +45,7 @@ const INITIAL_CONTEXT: HomepageLocationContext = {
 
 function formatLastExploration(
   iso: string | null,
-  t: (key: any, opts?: any) => any,
+  t: TFunction,
 ): string {
   if (!iso) return t("welcome.notYet");
   const timestamp = Date.parse(iso);
@@ -205,14 +206,7 @@ export function WelcomePage({
   const activeQuotes = language === "hi" ? TRAVEL_TAGLINES_HI : TRAVEL_TAGLINES_EN;
   const sessionTagline = activeQuotes[taglineIndex] ?? activeQuotes[0];
 
-  const defaultCityHeading = (city.name[language] ?? city.name.en).toUpperCase();
-  const headingText = !contextLoaded
-    ? defaultCityHeading
-    : context.scenario === "unknown"
-      ? defaultCityHeading
-      : language === "hi"
-        ? context.headingHi
-        : context.headingEn;
+  const headingText = language === "hi" ? context.headingHi : context.headingEn;
 
   const currentAnchorName = currentAnchor
     ? currentAnchor.i18n[language]?.title ?? currentAnchor.i18n.en.title
