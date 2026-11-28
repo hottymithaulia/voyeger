@@ -203,8 +203,8 @@ No `LICENSE` file is included because project-wide licensing has not been select
 
 ---
 
-## Team & Contributors
+## Team gamep8549 & Contributors
 
-- `[Contributor 1 Name]` — `[Role, e.g., Frontend / Offline Architecture]`
-- `[Contributor 2 Name]` — `[Role, e.g., Backend API / Content Pipeline]`
-- `[Contributor 3 Name]` — `[Role, e.g., Research & Curation]`
+- `Dharmesh Krish Mithaulia` — `[Offline Architecture]`
+- `[Ujjval]` — `[/ Content Pipeline]`
+
