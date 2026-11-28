@@ -1,0 +1,49 @@
+id: remember-bhopal-museum
+slug: remember-bhopal-museum
+category: culture
+status: draft
+tags:
+- memorial-museum
+- oral-history
+- bhopal-1984
+- social-justice
+- karond
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Remember Bhopal Museum
+    url: https://en.wikipedia.org/wiki/Remember_Bhopal_Museum
+    type: wikipedia
+text:
+  en:
+    title: Remember Bhopal Museum
+    summary: Opened on 2 December 2014 on the 30th anniversary of the 1984 Bhopal Gas Tragedy, the Remember Bhopal Museum is a survivor-curated memorial museum preserving personal artefacts, oral histories, and protest records.
+    story: Founded by the Remember Bhopal Trust without government or corporate funding and curated by journalist-museologist Rama Lakshmi alongside coordinator Shalini Sharma, the museum occupies a converted residence in Karond roughly 2.5 kilometres from the former Union Carbide factory. Its exhibits bring together personal belongings donated by victims' families—such as clothing and a stopped pocket watch—alongside photographs, campaign posters, and recorded survivor accounts.
+    tips: []
+    needs_review: true
+  hi:
+    title: रिमेम्बर भोपाल संग्रहालय
+    summary: 1984 की भोपाल गैस त्रासदी की 30वीं वर्षगांठ पर 2 दिसंबर 2014 को खुला रिमेम्बर भोपाल संग्रहालय पीड़ित समुदायों द्वारा संकलित व्यक्तिगत स्मृति-चिह्नों, मौखिक इतिहास और न्याय आंदोलन के दस्तावेज़ों को सहेजता है।
+    story: बिना किसी सरकारी या कॉर्पोरेट अनुदान के रिमेम्बर भोपाल ट्रस्ट द्वारा स्थापित और क्यूरेटर रमा लक्ष्मी तथा समन्वयक शालिनी शर्मा के नेतृत्व में तैयार यह संग्रहालय करोंद क्षेत्र में पूर्व यूनियन कार्बाइड कारखाने से लगभग 2.5 किलोमीटर दूर स्थित है। इसकी दीर्घाओं में पीड़ित परिवारों द्वारा भेंट की गई व्यक्तिगत वस्तुएँ, तस्वीरें, आंदोलन के पोस्टर और जीवित बचे लोगों के अनुभव प्रदर्शित हैं।
+    tips: []
+    needs_review: true
+deleted: false

@@ -3,6 +3,7 @@ from typing import List
 from fastapi import APIRouter, Body, Depends, Request, status
 from fastapi.responses import JSONResponse
 from sqlalchemy import select
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from server.db import get_db
@@ -41,18 +42,22 @@ def ingest_events(
             duplicates += 1
             continue
         seen_in_batch.add(ev.id)
-        db.add(
-            Event(
-                id=ev.id,
-                type=ev.type,
-                place_id=ev.place_id,
-                partner_id=ev.partner_id,
-                ts=ev.ts,
-                session_id=ev.session_id,
-                received_at=now,
-            )
-        )
-        accepted += 1
+        try:
+            with db.begin_nested():
+                db.add(
+                    Event(
+                        id=ev.id,
+                        type=ev.type,
+                        place_id=ev.place_id,
+                        partner_id=ev.partner_id,
+                        ts=ev.ts,
+                        session_id=ev.session_id,
+                        received_at=now,
+                    )
+                )
+            accepted += 1
+        except IntegrityError:
+            duplicates += 1
 
     db.commit()
     return JSONResponse(

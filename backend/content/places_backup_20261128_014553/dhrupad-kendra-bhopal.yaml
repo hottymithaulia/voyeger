@@ -1,0 +1,52 @@
+id: dhrupad-kendra-bhopal
+slug: dhrupad-kendra-bhopal
+category: hidden_gem
+status: draft
+tags:
+- dhrupad-music
+- classical-arts
+- guru-shishya
+- living-heritage
+- cultural-academy
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Dhrupad Kendra Bhopal
+    url: https://en.wikipedia.org/wiki/Dhrupad_Kendra_Bhopal
+    type: wikipedia
+  - name: Wikipedia - Zia Fariduddin Dagar
+    url: https://en.wikipedia.org/wiki/Zia_Fariduddin_Dagar
+    type: wikipedia
+text:
+  en:
+    title: Dhrupad Kendra Bhopal
+    summary: Established in 1981 on Ravindranath Thakur Marg near Bharat Bhavan, Dhrupad Kendra Bhopal is a dedicated state-supported conservatory preserving India's ancient Dhrupad classical vocal tradition through the Guru-Shishya system.
+    story: Founded by the Madhya Pradesh Department of Culture through the initiative of poet-administrator Ashok Vajpeyi and filmmaker Mani Kaul, the Kendra invited Dagar-tradition maestro Zia Fariduddin Dagar back from Europe to revive intensive Dhrupad training in Bhopal. Administered by the Ustad Alauddin Khan Sangeet Evam Kala Akademi, the institute trains scholars in four-year batches and has nurtured celebrated performers including Uday Bhawalkar and the Gundecha Brothers. Though central to India's modern Dhrupad revival, it rarely appears on tourist maps; visitors should verify locally when public recitals or visits are open.
+    tips: []
+    needs_review: true
+  hi:
+    title: ध्रुपद केंद्र भोपाल
+    summary: भारत भवन के पास रवींद्रनाथ ठाकुर मार्ग पर 1981 में स्थापित ध्रुपद केंद्र भोपाल भारत की प्राचीन ध्रुपद गायन परंपरा को गुरु-शिष्य पद्धति से संरक्षित करने वाला राज्य-समर्थित संगीत संस्थान है।
+    story: मध्यप्रदेश संस्कृति विभाग द्वारा कवि-प्रशासक अशोक वाजपेयी और फिल्मकार मणि कौल की पहल पर स्थापित इस केंद्र ने डागर परंपरा के प्रसिद्ध गुरु ज़िया फरीदुद्दीन डागर को यूरोप से भारत लौटने और भोपाल में ध्रुपद प्रशिक्षण का नेतृत्व करने के लिए आमंत्रित किया था। उस्ताद अलाउद्दीन खान संगीत एवं कला अकादमी द्वारा संचालित इस संस्थान ने चार-वर्षीय प्रशिक्षण सत्रों के माध्यम से उदय भवालकर और गुंदेचा बंधुओं जैसे प्रतिष्ठित कलाकारों को तैयार किया है। भारतीय शास्त्रीय संगीत के पुनर्जागरण में अहम भूमिका के बावजूद यह सामान्य पर्यटन सूचियों में नहीं आता; आगंतुकों को सार्वजनिक प्रस्तुति या प्रवेश की जानकारी स्थानीय स्तर पर लेनी चाहिए।
+    tips: []
+    needs_review: true
+deleted: false

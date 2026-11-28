@@ -1,0 +1,55 @@
+id: st-francis-of-assisi-cathedral-bhopal
+slug: st-francis-of-assisi-cathedral-bhopal
+category: hidden_gem
+status: draft
+tags:
+- cathedral
+- christian-heritage
+- central-bhopal
+- architecture
+- multi-faith-bhopal
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: true
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Archdiocese of Bhopal
+    url: https://en.wikipedia.org/wiki/Archdiocese_of_Bhopal
+    type: wikipedia
+  - name: Wikidata - Roman Catholic Archdiocese of Bhopal (Q420448)
+    url: https://www.wikidata.org/wiki/Q420448
+    type: wikidata
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Cathedral of St. Francis of Assisi
+    summary: Situated in central Bhopal near Arera Hills and Lal Parade Ground, the Cathedral of St. Francis of Assisi is a heritage church and the seat of the Roman Catholic Archdiocese of Bhopal.
+    story: 'Catalogued as item #135 alongside Lal Parade Ground (#134) in INTACH''s 2003 Bhopal built-heritage register, the church stands within central Bhopal''s historic administrative belt. Following the formation of Madhya Pradesh on 1 November 1956, Pope Paul VI established the Archdiocese of Bhopal on 13 September 1963 with this church serving as its cathedral under the patronage of St. Francis of Assisi. Omitted from mainstream sightseeing lists, the cathedral highlights a quieter thread of Bhopal''s diverse multi-faith architectural heritage.'
+    tips: []
+    needs_review: true
+  hi:
+    title: सेंट फ्रांसिस ऑफ असीसी कैथेड्रल
+    summary: अरेरा हिल्स और लाल परेड ग्राउंड के पास मध्य भोपाल में स्थित सेंट फ्रांसिस ऑफ असीसी कैथेड्रल एक विरासत गिरजाघर और रोमन कैथोलिक आर्चडायोसिस ऑफ भोपाल का प्रमुख केंद्र है।
+    story: 'इंटैक (INTACH) की 2003 की भोपाल विरासत सूची में लाल परेड ग्राउंड (#134) के साथ क्रमांक #135 पर दर्ज यह गिरजाघर मध्य भोपाल के ऐतिहासिक क्षेत्र में स्थित है। 1 नवंबर 1956 को मध्यप्रदेश के गठन के बाद 13 सितंबर 1963 को पोप पॉल षष्ठम ने भोपाल को आर्चडायोसिस घोषित किया और सेंट फ्रांसिस ऑफ असीसी को समर्पित इस गिरजाघर को कैथेड्रल का दर्जा मिला। मुख्य पर्यटन सूचियों से बाहर यह स्थान भोपाल की बहु-धार्मिक विरासत का शांत उदाहरण है।'
+    tips: []
+    needs_review: true
+deleted: false

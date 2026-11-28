@@ -1,0 +1,55 @@
+id: dhai-seedhi-ki-masjid
+slug: dhai-seedhi-ki-masjid
+category: hidden_gem
+status: draft
+tags:
+- mosque
+- fatehgarh-fort
+- earliest-mosque
+- nawab-era
+- old-bhopal
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: true
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Dost Mohammad of Bhopal
+    url: https://en.wikipedia.org/wiki/Dost_Mohammad_of_Bhopal
+    type: wikipedia
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+  - name: Madhya Pradesh Tourism - Times Passion Trail
+    url: https://www.mptourism.com/times-passion-trail-in-madhya-pradesh.html
+    type: official
+text:
+  en:
+    title: Dhai Seedhi Ki Masjid
+    summary: Perched on the historic Fatehgarh Fort precinct in Old Bhopal, Dhai Seedhi Ki Masjid is documented as the earliest mosque built in Bhopal.
+    story: Built during the 1720s under Nawab Dost Mohammad Khan while Fatehgarh Fort was taking shape, Dhai Seedhi Ki Masjid served the fort's garrison so guards could perform daily prayers on site. Catalogued in INTACH's 2003 Bhopal built-heritage register as Adhai Seedi ki Masjid or Huzara Masjid (#82), the intimate prayer structure contrasts strikingly in scale with the monumental Taj-ul-Masajid nearby. Rarely listed on mainstream sightseeing itineraries, it offers direct insight into Bhopal's earliest phase as a fortified town.
+    tips: []
+    needs_review: true
+  hi:
+    title: ढाई सीढ़ी की मस्जिद
+    summary: पुराने भोपाल के ऐतिहासिक फतेहगढ़ किला परिसर पर स्थित ढाई सीढ़ी की मस्जिद को भोपाल में बनी पहली मस्जिद के रूप में दर्ज किया गया है।
+    story: 1720 के दशक में नवाब दोस्त मोहम्मद खान द्वारा फतेहगढ़ किले के निर्माण के समय बनाई गई यह मस्जिद किले के पहरेदारों को वहीं नमाज़ अदा करने की सुविधा देने के लिए स्थापित की गई थी। इंटैक (INTACH) की 2003 की भोपाल विरासत सूची में अढ़ाई सीढ़ी की मस्जिद या हुज़रा मस्जिद (#82) के रूप में दर्ज यह लघु मस्जिद पास के विशाल ताज-उल-मसाजिद के मुकाबले अपने छोटे आकार के कारण विशेष पहचान रखती है। मुख्य पर्यटन सूचियों से बाहर यह स्थान भोपाल के प्रारंभिक किलेबंद नगर के इतिहास की झलक देता है।
+    tips: []
+    needs_review: true
+deleted: false

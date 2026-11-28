@@ -1,0 +1,55 @@
+id: tribal-museum-bhopal
+slug: tribal-museum-bhopal
+category: culture
+status: draft
+tags:
+- museum
+- tribal-heritage
+- anthropology
+- folk-arts
+- shamla-hills
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Tribal Museum Bhopal
+    url: https://en.wikipedia.org/wiki/Tribal_Museum_Bhopal
+    type: wikipedia
+  - name: Madhya Pradesh Tourism - Bhopal
+    url: https://www.mptourism.com/destination-bhopal.php
+    type: official
+  - name: Wikivoyage - Bhopal
+    url: https://en.wikivoyage.org/wiki/Bhopal
+    type: wikivoyage
+text:
+  en:
+    title: Madhya Pradesh Tribal Museum
+    summary: Located in Shyamla Hills, the Madhya Pradesh State Tribal Museum celebrates the living cultural traditions, indigenous knowledge systems, and artistry of regional tribal communities through immersive full-scale installations.
+    story: Established on 6 June 2013, this anthropological museum presents full-scale model houses, courtyards, and artistic installations illustrating shared cultural threads across the region's tribal communities. Thematic galleries explore everyday aesthetics, regional traditions in Chhattisgarh Dirgha, and traditional children's games in Rakku Dirgha. Beyond its galleries, the complex features an amphitheatre that hosts scheduled plays, musical recitals, and folk dances, along with the Chinhari retail outlet for handicrafts and an in-house magazine, Choumasa.
+    tips: []
+    needs_review: true
+  hi:
+    title: मध्यप्रदेश जनजातीय संग्रहालय
+    summary: श्यामला हिल्स में स्थित मध्यप्रदेश राज्य जनजातीय संग्रहालय क्षेत्र के जनजातीय समुदायों के जीवंत जीवन, देशज ज्ञान परंपराओं और कलात्मक सौंदर्य को भव्य पूर्ण-आकार प्रदर्शों के माध्यम से प्रस्तुत करता है।
+    story: 6 जून 2013 को स्थापित यह मानवशास्त्रीय संग्रहालय पूर्ण-आकार के जनजातीय आवासों, आंगनों और कलात्मक प्रदर्शों के जरिए क्षेत्र के विभिन्न समुदायों के साझा सांस्कृतिक सूत्र दिखाता है। इसकी प्रमुख दीर्घाओं में दैनिक जीवन और कला के साथ छत्तीसगढ़ दीर्घा तथा पारंपरिक बाल खेलों पर केंद्रित 'रक्कू दीर्घा' शामिल हैं। परिसर के भीतर एक मुक्ताकाश मंच है जहाँ नियमित रूप से नाटक, संगीत और लोकनृत्य प्रस्तुत किए जाते हैं, साथ ही हस्तशिल्प विक्रय केंद्र 'चिन्हारी' और पत्रिका 'चौमासा' का प्रकाशन भी यहीं से जुड़ा है।
+    tips: []
+    needs_review: true
+deleted: false

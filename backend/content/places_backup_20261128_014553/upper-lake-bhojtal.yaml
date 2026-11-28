@@ -1,0 +1,58 @@
+id: upper-lake-bhojtal
+slug: upper-lake-bhojtal
+category: experience
+status: draft
+tags:
+- lake
+- ramsar-wetland
+- waterfront
+- paramara-heritage
+- boating
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Bhojtal
+    url: https://en.wikipedia.org/wiki/Bhojtal
+    type: wikipedia
+  - name: Wikipedia - Bhoj Wetland
+    url: https://en.wikipedia.org/wiki/Bhoj_Wetland
+    type: wikipedia
+  - name: Madhya Pradesh Tourism - Bhopal
+    url: https://www.mptourism.com/destination-bhopal.php
+    type: official
+  - name: Wikivoyage - Bhopal
+    url: https://en.wikivoyage.org/wiki/Bhopal
+    type: wikivoyage
+text:
+  en:
+    title: Upper Lake (Bhojtal)
+    summary: Bhojtal, widely known as Upper Lake or Bada Talab, is Bhopal's defining 11th-century man-made lake and the western half of the Bhoj Wetland Ramsar site. Its expansive shoreline anchors the city's historic core, parks, and lakeside recreation.
+    story: Local historical tradition attributes Upper Lake to the 11th-century Paramara ruler Raja Bhoj of Malwa (1005–1055), who created the reservoir by constructing an earthen dam across the Kolans River and gave Bhopal its original name, Bhojpal. Renamed Bhojtal in March 2011 in Raja Bhoj's honour, the lake was designated alongside Lower Lake as a Ramsar Wetland of International Importance in August 2002. Its southern edge borders Van Vihar National Park, while its eastern shore meets Kamla Park and historic lakeside monuments, with Takia Island inside the water housing the tomb of Shah Ali Shah. A large statue of Raja Bhoj stands near the waterfront, where boating and evening views draw residents and visitors alike.
+    tips: []
+    needs_review: true
+  hi:
+    title: अपर लेक (भोजताल)
+    summary: भोजताल, जिसे बड़ा तालाब या अपर लेक भी कहा जाता है, भोपाल की 11वीं सदी की प्रमुख मानव-निर्मित झील और भोज वेटलैंड रामसर स्थल का मुख्य हिस्सा है। इसका विस्तृत तट शहर की ऐतिहासिक पहचान और झील किनारे की गतिविधियों का केंद्र है।
+    story: स्थानीय ऐतिहासिक परंपरा के अनुसार अपर लेक का निर्माण 11वीं सदी में मालवा के परमार शासक राजा भोज (1005–1055) ने कोलांस नदी पर मिट्टी का बांध बनाकर कराया था, जिनसे शहर का नाम भोजपाल पड़ा। मार्च 2011 में राजा भोज के सम्मान में इसका नाम भोजताल किया गया और अगस्त 2002 में इसे लोअर लेक के साथ अंतरराष्ट्रीय महत्व के रामसर वेटलैंड का दर्जा मिला। इसके दक्षिणी किनारे पर वन विहार राष्ट्रीय उद्यान और पूर्वी तट पर कमला पार्क स्थित हैं, जबकि झील के भीतर टाकिया द्वीप पर शाह अली शाह की मजार है। झील किनारे राजा भोज की विशाल प्रतिमा स्थापित है और यहाँ नौकायन तथा शहर के दृश्य देखने लोग आते हैं।
+    tips: []
+    needs_review: true
+deleted: false

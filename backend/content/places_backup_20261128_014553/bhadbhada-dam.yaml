@@ -1,0 +1,52 @@
+id: bhadbhada-dam
+slug: bhadbhada-dam
+category: hidden_gem
+status: draft
+tags:
+- dam
+- monsoon-viewpoint
+- upper-lake-outflow
+- water-engineering
+- bhadbhada
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Bhadbhada Dam
+    url: https://en.wikipedia.org/wiki/Bhadbhada_Dam
+    type: wikipedia
+  - name: Wikipedia - Bhojtal
+    url: https://en.wikipedia.org/wiki/Bhojtal
+    type: wikipedia
+text:
+  en:
+    title: Bhadbhada Dam
+    summary: Constructed in 1965 at the southeastern outlet of Upper Lake, Bhadbhada Dam is an eleven-gate spillway that regulates water flow from Bhojtal into the Kaliasote River.
+    story: Built in 1965 to manage Bhopal's primary reservoir, Bhadbhada Dam stands at the southeastern corner of Upper Lake with a full tank level of 1,666.80 feet (508.04 metres). Its eleven sluice gates generally remain closed for most of the year and are opened during heavy monsoon rainfall to release surplus water into the Kaliasote River, a tributary of the Betwa basin.
+    tips: []
+    needs_review: true
+  hi:
+    title: भदभदा डैम
+    summary: अपर लेक के दक्षिण-पूर्वी कोने पर 1965 में निर्मित भदभदा डैम ग्यारह गेट वाला एक प्रमुख बांध है, जो भोजताल के अतिरिक्त जल को कलियासोत नदी की ओर नियंत्रित करता है।
+    story: भोपाल के प्रमुख जलाशय के जल स्तर प्रबंधन के लिए 1965 में बने इस बांध का पूर्ण टैंक स्तर 1,666.80 फीट (508.04 मीटर) है। इसके ग्यारह स्लुइस गेट सामान्यतः वर्ष के अधिकांश समय बंद रहते हैं और भारी मानसूनी वर्षा के दौरान अतिरिक्त पानी को कलियासोत नदी में छोड़ने के लिए खोले जाते हैं। जहाँ आधिकारिक पर्यटन सूचियाँ अक्सर केरवा डैम को प्रमुखता देती हैं, वहीं वन विहार राष्ट्रीय उद्यान के करीब स्थित भदभदा डैम एक अपेक्षाकृत कम प्रचारित स्थानीय जल-अभियांत्रिकी स्थल है।
+    tips: []
+    needs_review: true
+deleted: false

@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { defineConfig, type Plugin, type PluginOption } from "vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import viteReact from "@vitejs/plugin-react";
@@ -89,6 +91,23 @@ function generateSwAfterPrerender(): Plugin {
   };
 }
 
+function serveMaplibreWorker(): Plugin {
+  return {
+    name: "voyeger:maplibre-worker",
+    apply: "serve",
+    configureServer(server) {
+      server.middlewares.use("/@maplibre-worker.mjs", (_req, res) => {
+        const workerPath = path.resolve(
+          process.cwd(),
+          "node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs",
+        );
+        res.setHeader("Content-Type", "application/javascript");
+        res.end(fs.readFileSync(workerPath));
+      });
+    },
+  };
+}
+
 export default defineConfig({
   server: {
     port: 8080,
@@ -115,6 +134,7 @@ export default defineConfig({
       },
     }),
     viteReact(),
+    serveMaplibreWorker(),
     pwaPlugins as unknown as PluginOption,
     generateSwAfterPrerender(),
   ],

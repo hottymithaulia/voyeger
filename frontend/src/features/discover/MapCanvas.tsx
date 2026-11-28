@@ -26,6 +26,7 @@ type ProjectedMarker = {
 
 const protocol = new Protocol();
 let protocolReady = false;
+const unavailableTileArchives = new Set<string>();
 
 function swatchColor(container: HTMLElement, className: string): string {
   const swatch = container.querySelector<HTMLElement>(className);
@@ -203,7 +204,7 @@ export function MapCanvas({
     if (!element) return;
     let cancelled = false;
     if (typeof setWorkerUrl === "function") {
-      setWorkerUrl(maplibreWorkerUrl);
+      setWorkerUrl(import.meta.env.DEV ? "/@maplibre-worker.mjs" : maplibreWorkerUrl);
     }
     if (!protocolReady) {
       addProtocol("pmtiles", protocol.tile);
@@ -276,6 +277,10 @@ export function MapCanvas({
     const addLocalArchive = async () => {
       const tilePath = import.meta.env["VITE_TILES_URL"] || "/tiles/bhopal.pmtiles";
       const archiveUrl = new URL(tilePath, window.location.origin).toString();
+      if (unavailableTileArchives.has(archiveUrl)) {
+        attachOnlineRasterFallback();
+        return;
+      }
       try {
         const archive = new PMTiles(archiveUrl);
         const header = await archive.getHeader();
@@ -306,6 +311,7 @@ export function MapCanvas({
         setTilesReady(true);
         updateMarkers();
       } catch (err) {
+        unavailableTileArchives.add(archiveUrl);
         console.debug("[VoyegerMap] PMTiles archive unavailable, activating raster fallback", err);
         attachOnlineRasterFallback();
       }

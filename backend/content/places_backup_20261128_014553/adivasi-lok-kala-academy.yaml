@@ -1,0 +1,52 @@
+id: adivasi-lok-kala-academy
+slug: adivasi-lok-kala-academy
+category: culture
+status: draft
+tags:
+- tribal-arts
+- folk-theatre
+- cultural-academy
+- lokrang-festival
+- bhopal-culture
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Adivasi Lok Kala Academy
+    url: https://en.wikipedia.org/wiki/Adivasi_Lok_Kala_Academy
+    type: wikipedia
+  - name: Wikipedia - Lado Bai
+    url: https://en.wikipedia.org/wiki/Lado_Bai
+    type: wikipedia
+text:
+  en:
+    title: Adivasi Lok Kala Academy
+    summary: Established by the Government of Madhya Pradesh in 1980, the Adivasi Lok Kala Academy is a state cultural institution dedicated to documenting, preserving, and promoting tribal and folk performing arts.
+    story: Operating as a zonal cultural centre in Madhya Pradesh with artists based in Bhopal, the academy conducts field surveys, publishes documentation on indigenous traditions, and hosts major state festivals including Lokrang, Ram Leela Mela, Nimad Utsav, Sampada, and Shruti Samaroh. It has also provided an artistic workspace in Bhopal for noted tribal painter Lado Bai and established off-site museums at Orchha.
+    tips: []
+    needs_review: true
+  hi:
+    title: आदिवासी लोक कला अकादमी
+    summary: मध्यप्रदेश सरकार द्वारा 1980 में स्थापित आदिवासी लोक कला अकादमी जनजातीय और लोक कलाओं के दस्तावेज़ीकरण, संरक्षण एवं संवर्धन के लिए समर्पित राज्य सांस्कृतिक संस्थान है।
+    story: भोपाल में सक्रिय यह सांस्कृतिक संस्थान जनजातीय लोक परंपराओं का सर्वेक्षण और प्रकाशन करता है तथा लोकरंग, रामलीला मेला, निमाड़ उत्सव, संपदा और श्रुति समारोह जैसे प्रमुख सांस्कृतिक उत्सव आयोजित करता है। यह संस्था प्रमुख जनजातीय चित्रकार लाड़ो बाई का कार्यस्थल भी रही है और इसने ओरछा में भी संग्रहालय स्थापित किए हैं।
+    tips: []
+    needs_review: true
+deleted: false

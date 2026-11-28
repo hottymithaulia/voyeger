@@ -56,7 +56,17 @@ function retryDelay(attempts: number): number {
   return Math.min(1000 * 2 ** Math.min(attempts, 10), 6 * 60 * 60 * 1000);
 }
 
-export async function flushOutbox(): Promise<void> {
+let activeFlush: Promise<void> | null = null;
+
+export function flushOutbox(): Promise<void> {
+  if (activeFlush) return activeFlush;
+  activeFlush = _flushOutbox().finally(() => {
+    activeFlush = null;
+  });
+  return activeFlush;
+}
+
+async function _flushOutbox(): Promise<void> {
   if (typeof navigator === "undefined" || !navigator.onLine || !(await api.health())) return;
   const due = (await db.outbox.orderBy("created_at").toArray()).filter((item) => item.retry_at <= Date.now()).slice(0, 50);
   const eventItems = due.filter((item) => item.kind === "event");

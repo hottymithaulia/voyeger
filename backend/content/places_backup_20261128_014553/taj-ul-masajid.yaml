@@ -1,0 +1,58 @@
+id: taj-ul-masajid
+slug: taj-ul-masajid
+category: culture
+status: draft
+tags:
+- mosque
+- begum-heritage
+- islamic-architecture
+- shahjahanabad
+- landmark
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: true
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Taj-ul-Masajid
+    url: https://en.wikipedia.org/wiki/Taj-ul-Masajid
+    type: wikipedia
+  - name: Wikidata - Taj-ul-Masajid (Q3514109)
+    url: https://www.wikidata.org/wiki/Q3514109
+    type: wikidata
+  - name: Madhya Pradesh Tourism - Bhopal
+    url: https://www.mptourism.com/destination-bhopal.php
+    type: official
+  - name: District Bhopal Official Portal - Places of Interest
+    url: https://bhopal.nic.in/en/places-of-interest/
+    type: official
+text:
+  en:
+    title: Taj-ul-Masajid
+    summary: Taj-ul-Masajid, meaning the 'Crown of Mosques', is one of India's largest mosques and a monumental pink sandstone landmark in Old Bhopal's Shahjahanabad quarter. Initiated by Nawab Shah Jahan Begum, its twin minarets and triple domes anchor the city's historic skyline.
+    story: Construction of Taj-ul-Masajid began under Nawab Shah Jahan Begum in the newly laid walled suburb of Shahjahanabad during the late 19th century, with historical accounts estimating initial work around 1871 and groundbreaking in 1887 before final completion in 1958. Spanning an interior area of about 13,000 square metres with capacity for roughly 26,000 worshippers, the mosque rises with two 67-metre minarets, three large domes, and 27 ceilings held aloft by massive arched pillars. Notably for its era, the complex incorporates a dedicated zenana prayer space for women, and its entrance was later renovated using 13th-century Syrian mosque motifs gifted by the Emir of Kuwait. From 1948 to 2001, the mosque grounds also hosted the annual Bhopal Tablighi Ijtema congregation.
+    tips: []
+    needs_review: true
+  hi:
+    title: ताज-उल-मसाजिद
+    summary: ताज-उल-मसाजिद, जिसका अर्थ 'मस्जिदों का ताज' है, भारत की सबसे बड़ी मस्जिदों में से एक और पुराने भोपाल के शाहजहानाबाद क्षेत्र की प्रमुख गुलाबी बलुआ पत्थर की धरोहर है। नवाब शाहजहाँ बेगम द्वारा प्रारंभ की गई यह मस्जिद शहर के क्षितिज की पहचान है।
+    story: ताज-उल-मसाजिद का निर्माण नवाब शाहजहाँ बेगम ने शाहजहानाबाद उपनगर में 19वीं सदी के उत्तरार्ध में शुरू कराया था, जिसका प्रारंभ लगभग 1871 और नींव 1887 मानी जाती है तथा निर्माण 1958 में पूरा हुआ। लगभग 13,000 वर्ग मीटर आंतरिक क्षेत्र और करीब 26,000 नमाजियों की क्षमता वाली इस मस्जिद में 67 मीटर ऊँची दो मीनारें, तीन विशाल गुंबद और 27 छतें हैं। अपने समय के लिहाज से दुर्लभ विशेषता के रूप में इसमें महिलाओं के लिए अलग ज़नाना इबादतगाह भी बनाई गई थी, और प्रवेश द्वार का जीर्णोद्धार कुवैत के अमीर द्वारा भेंट 13वीं सदी की सीरियाई शैली की सजावट से किया गया। 1948 से 2001 तक यहाँ वार्षिक भोपाल तबलीगी इज्तिमा का आयोजन होता रहा।
+    tips: []
+    needs_review: true
+deleted: false

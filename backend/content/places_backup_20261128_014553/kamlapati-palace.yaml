@@ -1,0 +1,58 @@
+id: kamlapati-palace
+slug: kamlapati-palace
+category: hidden_gem
+status: draft
+tags:
+- gond-heritage
+- palace
+- asi-monument
+- kamla-park
+- eighteenth-century
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Kamlapati Palace
+    url: https://en.wikipedia.org/wiki/Kamlapati_Palace
+    type: wikipedia
+  - name: Wikipedia - Monuments of National Importance in MP (West)
+    url: https://en.wikipedia.org/wiki/List_of_Monuments_of_National_Importance_in_Madhya_Pradesh/West
+    type: wikipedia
+  - name: Wikidata - Kamlapati Palace (Q27963272)
+    url: https://www.wikidata.org/wiki/Q27963272
+    type: wikidata
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Rani Kamlapati Palace
+    summary: Tucked inside Kamla Park on the ancient embankment separating Bhopal's Upper and Lower Lakes, Rani Kamlapati Palace (1722) is the earliest surviving secular building in Bhopal town.
+    story: Constructed in 1722 CE on the eastern flank of Raja Bhoj's ancient Bhojpal embankment, this double-storeyed palace is named after Rani Kamlapati, widow of Gond chief Nizam Shah of Ginnorgarh. Built in traditional lakhauri brick, its facade displays cusped arches supported on fluted pillars, lotus-petal merlons, and brackets carrying projecting chhajjas. Historical accounts link Rani Kamlapati's alliance with Sardar Dost Mohammad Khan to the founding of modern Bhopal on the opposite Fatehgarh ridge. Declared a protected Monument of National Importance (N-MP-10) in 1989, the structure remains under the custodianship of the Archaeological Survey of India.
+    tips: []
+    needs_review: true
+  hi:
+    title: रानी कमलापति महल
+    summary: अपर लेक और लोअर लेक को अलग करने वाले प्राचीन बांध पर कमला पार्क के भीतर स्थित रानी कमलापति महल (1722) भोपाल नगर की सबसे पुरानी शेष धर्मनिरपेक्ष इमारत है।
+    story: राजा भोज के प्राचीन भोजपाल बांध के पूर्वी हिस्से पर 1722 ई. में निर्मित यह दो-मंजिला महल गिन्नौरगढ़ के गोंड शासक निज़ाम शाह की विधवा रानी कमलापति के नाम पर जाना जाता है। पारंपरिक लाखौरी ईंटों से बने इस महल में नक्काशीदार खंभों पर टिकी कटावदार मेहराबें, कमल-पंखुड़ी आकार के कंगूरे और छज्जों को सहारा देने वाले ब्रेकेट देखे जा सकते हैं। ऐतिहासिक विवरणों में रानी कमलापति और सरदार दोस्त मोहम्मद खान के प्रसंग को आधुनिक भोपाल की स्थापना से जोड़ा जाता है। 1989 में राष्ट्रीय महत्व का संरक्षित स्मारक (N-MP-10) घोषित यह महल भारतीय पुरातत्व सर्वेक्षण (ASI) की देखरेख में है।
+    tips: []
+    needs_review: true
+deleted: false

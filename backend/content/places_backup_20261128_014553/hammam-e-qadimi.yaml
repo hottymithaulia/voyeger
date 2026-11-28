@@ -1,0 +1,52 @@
+id: hammam-e-qadimi
+slug: hammam-e-qadimi
+category: hidden_gem
+status: draft
+tags:
+- hammam
+- gond-heritage
+- living-heritage
+- eighteenth-century
+- old-bhopal
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Hammam-e-Qadimi
+    url: https://en.wikipedia.org/wiki/Hammam-e-Qadimi
+    type: wikipedia
+  - name: 'INTACH - Bhopal: The Built Heritage (2003)'
+    url: http://chapter.intach.org/pdf/4.Bhopal-TheBuiltHeritageMadhyaPradesh2003.pdf
+    type: other
+text:
+  en:
+    title: Hammam-e-Qadimi
+    summary: Hammam-e-Qadimi is a rare functioning 18th-century traditional steam bathhouse tucked into Old Bhopal near Gohar Mahal, preserving centuries-old thermal architecture.
+    story: Erected in the early 1700s during Gond rule and later gifted to Hajjam Hammu Khalida when Dost Mohammad Khan became Nawab of Bhopal, this historic bathhouse is catalogued as Hammam Kadimi (#190) in INTACH's 2003 Bhopal built-heritage listing. Its interior chambers form gradual stages transitioning from a hot, humid 60-degree-Celsius steam chamber toward cooler, drier outer rooms. On the rooftop, five ventilation openings locally called the naak and kaan (nose and ears) regulate airflow within the building. Absent from official tourism brochures, it represents one of Old Bhopal's most unusual surviving living-heritage structures.
+    tips: []
+    needs_review: true
+  hi:
+    title: हम्माम-ए-क़दीमी
+    summary: पुराने भोपाल में गौहर महल के पास स्थित हम्माम-ए-क़दीमी 18वीं सदी का एक दुर्लभ और आज भी प्रचलित पारंपरिक भाप स्नानघर है, जिसमें सदियों पुरानी तापीय वास्तुकला सुरक्षित है।
+    story: 1700 के प्रारंभिक वर्षों में गोंड शासन के दौरान निर्मित और बाद में दोस्त मोहम्मद खान के नवाब बनने पर हज्जाम हम्मू खलीदा को भेंट किया गया यह ऐतिहासिक स्नानघर इंटैक (INTACH) की 2003 की विरासत सूची में हम्माम कदीमी (#190) के रूप में दर्ज है। इसके कक्ष इस प्रकार बने हैं कि लगभग 60 डिग्री सेल्सियस वाले गर्म व आर्द्र भाप कक्ष से बाहर के अपेक्षाकृत ठंडे और शुष्क कक्षों तक क्रमिक संक्रमण होता है। छत पर बने पाँच वायु-संचार छिद्र, जिन्हें स्थानीय रूप से हम्माम की 'नाक और कान' कहा जाता है, इमारत के भीतर हवा का संतुलन बनाए रखते हैं। आधिकारिक पर्यटन सूचियों से बाहर यह पुराने भोपाल की एक अनूठी जीवंत धरोहर है।
+    tips: []
+    needs_review: true
+deleted: false

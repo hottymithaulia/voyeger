@@ -1,0 +1,55 @@
+id: bharat-bhavan
+slug: bharat-bhavan
+category: culture
+status: draft
+tags:
+- arts-centre
+- modern-architecture
+- museum
+- theatre
+- shamla-hills
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikipedia - Bharat Bhavan
+    url: https://en.wikipedia.org/wiki/Bharat_Bhavan
+    type: wikipedia
+  - name: Wikidata - Bharat Bhavan (Q2767116)
+    url: https://www.wikidata.org/wiki/Q2767116
+    type: wikidata
+  - name: Wikivoyage - Bhopal
+    url: https://en.wikivoyage.org/wiki/Bhopal
+    type: wikivoyage
+text:
+  en:
+    title: Bharat Bhavan
+    summary: Bharat Bhavan is an autonomous multi-arts complex and museum facing Upper Lake in Bhopal's Shamla Hills. Designed by acclaimed architect Charles Correa, it brings together contemporary and folk visual art, theatre, poetry, cinema, and classical music.
+    story: Inaugurated on 13 February 1982 and overseen by the Bharat Bhavan Trust, the arts complex on J. Swaminathan Marg was established as a centre for visual and performing arts, folk art, and literature. Designed by architect Charles Correa facing Upper Lake, the campus integrates multiple art galleries, an outdoor theatre, workshops, and archival libraries. Its dedicated wings include Roopankar for contemporary, folk, and tribal art alongside graphic and ceramic workshops, Rangmandal for repertory theatre, Vagarth for Indian poetry archives and literary festivals, Anhad for classical and folk music archives and recitals, Chhavi for classical cinema, and the Nirala Srijanpeeth creative writing chair.
+    tips: []
+    needs_review: true
+  hi:
+    title: भारत भवन
+    summary: भारत भवन भोपाल के श्यामला हिल्स में अपर लेक के सामने स्थित एक स्वायत्त बहु-कला केंद्र और संग्रहालय है। प्रसिद्ध वास्तुकार चार्ल्स कोरिया द्वारा डिज़ाइन किया गया यह परिसर दृश्य कला, रंगमंच, कविता, सिनेमा और शास्त्रीय संगीत का संगम है।
+    story: 13 फरवरी 1982 को उद्घाटित और भारत भवन ट्रस्ट द्वारा संचालित यह परिसर जे. स्वामीनाथन मार्ग पर दृश्य एवं प्रदर्शन कलाओं, लोक कला तथा साहित्य के केंद्र के रूप में स्थापित किया गया था। अपर लेक के सामने चार्ल्स कोरिया द्वारा डिज़ाइन किए गए इस परिसर में अनेक कला दीर्घाएँ, एक मुक्ताकाश मंच, कार्यशालाएँ और पुस्तकालय शामिल हैं। इसके प्रमुख प्रभागों में समकालीन, लोक और जनजातीय कला का संग्रहालय 'रूपांकर', रंगमंच प्रभाग 'रंगमंडल', भारतीय कविता और साहित्य का पुस्तकालय 'वागर्थ', शास्त्रीय व लोक संगीत प्रभाग 'अनहद', शास्त्रीय सिनेमा केंद्र 'छवि' और रचनात्मक लेखन पीठ 'निराला सृजनपीठ' शामिल हैं।
+    tips: []
+    needs_review: true
+deleted: false

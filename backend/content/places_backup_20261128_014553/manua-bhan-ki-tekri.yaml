@@ -1,0 +1,55 @@
+id: manua-bhan-ki-tekri
+slug: manua-bhan-ki-tekri
+category: culture
+status: draft
+tags:
+- jain-temple
+- hilltop-viewpoint
+- pilgrimage
+- ropeway
+- lalghati
+geo:
+  lat: null
+  lng: null
+is_anchor: true
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: true
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+  placeholder: true
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: District Bhopal Official Portal - Places of Interest
+    url: https://bhopal.nic.in/en/places-of-interest/
+    type: official
+  - name: Wikivoyage - Bhopal
+    url: https://en.wikivoyage.org/wiki/Bhopal
+    type: wikivoyage
+  - name: Madhya Pradesh Tourism - Discovering MP
+    url: https://www.mptourism.com/pdf/Discovering-MP-Final-Book.pdf
+    type: official
+text:
+  en:
+    title: Manua Bhan Ki Tekri
+    summary: Manua Bhan Ki Tekri is a hilltop Shwetambar Jain pilgrimage shrine near Lalghati on Gwalior Road, roughly seven kilometres from central Bhopal. Known for both spiritual significance and sweeping views across the city, the summit is reachable by road or cable car.
+    story: Recognized by the Bhopal district administration as a major Jain pilgrimage centre and the Sadhana Sthali of the Oswal dynasty, Manua Bhan Ki Tekri preserves sacred footwear memorials of Jain saints Maharaj Shri Vijay Suriji, Shri Jindutta Sureshwarji, and Acharya Manutung alongside an installed idol of Shri Man Bhadarji. An ancient, undeciphered stone-carved manuscript stands at the Simha Gate, and the hill hosts a major annual fair on Kartik Purnima. Beyond pilgrimage, visitors ascend via the hill road or the ropeway cable car for elevated panoramic views of Bhopal.
+    tips: []
+    needs_review: true
+  hi:
+    title: मनुआभान की टेकरी
+    summary: मनुआभान की टेकरी भोपाल के लालघाटी के पास ग्वालियर रोड पर स्थित एक पहाड़ी श्वेतांबर जैन तीर्थ स्थल है, जो मुख्य शहर से लगभग सात किलोमीटर दूर है। धार्मिक महत्व के साथ यह स्थल रोपवे और भोपाल के विहंगम दृश्यों के लिए जाना जाता है।
+    story: भोपाल जिला प्रशासन द्वारा प्रमुख जैन तीर्थ और ओसवाल वंश की साधना स्थली के रूप में दर्ज मनुआभान की टेकरी पर जैन संतों महाराज श्री विजय सूरीजी, श्री जिनदत्त सुरेश्वरजी और आचार्य मानतुंग की चरण पादुकाएँ तथा श्री मानभद्रजी की प्रतिमा प्रतिष्ठित हैं। यहाँ के सिंह द्वार पर पत्थर में उत्कीर्ण एक प्राचीन अपठित पांडुलिपि मौजूद है और प्रतिवर्ष कार्तिक पूर्णिमा पर बड़ा मेला लगता है। श्रद्धालु और सैलानी पहाड़ी मार्ग या रोपवे केबल कार के जरिए शिखर तक पहुँचकर पूरे शहर का दृश्य देख सकते हैं।
+    tips: []
+    needs_review: true
+deleted: false

@@ -1,0 +1,54 @@
+id: ravindra-bhavan-bhopal
+slug: ravindra-bhavan-bhopal
+category: hidden_gem
+status: hold
+tags:
+- cultural-centre
+- auditorium
+- art-exhibitions
+- performing-arts
+- central-bhopal
+geo:
+  lat: null
+  lng: null
+is_anchor: false
+anchor_for: []
+hours: null
+best_time: null
+cost_note: null
+sensitivity:
+  is_sacred: false
+  note: null
+partner_id: null
+media:
+  images: []
+  video: null
+provenance:
+  source: curated-research
+  license: CC-BY-SA-4.0
+  verified_by: null
+  verified_at: null
+  sources:
+  - name: Wikidata - Ravindra Bhawan, Bhopal (Q29866146)
+    url: https://www.wikidata.org/wiki/Q29866146
+    type: wikidata
+  - name: Wikipedia - Robin David
+    url: https://en.wikipedia.org/wiki/Robin_David
+    type: wikipedia
+  - name: Wikipedia - Isuri
+    url: https://en.wikipedia.org/wiki/Isuri
+    type: wikipedia
+text:
+  en:
+    title: Ravindra Bhavan
+    summary: Ravindra Bhavan is a public state cultural centre and auditorium complex near Bharat Bhavan that hosts visual-art exhibitions, music recitals, and literary programmes.
+    story: The complex serves as a showcase for events organised by the Madhya Pradesh Department of Culture, including sculptor Robin David's 2020 major exhibition alongside concerts and regional literary gatherings. Because visitor attention overwhelmingly concentrates on nearby Bharat Bhavan, Ravindra Bhavan remains an understated stop for travellers interested in Bhopal's live civic arts calendar.
+    tips: []
+    needs_review: true
+  hi:
+    title: रवींद्र भवन
+    summary: भारत भवन के पास स्थित रवींद्र भवन भोपाल का एक सार्वजनिक सांस्कृतिक केंद्र और सभागार परिसर है, जहाँ कला प्रदर्शनियाँ, संगीत समारोह और साहित्यिक कार्यक्रम आयोजित होते हैं।
+    story: यह परिसर मध्यप्रदेश संस्कृति विभाग द्वारा आयोजित बड़ी कला प्रदर्शनियों—जैसे 2020 में मूर्तिकार रॉबिन डेविड की प्रमुख प्रदर्शनी—के साथ संगीत प्रस्तुतियों और साहित्यिक आयोजनों का मंच रहा है। अधिकांश पर्यटकों का ध्यान पास के भारत भवन पर केंद्रित रहने के कारण रवींद्र भवन स्थानीय कला और मंचन परंपराओं को देखने के लिए एक कम चर्चित विकल्प बना रहता है।
+    tips: []
+    needs_review: true
+deleted: false
