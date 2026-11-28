@@ -206,7 +206,14 @@ export function WelcomePage({
   const activeQuotes = language === "hi" ? TRAVEL_TAGLINES_HI : TRAVEL_TAGLINES_EN;
   const sessionTagline = activeQuotes[taglineIndex] ?? activeQuotes[0];
 
-  const headingText = language === "hi" ? context.headingHi : context.headingEn;
+  const defaultCityHeading = (city.name[language] ?? city.name.en).toUpperCase();
+  const headingText = !contextLoaded
+    ? defaultCityHeading
+    : context.scenario === "unknown"
+      ? defaultCityHeading
+      : language === "hi"
+        ? context.headingHi
+        : context.headingEn;
 
   const currentAnchorName = currentAnchor
     ? currentAnchor.i18n[language]?.title ?? currentAnchor.i18n.en.title
