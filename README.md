@@ -24,7 +24,7 @@
 
 ## Problem Statement
 
-Visitors exploring heritage-rich cities often rely on cloud-only map apps that:
+Improving Visibility of Lesser-Known Tourist Places, Food, and Culture. Visitors exploring heritage-rich cities often rely on cloud-only map apps that:
 - Fail in low-connectivity precincts, lakeside zones, and old-city lanes.
 - Prioritize commercial listings over local stepwells, oral histories, artisans, and small eateries.
 - Lack bilingual navigation (English / Hindi), travel phrases, and sensitivity cues for sacred spaces.
